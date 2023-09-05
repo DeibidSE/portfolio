@@ -1,5 +1,5 @@
 <template>
-  <div class="relative z-10 flex items-center justify-center p-16 duration-500 translate-y-24 face face1 bg-primary-light dark:bg-primary-dark rounded-t-xl">
+  <div class="relative z-10 flex items-center justify-center p-16 duration-500 translate-y-24 face face1 bg-secondary-light dark:bg-secondary-dark rounded-t-xl">
     <div class="flex flex-col items-center justify-center duration-500 opacity-50 dark:opacity-20">
       <img
         :src="data.image"
@@ -10,7 +10,7 @@
       >
     </div>
   </div>
-  <div class="flex flex-col justify-center w-full p-6 overflow-x-hidden overflow-y-auto duration-500 -translate-y-24 shadow-xl opacity-0 face face2 rounded-b-xl bg-secondary-light dark:bg-secondary-dark">
+  <div class="flex flex-col justify-center w-full p-6 overflow-x-hidden overflow-y-auto duration-500 -translate-y-24 shadow-xl opacity-0 face face2 rounded-b-xl bg-primary-light dark:bg-primary-dark">
     <h3 class="self-center p-4 text-4xl font-bold text-center text-purple-600">
       {{ data.name }}
     </h3>
@@ -41,7 +41,7 @@ export default {
 .card {
   &:hover {
     .face.face1 {
-      @apply translate-y-0 bg-secondary-light dark:bg-secondary-dark shadow-xl;
+      @apply translate-y-0 bg-primary-light dark:bg-primary-dark shadow-xl;
       div {
         @apply opacity-100;
       }

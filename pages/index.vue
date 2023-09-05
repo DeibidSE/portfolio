@@ -1,40 +1,35 @@
 <template>
   <main>
     <HeaderComponent />
-
-    <SectionsWelcomeSection :info="getSectionInfo('welcome')" />
-
-    <SectionsPresentationSection :info="getSectionInfo('presentation')" />
-
-    <SectionsProjectsSection :info="getSectionInfo('projects')" />
-
-    <SectionsJobsAndStudiesSection :info="getSectionInfo('jobsAndStudies')" />
-
-    <SectionsSkillsSection :info="getSectionInfo('skills')" />
-
+    <SectionsMyIntroduction :info="sectionInfo.INTRODUCTION" />
+    <SectionsMyPresentation :info="sectionInfo.PRESENTATION" />
+    <SectionsMyProjects :info="sectionInfo.PROJECTS" />
+    <SectionsMyJobsAndStudies :info="sectionInfo.JOBS_AND_STUDIES" />
+    <SectionsMyTechnicalSkills :info="sectionInfo.TECHNICAL_SKILLS" />
     <ScrollToTopBtn />
   </main>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
 import { langStore } from '~/stores/langStore'
-import jsonInfo from '~/src/info.json'
+import { LangData } from '~/types/types.d'
+import espJsonData from '~/locales/es-ES.json'
+import engJsonData from '~/locales/en-EN.json'
 
-interface InfoInterface {
-  [section: string]: {
-    [language: string]: {}
-  };
-}
-
-const store = langStore()
-const info = jsonInfo as InfoInterface
-
-/**
- * Access a specific section of the json data depending on
- * the name received and the language selected
- * @param section The name of the section to access
- */
-const getSectionInfo = (section: string) => {
-  return info[section]?.[store.language]
+export default {
+  data () {
+    return {
+      langStore: langStore(),
+      langData: {
+        'es-ES': espJsonData,
+        'en-EN': engJsonData
+      } as LangData
+    }
+  },
+  computed: {
+    sectionInfo () {
+      return this.langData[this.langStore.getLanguage]
+    }
+  }
 }
 </script>

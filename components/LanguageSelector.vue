@@ -1,19 +1,10 @@
 <template>
   <div class="relative" @click="toggle">
-    <div class="relative flex items-center font-semibold rounded-lg cursor-pointer focus:outline-none">
+    <div class="relative flex items-center p-1 rounded-full cursor-pointer focus:outline-none">
       <!-- Flag -->
-      <Icon :name="selectedLang.icon" />
+      <Icon :name="selectedLang.icon" class="w-4 h-4 md:w-5 md:h-5" />
       <!-- Arrow -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1em"
-        height="1em"
-        aria-hidden="true"
-        class="w-5 h-5 ml-1 fill-current"
-        viewBox="0 0 24 24"
-      >
-        <path fill="currentColor" d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 0 0-1.41 0 1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0L17 10.59a1 1 0 0 0 0-1.42Z" />
-      </svg>
+      <Icon name="uil:angle-down" class="w-4 h-4 ml-1 md:w-5 md:h-5" />
     </div>
     <transition name="dropdown-content">
       <div v-if="showDropdown" class="absolute right-0 mt-2 origin-top-right border-2 border-purple-600 rounded-lg md:w-48 md:py-2 bg-secondary-light dark:bg-secondary-dark">
@@ -28,20 +19,15 @@
 
 <script lang="ts">
 import { langStore } from '~/stores/langStore'
-
-interface Language {
-  value: string
-  label: string;
-  icon: string;
-}
+import { Language } from '~/types/types.d'
 
 export default {
   data () {
     return {
       showDropdown: false,
       languages: [
-        { value: 'es', label: 'Español', icon: 'FlagESP' },
-        { value: 'en', label: 'English', icon: 'FlagENG' }
+        { value: 'es-ES', label: 'Español', icon: 'circle-flags:es-variant' },
+        { value: 'en-EN', label: 'English', icon: 'circle-flags:uk' }
       ] as Language[],
       store: langStore()
     }

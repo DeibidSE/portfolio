@@ -1,9 +1,8 @@
 <template>
-  <section id="about" class="flex flex-col min-h-screen gap-4 p-4 lg:max-h-screen lg:flex-row lg:gap-10 lg:p-8">
+  <section id="about" class="flex flex-col min-h-screen gap-4 p-6 lg:max-h-screen lg:flex-row lg:gap-10 lg:p-16">
     <div class="lg:w-2/3 scroll-transition">
-      <TerminalComponent>
+      <TerminalFrame>
         <div class="flex flex-col gap-4 lg:gap-6 terminal-font">
-          <!-- head -->
           <div class="flex items-start gap-2">
             <span class="font-semibold tracking-wider dark:text-lime-600 text-lime-800">user@localhost:~$</span>
             <span class="text-dark dark:text-light">{{ info.command }}</span>
@@ -29,20 +28,20 @@
               target="_blank"
               aria-label="Download my curriculum vitae"
               :download="cv.fileName"
-              :class="[
-                'hover:text-blue-800 dark:hover:text-blue-500',
-                activeIndex === key ? 'text-blue-700 dark:text-blue-400' : ''
-              ]"
+              :class="{
+                'hover:text-blue-800 dark:hover:text-blue-500': true,
+                'text-blue-700 dark:text-blue-400' : activeIndex === key
+              }"
               @mouseover="changeActiveIndex(key)"
             >
               > {{ cv.label }}
             </a>
           </div>
         </div>
-      </TerminalComponent>
+      </TerminalFrame>
     </div>
     <div class="self-center lg:w-1/3 scroll-transition">
-      <ProfileCardComponent :image="info.imagePath" />
+      <ProfileCard :profile-info="info.profileCard" />
     </div>
   </section>
 </template>
@@ -70,12 +69,12 @@ export default {
   },
   data () {
     return {
-      activeIndex: 0 // Track the active index
+      activeIndex: 0
     }
   },
   methods: {
     changeActiveIndex (index: any) {
-      this.activeIndex = index // Update the active index on hover
+      this.activeIndex = index
     }
   }
 }

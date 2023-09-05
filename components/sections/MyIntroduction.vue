@@ -2,7 +2,7 @@
   <section class="min-h-screen bg-primary-light dark:bg-primary-dark">
     <div class="flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto">
       <div class="flex items-end h-full p-6 overflow-hidden">
-        <h1 class="text-5xl font-bold text-center md:text-7xl">
+        <h1 class="text-5xl font-bold tracking-wide text-center md:text-7xl">
           {{ info.whoAmI }}
         </h1>
       </div>
@@ -14,12 +14,8 @@
     </div>
     <div class="absolute bottom-0 w-full py-4 text-center">
       <div class="flex flex-col animate-bounce text-dark dark:text-light">
-        <span class="text-sm font-bold">{{ info.scrDown }}</span>
-        <i class="self-center text-4xl cursor-pointer hover:text-purple-600" @click="scrollDown">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" aria-hidden="true" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M11.29 11.46a1 1 0 0 0 1.42 0l3-3A1 1 0 1 0 14.29 7L12 9.34 9.71 7a1 1 0 1 0-1.42 1.46Zm3 1.08L12 14.84l-2.29-2.3A1 1 0 0 0 8.29 14l3 3a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0-1.42-1.42Z" />
-          </svg>
-        </i>
+        <span class="text-sm">{{ info.scrDown }}</span>
+        <Icon name="uil:angle-double-down" class="self-center text-4xl cursor-pointer hover:text-purple-600" @click="scrollDown" />
       </div>
     </div>
   </section>

@@ -11,16 +11,13 @@ export const useThemeStore = defineStore('theme', {
       const isDarkModePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches
       const themeFromLocalStorage = localStorage.getItem('theme') as Theme
 
-      if (themeFromLocalStorage) {
-        this.setTheme(themeFromLocalStorage)
-      } else {
-        this.setTheme(isDarkModePreferred ? 'dark' : 'light')
-      }
+      this.setTheme(themeFromLocalStorage || (isDarkModePreferred ? 'dark' : 'light'))
     },
     setTheme (newTheme: Theme) {
       localStorage.setItem('theme', newTheme)
+      document.documentElement.classList.remove('light', 'dark')
+      document.documentElement.classList.add(newTheme)
       this.lightmode = newTheme === 'light'
-      document.documentElement.classList.toggle('dark', newTheme === 'dark')
     }
   },
   getters: {

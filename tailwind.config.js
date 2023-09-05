@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        inside: 'inset 0 0 10px rgba(0,0,0,0.5)'
+        inside: 'inset 0 0 10px rgba(0,0,0,0.5)',
+        top: '0px -10px 20px 0px rgba(0,0,0,0.2)'
       },
       backgroundColor: {
         // Used for backgrounds (darker than secondary)

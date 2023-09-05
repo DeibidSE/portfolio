@@ -1,0 +1,244 @@
+{
+    "INTRODUCTION": {
+        "whoAmI": "Hola! Soy David",
+        "job": "Desarrollador Web Full Stack",
+        "scrDown": "Ve hacia abajo para ver más"
+    },
+    "PRESENTATION": {
+        "command": "./sobre_mi.sh",
+        "title": "BIENVENIDO A MI PORTFOLIO",
+        "content": [
+            "🧑🏻‍💻 ¡Hola! Soy David, un apasionado Desarrollador Web Full Stack con más de 2 años de experiencia en el emocionante mundo de la programación.",
+            "🚀 A lo largo de mi corta trayectoria, he adquirido un amplio conocimiento en el desarrollo de aplicaciones web y siempre estoy en busca de nuevas formas de dar vida a ideas creativas e innovadoras. La programación se ha convertido en mi segundo idioma y disfruto enfrentándome a retos diarios que me permiten crecer profesionalmente y superar mis límites.",
+            "🚧 Aunque mi portafolio aún se encuentra en desarrollo, principalmente debido a mi enfoque en proyectos profesionales, estas experiencias me han permitido enfrentar desafíos significativos y aprender de situaciones del mundo real.",
+            "🔝 Estoy orgulloso de todo lo que he aprendido y construido hasta el momento, pero también emocionado por las futuras oportunidades que me permitirán expandir mi portafolio con proyectos más diversos y creativos, mostrando así mi capacidad para abordar una amplia gama de soluciones tecnológicas.",
+            "😀 ¡Muchas gracias por visitar mi sitio web y por ser parte de mi viaje de crecimiento y desarrollo profesional!"
+        ],
+        "profileCard": {
+            "imagePath": "/MyPortfolio/images/david.webp",
+            "socials": [
+                {
+                    "name": "LinkedIn",
+                    "icon": "uil:linkedin",
+                    "url": "https://www.linkedin.com/in/davidsimon98/"
+                },
+                {
+                    "name": "GitHub",
+                    "icon": "uil:github",
+                    "url": "https://github.com/DeibidSE"
+                },
+                {
+                    "name": "Email",
+                    "icon": "uil:envelope",
+                    "url": "mailto:davidsimon98@outlook.com"
+                }
+            ]
+        },
+        "cv": [
+            {
+                "url": "/MyPortfolio/CV - David Simón (ES - 2023).pdf",
+                "fileName": "CV - David Simón (ES - 2023).pdf",
+                "label": "Descarga mi Curriculum (Versión en Español)"
+            },
+            {
+                "url": "/MyPortfolio/CV - David Simón (EN - 2023).pdf",
+                "fileName": "CV - David Simón (EN - 2023).pdf",
+                "label": "Descarga mi Curriculum (Version en Inglés)"
+            }
+        ]
+    },
+    "PROJECTS": {
+        "Proyectos": {
+            "Mi trabajo diario": {
+                "image": "/MyPortfolio/images/verify.svg",
+                "description": "Aquí dedico casi el 100 % de mi tiempo a la programación, centrándome especialmente en proyectos web relacionados con los requisitos KYC (Conozca a su cliente) dentro del sector financiero. Aunque no puedo compartir detalles específicos debido a acuerdos de confidencialidad con la empresa, sí puedo mencionar que mi participación abarca una amplia gama de productos desarrollados mediante diversas tecnologías. He trabajado tanto en el frontend como en el backend, participando en el desarrollo de APIs Rest, la automatización de procesos, la creación de informes avanzados y la implementación de metodologías ágiles, entre otros aspectos."
+            },
+            "ddabetic": {
+                "image": "/MyPortfolio/images/ddabetic.webp",
+                "description": "Pequeño proyecto que continúa en desarrollo y que comencé durante unas vacaciones de verano utilizando Laravel y Vue 3. Esta aplicación web tenía como objetivo gestionar y mejorar el control de la diabetes",
+                "langs": [
+                    "laravel",
+                    "vue",
+                    "javascript",
+                    "sass",
+                    "tailwind",
+                    "mysql",
+                    "laragon"
+                ]
+            },
+            "MyPortfolio": {
+                "image": "/MyPortfolio/images/myportfolio.webp",
+                "description": "Quería embarcarme en un proyecto personal durante mi tiempo libre, desconectando del entorno profesional y laboral para explorar mi creatividad sin restricciones. Comencé a experimentar con el framework Nuxt y así es como surgió este portafolio que tienes ante tus ojos.",
+                "langs": [
+                    "nuxt",
+                    "typescript",
+                    "sass",
+                    "tailwind"
+                ]
+            },
+            "???": {
+                "image": "/MyPortfolio/images/undefined.webp",
+                "description": "React, quizás? Con Astro? Quien sabe..."
+            }
+        }
+    },
+    "JOBS_AND_STUDIES": {
+        "/trabajos": [
+            {
+                "title": "Desarrollador Web Full Stack en Simple KYC",
+                "startDate": "Feb 2021",
+                "endDate": "Presente",
+                "where": "Remoto",
+                "details": "Este es mi trabajo actual, donde he aprendido una amplia gama de habilidades y tecnologías aplicadas al desarrollo web.",
+                "website": "https://www.simplekyc.com/"
+            },
+            {
+                "title": "Dominama Análisis Tecnológicos S.L.",
+                "startDate": "Octubre 2020",
+                "endDate": "Diciembre 2020",
+                "where": "Remoto",
+                "details": "Mi primera toma de contacto con el mundo laboral, aquí completé las prácticas de 3 meses de duración ofrecidas por el grado superior. Por desgracia, debido a la pandemia de COVID-19, estas prácticas tuvieron que realizarse de manera 100% remota.",
+                "website": "http://www.dominama.es/"
+            }
+        ],
+        "/estudios": [
+            {
+                "title": "Técnico superior en Desarrollo de Aplicaciones Multiplataforma (DAM)",
+                "startDate": "Septiembre 2018",
+                "endDate": "Junio 2020",
+                "where": "Madrid",
+                "details": "Aquí empecé mis estudios de programación: Java, Python, SQL, Linux... un mundo de aprendizaje y crecimiento junto a dedicados profesores y compañeros. Estos años sin duda marcaron una época inolvidable en mi camino educativo."
+            },
+            {
+                "title": "Bachillerato tecnológico",
+                "startDate": 2014,
+                "endDate": 2018,
+                "where": "Madrid",
+                "details": "Durante este periodo completé el bachillerato de la rama de ciencias, centrado principalmente en asignaturas como matemáticas, química y biología, etc..."
+            }
+        ],
+        "/estudios adicionales": [
+            {
+                "title": "English Empire College",
+                "startDate": 2022,
+                "endDate": 2023,
+                "where": "Remoto",
+                "details": "Como parte de mi desarrollo profesional, la empresa para la que trabajo nos pagaba clases de inglés enfocadas a mejorar nuestros conocimientos de esta lengua."
+            },
+            {
+                "title": "Clases de conducir",
+                "startDate": 2018,
+                "endDate": 2019,
+                "where": "Madrid",
+                "details": "Completé las clases de conducir y obtuve el permiso de conducir de clase B"
+            },
+            {
+                "title": "Lingua Generation",
+                "startDate": 2010,
+                "endDate": 2020,
+                "where": "Madrid",
+                "details": "Una academia de inglés con profesores nativos"
+            }
+        ]
+    },
+    "TECHNICAL_SKILLS": {
+        "Habilidades": {
+            "/frontend": [
+                {
+                    "name": "Vue.js",
+                    "image": "/MyPortfolio/svg/vue-icon.svg",
+                    "progress": 80
+                },
+                {
+                    "name": "Nuxt 3",
+                    "image": "/MyPortfolio/svg/nuxt-icon.svg",
+                    "progress": 75
+                },
+                {
+                    "name": "TypeScript",
+                    "image": "/MyPortfolio/svg/typescript-icon.svg",
+                    "progress": 75
+                },
+                {
+                    "name": "JavaScript",
+                    "image": "/MyPortfolio/svg/javascript-icon.svg",
+                    "progress": 80
+                },
+                {
+                    "name": "HTML 5",
+                    "image": "/MyPortfolio/svg/html5-icon.svg",
+                    "progress": 95
+                },
+                {
+                    "name": "CSS",
+                    "image": "/MyPortfolio/svg/css-icon.svg",
+                    "progress": 70
+                },
+                {
+                    "name": "Sass",
+                    "image": "/MyPortfolio/svg/sass-icon.svg",
+                    "progress": 70
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "image": "/MyPortfolio/svg/tailwind-icon.svg",
+                    "progress": 90
+                }
+            ],
+            "/backend": [
+                {
+                    "name": "Laravel",
+                    "image": "/MyPortfolio/svg/laravel-icon.svg",
+                    "progress": 85
+                },
+                {
+                    "name": "PHP",
+                    "image": "/MyPortfolio/svg/php-icon.svg",
+                    "progress": 85
+                },
+                {
+                    "name": "MySQL",
+                    "image": "/MyPortfolio/svg/mysql-icon.svg",
+                    "progress": 80
+                },
+                {
+                    "name": "Java",
+                    "image": "/MyPortfolio/svg/java-icon.svg",
+                    "progress": 35
+                },
+                {
+                    "name": "Python",
+                    "image": "/MyPortfolio/svg/python-icon.svg",
+                    "progress": 20
+                }
+            ],
+            "/herramientas": [
+                {
+                    "name": "Visual Studio Code",
+                    "image": "/MyPortfolio/svg/vscode-icon.svg",
+                    "progress": 100
+                },
+                {
+                    "name": "Docker",
+                    "image": "/MyPortfolio/svg/docker-icon.svg",
+                    "progress": 80
+                },
+                {
+                    "name": "Vagrant",
+                    "image": "/MyPortfolio/svg/vagrant-icon.svg",
+                    "progress": 90
+                },
+                {
+                    "name": "Laragon",
+                    "image": "/MyPortfolio/svg/laragon-icon.svg",
+                    "progress": 95
+                },
+                {
+                    "name": "Android Studio",
+                    "image": "/MyPortfolio/svg/android-studio-icon.svg",
+                    "progress": 35
+                }
+            ]
+        }
+    }
+}

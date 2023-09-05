@@ -1,8 +1,4 @@
 <template>
-  <h2 class="w-full text-4xl font-bold text-purple-600 terminal-font">
-    📂 {{ title }}
-  </h2>
-
   <ol class="relative border-l-4 border-dark dark:border-light">
     <li v-for="(info, index) in sectionData" :key="index" class="mb-10 ml-4">
       <div class="absolute w-3 h-3 bg-purple-600 rounded-full mt-1.5 -left-2 border-2 border-dark dark:border-white" />
@@ -28,10 +24,6 @@
 <script lang="ts">
 export default {
   props: {
-    title: {
-      type: String,
-      default: ''
-    },
     sectionData: {
       type: Object,
       default () {
