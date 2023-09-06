@@ -32,7 +32,7 @@ export default {
     data: {
       type: Object,
       default: () => {
-        return { name: '', image: '/MyPortfolio/images/undefined.webp' }
+        return { name: '', image: '/MyPortfolio/images/undefined.webp', progress: 0 }
       }
     }
   }

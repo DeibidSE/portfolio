@@ -14,7 +14,7 @@
 import { langStore } from '~/stores/langStore'
 import { LangData } from '~/types/types.d'
 import espJsonData from '~/locales/es-ES.json'
-import engJsonData from '~/locales/en-EN.json'
+import engJsonData from '~/locales/en-GB.json'
 
 export default {
   data () {
@@ -22,7 +22,7 @@ export default {
       langStore: langStore(),
       langData: {
         'es-ES': espJsonData,
-        'en-EN': engJsonData
+        'en-GB': engJsonData
       } as LangData
     }
   },

@@ -9,7 +9,7 @@
           </div>
           <div class="flex flex-col leading-normal tracking-wide text-dark dark:text-light">
             <h2 class="mb-4 text-5xl font-extrabold text-center text-transparent lg:mb-6 bg-clip-text bg-gradient-to-t from-purple-600 to-pink-500">
-              {{ info.title }}
+              {{ info.title ?? '' }}
             </h2>
             <p v-for="(content, index) in info.content" :key="index">
               {{ content }}

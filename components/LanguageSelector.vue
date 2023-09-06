@@ -10,7 +10,7 @@
       <div v-if="showDropdown" class="absolute right-0 mt-2 origin-top-right border-2 border-purple-600 rounded-lg md:w-48 md:py-2 bg-secondary-light dark:bg-secondary-dark">
         <label v-for="(lang, key) in languages" :key="key" class="flex items-center gap-4 p-4 hover:bg-accent-light dark:hover:bg-accent-dark" @click.stop="selectLang(lang)">
           <Icon :name="lang.icon" />
-          {{ lang.label }}
+          {{ lang.label ?? '' }}
         </label>
       </div>
     </transition>
@@ -27,7 +27,7 @@ export default {
       showDropdown: false,
       languages: [
         { value: 'es-ES', label: 'Español', icon: 'circle-flags:es-variant' },
-        { value: 'en-EN', label: 'English', icon: 'circle-flags:uk' }
+        { value: 'en-GB', label: 'English', icon: 'circle-flags:uk' }
       ] as Language[],
       store: langStore()
     }

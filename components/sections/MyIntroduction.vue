@@ -14,7 +14,7 @@
     </div>
     <div class="absolute bottom-0 w-full py-4 text-center">
       <div class="flex flex-col animate-bounce text-dark dark:text-light">
-        <span class="text-sm">{{ info.scrDown }}</span>
+        <span class="text-sm">{{ info.scrDown ?? '' }}</span>
         <Icon name="uil:angle-double-down" class="self-center text-4xl cursor-pointer hover:text-purple-600" @click="scrollDown" />
       </div>
     </div>

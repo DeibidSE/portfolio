@@ -8,7 +8,7 @@
     <div class="flex flex-col gap-6 m-auto items-left">
       <span class="text-4xl font-bold tracking-wide text-center text-purple-600">{{ projectName }}</span>
       <p class="text-sm md:text-lg">
-        {{ projectData.description }}
+        {{ projectData.description ?? '' }}
       </p>
       <div v-if="projectData.langs" class="inline-flex justify-between w-full p-4 mx-auto rounded-lg md:p-6 shadow-inside">
         <TooltipComponent v-for="(lang, key) in projectData.langs" :key="key" :tooltip-text="lang" position="top">
