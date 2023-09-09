@@ -7,7 +7,7 @@
           class="flex items-center justify-center w-4 h-4 text-lg transition-transform transform rounded-full sm:text-xl sm:w-6 sm:h-6"
           :class="{ 'translate-x-6': themeStore.isLightMode, 'translate-x-0': !themeStore.isLightMode }"
         >
-          {{ themeStore.isLightMode ? '🌚' : '🌞' }}
+          <Icon :name="themeStore.isLightMode ? 'fluent-emoji:new-moon-face' : 'fluent-emoji:sun-with-face'" />
         </div>
       </div>
     </label>

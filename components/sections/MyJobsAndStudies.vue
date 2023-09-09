@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col min-h-screen gap-6 p-6 md:grid md:p-16 md:grid-cols-3">
+  <section class="flex flex-col min-h-screen gap-6 p-6 lg:grid md:p-16 lg:grid-cols-3">
     <!-- Card -->
     <div v-for="(sectionData, sectionName) in info" :key="sectionName" class="flex flex-col gap-8 p-8 border-2 bg-primary-light dark:bg-primary-dark rounded-xl dark:border-light border-dark scroll-transition">
       <!-- Title -->
