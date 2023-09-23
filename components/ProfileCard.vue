@@ -25,12 +25,7 @@ export default {
   props: {
     profileInfo: {
       type: Object,
-      default: () => {
-        return {
-          imagePath: '/MyPortfolio/images/undefined.webp',
-          socials: []
-        }
-      }
+      default: () => {}
     }
   }
 }

@@ -27,13 +27,7 @@ export default {
     sectionData: {
       type: Object,
       default () {
-        return {
-          title: '',
-          startDate: '',
-          endDate: '',
-          where: '',
-          details: ''
-        }
+        return {}
       }
     }
   }

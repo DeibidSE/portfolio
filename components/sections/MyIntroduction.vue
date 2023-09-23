@@ -1,9 +1,9 @@
 <template>
-  <section class="min-h-screen bg-primary-light dark:bg-primary-dark">
+  <section :id="title" class="min-h-screen bg-primary-light dark:bg-primary-dark">
     <div class="flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto">
       <div class="flex items-end h-full p-6 overflow-hidden">
         <h1 class="text-5xl font-bold tracking-wide text-center md:text-7xl">
-          {{ info.whoAmI }}
+          {{ section.whoAmI }}
         </h1>
       </div>
       <div class="flex items-start h-full p-6 overflow-hidden">
@@ -14,7 +14,7 @@
     </div>
     <div class="absolute bottom-0 w-full py-4 text-center">
       <div class="flex flex-col animate-bounce text-dark dark:text-light">
-        <span class="text-sm">{{ info.scrDown ?? '' }}</span>
+        <span class="text-sm">{{ section.scrDown ?? '' }}</span>
         <Icon name="uil:angle-double-down" class="self-center text-4xl cursor-pointer hover:text-purple-600" @click="scrollDown" />
       </div>
     </div>
@@ -24,15 +24,9 @@
 <script lang="ts">
 export default {
   props: {
-    info: {
+    sectionInfo: {
       type: Object,
-      default: () => {
-        return {
-          whoAmI: 'Error Loading Data',
-          job: '',
-          scrDown: 'Scroll down to see NOTHING'
-        }
-      }
+      default: () => {}
     }
   },
   data () {
@@ -40,6 +34,20 @@ export default {
       txt: '',
       isDeleting: false,
       loopNum: 0
+    }
+  },
+  computed: {
+    /**
+     * Returns the title of the section
+     */
+    title () {
+      return Object.keys(this.sectionInfo).toString()
+    },
+    /**
+     * Return an array with the info of the section
+     */
+    section () {
+      return this.sectionInfo[this.title] || []
     }
   },
   mounted () {
@@ -51,7 +59,7 @@ export default {
      */
     tick () {
       const htmlElement = this.$refs.typewriter as HTMLElement
-      const fullTxt = this.info.job
+      const fullTxt = this.section.job
 
       if (htmlElement && fullTxt.length > 0) {
         if (this.isDeleting) {
@@ -80,16 +88,20 @@ export default {
 
         setTimeout(this.tick, pause)
       } else {
-        this.txt = this.info.job
+        this.txt = this.section.job
       }
     },
     /**
-     * Scolls to 'about' section
+     * Scolls to the second section element
      */
     scrollDown () {
-      const aboutSection = document.getElementById('about') as HTMLElement
-      if (aboutSection) {
-        const { top } = aboutSection.getBoundingClientRect()
+      // Gets all sections of the body
+      const bodySections = document.querySelectorAll('section')
+
+      if (bodySections && bodySections.length >= 2) {
+        // Gets the second section (presentation section)
+        const secondSection = bodySections[1]
+        const { top } = secondSection.getBoundingClientRect()
         window.scrollTo({
           top: top + window.scrollY,
           behavior: 'smooth'

@@ -1,18 +1,18 @@
 <template>
-  <section id="about" class="flex flex-col min-h-screen gap-4 p-6 lg:max-h-screen lg:flex-row lg:gap-10 lg:p-16">
+  <section :id="title" class="flex flex-col min-h-screen gap-4 p-6 lg:max-h-screen lg:flex-row lg:gap-10 lg:p-16">
     <div class="lg:w-2/3 scroll-transition">
       <TerminalFrame>
         <div class="flex flex-col gap-4 lg:gap-6 terminal-font">
           <div class="flex items-start gap-2">
             <span class="font-semibold tracking-wider dark:text-lime-600 text-lime-800">user@localhost:~$</span>
-            <span class="text-dark dark:text-light">{{ info.command }}</span>
+            <span class="text-dark dark:text-light">{{ section.command ?? '' }}</span>
           </div>
           <div class="flex flex-col leading-normal tracking-wide text-dark dark:text-light">
             <h2 class="mb-4 text-5xl font-extrabold text-center text-transparent lg:mb-6 bg-clip-text bg-gradient-to-t from-purple-600 to-pink-500">
-              {{ info.title ?? '' }}
+              {{ section.title ?? '' }}
             </h2>
-            <p v-for="(content, index) in info.content" :key="index">
-              {{ content }}
+            <p v-for="(content, index) in section.content" :key="index">
+              {{ content ?? '' }}
             </p>
           </div>
           <hr class="border border-gray-600">
@@ -22,7 +22,7 @@
               <span class="text-dark dark:text-light">npm run cv-download</span>
             </div>
             <a
-              v-for="(cv, key) in info.cv"
+              v-for="(cv, key) in section.cv"
               :key="key"
               :href="cv.url"
               target="_blank"
@@ -34,14 +34,14 @@
               }"
               @mouseover="changeActiveIndex(key)"
             >
-              > {{ cv.label }}
+              > {{ cv.label ?? '' }}
             </a>
           </div>
         </div>
       </TerminalFrame>
     </div>
     <div class="self-center lg:w-1/3 scroll-transition">
-      <ProfileCard :profile-info="info.profileCard" />
+      <ProfileCard :profile-info="section.profileCard" />
     </div>
   </section>
 </template>
@@ -49,22 +49,9 @@
 <script lang="ts">
 export default {
   props: {
-    info: {
+    sectionInfo: {
       type: Object,
-      default: () => {
-        return {
-          command: '',
-          title: '',
-          content: [''],
-          imagePath: '/MyPortfolio/images/undefined.webp',
-          downloadBtn: {
-            command: '',
-            url: '',
-            fileName: '',
-            label: ''
-          }
-        }
-      }
+      default: () => {}
     }
   },
   data () {
@@ -72,8 +59,26 @@ export default {
       activeIndex: 0
     }
   },
+  computed: {
+    /**
+     * Returns the title of the section
+     */
+    title () {
+      return Object.keys(this.sectionInfo).toString()
+    },
+    /**
+     * Return an array with the info of the section
+     */
+    section () {
+      return this.sectionInfo[this.title] || []
+    }
+  },
   methods: {
-    changeActiveIndex (index: any) {
+    /**
+     * Sets the index of the line over which the mouse hovers to change class dynamically
+     * @param index key of the line selected
+     */
+    changeActiveIndex (index: number) {
       this.activeIndex = index
     }
   }

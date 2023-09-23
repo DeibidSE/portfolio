@@ -34,9 +34,7 @@ export default {
     },
     projectData: {
       type: Object,
-      default: () => {
-        return { image: '/MyPortfolio/images/undefined.webp', description: '' }
-      }
+      default: () => {}
     }
   }
 }

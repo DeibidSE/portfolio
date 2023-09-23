@@ -33,14 +33,24 @@ export default {
     }
   },
   computed: {
+    /**
+     * Gets the selected language object
+     */
     selectedLang (): Language {
       return this.languages.find(lang => lang.value === this.store.language) || this.languages[0]
     }
   },
   methods: {
+    /**
+     * Open or close the language selector dropdown
+     */
     toggle () {
       this.showDropdown = !this.showDropdown
     },
+    /**
+     * Sets the selected language in store and closes the dropdown
+     * @param lang Object data of the language selected
+     */
     selectLang (lang: Language) {
       this.store.setLanguage(lang.value)
       this.showDropdown = false

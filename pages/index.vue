@@ -1,11 +1,11 @@
 <template>
   <main>
-    <HeaderComponent />
-    <SectionsMyIntroduction :info="sectionInfo.INTRODUCTION" />
-    <SectionsMyPresentation :info="sectionInfo.PRESENTATION" />
-    <SectionsMyProjects :info="sectionInfo.PROJECTS" />
-    <SectionsMyJobsAndStudies :info="sectionInfo.JOBS_AND_STUDIES" />
-    <SectionsMyTechnicalSkills :info="sectionInfo.TECHNICAL_SKILLS" />
+    <HeaderComponent :section-list="sectionList" />
+    <SectionsMyIntroduction :section-info="sectionInfo[0]" />
+    <SectionsMyPresentation :section-info="sectionInfo[1]" />
+    <SectionsMyProjects :section-info="sectionInfo[2]" />
+    <SectionsMyJobsAndStudies :section-info="sectionInfo[3]" />
+    <SectionsMyTechnicalSkills :section-info="sectionInfo[4]" />
     <ScrollToTopBtn />
   </main>
 </template>
@@ -29,6 +29,9 @@ export default {
   computed: {
     sectionInfo () {
       return this.langData[this.langStore.getLanguage]
+    },
+    sectionList () {
+      return this.sectionInfo.map((item: string[]) => Object.keys(item)[0])
     }
   }
 }

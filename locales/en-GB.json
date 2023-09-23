@@ -1,53 +1,57 @@
-{
-    "INTRODUCTION": {
-        "whoAmI": "Hi there! I'm David",
-        "job": "Full Stack Web Developer",
-        "scrDown": "Scroll down to see more"
+[
+    {
+        "Introduction": {
+            "whoAmI": "Hi there! I'm David",
+            "job": "Full Stack Web Developer",
+            "scrDown": "Scroll down to see more"
+        }
     },
-    "PRESENTATION": {
-        "command": "./about_me.sh",
-        "title": "WELCOME TO MY PORTFOLIO",
-        "content": [
-            "🧑🏻‍💻 Hi there! I'm David, a passionate Full Stack Web Developer with over 2 years of experience in the exciting world of programming.",
-            "🚀 Throughout my brief journey, I've gained extensive knowledge in web application development and I'm always seeking new ways to breathe life into creative and innovative ideas. Programming has become my second language, and I enjoy facing daily challenges that allow me to grow professionally and push my limits.",
-            "🚧 Although my portfolio is still in development, mainly due to my focus on professional projects, these experiences have allowed me to face significant challenges and learn from real-world situations.",
-            "🔝  I am proud of everything I have learned and built so far, but also excited for future opportunities that will allow me to expand my portfolio with more diverse and creative projects, thus showcasing my ability to tackle a wide range of technology solutions.",
-            "😀 Thank you so much for visiting my website and for being part of my journey of growth and professional development!"
-        ],
-        "profileCard": {
-            "imagePath": "/MyPortfolio/images/david.webp",
-            "socials": [
+    {
+        "Presentation": {
+            "command": "./about_me.sh",
+            "title": "WELCOME TO MY PORTFOLIO",
+            "content": [
+                "🧑🏻‍💻 Hi there! I'm David, a passionate Full Stack Web Developer with over 2 years of experience in the exciting world of programming.",
+                "🚀 Throughout my brief journey, I've gained extensive knowledge in web application development and I'm always seeking new ways to breathe life into creative and innovative ideas. Programming has become my second language, and I enjoy facing daily challenges that allow me to grow professionally and push my limits.",
+                "🚧 Although my portfolio is still in development, mainly due to my focus on professional projects, these experiences have allowed me to face significant challenges and learn from real-world situations.",
+                "🔝  I am proud of everything I have learned and built so far, but also excited for future opportunities that will allow me to expand my portfolio with more diverse and creative projects, thus showcasing my ability to tackle a wide range of technology solutions.",
+                "😀 Thank you so much for visiting my website and for being part of my journey of growth and professional development!"
+            ],
+            "profileCard": {
+                "imagePath": "/MyPortfolio/images/david.webp",
+                "socials": [
+                    {
+                        "name": "LinkedIn",
+                        "icon": "uil:linkedin",
+                        "url": "https://www.linkedin.com/in/davidsimon98/"
+                    },
+                    {
+                        "name": "GitHub",
+                        "icon": "uil:github",
+                        "url": "https://github.com/DeibidSE"
+                    },
+                    {
+                        "name": "Email",
+                        "icon": "uil:envelope",
+                        "url": "mailto:davidsimon98@outlook.com"
+                    }
+                ]
+            },
+            "cv": [
                 {
-                    "name": "LinkedIn",
-                    "icon": "uil:linkedin",
-                    "url": "https://www.linkedin.com/in/davidsimon98/"
+                    "url": "/MyPortfolio/CV - David Simón (EN - 2023).pdf",
+                    "fileName": "CV - David Simón (EN - 2023).pdf",
+                    "label": "Download my Curriculum (English Version)"
                 },
                 {
-                    "name": "GitHub",
-                    "icon": "uil:github",
-                    "url": "https://github.com/DeibidSE"
-                },
-                {
-                    "name": "Email",
-                    "icon": "uil:envelope",
-                    "url": "mailto:davidsimon98@outlook.com"
+                    "url": "/MyPortfolio/CV - David Simón (ES - 2023).pdf",
+                    "fileName": "CV - David Simón (ES - 2023).pdf",
+                    "label": "Download my Curriculum (Spanish version)"
                 }
             ]
-        },
-        "cv": [
-            {
-                "url": "/MyPortfolio/CV - David Simón (EN - 2023).pdf",
-                "fileName": "CV - David Simón (EN - 2023).pdf",
-                "label": "Download my Curriculum (English Version)"
-            },
-            {
-                "url": "/MyPortfolio/CV - David Simón (ES - 2023).pdf",
-                "fileName": "CV - David Simón (ES - 2023).pdf",
-                "label": "Download my Curriculum (Spanish version)"
-            }
-        ]
+        }
     },
-    "PROJECTS": {
+    {
         "Projects": {
             "My daily Job": {
                 "image": "/MyPortfolio/images/verify.svg",
@@ -82,66 +86,68 @@
             }
         }
     },
-    "JOBS_AND_STUDIES": {
-        "/jobs": [
-            {
-                "title": "Full Stack Web Developer at Simple KYC",
-                "startDate": "Feb 2021",
-                "endDate": "Present",
-                "where": "Remote",
-                "details": "This is my current job where I have learned a wide range of web development skills and technologies.",
-                "website": "https://www.simplekyc.com/"
-            },
-            {
-                "title": "Dominama Análisis Tecnológicos S.L.",
-                "startDate": "Oct 2020",
-                "endDate": "Dec 2020",
-                "where": "Remote",
-                "details": "My first contact with the working world, here I completed the 3-month internship required by the superior degree. Unfortunately, due to the COVID-19 pandemic, these internships had to be done 100% remotely.",
-                "website": "http://www.dominama.es/"
-            }
-        ],
-        "/studies": [
-            {
-                "title": "Superior Degree in Multi-Platform Applications Development",
-                "startDate": "Sept 2018",
-                "endDate": "Jun 2020",
-                "where": "Madrid",
-                "details": "Here I began my programming studies: Java, Python, SQL, Linux... a world of learning and growth with dedicated teachers and colleagues. These years undoubtedly marked an unforgettable time in my educational journey."
-            },
-            {
-                "title": "Technological Bachillerato",
-                "startDate": 2014,
-                "endDate": 2018,
-                "where": "Madrid",
-                "details": "In Spain, we have what is referred to as Bachillerato, an educational phase following secondary school that acts as a transition to higher education. This stage prepares students for university studies and vocational avenues alike. Personally, I specialized in the science track, which primarily focuses on subjects like mathematics, chemistry, biology, and more."
-            }
-        ],
-        "/additional studies": [
-            {
-                "title": "English Empire College",
-                "startDate": 2022,
-                "endDate": 2023,
-                "where": "Remote",
-                "details": "As part of my professional development, the company I work for paid us English classes focused on improving our English language skills."
-            },
-            {
-                "title": "Driving lessons",
-                "startDate": 2018,
-                "endDate": 2019,
-                "where": "Madrid",
-                "details": "I completed driving lessons and obtained my class B driver's license"
-            },
-            {
-                "title": "Lingua Generation",
-                "startDate": 2010,
-                "endDate": 2020,
-                "where": "Madrid",
-                "details": "An English academy with native teachers"
-            }
-        ]
+    {
+        "Jobs And Studies": {
+            "/jobs": [
+                {
+                    "title": "Full Stack Web Developer at Simple KYC",
+                    "startDate": "Feb 2021",
+                    "endDate": "Present",
+                    "where": "Remote",
+                    "details": "This is my current job where I have learned a wide range of web development skills and technologies.",
+                    "website": "https://www.simplekyc.com/"
+                },
+                {
+                    "title": "Dominama Análisis Tecnológicos S.L.",
+                    "startDate": "Oct 2020",
+                    "endDate": "Dec 2020",
+                    "where": "Remote",
+                    "details": "My first contact with the working world, here I completed the 3-month internship required by the superior degree. Unfortunately, due to the COVID-19 pandemic, these internships had to be done 100% remotely.",
+                    "website": "http://www.dominama.es/"
+                }
+            ],
+            "/studies": [
+                {
+                    "title": "Superior Degree in Multi-Platform Applications Development",
+                    "startDate": "Sept 2018",
+                    "endDate": "Jun 2020",
+                    "where": "Madrid",
+                    "details": "Here I began my programming studies: Java, Python, SQL, Linux... a world of learning and growth with dedicated teachers and colleagues. These years undoubtedly marked an unforgettable time in my educational journey."
+                },
+                {
+                    "title": "Technological Bachillerato",
+                    "startDate": 2014,
+                    "endDate": 2018,
+                    "where": "Madrid",
+                    "details": "In Spain, we have what is referred to as Bachillerato, an educational phase following secondary school that acts as a transition to higher education. This stage prepares students for university studies and vocational avenues alike. Personally, I specialized in the science track, which primarily focuses on subjects like mathematics, chemistry, biology, and more."
+                }
+            ],
+            "/additional studies": [
+                {
+                    "title": "English Empire College",
+                    "startDate": 2022,
+                    "endDate": 2023,
+                    "where": "Remote",
+                    "details": "As part of my professional development, the company I work for paid us English classes focused on improving our English language skills."
+                },
+                {
+                    "title": "Driving lessons",
+                    "startDate": 2018,
+                    "endDate": 2019,
+                    "where": "Madrid",
+                    "details": "I completed driving lessons and obtained my class B driver's license"
+                },
+                {
+                    "title": "Lingua Generation",
+                    "startDate": 2010,
+                    "endDate": 2020,
+                    "where": "Madrid",
+                    "details": "An English academy with native teachers"
+                }
+            ]
+        }
     },
-    "TECHNICAL_SKILLS": {
+    {
         "Skills": {
             "/frontend": [
                 {
@@ -241,4 +247,4 @@
             ]
         }
     }
-}
+]

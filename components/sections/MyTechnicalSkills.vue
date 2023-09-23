@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col min-h-screen">
+  <section :id="title" class="flex flex-col min-h-screen">
     <div class="bg-primary-light dark:bg-primary-dark">
       <div class="flex w-full gap-4 px-6 py-8 md:px-16">
         <Icon name="fluent-emoji-flat:open-file-folder" class="w-9 h-9" />
@@ -80,11 +80,9 @@ import { Skill } from '~/types/types.d'
 
 export default {
   props: {
-    info: {
+    sectionInfo: {
       type: Object,
-      default: () => {
-        return { Skills: { '-': [{ name: '-', image: '/MyPortfolio/images/undefined.webp' }] } }
-      }
+      default: () => {}
     }
   },
   data () {
@@ -94,14 +92,17 @@ export default {
     }
   },
   computed: {
+    /**
+     * Returns the title of the section
+     */
     title () {
-      return Object.keys(this.info).toString()
+      return Object.keys(this.sectionInfo).toString()
     },
     /**
      * Filter the elements of the selected category in the JSON
      */
     filteredSkills (): Skill[] {
-      return this.info[this.title][this.selectedCategory] || []
+      return this.sectionInfo[this.title][this.selectedCategory] || []
     },
     /**
      * Filter and sorts the elements of the selected category in the JSON by progress (from higher to lower)
@@ -113,10 +114,35 @@ export default {
      * Get every category from the JSON
      */
     categories (): string[] {
-      return Object.keys(this.info[this.title])
+      return Object.keys(this.sectionInfo[this.title])
     }
   },
+  /**
+   * Little easter egg in console.
+   *  - Q: Why is it here and not in...let's say 'index.vue'?
+   *  - A: Because this is 100% a skill.
+   */
+  mounted () {
+    console.log(`%c                                             
+       ___________________________________   
+      |                                   |  
+      |  Sneaky peeky!                    |  
+      |  You're not supposed to see this  |  
+      |_________ _________________________|  
+                V                            
+       *******                               
+      *  o O  *                              
+      *   ∆   *                              
+      *   3   *                              
+       *******                               
+                                             `,
+    'font-weight: 700;')
+  },
   methods: {
+    /**
+     * Sets the category selected on the tab
+     * @param category
+     */
     selectCategory (category: string) {
       this.selectedCategory = category
     }

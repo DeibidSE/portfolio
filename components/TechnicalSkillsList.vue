@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row gap-8 py-4 rounded-lg">
+  <div v-if="data && data.image && data.progress" class="flex flex-row gap-8 py-4 rounded-lg">
     <TooltipComponent :tooltip-text="data.name" position="bottom">
       <img
         :src="data.image"
@@ -31,9 +31,7 @@ export default {
   props: {
     data: {
       type: Object,
-      default: () => {
-        return { name: '', image: '/MyPortfolio/images/undefined.webp', progress: 0 }
-      }
+      default: () => {}
     }
   }
 }
