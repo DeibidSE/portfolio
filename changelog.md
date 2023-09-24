@@ -1,7 +1,5 @@
 # CHANGELOG
 
----
-
 ## [v1.0.0] - 28-08-2023
 
 - Initial release
@@ -74,5 +72,13 @@
 ### Removed
 
 - Removed default data for props.
+
+---
+
+## [v1.2.1] - 24-09-2023
+
+### Changes
+
+- Improve scroll blocking when the menu is open by using the "prevent" method instead of adding a CSS class to the body
 
 ---

@@ -5,7 +5,12 @@
         <Icon name="MainLogo" width="258.808" height="54.308" class="w-full h-full fill-current" />
       </div>
       <div class="flex justify-center">
-        <Icon name="ph:list-bold" class="w-6 h-6 cursor-pointer fill-current hover:text-purple-600" @click="toggleMenuDropdown" />
+        <Icon
+          name="ph:list-bold"
+          class="w-5 h-5 cursor-pointer fill-current md:w-6 md:h-6 hover:text-purple-600"
+          :class="{'text-purple-700' : open }"
+          @click="toggleMenuDropdown"
+        />
       </div>
       <div class="flex flex-row items-center justify-end gap-3 md:gap-6">
         <ThemeSwitch />
@@ -14,7 +19,14 @@
     </nav>
   </header>
 
-  <MenuDropdown :section-list="sectionList" :open="open" @close="toggleMenuDropdown" />
+  <MenuDropdown
+    :section-list="sectionList"
+    :open="open"
+    @close="toggleMenuDropdown"
+    @scroll.prevent
+    @wheel.prevent
+    @touchmove.prevent
+  />
 </template>
 
 <script lang="ts">
@@ -32,16 +44,10 @@ export default {
   },
   methods: {
     /**
-     * - Toogles the menu state between open (true) or close (false)
-     * - Manages the vertical scroll adding or removing the 'overflow-y-hidden' class to the body
+     * Toogles the menu state between open (true) or close (false)
      */
     toggleMenuDropdown () {
       this.open = !this.open
-      if (this.open) {
-        document.body.classList.add('overflow-y-hidden')
-      } else {
-        document.body.classList.remove('overflow-y-hidden')
-      }
     }
   }
 }

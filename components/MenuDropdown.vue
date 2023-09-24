@@ -5,7 +5,9 @@
   >
     <ul class="flex flex-col justify-center flex-1 h-full gap-8 p-16">
       <li v-for="(section, key) in sectionList" :key="key">
-        <span class="text-2xl opacity-100 cursor-pointer md:text-4xl hover:text-purple-600" @click="goToSection(section)">{{ section }}</span>
+        <span class="text-2xl opacity-100 cursor-pointer md:text-4xl hover:text-purple-600" @click="scrollToSection(section)">
+          {{ section }}
+        </span>
       </li>
     </ul>
   </aside>
@@ -27,17 +29,15 @@ export default {
   methods: {
     /**
      * Closes the menu emiting the event to the parent component
-     * and re-enable vertical overflow.
      */
     closeMenuDropdown () {
-      document.body.classList.remove('overflow-y-hidden')
       this.$emit('close')
     },
     /**
      * Scrolls to the selected section
      * @param section id of the section selected
      */
-    goToSection (section: string) {
+    scrollToSection (section: string) {
       // Close the menu
       this.closeMenuDropdown()
       // Seach the section selected by id
