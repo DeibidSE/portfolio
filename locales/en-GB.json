@@ -3,7 +3,7 @@
         "Introduction": {
             "whoAmI": "Hi there! I'm David",
             "job": "Full Stack Web Developer",
-            "scrDown": "Scroll down to see more"
+            "scrollDown": "Scroll down to see more"
         }
     },
     {
@@ -19,7 +19,7 @@
             ],
             "profileCard": {
                 "imagePath": "/MyPortfolio/images/david.webp",
-                "socials": [
+                "socialLinks": [
                     {
                         "name": "LinkedIn",
                         "icon": "uil:linkedin",
@@ -93,7 +93,7 @@
                     "title": "Full Stack Web Developer at Simple KYC",
                     "startDate": "Feb 2021",
                     "endDate": "Present",
-                    "where": "Remote",
+                    "location": "Remote",
                     "details": "This is my current job where I have learned a wide range of web development skills and technologies.",
                     "website": "https://www.simplekyc.com/"
                 },
@@ -101,7 +101,7 @@
                     "title": "Dominama Análisis Tecnológicos S.L.",
                     "startDate": "Oct 2020",
                     "endDate": "Dec 2020",
-                    "where": "Remote",
+                    "location": "Remote",
                     "details": "My first contact with the working world, here I completed the 3-month internship required by the superior degree. Unfortunately, due to the COVID-19 pandemic, these internships had to be done 100% remotely.",
                     "website": "http://www.dominama.es/"
                 }
@@ -111,14 +111,14 @@
                     "title": "Superior Degree in Multi-Platform Applications Development",
                     "startDate": "Sept 2018",
                     "endDate": "Jun 2020",
-                    "where": "Madrid",
+                    "location": "Madrid",
                     "details": "Here I began my programming studies: Java, Python, SQL, Linux... a world of learning and growth with dedicated teachers and colleagues. These years undoubtedly marked an unforgettable time in my educational journey."
                 },
                 {
                     "title": "Technological Bachillerato",
                     "startDate": 2014,
                     "endDate": 2018,
-                    "where": "Madrid",
+                    "location": "Madrid",
                     "details": "In Spain, we have what is referred to as Bachillerato, an educational phase following secondary school that acts as a transition to higher education. This stage prepares students for university studies and vocational avenues alike. Personally, I specialized in the science track, which primarily focuses on subjects like mathematics, chemistry, biology, and more."
                 }
             ],
@@ -127,21 +127,21 @@
                     "title": "English Empire College",
                     "startDate": 2022,
                     "endDate": 2023,
-                    "where": "Remote",
+                    "location": "Remote",
                     "details": "As part of my professional development, the company I work for paid us English classes focused on improving our English language skills."
                 },
                 {
                     "title": "Driving lessons",
                     "startDate": 2018,
                     "endDate": 2019,
-                    "where": "Madrid",
+                    "location": "Madrid",
                     "details": "I completed driving lessons and obtained my class B driver's license"
                 },
                 {
                     "title": "Lingua Generation",
                     "startDate": 2010,
                     "endDate": 2020,
-                    "where": "Madrid",
+                    "location": "Madrid",
                     "details": "An English academy with native teachers"
                 }
             ]

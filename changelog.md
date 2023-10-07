@@ -82,3 +82,14 @@
 - Improve scroll blocking when the menu is open by using the "prevent" method instead of adding a CSS class to the body
 
 ---
+
+## [v1.2.2] - 07-10-2023
+
+### Changes
+
+- Upgraded to Nuxt 3.7.4
+- Minor bugfixes
+- Renamed certain internal fields and TypeScript interfaces to improve code readability and maintainability.
+- Now, when scrolling to any section, the header's height is excluded from the calculation, ensuring that the position is accurately placed at the top of the section
+
+---

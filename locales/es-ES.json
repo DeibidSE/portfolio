@@ -3,7 +3,7 @@
         "Introducción": {
             "whoAmI": "Hola! Soy David",
             "job": "Desarrollador Web Full Stack",
-            "scrDown": "Ve hacia abajo para ver más"
+            "scrollDown": "Ve hacia abajo para ver más"
         }
     },
     {
@@ -19,7 +19,7 @@
             ],
             "profileCard": {
                 "imagePath": "/MyPortfolio/images/david.webp",
-                "socials": [
+                "socialLinks": [
                     {
                         "name": "LinkedIn",
                         "icon": "uil:linkedin",
@@ -93,7 +93,7 @@
                     "title": "Desarrollador Web Full Stack en Simple KYC",
                     "startDate": "Feb 2021",
                     "endDate": "Presente",
-                    "where": "Remoto",
+                    "location": "Remoto",
                     "details": "Este es mi trabajo actual, donde he aprendido una amplia gama de habilidades y tecnologías aplicadas al desarrollo web.",
                     "website": "https://www.simplekyc.com/"
                 },
@@ -101,7 +101,7 @@
                     "title": "Dominama Análisis Tecnológicos S.L.",
                     "startDate": "Octubre 2020",
                     "endDate": "Diciembre 2020",
-                    "where": "Remoto",
+                    "location": "Remoto",
                     "details": "Mi primera toma de contacto con el mundo laboral, aquí completé las prácticas de 3 meses de duración ofrecidas por el grado superior. Por desgracia, debido a la pandemia de COVID-19, estas prácticas tuvieron que realizarse de manera 100% remota.",
                     "website": "http://www.dominama.es/"
                 }
@@ -111,14 +111,14 @@
                     "title": "Técnico superior en Desarrollo de Aplicaciones Multiplataforma (DAM)",
                     "startDate": "Septiembre 2018",
                     "endDate": "Junio 2020",
-                    "where": "Madrid",
+                    "location": "Madrid",
                     "details": "Aquí empecé mis estudios de programación: Java, Python, SQL, Linux... un mundo de aprendizaje y crecimiento junto a dedicados profesores y compañeros. Estos años sin duda marcaron una época inolvidable en mi camino educativo."
                 },
                 {
                     "title": "Bachillerato tecnológico",
                     "startDate": 2014,
                     "endDate": 2018,
-                    "where": "Madrid",
+                    "location": "Madrid",
                     "details": "Durante este periodo completé el bachillerato de la rama de ciencias, centrado principalmente en asignaturas como matemáticas, química y biología, etc..."
                 }
             ],
@@ -127,21 +127,21 @@
                     "title": "English Empire College",
                     "startDate": 2022,
                     "endDate": 2023,
-                    "where": "Remoto",
+                    "location": "Remoto",
                     "details": "Como parte de mi desarrollo profesional, la empresa para la que trabajo nos pagaba clases de inglés enfocadas a mejorar nuestros conocimientos de esta lengua."
                 },
                 {
                     "title": "Clases de conducir",
                     "startDate": 2018,
                     "endDate": 2019,
-                    "where": "Madrid",
+                    "location": "Madrid",
                     "details": "Completé las clases de conducir y obtuve el permiso de conducir de clase B"
                 },
                 {
                     "title": "Lingua Generation",
                     "startDate": 2010,
                     "endDate": 2020,
-                    "where": "Madrid",
+                    "location": "Madrid",
                     "details": "Una academia de inglés con profesores nativos"
                 }
             ]

@@ -1,4 +1,4 @@
-interface LangData {
+export interface LanguageData {
   [locale: string]: {
     [section: string]: any;
   };
@@ -10,42 +10,48 @@ export interface Language {
   icon: string;
 }
 
-export interface Introduction {
+export interface PersonalIntroduction {
   whoAmI: string;
   job: string;
-  scrDown: string;
+  scrollDown: string;
 }
 
-export interface Presentation {
+export interface PresentationInfo {
   command: string;
   title: string;
   content: string[];
-  profileCard: ProfileCard;
-  cv: CV[];
+  profileCard: UserProfileCard;
+  cv: Curriculum[];
 }
 
-export interface ProfileCard {
+export interface UserProfileCard {
   imagePath: string;
-  socials: Social[];
+  socialLinks: SocialLink[];
 }
 
-export interface Social {
+export interface SocialLink {
   name: string;
   icon: string;
   url: string;
 }
 
-export interface CV {
+export interface Curriculum {
   url: string;
   fileName: string;
   label: string;
 }
 
-export interface Projects {
+export interface ProjectData {
   [job: string]: Project;
 }
 
-export interface JobsAndStudies {
+export interface Project {
+  image: string;
+  description: string;
+  languages?: string[];
+}
+
+export interface JobsAndStudiesData {
   [category: string]: JobOrStudy[];
 }
 
@@ -53,12 +59,12 @@ export interface JobOrStudy {
   title: string;
   startDate: string;
   endDate: string;
-  where: string;
+  location: string;
   details: string;
   website?: string;
 }
 
-export interface Skills {
+export interface SkillData {
   [skill: string]: Skill[];
 }
 

@@ -14,7 +14,7 @@
     </div>
     <div class="absolute bottom-0 w-full py-4 text-center">
       <div class="flex flex-col animate-bounce text-dark dark:text-light">
-        <span class="text-sm">{{ section.scrDown ?? '' }}</span>
+        <span class="text-sm">{{ section.scrollDown ?? '' }}</span>
         <Icon name="uil:angle-double-down" class="self-center text-4xl cursor-pointer hover:text-purple-600" @click="scrollDown" />
       </div>
     </div>
@@ -97,13 +97,15 @@ export default {
     scrollDown () {
       // Gets all sections of the body
       const bodySections = document.querySelectorAll('section')
+      const headerElement = document.getElementById('header')
+      const headerHeight = headerElement ? headerElement.offsetHeight : 0
 
       if (bodySections && bodySections.length >= 2) {
         // Gets the second section (presentation section)
         const secondSection = bodySections[1]
         const { top } = secondSection.getBoundingClientRect()
         window.scrollTo({
-          top: top + window.scrollY,
+          top: (top + window.scrollY) - headerHeight,
           behavior: 'smooth'
         })
       }

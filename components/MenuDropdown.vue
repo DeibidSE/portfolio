@@ -42,11 +42,14 @@ export default {
       this.closeMenuDropdown()
       // Seach the section selected by id
       const sectionSelected = document.getElementById(`${section}`) as HTMLElement
+      const headerElement = document.getElementById('header')
+      const headerHeight = headerElement ? headerElement.offsetHeight : 0
+
       if (sectionSelected) {
         const { top } = sectionSelected.getBoundingClientRect()
         // Scrolls to the section selected
         window.scrollTo({
-          top: top + window.scrollY,
+          top: (top + window.scrollY) - headerHeight,
           behavior: 'smooth'
         })
       }

@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { langStore } from '~/stores/langStore'
-import { LangData } from '~/types/types.d'
+import { LanguageData } from '~/types/types.d'
 import espJsonData from '~/locales/es-ES.json'
 import engJsonData from '~/locales/en-GB.json'
 
@@ -23,7 +23,7 @@ export default {
       langData: {
         'es-ES': espJsonData,
         'en-GB': engJsonData
-      } as LangData
+      } as LanguageData
     }
   },
   computed: {

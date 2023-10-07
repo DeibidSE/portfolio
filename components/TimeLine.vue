@@ -12,7 +12,7 @@
         </span>
       </h3>
       <h4 class="mb-2 text-base text-gray-800 dark:text-gray-600">
-        {{ info.where }}
+        {{ info.location }}
       </h4>
       <p class="mb-4 text-xs text-gray-600 dark:text-gray-400">
         {{ info.details }}
