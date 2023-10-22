@@ -75,7 +75,7 @@
                 "description": "Quería embarcarme en un proyecto personal durante mi tiempo libre, desconectando del entorno profesional y laboral para explorar mi creatividad sin restricciones. Comencé a experimentar con el framework Nuxt y así es como surgió este portafolio que tienes ante tus ojos.",
                 "langs": [
                     "Nuxt",
-                    "Typescript",
+                    "TypeScript",
                     "Sass",
                     "Tailwind CSS"
                 ]
@@ -167,7 +167,7 @@
                 },
                 {
                     "name": "JavaScript",
-                    "image": "/MyPortfolio/svg/Javascript.svg",
+                    "image": "/MyPortfolio/svg/JavaScript.svg",
                     "progress": 80
                 },
                 {
