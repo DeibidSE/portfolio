@@ -5,7 +5,7 @@
     aria-label="Scroll to top of the page"
     @click="scrollToTop"
   >
-    <Icon name="uil:arrow-circle-up" class="text-4xl text-white" aria-hidden="true" />
+    <Icon name="uil:arrow-circle-up" class="text-4xl text-white" />
   </button>
 </template>
 

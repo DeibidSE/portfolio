@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center" role="switch" aria-label="Change color theme" :aria-checked="themeStore.lightmode" tabindex="0">
+  <div class="flex items-center" role="switch" aria-label="Change color theme" :aria-checked="themeStore.lightmode">
     <label for="lightmodeToggle" class="cursor-pointer">
       <input id="lightmodeToggle" v-model="themeStore.lightmode" type="checkbox" class="hidden checkbox peer" aria-hidden="true">
       <div class="flex items-center justify-between w-12 h-6 p-1 rounded-full sm:w-14 sm:h-7 shadow-inside bg-accent-light dark:bg-accent-dark">

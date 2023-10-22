@@ -2,17 +2,11 @@
   <aside
     class="fixed top-0 z-40 w-full h-full transition-transform duration-500 transform shadow-lg backdrop-blur-xl"
     :class="{ 'translate-y-0': open, '-translate-y-full': !open }"
-    role="menu"
     aria-label="Navigation menu"
   >
-    <ul class="flex flex-col justify-center flex-1 h-full gap-8 p-16" role="list">
-      <li v-for="(section, key) in sectionList" :key="key" role="listitem">
-        <span
-          class="text-2xl capitalize opacity-100 cursor-pointer md:text-4xl hover:text-purple-600"
-          role="link"
-          tabindex="0"
-          @click="scrollToSection(section)"
-        >
+    <ul class="flex flex-col justify-center flex-1 h-full gap-8 p-16">
+      <li v-for="(section, key) in sectionList" :key="key">
+        <span class="text-2xl capitalize opacity-100 cursor-pointer md:text-4xl hover:text-purple-600" @click="scrollToSection(section)">
           {{ section }}
         </span>
       </li>

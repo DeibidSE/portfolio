@@ -8,7 +8,7 @@
             <span class="text-dark dark:text-light">{{ section.command ?? '' }}</span>
           </div>
           <div class="flex flex-col leading-normal tracking-wide text-dark dark:text-light">
-            <h2 class="mb-4 text-5xl font-extrabold text-center text-transparent lg:mb-6 bg-clip-text bg-gradient-to-t from-purple-600 to-pink-500" role="heading" aria-level="2">
+            <h2 class="mb-4 text-5xl font-extrabold text-center text-transparent lg:mb-6 bg-clip-text bg-gradient-to-t from-purple-600 to-pink-500">
               {{ section.title ?? '' }}
             </h2>
             <p v-for="(content, index) in section.content" :key="index">

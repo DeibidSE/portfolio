@@ -11,14 +11,8 @@
         :aria-label="`Logo of ${data.name}`"
       >
     </TooltipComponent>
-    <div
-      class="w-full rounded-full h-2.5 bg-gray-700 dark:bg-gray-900 mt-4"
-      role="progressbar"
-      aria-valuemin="0"
-      aria-valuemax="100"
-      :aria-valuenow="data.progress"
-    >
-      <div class="bg-gradient-to-r from-purple-600 to-pink-500 h-2.5 rounded-full" :style="`width: ${data.progress}%`" role="presentation" />
+    <div class="w-full rounded-full h-2.5 bg-gray-700 dark:bg-gray-900 mt-4">
+      <div class="bg-gradient-to-r from-purple-600 to-pink-500 h-2.5 rounded-full" :style="`width: ${data.progress}%`" />
       <span
         :class="{
           'flex justify-end text-xs': data.progress,
