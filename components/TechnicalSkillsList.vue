@@ -3,22 +3,30 @@
     <TooltipComponent :tooltip-text="data.name" position="bottom">
       <img
         :src="data.image"
-        :alt="'An image of the official logo of ' + data.name"
+        :alt="`An image of the official logo of ${data.name}`"
         class="w-10 h-10 hover:scale-125"
         width="40"
         height="40"
+        role="img"
+        :aria-label="`Logo of ${data.name}`"
       >
     </TooltipComponent>
-    <div class="w-full rounded-full h-2.5 bg-gray-700 dark:bg-gray-900 mt-4">
-      <div class="bg-gradient-to-r from-purple-600 to-pink-500 h-2.5 rounded-full" :style="'width: ' + data.progress + '%'" />
+    <div
+      class="w-full rounded-full h-2.5 bg-gray-700 dark:bg-gray-900 mt-4"
+      role="progressbar"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      :aria-valuenow="data.progress"
+    >
+      <div class="bg-gradient-to-r from-purple-600 to-pink-500 h-2.5 rounded-full" :style="`width: ${data.progress}%`" role="presentation" />
       <span
         :class="{
           'flex justify-end text-xs': data.progress,
-          'text-green-600': data.progress >= 70 ,
+          'text-green-600': data.progress >= 70,
           'text-yellow-400': data.progress >= 30 && data.progress < 70,
           'text-red-600': data.progress < 30
         }"
-        :style="'width: ' + data.progress + '%'"
+        :style="`width: ${data.progress}%`"
       >
         {{ data.progress }} %
       </span>

@@ -1,15 +1,22 @@
 <template>
-  <div class="relative" @click="toggle">
+  <div class="relative" role="button" tabindex="0" aria-label="Select language" @click="toggle">
     <div class="relative flex items-center p-1 rounded-full cursor-pointer focus:outline-none">
       <!-- Flag -->
-      <Icon :name="selectedLang.icon" class="w-4 h-4 md:w-5 md:h-5" />
+      <Icon :name="selectedLang.icon" class="w-4 h-4 md:w-5 md:h-5" alt="Flag of the selected language" />
       <!-- Arrow -->
-      <Icon name="uil:angle-down" class="w-4 h-4 ml-1 md:w-5 md:h-5" />
+      <Icon name="uil:angle-down" class="w-4 h-4 ml-1 md:w-5 md:h-5" alt="Down arrow icon" />
     </div>
     <transition name="dropdown-content">
-      <div v-if="showDropdown" class="absolute right-0 mt-2 origin-top-right border-2 border-purple-600 rounded-lg md:w-48 md:py-2 bg-secondary-light dark:bg-secondary-dark">
-        <label v-for="(lang, key) in languages" :key="key" class="flex items-center gap-4 p-4 hover:bg-accent-light dark:hover:bg-accent-dark" @click.stop="selectLang(lang)">
-          <Icon :name="lang.icon" />
+      <div v-if="showDropdown" class="absolute right-0 mt-2 origin-top-right border-2 border-purple-600 rounded-lg md:w-48 md:py-2 bg-secondary-light dark:bg-secondary-dark" role="menu">
+        <label
+          v-for="(lang, key) in languages"
+          :key="key"
+          class="flex items-center gap-4 p-4 hover:bg-accent-light dark:hover:bg-accent-dark"
+          role="menuitem"
+          tabindex="0"
+          @click.stop="selectLang(lang)"
+        >
+          <Icon :name="lang.icon" alt="Language flag" />
           {{ lang.label ?? '' }}
         </label>
       </div>
@@ -19,7 +26,7 @@
 
 <script lang="ts">
 import { langStore } from '~/stores/langStore'
-import { Language } from '~/types/types.d'
+import { type Language } from '~/types/types.d'
 
 export default {
   data () {

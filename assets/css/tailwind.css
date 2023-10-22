@@ -2,6 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom fonts */
+
+@font-face {
+  font-family: "coolvetica";
+  src: url("~/assets/fonts/coolvetica.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VT323";
+  src: url("~/assets/fonts/VT323.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CSS Scroll Driven Animation (Not compatible with all browsers) */
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.scroll-transition {
+  view-timeline-name: --scroll-driven-animations;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --scroll-driven-animations;
+  animation-range: entry 15% cover 40%;
+}
+
+@layer base {
+  html {
+    font-family: "coolvetica", system-ui, sans-serif;
+  }
+}
+
 @layer components {
   .bg-accent-dark {
     background-color: #383838;

@@ -1,12 +1,12 @@
 # CHANGELOG
 
-## [v1.0.0] - 28-08-2023
+## [v1.0.0] - 28/08/2023
 
 - Initial release
 
 ---
 
-## [v1.1.0] - 05-09-2023
+## [v1.1.0] - 05/09/2023
 
 ### Changes
 
@@ -33,7 +33,7 @@
 
 ---
 
-## [v1.1.1] - 06-09-2023
+## [v1.1.1] - 06/09/2023
 
 ### Changes
 
@@ -43,7 +43,7 @@
 
 ---
 
-## [v1.1.2] - 09-09-2023
+## [v1.1.2] - 09/09/2023
 
 ### Changes
 
@@ -53,7 +53,7 @@
 
 ---
 
-## [v1.2.0] - 23-09-2023
+## [v1.2.0] - 23/09/2023
 
 ### Changes
 
@@ -75,7 +75,7 @@
 
 ---
 
-## [v1.2.1] - 24-09-2023
+## [v1.2.1] - 24/09/2023
 
 ### Changes
 
@@ -83,7 +83,7 @@
 
 ---
 
-## [v1.2.2] - 07-10-2023
+## [v1.2.2] - 07/10/2023
 
 ### Changes
 
@@ -93,3 +93,22 @@
 - Now, when scrolling to any section, the header's height is excluded from the calculation, ensuring that the position is accurately placed at the top of the section
 
 ---
+
+## [v1.3.0] - 22/10/2023
+
+### Changes
+
+- Improve accessibility.
+- Updated type imports to use the new syntax for improved type import clarity.
+- Upgraded to Nuxt 3.8.0.
+- Updated some dependencies in package.json.
+- Moved animation and font classes to `tailwind.config.js`.
+- Restructured the primary application logic into `app.vue`, allowing direct page loading without a layout.
+- Reorganized the Header component placement for better code structure.
+- Renamed `HeaderComponent` to `AppHeader`.
+- Renamed almost all SVG Icons.
+
+### Removed
+
+- Simplified the project structure by removing the `/layout` directory.
+- Removed the main SCSS File, as its functionality has been integrated into `css/tailwind.css`.

@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  devtools: { enabled: false },
+  eslint: { lintOnStart: false },
   ssr: false,
   app: {
     baseURL: '/MyPortfolio/',
@@ -17,11 +19,11 @@ export default defineNuxtConfig({
         {
           hid: 'description',
           name: 'description',
-          content: '¡Bienvenido a mi portfolio! Soy David, un desarrollador web full stack. Explora mi trabajo y proyectos aquí.'
+          content: "Welcome to my portfolio! I'm David, a full stack web developer. Explore my work and projects here."
         },
         {
           name: 'author',
-          content: 'David Simón - DeibidSE'
+          content: 'David Simón - @DeibidSE'
         }
       ],
       link: [
@@ -39,14 +41,5 @@ export default defineNuxtConfig({
     '@pinia-plugin-persistedstate/nuxt',
     'nuxt-icon'
   ],
-  css: [
-    '@/assets/css/tailwind.css',
-    '@/assets/css/index.scss'
-  ],
-  eslint: {
-    lintOnStart: false
-  },
-  nitro: {
-    compressPublicAssets: true
-  }
+  css: ['@/assets/css/tailwind.css']
 })

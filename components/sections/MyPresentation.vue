@@ -1,21 +1,21 @@
 <template>
-  <section :id="title" class="flex flex-col min-h-screen gap-4 p-6 lg:max-h-screen lg:flex-row lg:gap-10 lg:p-16">
+  <section :id="title" class="flex flex-col min-h-screen gap-4 p-6 lg:max-h-screen lg:flex-row lg:gap-10 lg:p-16" role="region" :aria-label="title">
     <div class="lg:w-2/3 scroll-transition">
       <TerminalFrame>
-        <div class="flex flex-col gap-4 lg:gap-6 terminal-font">
+        <div class="flex flex-col gap-4 lg:gap-6 font-terminal">
           <div class="flex items-start gap-2">
             <span class="font-semibold tracking-wider dark:text-lime-600 text-lime-800">user@localhost:~$</span>
             <span class="text-dark dark:text-light">{{ section.command ?? '' }}</span>
           </div>
           <div class="flex flex-col leading-normal tracking-wide text-dark dark:text-light">
-            <h2 class="mb-4 text-5xl font-extrabold text-center text-transparent lg:mb-6 bg-clip-text bg-gradient-to-t from-purple-600 to-pink-500">
+            <h2 class="mb-4 text-5xl font-extrabold text-center text-transparent lg:mb-6 bg-clip-text bg-gradient-to-t from-purple-600 to-pink-500" role="heading" aria-level="2">
               {{ section.title ?? '' }}
             </h2>
             <p v-for="(content, index) in section.content" :key="index">
               {{ content ?? '' }}
             </p>
           </div>
-          <hr class="border border-gray-600">
+          <hr class="border border-gray-600" role="separator">
           <div class="flex flex-col gap-2 w-max">
             <div class="flex items-start gap-2">
               <span class="font-semibold tracking-wider dark:text-lime-600 text-lime-800">user@localhost:~$</span>
@@ -32,6 +32,7 @@
                 'hover:text-blue-800 dark:hover:text-blue-500': true,
                 'text-blue-700 dark:text-blue-400' : activeIndex === key
               }"
+              role="link"
               @mouseover="changeActiveIndex(key)"
             >
               > {{ cv.label ?? '' }}

@@ -1,21 +1,28 @@
 <template>
-  <section :id="title" class="min-h-screen bg-primary-light dark:bg-primary-dark">
+  <section :id="title" class="min-h-screen bg-primary-light dark:bg-primary-dark" role="region" :aria-label="title">
     <div class="flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto">
       <div class="flex items-end h-full p-6 overflow-hidden">
-        <h1 class="text-5xl font-bold tracking-wide text-center md:text-7xl">
+        <h1 class="text-5xl font-bold text-center md:tracking-wide md:text-7xl" role="heading" aria-level="1">
           {{ section.whoAmI }}
         </h1>
       </div>
       <div class="flex items-start h-full p-6 overflow-hidden">
-        <h2 ref="typewriter" class="inline-block text-3xl font-bold text-center text-purple-600 cursor-default md:text-5xl blinking-caret">
+        <h3 ref="typewriter" class="inline-block text-3xl font-bold text-center text-purple-600 cursor-default md:text-5xl animate-blinking-caret" role="heading" aria-level="2">
           {{ txt }}
-        </h2>
+        </h3>
       </div>
     </div>
     <div class="absolute bottom-0 w-full py-4 text-center">
       <div class="flex flex-col animate-bounce text-dark dark:text-light">
-        <span class="text-sm">{{ section.scrollDown ?? '' }}</span>
-        <Icon name="uil:angle-double-down" class="self-center text-4xl cursor-pointer hover:text-purple-600" @click="scrollDown" />
+        <span class="text-sm" aria-hidden="true">{{ section.scrollDown ?? '' }}</span>
+        <Icon
+          name="uil:angle-double-down"
+          class="self-center text-4xl cursor-pointer hover:text-purple-600"
+          role="button"
+          aria-label="Scroll down"
+          tabindex="0"
+          @click="scrollDown"
+        />
       </div>
     </div>
   </section>
