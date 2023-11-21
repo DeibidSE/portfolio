@@ -34,6 +34,11 @@ export default defineNuxtConfig({
       }
     }
   },
+  runtimeConfig: {
+    public: {
+      BASE_URL: '/MyPortfolio'
+    }
+  },
   modules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',

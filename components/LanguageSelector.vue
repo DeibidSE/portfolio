@@ -15,7 +15,7 @@
           @click.stop="selectLang(lang)"
         >
           <Icon :name="lang.icon" alt="Language flag" />
-          {{ lang.label ?? '' }}
+          {{ lang.label || '' }}
         </label>
       </div>
     </transition>

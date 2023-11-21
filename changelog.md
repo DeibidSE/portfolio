@@ -112,3 +112,24 @@
 
 - Simplified the project structure by removing the `/layout` directory.
 - Removed the main SCSS File, as its functionality has been integrated into `css/tailwind.css`.
+
+## [v1.4.0] - 22/11/2023
+
+### Changes
+
+- Introduce a new project in the "Projects" section.
+- Add new SVG icons (Astro, Node and Express).
+- Create a template (`error.vue`) for handling non-existent URLs.
+- Move the content of the terminal to a new component for better code structure.
+- Implement smoother transitions when hovering over any icon.
+- Improved responsiveness by adjusting sizes for various resolutions.
+- Define the base URL (`/MyPortfolio`) in the runtime config API of Nuxt.
+- Added links to the official website in the icon of each technology used in each project.
+- Improve readability of certain parts of the code.
+- Removed the background color from the theme switcher.
+- Reformat some sections of the code.
+- Update dependencies in `package.json`.
+
+### Removed
+
+- Removed `undefined.webp` image, as it's no longer necessary.

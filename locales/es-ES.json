@@ -18,7 +18,7 @@
                 "😀 ¡Muchas gracias por visitar mi sitio web y por ser parte de mi viaje de crecimiento y desarrollo profesional!"
             ],
             "profileCard": {
-                "imagePath": "/MyPortfolio/images/david.webp",
+                "imagePath": "/images/david.webp",
                 "socialLinks": [
                     {
                         "name": "LinkedIn",
@@ -39,12 +39,12 @@
             },
             "cv": [
                 {
-                    "url": "/MyPortfolio/CV - David Simón (ES - 2023).pdf",
+                    "url": "/CV - David Simón (ES - 2023).pdf",
                     "fileName": "CV - David Simón (ES - 2023).pdf",
                     "label": "Descarga mi Curriculum (Versión en Español)"
                 },
                 {
-                    "url": "/MyPortfolio/CV - David Simón (EN - 2023).pdf",
+                    "url": "/CV - David Simón (EN - 2023).pdf",
                     "fileName": "CV - David Simón (EN - 2023).pdf",
                     "label": "Descarga mi Curriculum (Version en Inglés)"
                 }
@@ -54,35 +54,94 @@
     {
         "proyectos": {
             "Mi trabajo diario": {
-                "image": "/MyPortfolio/images/verify.svg",
+                "image": "/images/verify.svg",
                 "description": "Aquí dedico casi el 100 % de mi tiempo a la programación, centrándome especialmente en proyectos web relacionados con los requisitos KYC (Conozca a su cliente) dentro del sector financiero. Aunque no puedo compartir detalles específicos debido a acuerdos de confidencialidad con la empresa, sí puedo mencionar que mi participación abarca una amplia gama de productos desarrollados mediante diversas tecnologías. He trabajado tanto en el frontend como en el backend, participando en el desarrollo de APIs Rest, la automatización de procesos, la creación de informes avanzados y la implementación de metodologías ágiles, entre otros aspectos."
             },
             "ddabetic": {
-                "image": "/MyPortfolio/images/ddabetic.webp",
+                "image": "/images/ddabetic.webp",
                 "description": "Pequeño proyecto que continúa en desarrollo y que comencé durante unas vacaciones de verano utilizando Laravel y Vue 3. Esta aplicación web tenía como objetivo gestionar y mejorar el control de la diabetes",
-                "langs": [
-                    "Laravel",
-                    "Vue",
-                    "JavaScript",
-                    "Sass",
-                    "Tailwind CSS",
-                    "MySQL",
-                    "Laragon"
-                ]
-            },
-            "MyPortfolio": {
-                "image": "/MyPortfolio/images/myportfolio.webp",
-                "description": "Quería embarcarme en un proyecto personal durante mi tiempo libre, desconectando del entorno profesional y laboral para explorar mi creatividad sin restricciones. Comencé a experimentar con el framework Nuxt y así es como surgió este portafolio que tienes ante tus ojos.",
-                "langs": [
-                    "Nuxt",
-                    "TypeScript",
-                    "Sass",
-                    "Tailwind CSS"
+                "technologies": [
+                    {
+                        "name": "Laravel",
+                        "url": "https://laravel.com/"
+                    },
+                    {
+                        "name": "Vue",
+                        "url": "https://vuejs.org/"
+                    },
+                    {
+                        "name": "JavaScript",
+                        "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
+                    },
+                    {
+                        "name": "Sass",
+                        "url": "https://sass-lang.com/"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "url": "https://tailwindcss.com/"
+                    },
+                    {
+                        "name": "MySQL",
+                        "url": "https://www.mysql.com/"
+                    },
+                    {
+                        "name": "Laragon",
+                        "url": "https://laragon.org/index.html"
+                    }
                 ]
             },
             "???": {
-                "image": "/MyPortfolio/images/undefined.webp",
-                "description": "¿Aprender y empezar un proyecto con React? ¿O quizás algo con el framework Astro? Quién sabe..."
+                "text": "En construcción",
+                "description": "Formando equipo con un amigo para nuestro primer proyecto juntos, buscábamos crear algo interesante, quizás hasta útil para empresas. Optamos por Node en el backend y Astro, uno de los frameworks de JavaScript más rápidos, en el frontend. Ambos son totalmente nuevos para nosotros, lo que lo convierte también en una experiencia de aprendizaje. Nuestro proyecto no solo es rápido; es modular, diseñado para ensamblarse sin problemas. Estamos comenzando con un módulo principal como base, centrándonos en la flexibilidad. ¿El plan? Agregar nuevos módulos en función de las necesidades.",
+                "technologies": [
+                    {
+                        "name": "Node.js",
+                        "url": "https://nodejs.org/"
+                    },
+                    {
+                        "name": "Express",
+                        "url": "https://expressjs.com/"
+                    },
+                    {
+                        "name": "MySQL",
+                        "url": "https://www.mysql.com/"
+                    },
+                    {
+                        "name": "Astro",
+                        "url": "https://astro.build/"
+                    },
+                    {
+                        "name": "Vue",
+                        "url": "https://vuejs.org/"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "url": "https://tailwindcss.com/"
+                    }
+                ]
+            },
+            "Este Portfolio": {
+                "image": "/images/myportfolio.webp",
+                "description": "Quería embarcarme en un proyecto personal durante mi tiempo libre, desconectando del entorno profesional y laboral para explorar mi creatividad sin restricciones. Comencé a experimentar con el framework Nuxt y así es como surgió este portafolio que tienes ante tus ojos.",
+                "technologies": [
+                    {
+                        "name": "Nuxt.js",
+                        "url": "https://nuxt.com/"
+                    },
+                    {
+                        "name": "TypeScript",
+                        "url": "https://www.typescriptlang.org/"
+                    },
+                    {
+                        "name": "Sass",
+                        "url": "https://sass-lang.com/"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "url": "https://tailwindcss.com/"
+                    }
+                ]
             }
         }
     },
@@ -152,96 +211,96 @@
             "/frontend": [
                 {
                     "name": "Vue.js",
-                    "image": "/MyPortfolio/svg/Vue.svg",
+                    "image": "/svg/Vue.svg",
                     "progress": 80
                 },
                 {
                     "name": "Nuxt 3",
-                    "image": "/MyPortfolio/svg/Nuxt.svg",
+                    "image": "/svg/Nuxt.js.svg",
                     "progress": 75
                 },
                 {
                     "name": "TypeScript",
-                    "image": "/MyPortfolio/svg/TypeScript.svg",
+                    "image": "/svg/TypeScript.svg",
                     "progress": 80
                 },
                 {
                     "name": "JavaScript",
-                    "image": "/MyPortfolio/svg/JavaScript.svg",
+                    "image": "/svg/JavaScript.svg",
                     "progress": 80
                 },
                 {
                     "name": "HTML 5",
-                    "image": "/MyPortfolio/svg/HTML.svg",
+                    "image": "/svg/HTML.svg",
                     "progress": 95
                 },
                 {
                     "name": "CSS",
-                    "image": "/MyPortfolio/svg/CSS.svg",
+                    "image": "/svg/CSS.svg",
                     "progress": 70
                 },
                 {
                     "name": "Sass",
-                    "image": "/MyPortfolio/svg/Sass.svg",
+                    "image": "/svg/Sass.svg",
                     "progress": 70
                 },
                 {
                     "name": "Tailwind CSS",
-                    "image": "/MyPortfolio/svg/Tailwind CSS.svg",
+                    "image": "/svg/Tailwind CSS.svg",
                     "progress": 90
                 }
             ],
             "/backend": [
                 {
                     "name": "Laravel",
-                    "image": "/MyPortfolio/svg/Laravel.svg",
+                    "image": "/svg/Laravel.svg",
                     "progress": 85
                 },
                 {
                     "name": "PHP",
-                    "image": "/MyPortfolio/svg/PHP.svg",
+                    "image": "/svg/PHP.svg",
                     "progress": 85
                 },
                 {
                     "name": "MySQL",
-                    "image": "/MyPortfolio/svg/MySQL.svg",
+                    "image": "/svg/MySQL.svg",
                     "progress": 80
                 },
                 {
                     "name": "Java",
-                    "image": "/MyPortfolio/svg/Java.svg",
+                    "image": "/svg/Java.svg",
                     "progress": 35
                 },
                 {
                     "name": "Python",
-                    "image": "/MyPortfolio/svg/Python.svg",
+                    "image": "/svg/Python.svg",
                     "progress": 20
                 }
             ],
             "/herramientas": [
                 {
                     "name": "Visual Studio Code",
-                    "image": "/MyPortfolio/svg/VS Code.svg",
+                    "image": "/svg/VS Code.svg",
                     "progress": 100
                 },
                 {
                     "name": "Docker",
-                    "image": "/MyPortfolio/svg/Docker.svg",
+                    "image": "/svg/Docker.svg",
                     "progress": 80
                 },
                 {
                     "name": "Vagrant",
-                    "image": "/MyPortfolio/svg/Vagrant.svg",
+                    "image": "/svg/Vagrant.svg",
                     "progress": 90
                 },
                 {
                     "name": "Laragon",
-                    "image": "/MyPortfolio/svg/Laragon.svg",
+                    "image": "/svg/Laragon.svg",
                     "progress": 95
                 },
                 {
                     "name": "Android Studio",
-                    "image": "/MyPortfolio/svg/Android Studio.svg",
+                    "image": "/svg/Android Studio.svg",
                     "progress": 35
                 }
             ]

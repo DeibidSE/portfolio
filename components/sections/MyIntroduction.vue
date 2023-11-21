@@ -1,20 +1,20 @@
 <template>
   <section :id="title" class="min-h-screen bg-primary-light dark:bg-primary-dark" :aria-label="title">
     <div class="flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto">
-      <div class="flex items-end h-full p-6 overflow-hidden">
-        <h1 class="text-5xl font-bold text-center md:tracking-wide md:text-7xl">
+      <div class="flex items-end justify-center w-full h-full p-5 overflow-hidden sm:p-6">
+        <h1 class="w-full text-5xl font-bold text-center md:tracking-wide sm:text-6xl md:text-7xl">
           {{ section.whoAmI }}
         </h1>
       </div>
-      <div class="flex items-start h-full p-6 overflow-hidden">
-        <h2 ref="typewriter" class="inline-block text-3xl font-bold text-center text-purple-600 cursor-default md:text-5xl animate-blinking-caret">
+      <div class="flex items-start justify-center w-full h-full p-5 overflow-hidden sm:p-6">
+        <h2 ref="typewriter" class="inline-block text-2xl font-bold text-center text-purple-600 cursor-default sm:text-4xl md:text-5xl animate-blinking-caret">
           {{ txt }}
         </h2>
       </div>
     </div>
     <div class="absolute bottom-0 w-full py-4 text-center">
       <div class="flex flex-col animate-bounce text-dark dark:text-light">
-        <span class="text-sm">{{ section.scrollDown ?? '' }}</span>
+        <span class="w-full text-xs sm:text-sm">{{ section.scrollDown || '' }}</span>
         <Icon
           name="uil:angle-double-down"
           class="self-center text-4xl cursor-pointer hover:text-purple-600"

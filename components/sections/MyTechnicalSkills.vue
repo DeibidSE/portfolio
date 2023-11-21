@@ -60,7 +60,7 @@
         </div>
       </div>
 
-      <div :class="{'flex-wrap justify-around p-6 md:flex md:gap-8 md:p-16': !showList}" aria-label="Skills Container">
+      <div :class="{'flex-wrap justify-around p-6 md:flex md:gap-8 md:p-8 lg:p-16': !showList}" aria-label="Skills Container">
         <!-- List view -->
         <ul v-if="showList" class="flex flex-col justify-between flex-1 h-full gap-8 px-8 py-8 md:px-16" role="list">
           <li

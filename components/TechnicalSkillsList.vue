@@ -2,9 +2,10 @@
   <div v-if="data && data.image && data.progress" class="flex flex-row gap-8 py-4 rounded-lg">
     <TooltipComponent :tooltip-text="data.name" position="bottom">
       <img
-        :src="data.image"
+        :src="$config.public.BASE_URL + data.image"
         :alt="`An image of the official logo of ${data.name}`"
-        class="w-10 h-10 hover:scale-125"
+        class="w-10 h-10 transition-transform hover:scale-125"
+        loading="lazy"
         width="40"
         height="40"
         role="img"
