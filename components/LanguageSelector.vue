@@ -9,8 +9,8 @@
     <transition name="dropdown-content">
       <div v-if="showDropdown" class="absolute right-0 mt-2 origin-top-right border-2 border-purple-600 rounded-lg md:w-48 md:py-2 bg-secondary-light dark:bg-secondary-dark">
         <label
-          v-for="(lang, key) in languages"
-          :key="key"
+          v-for="lang in languages"
+          :key="lang.value"
           class="flex items-center gap-4 p-4 hover:bg-accent-light dark:hover:bg-accent-dark"
           @click.stop="selectLang(lang)"
         >
@@ -65,13 +65,13 @@ export default {
 </script>
 
 <style scoped>
-.dropdown-content-enter-active,
-.dropdown-content-leave-active {
-  transition: opacity 0.2s, transform 0.2s;
-}
-.dropdown-content-enter,
-.dropdown-content-leave-to {
-  opacity: 0;
-  transform: translateY(-5px);
-}
+  .dropdown-content-enter-active,
+  .dropdown-content-leave-active {
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .dropdown-content-enter,
+  .dropdown-content-leave-to {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
 </style>

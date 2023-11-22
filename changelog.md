@@ -113,7 +113,7 @@
 - Simplified the project structure by removing the `/layout` directory.
 - Removed the main SCSS File, as its functionality has been integrated into `css/tailwind.css`.
 
-## [v1.4.0] - 22/11/2023
+## [v1.4.0] - 21/11/2023
 
 ### Changes
 
@@ -133,3 +133,9 @@
 ### Removed
 
 - Removed `undefined.webp` image, as it's no longer necessary.
+
+## [v1.4.1] - 22/11/2023
+
+### Changes
+
+- Move some icons to Vue components

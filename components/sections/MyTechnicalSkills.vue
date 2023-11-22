@@ -1,7 +1,7 @@
 <template>
   <section :id="title" class="flex flex-col min-h-screen bg-primary-light dark:bg-primary-dark" :aria-label="title">
     <header class="flex w-full gap-4 px-6 py-8 md:px-16">
-      <Icon name="fluent-emoji-flat:open-file-folder" class="w-9 h-9" alt="Folder Icon" />
+      <Icon name="FolderIcon" class="w-9 h-9" alt="Folder Icon" />
       <h2 class="text-4xl text-purple-600 uppercase md:font-bold font-terminal">
         {{ title }}
       </h2>
@@ -23,7 +23,7 @@
         @click="selectCategory(category)"
       >
         <div class="flex items-center justify-center gap-2">
-          <Icon name="fluent-emoji-flat:open-file-folder" class="w-3 h-3 md:w-5 md:h-5" />
+          <Icon name="FolderIcon" class="w-3 h-3 md:w-5 md:h-5" />
           <span class="text-xs uppercase md:text-xl font-terminal">{{ category }}</span>
         </div>
       </li>

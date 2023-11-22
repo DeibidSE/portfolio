@@ -2,7 +2,7 @@
   <section :id="title" class="min-h-screen bg-primary-light dark:bg-primary-dark" :aria-label="title">
     <div class="flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto">
       <div class="flex items-end justify-center w-full h-full p-5 overflow-hidden sm:p-6">
-        <h1 class="w-full text-5xl font-bold text-center md:tracking-wide sm:text-6xl md:text-7xl">
+        <h1 class="w-full text-5xl font-bold text-center sm:text-6xl md:text-7xl">
           {{ section.whoAmI }}
         </h1>
       </div>

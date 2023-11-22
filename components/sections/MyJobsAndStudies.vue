@@ -7,7 +7,7 @@
       :aria-label="String(sectionName)"
     >
       <header class="flex w-full gap-4">
-        <Icon name="fluent-emoji-flat:open-file-folder" class="w-9 h-9" alt="Folder Icon" />
+        <Icon name="FolderIcon" class="w-9 h-9" alt="Folder Icon" />
         <h2 class="text-4xl font-bold text-purple-600 uppercase font-terminal">
           {{ sectionName }}
         </h2>
