@@ -305,5 +305,13 @@
                 }
             ]
         }
+    },
+    {
+        "others": {
+            "alertCompatibility": {
+                "message": "This browser or browser version appears to be incompatible with the animations included in this portfolio. As a result, you will experience the static version of the site, without animations and transitions during scrolling.",
+                "linkText": "Click here for more information"
+            }
+        }
     }
 ]

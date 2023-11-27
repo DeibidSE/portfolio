@@ -11,7 +11,7 @@
     >
     <div
       v-else
-      class="flex items-center justify-center text-center w-full aspect-video max-w-[752px] max-h-[400px] transition-transform rounded-lg hover:scale-105 hover:rotate-1 bg-[repeating-linear-gradient(-45deg,_yellow,_yellow_50px,_black_50px,_black_100px)]"
+      class="flex items-center justify-center text-center w-full aspect-video max-w-[752px] max-h-[400px] transition-transform rounded-lg hover:scale-105 hover:rotate-1 bg-[repeating-linear-gradient(-45deg,_yellow,_yellow_50px,_black_50px,_black_100px)] bg-fixed bg-repeat"
     >
       <span class="w-full p-2 text-2xl font-semibold bg-orange-600 border-black border-y-2 md:p-4 md:text-5xl text-dark font-terminal">
         {{ projectData.text || 'Work in Progress' }}
@@ -26,7 +26,7 @@
       </p>
       <div v-if="projectData.technologies" class="inline-flex justify-around w-full p-4 mx-auto rounded-lg lg:p-6 shadow-inside">
         <TooltipComponent v-for="(technology, key) in projectData.technologies" :key="key" :tooltip-text="technology.name" position="top">
-          <a :href="technology.url" target="_blank" rel="noreferrer" class="cursor-pointer">
+          <a :href="technology.url" target="_blank" rel="noopener noreferrer" class="cursor-pointer">
             <img
               :src="`${$config.public.BASE_URL}/svg/${technology.name}.svg`"
               :alt="`The logo of ${technology.name}`"

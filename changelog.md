@@ -139,3 +139,11 @@
 ### Changes
 
 - Move some icons to Vue components
+
+## [v1.4.2] - 27/11/2023
+
+### Changes
+
+- Added a new alert for browsers that do not support CSS Scroll animations.
+- Added a top mini-progress bar.
+- Minor fixes and changes

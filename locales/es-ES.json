@@ -305,5 +305,13 @@
                 }
             ]
         }
+    },
+    {
+        "others": {
+            "alertCompatibility": {
+                "message": "Tu navegador o la versión que estás utilizando parece ser incompatible con las animaciones incluidas en este portafolio. Como resultado, experimentarás la versión estática del sitio, sin animaciones ni transiciones durante el desplazamiento.",
+                "linkText": "Haz clic aquí para más información"
+            }
+        }
     }
 ]
