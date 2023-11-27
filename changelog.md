@@ -145,5 +145,4 @@
 ### Changes
 
 - Added a new alert for browsers that do not support CSS Scroll animations.
-- Added a top mini-progress bar.
-- Minor fixes and changes
+- Minor changes

@@ -13,7 +13,6 @@
     id="header"
     class="fixed top-0 z-50 flex flex-col w-full gap-6 px-6 py-4 transition-all bg-transparent shadow-lg md:px-8 backdrop-blur-lg"
   >
-    <div id="progress" />
     <nav class="container flex items-center content-between justify-between h-auto gap-4 mx-auto">
       <div class="flex justify-start w-36 lg:w-48">
         <Icon
@@ -66,19 +65,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-  @keyframes grow-progress {
-    from {
-      transform: scaleX(0);
-    }
-    to {
-      transform: scaleX(1);
-    }
-  }
-
-  #progress {
-    @apply fixed w-full h-1 origin-[0_50%] animate-[grow-progress_auto_linear] left-0 top-0 bg-purple-600;
-    animation-timeline: scroll();
-  }
-</style>

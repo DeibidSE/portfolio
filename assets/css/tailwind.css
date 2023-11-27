@@ -33,8 +33,10 @@
 }
 
 .scroll-transition {
-  animation: show linear both;
-  animation-timeline: view();
+  view-timeline-name: --scroll-driven-animations;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --scroll-driven-animations;
   animation-range: entry 15% cover 40%;
 }
 
