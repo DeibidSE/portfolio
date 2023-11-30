@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     sectionInfo () {
-      return this.langData[this.langStore.getLanguage]
+      return this.langData[this.langStore.getLanguage].filter((item: any) => Object.keys(item)[0].toLowerCase() !== 'others')
     },
     sectionList (): string[] {
       return this.sectionInfo.map((item: string[]) => Object.keys(item)[0])
