@@ -5,29 +5,24 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { langStore } from '~/stores/langStore'
 import { type LanguageData } from '~/types/types.d'
 import espJsonData from '~/locales/es-ES.json'
 import engJsonData from '~/locales/en-GB.json'
 
-export default {
-  data () {
-    return {
-      langStore: langStore(),
-      langData: {
-        'es-ES': espJsonData,
-        'en-GB': engJsonData
-      } as LanguageData
-    }
-  },
-  computed: {
-    sectionInfo () {
-      return this.langData[this.langStore.getLanguage].filter((item: any) => Object.keys(item)[0].toLowerCase() !== 'others')
-    },
-    sectionList (): string[] {
-      return this.sectionInfo.map((item: string[]) => Object.keys(item)[0])
-    }
-  }
-}
+const languageStore = langStore()
+
+const langData = ref<LanguageData>({
+  'es-ES': espJsonData,
+  'en-GB': engJsonData
+})
+
+const sectionInfo = computed(() => {
+  return langData.value[languageStore.getLanguage].filter((item: any) => Object.keys(item)[0].toLowerCase() !== 'others')
+})
+
+const sectionList = computed(() => {
+  return sectionInfo.value.map((item: string[]) => Object.keys(item)[0])
+})
 </script>

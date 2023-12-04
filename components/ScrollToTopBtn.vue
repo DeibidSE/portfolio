@@ -9,30 +9,27 @@
   </button>
 </template>
 
-<script lang="ts">
-export default {
-  data () {
-    return {
-      showScrollToTop: false,
-      y: 0
-    }
-  },
-  mounted () {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  beforeUnmount () {
-    window.removeEventListener('scroll', this.handleScroll)
-  },
-  methods: {
-    handleScroll () {
-      this.showScrollToTop = window.scrollY > 0
-    },
-    scrollToTop () {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      })
-    }
-  }
+<script setup lang="ts">
+import { onMounted, onBeforeUnmount, ref } from 'vue'
+
+const showScrollToTop = ref(false)
+
+const handleScroll = () => {
+  showScrollToTop.value = window.scrollY > 0
 }
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>

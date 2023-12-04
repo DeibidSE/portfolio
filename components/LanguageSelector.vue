@@ -22,45 +22,30 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { langStore } from '~/stores/langStore'
 import { type Language } from '~/types/types.d'
 
-export default {
-  data () {
-    return {
-      showDropdown: false,
-      languages: [
-        { value: 'es-ES', label: 'Español', icon: 'circle-flags:es-variant' },
-        { value: 'en-GB', label: 'English', icon: 'circle-flags:uk' }
-      ] as Language[],
-      store: langStore()
-    }
-  },
-  computed: {
-    /**
-     * Gets the selected language object
-     */
-    selectedLang (): Language {
-      return this.languages.find(lang => lang.value === this.store.language) || this.languages[0]
-    }
-  },
-  methods: {
-    /**
-     * Open or close the language selector dropdown
-     */
-    toggle () {
-      this.showDropdown = !this.showDropdown
-    },
-    /**
-     * Sets the selected language in store and closes the dropdown
-     * @param lang Object data of the language selected
-     */
-    selectLang (lang: Language) {
-      this.store.setLanguage(lang.value)
-      this.showDropdown = false
-    }
-  }
+const showDropdown = ref(false)
+
+const languages = ref<Language[]>([
+  { value: 'es-ES', label: 'Español', icon: 'circle-flags:es-variant' },
+  { value: 'en-GB', label: 'English', icon: 'circle-flags:uk' }
+])
+
+const store = langStore()
+
+const selectedLang = computed(() => {
+  return languages.value.find(lang => lang.value === store.language) || languages.value[0]
+})
+
+const toggle = () => {
+  showDropdown.value = !showDropdown.value
+}
+
+const selectLang = (lang: Language) => {
+  store.setLanguage(lang.value)
+  showDropdown.value = false
 }
 </script>
 

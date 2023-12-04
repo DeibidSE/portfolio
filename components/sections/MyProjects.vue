@@ -15,27 +15,16 @@
   </section>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    sectionInfo: {
-      type: Object,
-      default: () => {}
-    }
-  },
-  computed: {
-    /**
-     * Returns the title of the section
-     */
-    title () {
-      return Object.keys(this.sectionInfo).toString()
-    },
-    /**
-     * Return an array with the info of the section
-     */
-    projects () {
-      return this.sectionInfo[this.title]
-    }
+<script setup lang="ts">
+import { type ProjectData } from '~/types/types.d'
+
+const props = defineProps({
+  sectionInfo: {
+    type: Object,
+    default: () => ({})
   }
-}
+})
+
+const title = computed<string>(() => Object.keys(props.sectionInfo).toString() || '')
+const projects = computed<ProjectData>(() => props.sectionInfo[title.value] || {})
 </script>

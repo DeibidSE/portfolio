@@ -27,7 +27,7 @@ export default {
   props: {
     sectionInfo: {
       type: Object,
-      default: () => {}
+      default: () => ({})
     }
   },
   emits: ['close']

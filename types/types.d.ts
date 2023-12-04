@@ -46,9 +46,15 @@ export interface ProjectData {
 }
 
 export interface Project {
-  image: string;
+  text?: string
+  image?: string;
   description: string;
-  languages?: string[];
+  technologies: Technology[];
+}
+
+export interface Technology {
+  name: string;
+  url: string;
 }
 
 export interface JobsAndStudiesData {

@@ -11,19 +11,17 @@
   </span>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    tooltipText: {
-      type: String,
-      default: ''
-    },
-    position: {
-      type: String,
-      default: 'top'
-    }
+<script setup lang="ts">
+defineProps({
+  tooltipText: {
+    type: String,
+    default: ''
+  },
+  position: {
+    type: String,
+    default: 'top'
   }
-}
+})
 </script>
 
 <style scoped lang="scss">

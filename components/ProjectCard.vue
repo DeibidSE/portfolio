@@ -44,17 +44,17 @@
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    projectName: {
-      type: String,
-      default: ''
-    },
-    projectData: {
-      type: Object,
-      default: () => {}
-    }
+<script setup lang="ts">
+import { type Project } from '~/types/types.d'
+
+defineProps({
+  projectName: {
+    type: String,
+    default: ''
+  },
+  projectData: {
+    type: Object as () => Project,
+    default: () => ({})
   }
-}
+})
 </script>

@@ -42,26 +42,18 @@
   </header>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    sectionList: {
-      type: Array as () => string[],
-      default: () => []
-    }
-  },
-  data () {
-    return {
-      menuOpen: false
-    }
-  },
-  methods: {
-    /**
-     * Toggles the menu state between open (true) or close (false)
-     */
-    toggleMenuDropdown () {
-      this.menuOpen = !this.menuOpen
-    }
+<script setup lang="ts">
+
+defineProps({
+  sectionList: {
+    type: Array as () => string[],
+    default: () => []
   }
+})
+
+const menuOpen = ref(false)
+
+const toggleMenuDropdown = () => {
+  menuOpen.value = !menuOpen.value
 }
 </script>

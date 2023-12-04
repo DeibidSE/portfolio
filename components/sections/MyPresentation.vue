@@ -11,27 +11,16 @@
   </section>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    sectionInfo: {
-      type: Object,
-      default: () => {}
-    }
-  },
-  computed: {
-    /**
-     * Returns the title of the section
-     */
-    title () {
-      return Object.keys(this.sectionInfo).toString()
-    },
-    /**
-     * Return an array with the info of the section
-     */
-    section () {
-      return this.sectionInfo[this.title] || []
-    }
+<script setup lang="ts">
+import { type PresentationInfo } from '~/types/types.d'
+
+const props = defineProps({
+  sectionInfo: {
+    type: Object,
+    default: () => ({})
   }
-}
+})
+
+const title = computed<string>(() => Object.keys(props.sectionInfo).toString() || '')
+const section = computed<PresentationInfo>(() => props.sectionInfo[title.value] || {})
 </script>

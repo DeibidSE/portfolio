@@ -85,55 +85,27 @@
   </section>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { type Skill } from '~/types/types.d'
 
-export default {
-  props: {
-    sectionInfo: {
-      type: Object,
-      default: () => {}
-    }
-  },
-  data () {
-    return {
-      selectedCategory: '/frontend',
-      showList: false
-    }
-  },
-  computed: {
-    /**
-     * Returns the title of the section
-     */
-    title () {
-      return Object.keys(this.sectionInfo).toString()
-    },
-    /**
-     * Filter the elements of the selected category in the JSON
-     */
-    filteredSkills (): Skill[] {
-      return this.sectionInfo[this.title][this.selectedCategory] || []
-    },
-    /**
-     * Filter and sorts the elements of the selected category in the JSON by progress (from higher to lower)
-     */
-    sortedFilteredSkills (): Skill[] {
-      return this.filteredSkills.slice().sort((a: Skill, b: Skill) => b.progress - a.progress)
-    },
-    /**
-     * Get every category from the JSON
-     */
-    categories (): string[] {
-      return Object.keys(this.sectionInfo[this.title])
-    }
-  },
-  /**
-   * Little easter egg in console.
-   *  - Q: Why is it here?
-   *  - A: Br0, trust me. This is 100% a skill.
-   */
-  mounted () {
-    console.log(`%c                                             
+const props = defineProps({
+  sectionInfo: {
+    type: Object,
+    default: () => ({})
+  }
+})
+
+const selectedCategory = ref('/frontend')
+const showList = ref(false)
+
+const title = computed(() => Object.keys(props.sectionInfo).toString())
+const filteredSkills = computed(() => props.sectionInfo[title.value][selectedCategory.value] || [])
+const sortedFilteredSkills = computed(() => filteredSkills.value.slice().sort((a: Skill, b: Skill) => b.progress - a.progress))
+const categories = computed(() => Object.keys(props.sectionInfo[title.value]))
+
+// Little easter egg in console.
+onMounted(() => {
+  console.log(`%c                                             
        ___________________________________   
       |                                   |  
       |  Sneaky peeky!                    |  
@@ -146,16 +118,10 @@ export default {
       *   3   *                              
        *******                               
                                              `,
-    'font-weight: 700;')
-  },
-  methods: {
-    /**
-     * Sets the category selected on the tab
-     * @param category
-     */
-    selectCategory (category: string) {
-      this.selectedCategory = category
-    }
-  }
+  'font-weight: 700;')
+})
+
+const selectCategory = (category: string) => {
+  selectedCategory.value = category
 }
 </script>

@@ -26,15 +26,15 @@
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    data: {
-      type: Object,
-      default: () => {}
-    }
+<script setup lang="ts">
+import { type Skill } from '~/types/types.d'
+
+defineProps({
+  data: {
+    type: Object as () => Skill,
+    default: () => ({})
   }
-}
+})
 </script>
 
 <style scoped lang="scss">
