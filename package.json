@@ -12,10 +12,10 @@
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/tailwindcss": "^6.9.4",
+    "@nuxtjs/tailwindcss": "^6.10.1",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@pinia/nuxt": "^0.5.1",
-    "eslint": "^8.54.0",
+    "eslint": "^8.55.0",
     "gh-pages": "^6.1.0",
     "nuxt": "^3.8.2",
     "nuxt-icon": "^0.6.6",
