@@ -18,29 +18,17 @@
   </section>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { type JobsAndStudiesData } from '~/types/types.d'
 
-export default {
-  props: {
-    sectionInfo: {
-      type: Object,
-      default: () => ({})
-    }
-  },
-  computed: {
-    /**
-     * Returns the title of the section
-     */
-    title () {
-      return Object.keys(this.sectionInfo).toString()
-    },
-    /**
-     * Return an array with the info of the section
-     */
-    section (): JobsAndStudiesData {
-      return this.sectionInfo[this.title] || []
-    }
+const props = defineProps({
+  sectionInfo: {
+    type: Object,
+    default: () => ({})
   }
-}
+})
+
+const title = computed<string>(() => Object.keys(props.sectionInfo).toString() || '')
+const section = computed<JobsAndStudiesData>(() => props.sectionInfo[title.value] || {})
+
 </script>

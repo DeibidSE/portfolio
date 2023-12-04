@@ -14,22 +14,17 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { onMounted, watch } from 'vue'
 import { useThemeStore } from '~/stores/themeStore'
 
-export default {
-  data () {
-    return {
-      themeStore: useThemeStore()
-    }
-  },
-  watch: {
-    'themeStore.lightmode' (selected) {
-      this.themeStore.setTheme(selected ? 'light' : 'dark')
-    }
-  },
-  mounted () {
-    this.themeStore.initTheme()
-  }
-}
+const themeStore = useThemeStore()
+
+watch(() => themeStore.lightmode, (selected) => {
+  themeStore.setTheme(selected ? 'light' : 'dark')
+})
+
+onMounted(() => {
+  themeStore.initTheme()
+})
 </script>

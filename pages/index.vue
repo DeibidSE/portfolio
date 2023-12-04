@@ -12,32 +12,22 @@
   </main>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    sectionInfo: {
-      type: Array as () => Record<string, any>[],
-      default: () => []
-    }
-  },
-  data () {
-    return {
-      hideAlert: this.isBrowserCompatible()
-    }
-  },
-  methods: {
-    /**
-     * Checks if the browser is compatible with CSS Scroll Driven Animations
-     */
-    isBrowserCompatible (): Boolean {
-      return CSS.supports('animation-timeline: view()')
-    },
-    /**
-     * Hide the alert of compatibility
-     */
-    closeAlert () {
-      this.hideAlert = true
-    }
+<script setup lang="ts">
+
+defineProps({
+  sectionInfo: {
+    type: Array as () => Record<string, any>[],
+    default: () => []
   }
+})
+
+const hideAlert = ref(isBrowserCompatible())
+
+function isBrowserCompatible (): boolean {
+  return CSS.supports('animation-timeline: view()')
+}
+
+function closeAlert () {
+  hideAlert.value = true
 }
 </script>

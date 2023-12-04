@@ -19,15 +19,13 @@
   </ol>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    sectionData: {
-      type: Object,
-      default () {
-        return {}
-      }
+<script setup lang="ts">
+defineProps({
+  sectionData: {
+    type: Object,
+    default () {
+      return {}
     }
   }
-}
+})
 </script>

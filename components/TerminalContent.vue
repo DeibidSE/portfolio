@@ -38,27 +38,19 @@
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    terminalData: {
-      type: Object,
-      default: () => ({})
-    }
-  },
-  data () {
-    return {
-      activeIndex: 0
-    }
-  },
-  methods: {
-    /**
-     * Sets the index of the line over which the mouse hovers to change class dynamically
-     * @param index key of the line selected
-     */
-    changeActiveIndex (index: number) {
-      this.activeIndex = index
-    }
+<script setup lang="ts">
+import { type PresentationInfo } from '~/types/types.d'
+
+defineProps({
+  terminalData: {
+    type: Object as () => PresentationInfo,
+    default: () => ({})
   }
+})
+
+const activeIndex = ref(0)
+
+const changeActiveIndex = (index: number) => {
+  activeIndex.value = index
 }
 </script>

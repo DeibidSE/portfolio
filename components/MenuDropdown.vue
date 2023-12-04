@@ -17,47 +17,43 @@
   </aside>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    menuOpen: {
-      type: Boolean,
-      default: false
-    },
-    sectionList: {
-      type: Array as () => string[],
-      default: () => []
-    }
-  },
-  emits: ['menu-close'],
-  methods: {
-    /**
-     * Closes the menu emiting the event to the parent component
-     */
-    closeMenuDropdown () {
-      this.$emit('menu-close')
-    },
-    /**
-     * Scrolls to the selected section
-     * @param section id of the section selected
-     */
-    scrollToSection (section: string) {
-      // Close the menu
-      this.closeMenuDropdown()
-      // Seach the section selected by id
-      const sectionSelected = document.getElementById(`${section}`) as HTMLElement
-      const headerElement = document.getElementById('header')
-      const headerHeight = headerElement ? headerElement.offsetHeight : 0
+<script setup lang="ts">
 
-      if (sectionSelected) {
-        const { top } = sectionSelected.getBoundingClientRect()
-        // Scrolls to the section selected
-        window.scrollTo({
-          top: (top + window.scrollY) - headerHeight,
-          behavior: 'smooth'
-        })
-      }
-    }
+defineProps({
+  menuOpen: {
+    type: Boolean,
+    default: false
+  },
+  sectionList: {
+    type: Array as () => string[],
+    default: () => []
+  }
+})
+
+const emit = defineEmits(['menu-close'])
+
+const closeMenuDropdown = () => {
+  emit('menu-close')
+}
+
+const scrollToSection = (section: string) => {
+  // Cierra el menú
+  closeMenuDropdown()
+
+  // Busca la sección seleccionada por id
+  const sectionSelected = document.getElementById(`${section}`) as HTMLElement
+  const headerElement = document.getElementById('header')
+  const headerHeight = headerElement ? headerElement.offsetHeight : 0
+
+  if (sectionSelected) {
+    const { top } = sectionSelected.getBoundingClientRect()
+
+    // Desplázate a la sección seleccionada
+    window.scrollTo({
+      top: top + window.scrollY - headerHeight,
+      behavior: 'smooth'
+    })
   }
 }
+
 </script>

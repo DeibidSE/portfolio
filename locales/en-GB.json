@@ -122,7 +122,7 @@
                 ]
             },
             "This Portfolio": {
-                "image": "/images/myportfolio.webp",
+                "image": "/images/portfolio.webp",
                 "description": "I wanted to embark on a personal project during my free time, disconnecting from the professional and work environment to explore my creativity without restrictions. I started experimenting with the Nuxt framework, and that's how I created the portfolio you are currently viewing.",
                 "technologies": [
                     {

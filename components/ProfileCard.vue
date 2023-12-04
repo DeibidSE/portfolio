@@ -35,13 +35,13 @@
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    profileInfo: {
-      type: Object,
-      default: () => ({})
-    }
+<script setup lang="ts">
+import { type UserProfileCard } from '~/types/types.d'
+
+defineProps({
+  profileInfo: {
+    type: Object as () => UserProfileCard,
+    default: () => ({})
   }
-}
+})
 </script>
