@@ -15,7 +15,6 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, watch } from 'vue'
 import { useThemeStore } from '~/stores/themeStore'
 
 const themeStore = useThemeStore()

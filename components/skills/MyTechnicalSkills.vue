@@ -1,9 +1,13 @@
 <template>
-  <section :id="title" class="flex flex-col min-h-screen bg-primary-light dark:bg-primary-dark" :aria-label="title">
+  <section
+    :id="sectionId"
+    class="flex flex-col min-h-screen bg-primary-light dark:bg-primary-dark"
+    :aria-label="sectionId"
+  >
     <header class="flex w-full gap-4 px-6 py-8 md:px-16">
       <Icon name="FolderIcon" class="w-9 h-9" alt="Folder Icon" />
       <h2 class="text-4xl text-purple-600 uppercase md:font-bold font-terminal">
-        {{ title }}
+        {{ sectionTitle }}
       </h2>
     </header>
     <!-- Tabs with different categories -->
@@ -31,12 +35,13 @@
 
     <div class="min-h-screen rounded-lg bg-secondary-light dark:bg-secondary-dark" :aria-label="selectedCategory">
       <!-- Grid/list toggle -->
+      <!--
       <div class="flex justify-end mt-2 mr-2" aria-label="View Toggle">
-        <div class="inline-flex text-sm leading-none border-2 border-purple-600 rounded-full cursor-pointer bg-accent-light dark:bg-accent-dark text-dark dark:text-light">
+        <div class="inline-flex text-sm leading-none border-2 border-purple-600 rounded-full cursor-pointer bg-accent-light dark:bg-accent-dark text-dark dark:text-light shadow-inside">
           <i
             :class="{
               'inline-flex items-center px-2 py-1 md:px-4 md:py-2 transition-colors duration-300 ease-in rounded-l-full rounded-r-none focus:outline-none' : true,
-              'bg-secondary-light dark:bg-secondary-dark text-purple-600 rounded-full' : !showList
+              'bg-secondary-light dark:bg-secondary-dark text-purple-600 rounded-full shadow-xl' : !showList
             }"
             role="button"
             tabindex="0"
@@ -59,26 +64,33 @@
           </i>
         </div>
       </div>
-
+      -->
       <div :class="{'flex-wrap justify-around p-6 md:flex md:gap-8 md:p-8 lg:p-16': !showList}" aria-label="Skills Container">
         <!-- List view -->
-        <ul v-if="showList" class="flex flex-col justify-between flex-1 h-full gap-8 px-8 py-8 md:px-16" role="list">
+        <!--<ul v-if="showList" class="flex flex-col justify-between flex-1 h-full gap-8 px-8 py-8 md:px-16" role="list">
+          <AlertComponent
+            :data="alert"
+            :enable-close="false"
+            :animate-entry="false"
+            type="info"
+            class="shadow-inside"
+          />
+
           <li
             v-for="lang in sortedFilteredSkills"
             :key="lang.name"
             role="listitem"
           >
-            <TechnicalSkillsList :data="lang" />
+            <SkillsTechnicalSkillsList :data="lang" />
           </li>
-        </ul>
+        </ul>-->
         <!-- Grid view -->
         <div
           v-for="lang in filteredSkills"
-          v-else
           :key="lang.name"
           class="w-full card md:w-80 scroll-transition"
         >
-          <TechnicalSkillCard :data="lang" />
+          <SkillsTechnicalSkillCard :data="lang" />
         </div>
       </div>
     </div>
@@ -86,10 +98,14 @@
 </template>
 
 <script setup lang="ts">
-import { type Skill } from '~/types/types.d'
+// import { type Skill } from '~/types/types.d'
 
 const props = defineProps({
-  sectionInfo: {
+  sectionData: {
+    type: Object,
+    default: () => ({})
+  },
+  alert: {
     type: Object,
     default: () => ({})
   }
@@ -98,12 +114,29 @@ const props = defineProps({
 const selectedCategory = ref('/frontend')
 const showList = ref(false)
 
-const title = computed(() => Object.keys(props.sectionInfo).toString())
-const filteredSkills = computed(() => props.sectionInfo[title.value][selectedCategory.value] || [])
-const sortedFilteredSkills = computed(() => filteredSkills.value.slice().sort((a: Skill, b: Skill) => b.progress - a.progress))
-const categories = computed(() => Object.keys(props.sectionInfo[title.value]))
+// Computed property for calculating the section title
+const sectionTitle = computed<string>(() => Object.keys(props.sectionData).toString() || '')
+const sectionId = computed<string>(() => sectionTitle.value.toLowerCase().replace(/\s+/g, '-'))
 
-// Little easter egg in console.
+// Computed property for filtered skills based on the selected category
+const filteredSkills = computed(() => props.sectionData[sectionTitle.value][selectedCategory.value] || [])
+
+// Computed property for filtered and sorted skills by progress
+/*
+const sortedFilteredSkills = computed(() =>
+  [...filteredSkills.value].sort((a: Skill, b: Skill) => b.progress - a.progress)
+)
+*/
+
+// Computed property for available categories in the current section (tabs)
+const categories = computed(() => Object.keys(props.sectionData[sectionTitle.value]))
+
+// Function to handle category selection
+const selectCategory = (category: string) => {
+  selectedCategory.value = category
+}
+
+// Easter egg displayed in the console when the component is mounted
 onMounted(() => {
   console.log(`%c                                             
        ___________________________________   
@@ -120,8 +153,4 @@ onMounted(() => {
                                              `,
   'font-weight: 700;')
 })
-
-const selectCategory = (category: string) => {
-  selectedCategory.value = category
-}
 </script>

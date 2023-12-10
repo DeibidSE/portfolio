@@ -142,7 +142,20 @@
 
 ## [v1.4.2] - 27/11/2023
 
+### Added
+
+- New alert for browsers that do not support CSS Scroll animations.
+
+## [v1.4.3] - ??/12/2023
+
 ### Changes
 
-- Added a new alert for browsers that do not support CSS Scroll animations.
-- Minor changes
+- Updated to Vue 3 `<script setup>` syntax (first time using it; hope I didn't mess things up...)
+- Improved variable names for clarity
+- Refactored components folder structure
+- Extracted alerts into a reusable component
+- Various bugfixes
+
+### Added
+
+- Alert in the skills section for percentage warnings

@@ -1,5 +1,9 @@
 <template>
-  <section :id="title" class="min-h-screen bg-primary-light dark:bg-primary-dark" :aria-label="title">
+  <section
+    :id="sectionId"
+    class="min-h-screen bg-primary-light dark:bg-primary-dark"
+    :aria-label="sectionId"
+  >
     <div class="flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto">
       <div class="flex items-end justify-center w-full h-full p-5 overflow-hidden sm:p-6">
         <h1 class="w-full text-4xl font-bold text-center sm:text-5xl md:text-7xl">
@@ -31,7 +35,7 @@
 import { type PersonalIntroduction } from '~/types/types.d'
 
 const props = defineProps({
-  sectionInfo: {
+  sectionData: {
     type: Object,
     default: () => ({})
   }
@@ -42,8 +46,9 @@ const isDeleting = ref(false)
 const loopNum = ref(0)
 const typingtextElement = ref<HTMLElement | null>(null)
 
-const title = computed<string>(() => Object.keys(props.sectionInfo)[0] || '')
-const sectionData = computed<PersonalIntroduction>(() => props.sectionInfo[title.value] || {})
+const sectionTitle = computed<string>(() => Object.keys(props.sectionData).toString() || '')
+const sectionId = computed<string>(() => sectionTitle.value.toLowerCase().replace(/\s+/g, '-'))
+const sectionData = computed<PersonalIntroduction>(() => props.sectionData[sectionTitle.value] || {})
 
 onMounted(() => {
   typingtextElement.value = typingtextElement as unknown as HTMLElement

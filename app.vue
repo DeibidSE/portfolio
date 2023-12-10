@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="bg-gradient-to-r from-purple-600 to-pink-500 text-dark dark:text-light">
-    <AppHeader :section-list="sectionList" />
-    <NuxtPage :section-info="sectionInfo" />
+    <HeaderAppHeader :section-list="sectionList" />
+    <NuxtPage :selected-language-data="selectedLanguageData" />
   </div>
 </template>
 
@@ -11,18 +11,24 @@ import { type LanguageData } from '~/types/types.d'
 import espJsonData from '~/locales/es-ES.json'
 import engJsonData from '~/locales/en-GB.json'
 
+const EXCLUDED_SECTIONS = ['others']
 const languageStore = langStore()
-
-const langData = ref<LanguageData>({
+const languageData = ref<LanguageData>({
   'es-ES': espJsonData,
   'en-GB': engJsonData
 })
 
-const sectionInfo = computed(() => {
-  return langData.value[languageStore.getLanguage].filter((item: any) => Object.keys(item)[0].toLowerCase() !== 'others')
-})
+const selectedLanguageData = computed(() => languageData.value[languageStore.getLanguage])
 
+// Gets an array with all section names
 const sectionList = computed(() => {
-  return sectionInfo.value.map((item: string[]) => Object.keys(item)[0])
+  // Filter sections to exclude some
+  const filteredSections = selectedLanguageData.value.filter((section: any) => {
+    const [sectionTitle] = Object.keys(section)
+    return !EXCLUDED_SECTIONS.includes(sectionTitle)
+  })
+
+  // Map to get section names
+  return filteredSections.map((section: any) => Object.keys(section)[0])
 })
 </script>
