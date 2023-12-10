@@ -33,10 +33,10 @@ const languages = ref<Language[]>([
   { value: 'en-GB', label: 'English', icon: 'circle-flags:uk' }
 ])
 
-const store = langStore()
+const languageStore = langStore()
 
 const selectedLang = computed(() => {
-  return languages.value.find(lang => lang.value === store.language) || languages.value[0]
+  return languages.value.find(lang => lang.value === languageStore.language) || languages.value[0]
 })
 
 const toggle = () => {
@@ -44,7 +44,7 @@ const toggle = () => {
 }
 
 const selectLang = (lang: Language) => {
-  store.setLanguage(lang.value)
+  languageStore.setLanguage(lang.value)
   showDropdown.value = false
 }
 </script>

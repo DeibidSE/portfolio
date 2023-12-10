@@ -1,6 +1,6 @@
 <template>
   <!-- Dropdown menu-->
-  <MenuDropdown
+  <HeaderMenuDropdown
     :section-list="sectionList"
     :menu-open="menuOpen"
     @menu-close="toggleMenuDropdown"
@@ -35,8 +35,8 @@
         />
       </div>
       <div class="flex flex-row items-center justify-end gap-3 md:gap-6">
-        <ThemeSwitch aria-label="Switch theme" />
-        <LanguageSelector aria-label="Select language" />
+        <HeaderThemeSwitch aria-label="Switch theme" />
+        <HeaderLanguageSelector aria-label="Select language" />
       </div>
     </nav>
   </header>

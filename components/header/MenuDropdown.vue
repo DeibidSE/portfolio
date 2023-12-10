@@ -20,10 +20,7 @@
 <script setup lang="ts">
 
 defineProps({
-  menuOpen: {
-    type: Boolean,
-    default: false
-  },
+  menuOpen: Boolean,
   sectionList: {
     type: Array as () => string[],
     default: () => []
@@ -32,18 +29,15 @@ defineProps({
 
 const emit = defineEmits(['menu-close'])
 
-const closeMenuDropdown = () => {
-  emit('menu-close')
-}
+const closeMenuDropdown = () => emit('menu-close')
 
 const scrollToSection = (section: string) => {
   // Cierra el menú
   closeMenuDropdown()
 
   // Busca la sección seleccionada por id
-  const sectionSelected = document.getElementById(`${section}`) as HTMLElement
-  const headerElement = document.getElementById('header')
-  const headerHeight = headerElement ? headerElement.offsetHeight : 0
+  const sectionSelected = document.getElementById(section.replace(/\s+/g, '-')) as HTMLElement
+  const headerHeight = document.getElementById('header')?.offsetHeight || 0
 
   if (sectionSelected) {
     const { top } = sectionSelected.getBoundingClientRect()
@@ -55,5 +49,4 @@ const scrollToSection = (section: string) => {
     })
   }
 }
-
 </script>

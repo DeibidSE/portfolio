@@ -262,6 +262,16 @@
                     "progress": 85
                 },
                 {
+                    "name": "Node.js",
+                    "image": "/svg/Node.js.svg",
+                    "progress": 40
+                },
+                {
+                    "name": "Express",
+                    "image": "/svg/Express.svg",
+                    "progress": 40
+                },
+                {
                     "name": "MySQL",
                     "image": "/svg/MySQL.svg",
                     "progress": 80
@@ -310,7 +320,13 @@
         "others": {
             "alertCompatibility": {
                 "message": "This browser or browser version appears to be incompatible with the animations included in this portfolio. As a result, you will experience the static version of the site, without animations and transitions during scrolling.",
-                "linkText": "Click here for more information"
+                "links": {
+                    "label": "Click here for more information",
+                    "url": "https://caniuse.com/?search=animation-timeline"
+                }
+            },
+            "alertSkills": {
+                "message": "These progress bars, divided into four sections, represent my level of familiarity and comfort with each technology. The variation in shades of purple indicates different skill levels, with a lighter shade associated with a higher mastery. This representation is subjective and reflects my personal perception of experience and ease of use in each technology."
             }
         }
     }

@@ -1,7 +1,11 @@
 <template>
-  <section :id="title" class="flex flex-col min-h-screen gap-6 p-6 lg:grid lg:p-16 lg:grid-cols-3" :aria-label="title">
+  <section
+    :id="sectionId"
+    class="flex flex-col min-h-screen gap-6 p-6 lg:grid lg:p-16 lg:grid-cols-3"
+    :aria-label="sectionTitle"
+  >
     <div
-      v-for="(sectionData, sectionName) in section"
+      v-for="(section, sectionName) in sections"
       :key="sectionName"
       class="flex flex-col gap-8 p-8 border-2 bg-primary-light dark:bg-primary-dark rounded-xl dark:border-light border-dark scroll-transition"
       :aria-label="String(sectionName)"
@@ -13,7 +17,7 @@
         </h2>
       </header>
       <!-- Timeline -->
-      <TimeLine :section-data="sectionData" />
+      <TrajectoryTimeLine :data="section" />
     </div>
   </section>
 </template>
@@ -22,13 +26,14 @@
 import { type JobsAndStudiesData } from '~/types/types.d'
 
 const props = defineProps({
-  sectionInfo: {
+  sectionData: {
     type: Object,
     default: () => ({})
   }
 })
 
-const title = computed<string>(() => Object.keys(props.sectionInfo).toString() || '')
-const section = computed<JobsAndStudiesData>(() => props.sectionInfo[title.value] || {})
+const sectionTitle = computed<string>(() => Object.keys(props.sectionData).toString() || '')
+const sectionId = computed<string>(() => sectionTitle.value.toLowerCase().replace(/\s+/g, '-'))
+const sections = computed<JobsAndStudiesData>(() => props.sectionData[sectionTitle.value] || {})
 
 </script>

@@ -1,27 +1,38 @@
 <template>
   <main>
-    <SectionsMyIntroduction :section-info="sectionInfo[0]" />
-    <SectionsMyPresentation :section-info="sectionInfo[1]" />
-    <SectionsMyProjects :section-info="sectionInfo[2]" />
-    <SectionsMyJobsAndStudies :section-info="sectionInfo[3]" />
-    <SectionsMyTechnicalSkills :section-info="sectionInfo[4]" />
+    <IntroductionMyIntroduction :section-data="selectedLanguageData[0]" />
+    <PresentationMyPresentation :section-data="selectedLanguageData[1]" />
+    <ProjectsMyProjects :section-data="selectedLanguageData[2]" />
+    <TrajectoryMyJobsAndStudies :section-data="selectedLanguageData[3]" />
+    <SkillsMyTechnicalSkills
+      :section-data="selectedLanguageData[4]"
+      :alert="otherData('alertSkills')"
+    />
     <ScrollToTopBtn />
     <div v-if="!hideAlert" class="fixed right-0 z-20 flex w-full p-2 mx-auto top-20 place-content-center lg:w-1/2">
-      <AlertCompatibility :section-info="sectionInfo[5]['others']['alertCompatibility'] || {}" @close="closeAlert" />
+      <AlertComponent
+        :data="otherData('alertCompatibility')"
+        type="error"
+        @close="closeAlert"
+      />
     </div>
   </main>
 </template>
 
 <script setup lang="ts">
 
-defineProps({
-  sectionInfo: {
+const props = defineProps({
+  selectedLanguageData: {
     type: Array as () => Record<string, any>[],
     default: () => []
   }
 })
 
 const hideAlert = ref(isBrowserCompatible())
+
+function otherData (alert: string) {
+  return props.selectedLanguageData[5]?.others[alert] || {}
+}
 
 function isBrowserCompatible (): boolean {
   return CSS.supports('animation-timeline: view()')

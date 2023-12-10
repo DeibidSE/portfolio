@@ -10,11 +10,15 @@ export interface Language {
   icon: string;
 }
 
+/* -------------------------------------------------------- */
+
 export interface PersonalIntroduction {
   whoAmI: string;
   job: string;
   scrollDown: string;
 }
+
+/* -------------------------------------------------------- */
 
 export interface PresentationInfo {
   command: string;
@@ -41,12 +45,14 @@ export interface Curriculum {
   label: string;
 }
 
+/* -------------------------------------------------------- */
+
 export interface ProjectData {
   [job: string]: Project;
 }
 
 export interface Project {
-  text?: string
+  text?: string;
   image?: string;
   description: string;
   technologies: Technology[];
@@ -56,6 +62,8 @@ export interface Technology {
   name: string;
   url: string;
 }
+
+/* -------------------------------------------------------- */
 
 export interface JobsAndStudiesData {
   [category: string]: JobOrStudy[];
@@ -69,6 +77,8 @@ export interface JobOrStudy {
   details: string;
   website?: string;
 }
+
+/* -------------------------------------------------------- */
 
 export interface SkillData {
   [skill: string]: Skill[];
