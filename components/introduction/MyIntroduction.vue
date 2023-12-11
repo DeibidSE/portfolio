@@ -11,7 +11,7 @@
         </h1>
       </div>
       <div class="flex items-start justify-center w-full h-full p-5 overflow-hidden sm:p-6">
-        <h2 ref="typingtext" class="inline-block text-2xl font-bold text-center text-purple-600 cursor-default sm:text-4xl md:text-5xl animate-blinking-caret">
+        <h2 ref="typingtext" class="inline-block text-2xl font-bold text-center text-purple-500 cursor-default sm:text-4xl md:text-5xl animate-blinking-caret">
           {{ txt }}
         </h2>
       </div>
@@ -21,7 +21,7 @@
         <span class="w-full text-xs sm:text-sm">{{ sectionData.scrollDown || '' }}</span>
         <Icon
           name="uil:angle-double-down"
-          class="self-center text-4xl cursor-pointer hover:text-purple-600"
+          class="self-center text-4xl cursor-pointer hover:text-purple-500"
           role="button"
           aria-label="Scroll down"
           @click="scrollDown"

@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="flex flex-col justify-center w-full p-6 overflow-x-hidden overflow-y-auto duration-500 -translate-y-24 shadow-xl opacity-0 face face2 rounded-b-xl bg-primary-light dark:bg-primary-dark" :aria-label="`Details about ${data.name}`">
-    <h3 class="self-center p-4 text-4xl font-bold text-center text-purple-600">
+    <h3 class="self-center p-4 text-4xl font-bold text-center text-purple-500">
       {{ data.name || '' }}
     </h3>
     <div v-if="data.progress" class="flex flex-row items-center gap-1 p-4 shadow-inside rounded-xl">

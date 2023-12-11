@@ -7,7 +7,7 @@
     <ul class="flex flex-col justify-center flex-1 h-full gap-8 p-16">
       <li v-for="(section, key) in sectionList" :key="key">
         <span
-          class="text-2xl capitalize opacity-100 cursor-pointer md:text-4xl hover:text-purple-600"
+          class="text-2xl capitalize opacity-100 cursor-pointer md:text-4xl hover:text-purple-500"
           @click.stop="scrollToSection(section)"
         >
           {{ section }}

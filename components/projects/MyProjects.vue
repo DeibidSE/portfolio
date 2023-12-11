@@ -6,7 +6,7 @@
   >
     <header class="flex items-center gap-4">
       <Icon name="FolderIcon" class="w-9 h-9" alt="Folder Icon" />
-      <h2 class="text-4xl text-purple-600 uppercase md:font-bold font-terminal">
+      <h2 class="text-4xl text-purple-500 uppercase md:font-bold font-terminal">
         {{ sectionTitle }}
       </h2>
     </header>

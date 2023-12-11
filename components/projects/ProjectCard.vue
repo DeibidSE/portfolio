@@ -18,7 +18,7 @@
       </span>
     </div>
     <div class="flex flex-col w-full gap-6 m-auto items-left">
-      <h3 class="text-4xl font-bold tracking-wide text-center text-purple-600">
+      <h3 class="text-4xl font-bold tracking-wide text-center text-purple-500">
         {{ projectName }}
       </h3>
       <p class="self-center text-sm lg:text-lg" aria-label="Description of the project">

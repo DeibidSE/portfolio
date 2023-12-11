@@ -1,5 +1,5 @@
 <template>
-  <div v-if="data && data.image && data.progress" class="flex flex-row items-center gap-8 py-4 rounded-lg">
+  <div v-if="data && data.image && data.progress" class="flex flex-row items-center gap-8 py-4">
     <TooltipComponent :tooltip-text="data.name" position="bottom">
       <img
         :src="$config.public.BASE_URL + data.image"
@@ -13,11 +13,11 @@
       >
     </TooltipComponent>
     <div class="w-full rounded-full">
-      <div class="flex h-5 overflow-hidden text-xs rounded bg-accent-light dark:bg-accent-dark">
+      <div class="flex h-5 overflow-hidden text-xs rounded-lg bg-primary-light dark:bg-primary-dark">
         <div
           v-for="(color, index) in getColorSections"
           :key="index"
-          :class="color.class"
+          :class="[color.class, { 'rounded-r-lg': index === getColorSections.length - 1 }]"
           :style="{ width: color.width + '%' }"
         />
       </div>
@@ -37,10 +37,10 @@ const props = defineProps({
 
 const getColorSections = computed(() => {
   const levels = [
-    { class: 'bg-purple-700', width: 25 },
-    { class: 'bg-purple-600', width: 25 },
-    { class: 'bg-purple-500', width: 25 },
-    { class: 'bg-purple-400', width: 25 }
+    { class: 'bg-red-600', width: 25 },
+    { class: 'bg-orange-500', width: 25 },
+    { class: 'bg-yellow-400', width: 25 },
+    { class: 'bg-green-500', width: 25 }
   ]
 
   const filledSections = Math.floor(props.data.progress / 25)

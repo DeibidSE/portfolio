@@ -23,7 +23,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 :aria-label="`Link to my ${info.name}`"
-                class="flex-grow text-2xl text-gray-400 hover:text-purple-600"
+                class="flex-grow text-2xl text-gray-400 hover:text-purple-500"
               >
                 <Icon :name="info.icon" class="transition-transform w-7 h-7 hover:scale-150" role="link" />
               </a>

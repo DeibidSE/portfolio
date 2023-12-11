@@ -20,19 +20,16 @@ module.exports = {
       },
       backgroundColor: {
         // Used for backgrounds (darker than secondary)
-        'primary-dark': '#1C1B1F',
+        'primary-dark': '#1E2127',
         'primary-light': '#FFFBFF',
         // Used for surfaces like cards (lighter than primary)
-        'secondary-dark': '#26242A',
-        'secondary-light': '#F9F0FD',
-        // Used for secondary surfaces like unused tabs or hover
-        'accent-dark': '#633B48',
-        'accent-light': '#FFD9DD'
+        'secondary-dark': '#282C34',
+        'secondary-light': '#F9F0FD'
       },
       colors: {
         // Mainly used for fonts
-        dark: '#1C1B1F',
-        light: '#E6E1E5'
+        dark: '#1E2127',
+        light: '#FFFBFF'
       },
       // Custom animations
       keyframes: {

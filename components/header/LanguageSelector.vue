@@ -7,11 +7,11 @@
       <Icon name="uil:angle-down" class="w-4 h-4 ml-1 md:w-5 md:h-5" alt="Down arrow icon" />
     </div>
     <transition name="dropdown-content">
-      <div v-if="showDropdown" class="absolute right-0 mt-2 origin-top-right border-2 border-purple-600 rounded-lg md:w-48 md:py-2 bg-secondary-light dark:bg-secondary-dark">
+      <div v-if="showDropdown" class="absolute right-0 mt-2 origin-top-right border-2 border-purple-500 rounded-lg md:w-48 md:py-2 bg-secondary-light dark:bg-secondary-dark">
         <label
           v-for="lang in languages"
           :key="lang.value"
-          class="flex items-center gap-4 p-4 hover:bg-accent-light dark:hover:bg-accent-dark"
+          class="flex items-center gap-4 p-4 hover:bg-purple-200 dark:hover:bg-purple-500"
           @click.stop="selectLang(lang)"
         >
           <Icon :name="lang.icon" alt="Language flag" />
