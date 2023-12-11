@@ -26,7 +26,7 @@
       <div class="flex justify-center">
         <Icon
           name="ph:list-bold"
-          class="w-5 h-5 cursor-pointer fill-current md:w-6 md:h-6 hover:text-purple-600"
+          class="w-5 h-5 cursor-pointer fill-current md:w-6 md:h-6 hover:text-purple-500"
           :class="{ 'text-purple-700' : menuOpen }"
           role="button"
           aria-label="Toggle menu"

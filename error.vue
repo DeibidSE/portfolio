@@ -2,7 +2,7 @@
   <main class="grid min-h-screen px-6 py-24 bg-gradient-to-r from-purple-600 to-pink-500 place-items-center sm:py-32 lg:px-8">
     <div class="p-12 text-center border-2 rounded-lg md:p-16 border-dark bg-secondary-light">
       <p class="font-semibold tracking-wide text-purple-600 text-9xl">
-        404
+        Oops!
       </p>
       <h1 class="mt-4 text-3xl font-bold tracking-tight text-dark sm:text-5xl">
         Page not found

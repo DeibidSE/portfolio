@@ -3,16 +3,17 @@
     v-if="data"
     :class="{
       'flex items-center p-4 bg-transparent backdrop-blur-xl' : true,
-      'text-red-600 border-2 border-red-600 rounded-lg dark:border-red-400 dark:text-red-400' : type === 'error',
-      'text-yellow-600 border-2 border-yellow-600 rounded-lg dark:border-yellow-300 dark:text-yellow-300' : type === 'warning',
-      'text-purple-600 border-2 border-purple-600 rounded-lg dark:border-purple-400 dark:text-purple-400' : type === 'info',
+      'text-red-600 border-2 border-red-600 rounded-lg dark:border-red-500 dark:text-red-500' : type === 'error',
+      'text-yellow-600 border-2 border-yellow-600 rounded-lg dark:border-yellow-400 dark:text-yellow-400' : type === 'warning',
+      'text-purple-500 border-2 border-purple-500 rounded-lg dark:border-purple-400 dark:text-purple-400' : type === 'info',
       'entrance-anim': animateEntry
     }"
     role="alert"
     aria-live="assertive"
   >
     <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+      <path v-if="type === 'info'" d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+      <path v-else d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM10 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm1-4a1 1 0 0 1-2 0V6a1 1 0 0 1 2 0v5Z" />
     </svg>
     <div class="text-xs font-medium sm:text-sm ms-3 me-4">
       {{ data.message || '' }}
@@ -51,7 +52,7 @@ defineProps({
   },
   type: {
     type: String,
-    default: 'warning'
+    default: 'info'
   }
 })
 

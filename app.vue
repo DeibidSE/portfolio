@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gradient-to-r from-purple-600 to-pink-500 text-dark dark:text-light">
+  <div id="app" class="bg-gradient-to-r from-purple-500 to-pink-500 text-dark dark:text-light">
     <HeaderAppHeader :section-list="sectionList" />
     <NuxtPage :selected-language-data="selectedLanguageData" />
   </div>

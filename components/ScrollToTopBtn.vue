@@ -1,7 +1,7 @@
 <template>
   <button
     v-if="showScrollToTop"
-    class="fixed z-40 p-2 bg-purple-600 rounded-full shadow-lg bottom-4 right-4"
+    class="fixed z-40 p-2 bg-purple-500 rounded-full shadow-lg bottom-4 right-4"
     aria-label="Scroll to top of the page"
     @click="scrollToTop"
   >

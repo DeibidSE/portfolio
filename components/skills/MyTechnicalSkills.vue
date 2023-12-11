@@ -6,7 +6,7 @@
   >
     <header class="flex w-full gap-4 px-6 py-8 md:px-16">
       <Icon name="FolderIcon" class="w-9 h-9" alt="Folder Icon" />
-      <h2 class="text-4xl text-purple-600 uppercase md:font-bold font-terminal">
+      <h2 class="text-4xl text-purple-500 uppercase md:font-bold font-terminal">
         {{ sectionTitle }}
       </h2>
     </header>
@@ -19,7 +19,7 @@
           'flex-1 md:p-8 p-2 py-8 text-center cursor-pointer rounded-t-xl',
           selectedCategory === category
             ? 'border-x-2 border-t-2 border-x-purple-400 border-t-purple-400 bg-secondary-light dark:bg-secondary-dark shadow-top'
-            : 'bg-accent-light dark:bg-accent-dark'
+            : 'bg-purple-200 dark:bg-purple-600'
         ]"
         role="tab"
         :aria-selected="selectedCategory === category"
@@ -35,13 +35,12 @@
 
     <div class="min-h-screen rounded-lg bg-secondary-light dark:bg-secondary-dark" :aria-label="selectedCategory">
       <!-- Grid/list toggle -->
-      <!--
       <div class="flex justify-end mt-2 mr-2" aria-label="View Toggle">
-        <div class="inline-flex text-sm leading-none border-2 border-purple-600 rounded-full cursor-pointer bg-accent-light dark:bg-accent-dark text-dark dark:text-light shadow-inside">
+        <div class="inline-flex text-sm leading-none bg-purple-200 border-2 border-purple-500 rounded-full cursor-pointer dark:bg-purple-500 text-dark dark:text-light shadow-inside">
           <i
             :class="{
               'inline-flex items-center px-2 py-1 md:px-4 md:py-2 transition-colors duration-300 ease-in rounded-l-full rounded-r-none focus:outline-none' : true,
-              'bg-secondary-light dark:bg-secondary-dark text-purple-600 rounded-full shadow-xl' : !showList
+              'bg-secondary-light dark:bg-secondary-dark text-purple-500 rounded-full shadow-xl' : !showList
             }"
             role="button"
             tabindex="0"
@@ -53,7 +52,7 @@
           <i
             :class="{
               'inline-flex items-center px-2 py-1 md:px-4 md:py-2 transition-colors duration-300 ease-in rounded-r-full rounded-l-none focus:outline-none' : true,
-              'bg-secondary-light dark:bg-secondary-dark text-purple-600 rounded-full': showList
+              'bg-secondary-light dark:bg-secondary-dark text-purple-500 rounded-full': showList
             }"
             role="button"
             tabindex="0"
@@ -64,10 +63,9 @@
           </i>
         </div>
       </div>
-      -->
       <div :class="{'flex-wrap justify-around p-6 md:flex md:gap-8 md:p-8 lg:p-16': !showList}" aria-label="Skills Container">
         <!-- List view -->
-        <!--<ul v-if="showList" class="flex flex-col justify-between flex-1 h-full gap-8 px-8 py-8 md:px-16" role="list">
+        <ul v-if="showList" class="flex flex-col justify-between flex-1 h-full gap-8 px-8 py-8 md:px-16" role="list">
           <AlertComponent
             :data="alert"
             :enable-close="false"
@@ -83,10 +81,11 @@
           >
             <SkillsTechnicalSkillsList :data="lang" />
           </li>
-        </ul>-->
+        </ul>
         <!-- Grid view -->
         <div
           v-for="lang in filteredSkills"
+          v-else
           :key="lang.name"
           class="w-full card md:w-80 scroll-transition"
         >
@@ -98,7 +97,7 @@
 </template>
 
 <script setup lang="ts">
-// import { type Skill } from '~/types/types.d'
+import { type Skill } from '~/types/types.d'
 
 const props = defineProps({
   sectionData: {
@@ -122,11 +121,9 @@ const sectionId = computed<string>(() => sectionTitle.value.toLowerCase().replac
 const filteredSkills = computed(() => props.sectionData[sectionTitle.value][selectedCategory.value] || [])
 
 // Computed property for filtered and sorted skills by progress
-/*
 const sortedFilteredSkills = computed(() =>
   [...filteredSkills.value].sort((a: Skill, b: Skill) => b.progress - a.progress)
 )
-*/
 
 // Computed property for available categories in the current section (tabs)
 const categories = computed(() => Object.keys(props.sectionData[sectionTitle.value]))

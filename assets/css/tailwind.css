@@ -67,13 +67,3 @@
     font-family: "coolvetica", system-ui, sans-serif;
   }
 }
-
-@layer components {
-  .bg-accent-dark {
-    background-color: #383838;
-  }
-
-  .bg-accent-light {
-    background-color: #e0e0e0;
-  }
-}
