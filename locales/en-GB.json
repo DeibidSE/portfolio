@@ -326,7 +326,7 @@
                 }
             },
             "alertSkills": {
-                "message": "These progress bars, divided into four sections, represent my level of familiarity and comfort with each technology. The variation in shades of purple indicates different skill levels, with a lighter shade associated with a higher mastery. This representation is subjective and reflects my personal perception of experience and ease of use in each technology."
+                "message": "These progress bars represent my subjective level with different technologies: red (lower mastery) to green (higher mastery). They kind of reflect my experience and how easily I use each technology."
             }
         }
     }

@@ -326,7 +326,7 @@
                 }
             },
             "alertSkills": {
-                "message": "Estas barras de progreso, divididas en cuatro partes, representan mi nivel de familiaridad y comodidad con cada tecnología. La variación de tonos de morado indica diferentes niveles de habilidad, siendo un tono más claro asociado con un mayor dominio. Esta representación es subjetiva y refleja mi percepción personal de la experiencia y facilidad de uso en cada tecnología."
+                "message": "Estas barras representan mi nivel subjetivo con las diferentes tecnologías: rojo (menos dominio) a verde (más dominio). Sirven un poco para reflejar mi experiencia y la facilidad con la que utilizo cada tecnología."
             }
         }
     }
