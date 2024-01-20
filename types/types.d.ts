@@ -23,6 +23,7 @@ export interface PersonalIntroduction {
 export interface PresentationInfo {
   command: string;
   title: string;
+  availability: string;
   content: string[];
   profileCard: UserProfileCard;
   cv: Curriculum[];

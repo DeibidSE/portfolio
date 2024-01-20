@@ -4,7 +4,7 @@
     <PageDivider />
     <PresentationMyPresentation :section-data="selectedLanguageData[1]" />
     <PageDivider :top="true" />
-    <ProjectsMyProjects :section-data="selectedLanguageData[2]" />
+    <ProjectsMyProjects :section-data="selectedLanguageData[2]" :alert="otherData('projectsAlert')" />
     <PageDivider />
     <TrajectoryMyJobsAndStudies :section-data="selectedLanguageData[3]" />
     <PageDivider :top="true" />
@@ -12,7 +12,7 @@
       :section-data="selectedLanguageData[4]"
       :alert="otherData('alertSkills')"
     />
-    <ScrollToTopBtn />
+    <ScrollToTopBtn :btn-data="otherData('backToTopButton')" />
     <div v-if="!hideAlert" class="fixed right-0 z-20 flex w-full p-2 mx-auto top-20 place-content-center lg:w-1/2">
       <AlertComponent
         :data="otherData('alertCompatibility')"

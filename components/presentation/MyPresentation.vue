@@ -1,17 +1,14 @@
 <template>
   <section
     :id="sectionId"
-    class="flex flex-col min-h-screen gap-4 p-6 lg:flex-row lg:gap-10 lg:p-16"
+    class="flex flex-col min-h-screen gap-4 p-6 lg:flex-row lg:gap-10 lg:px-32 lg:py-16"
     role="region"
     :aria-label="sectionId"
   >
-    <div class="flex-grow lg:w-2/3 scroll-transition">
+    <div class="flex self-center justify-center w-full h-full scroll-transition">
       <PresentationTerminalFrame>
         <PresentationTerminalContent :terminal-data="section" />
       </PresentationTerminalFrame>
-    </div>
-    <div class="self-center lg:w-1/3 scroll-transition">
-      <PresentationProfileCard :profile-info="section.profileCard" />
     </div>
   </section>
 </template>

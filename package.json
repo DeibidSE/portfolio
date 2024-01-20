@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "portfolio-deibidse",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -12,15 +12,15 @@
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/tailwindcss": "^6.10.1",
+    "@nuxtjs/tailwindcss": "^6.10.4",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@pinia/nuxt": "^0.5.1",
-    "eslint": "^8.55.0",
-    "gh-pages": "^6.1.0",
-    "nuxt": "^3.8.2",
-    "nuxt-icon": "^0.6.6",
-    "sass": "^1.69.5",
-    "sass-loader": "^13.3.2"
+    "eslint": "^8.56.0",
+    "gh-pages": "^6.1.1",
+    "nuxt": "^3.9.3",
+    "nuxt-icon": "^0.6.8",
+    "sass": "^1.70.0",
+    "sass-loader": "^14.0.0"
   },
   "overrides": {
     "vue": "latest"

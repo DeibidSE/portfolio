@@ -160,3 +160,25 @@
 
 - Reusable alert component
 - SVG dividers between sections
+
+## [v1.6.0] - 20/01/2024
+
+### Changes
+
+- Redesign of the "Presentation" section
+- Redesigned "back to top" button
+- Redesigned switch component to switch between dark/light modes
+- Improved animations and transitions
+- Upgrade to Nuxt 3.9.3
+- Reduced profile photo size
+- Default language is now Spanish instead of English
+
+### Added
+
+- Scroll animation to the navbar
+- New alerts
+- New footer and badge components.
+
+### Removed
+
+- Removed unfinished/redundant projects

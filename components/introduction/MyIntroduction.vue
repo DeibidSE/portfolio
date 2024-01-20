@@ -7,12 +7,12 @@
     <div class="flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto">
       <div class="flex items-end justify-center w-full h-full p-5 overflow-hidden sm:p-6">
         <h1 class="w-full text-4xl font-bold text-center sm:text-5xl md:text-7xl">
-          {{ sectionData.whoAmI }}
+          {{ sectionData.whoAmI || '' }}
         </h1>
       </div>
       <div class="flex items-start justify-center w-full h-full p-5 overflow-hidden sm:p-6">
         <h2 ref="typingtext" class="inline-block text-2xl font-bold text-center text-purple-500 cursor-default sm:text-4xl md:text-5xl animate-blinking-caret">
-          {{ txt }}
+          {{ txt || '' }}
         </h2>
       </div>
     </div>

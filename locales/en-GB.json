@@ -10,8 +10,9 @@
         "presentation": {
             "command": "./about_me.sh",
             "title": "WELCOME TO MY PORTFOLIO",
+            "availability": "Currently Employed",
             "content": [
-                "🧑🏻‍💻 Hi there! I'm David, a passionate Full Stack Web Developer with over 2 years of experience in the exciting world of programming.",
+                "🧑🏻‍💻 Hi there! I'm David, a passionate Full Stack Web Developer with almost 3 years of experience in the exciting world of programming.",
                 "🚀 Throughout my brief journey, I've gained extensive knowledge in web application development and I'm always seeking new ways to breathe life into creative and innovative ideas. Programming has become my second language, and I enjoy facing daily challenges that allow me to grow professionally and push my limits.",
                 "🚧 Although my portfolio is still in development, mainly due to my focus on professional projects, these experiences have allowed me to face significant challenges and learn from real-world situations.",
                 "🔝  I am proud of everything I have learned and built so far, but also excited for future opportunities that will allow me to expand my portfolio with more diverse and creative projects, thus showcasing my ability to tackle a wide range of technology solutions.",
@@ -31,7 +32,7 @@
                         "url": "https://github.com/DeibidSE"
                     },
                     {
-                        "name": "Email",
+                        "name": "davidsimon98@outlook.com",
                         "icon": "uil:envelope",
                         "url": "mailto:davidsimon98@outlook.com"
                     }
@@ -55,11 +56,7 @@
         "projects": {
             "My daily Job": {
                 "image": "/images/verify.svg",
-                "description": "Here, I dedicate almost 100% of my time to programming, focusing specifically on web projects related to KYC (Know Your Customer) requirements within the financial sector. While I can't share specific details due to confidentiality agreements with the company, I can mention that my involvement covers a wide range of products developed using various technologies. I've worked on both the frontend and backend, participating in Rest API development, process automation, advanced reporting creation, and the implementation of agile methodologies, among other aspects."
-            },
-            "ddabetic": {
-                "image": "/images/ddabetic.webp",
-                "description": "Small project that still under development and I started during a summer vacation using Laravel and Vue 3. This web application aimed to manage and improve diabetes control.",
+                "description": "Here, I dedicate almost 100% of my time to programming, focusing specifically on web projects related to KYC (Know Your Customer) requirements within the financial sector. While I can't share specific details due to confidentiality agreements with the company, I can mention that my involvement covers a wide range of products developed using various technologies. I've worked on both the frontend and backend, participating in Rest API development, process automation, advanced reporting creation, and the implementation of agile methodologies, among other aspects.",
                 "technologies": [
                     {
                         "name": "Laravel",
@@ -74,6 +71,14 @@
                         "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
                     },
                     {
+                        "name": "TypeScript",
+                        "url": "https://www.typescriptlang.org/"
+                    },
+                    {
+                        "name": "CSS",
+                        "url": "https://developer.mozilla.org/es/docs/Web/CSS"
+                    },
+                    {
                         "name": "Sass",
                         "url": "https://sass-lang.com/"
                     },
@@ -86,8 +91,16 @@
                         "url": "https://www.mysql.com/"
                     },
                     {
-                        "name": "Laragon",
+                        "name": "PostgreSQL",
+                        "url": "https://www.postgresql.org/"
+                    },
+                    {
+                        "name": "Docker",
                         "url": "https://laragon.org/index.html"
+                    },
+                    {
+                        "name": "Vagrant",
+                        "url": "https://www.vagrantup.com/"
                     }
                 ]
             },
@@ -120,28 +133,6 @@
                         "url": "https://tailwindcss.com/"
                     }
                 ]
-            },
-            "This Portfolio": {
-                "image": "/images/portfolio.webp",
-                "description": "I wanted to embark on a personal project during my free time, disconnecting from the professional and work environment to explore my creativity without restrictions. I started experimenting with the Nuxt framework, and that's how I created the portfolio you are currently viewing.",
-                "technologies": [
-                    {
-                        "name": "Nuxt.js",
-                        "url": "https://nuxt.com/"
-                    },
-                    {
-                        "name": "TypeScript",
-                        "url": "https://www.typescriptlang.org/"
-                    },
-                    {
-                        "name": "Sass",
-                        "url": "https://sass-lang.com/"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "url": "https://tailwindcss.com/"
-                    }
-                ]
             }
         }
     },
@@ -150,7 +141,7 @@
             "/jobs": [
                 {
                     "title": "Full Stack Web Developer at Simple KYC",
-                    "startDate": "Feb 2021",
+                    "startDate": "February 2021",
                     "endDate": "Present",
                     "location": "Remote",
                     "details": "This is my current job where I have learned a wide range of web development skills and technologies.",
@@ -158,8 +149,8 @@
                 },
                 {
                     "title": "Dominama Análisis Tecnológicos S.L.",
-                    "startDate": "Oct 2020",
-                    "endDate": "Dec 2020",
+                    "startDate": "October 2020",
+                    "endDate": "December 2020",
                     "location": "Remote",
                     "details": "My first contact with the working world, here I completed the 3-month internship required by the superior degree. Unfortunately, due to the COVID-19 pandemic, these internships had to be done 100% remotely.",
                     "website": "http://www.dominama.es/"
@@ -168,8 +159,8 @@
             "/studies": [
                 {
                     "title": "Superior Degree in Multi-Platform Applications Development",
-                    "startDate": "Sept 2018",
-                    "endDate": "Jun 2020",
+                    "startDate": "September 2018",
+                    "endDate": "June 2020",
                     "location": "Madrid",
                     "details": "Here I began my programming studies: Java, Python, SQL, Linux... a world of learning and growth with dedicated teachers and colleagues. These years undoubtedly marked an unforgettable time in my educational journey."
                 },
@@ -262,6 +253,16 @@
                     "progress": 85
                 },
                 {
+                    "name": "MySQL",
+                    "image": "/svg/MySQL.svg",
+                    "progress": 80
+                },
+                {
+                    "name": "PostgreSQL",
+                    "image": "/svg/PostgreSQL.svg",
+                    "progress": 70
+                },
+                {
                     "name": "Node.js",
                     "image": "/svg/Node.js.svg",
                     "progress": 40
@@ -270,11 +271,6 @@
                     "name": "Express",
                     "image": "/svg/Express.svg",
                     "progress": 40
-                },
-                {
-                    "name": "MySQL",
-                    "image": "/svg/MySQL.svg",
-                    "progress": 80
                 },
                 {
                     "name": "Java",
@@ -318,6 +314,12 @@
     },
     {
         "others": {
+            "backToTopButton": {
+                "label": "Back to Top"
+            },
+            "projectsAlert": {
+                "message": "I have few personal projects (at least that deserve to be shown here) because I love to balance my life. I work hard, but I also enjoy my free time to unwind and explore other things that I'm passionate about beyond coding. For me, this is crucial to stay fresh and creative. Although you won't find many personal projects in this portfolio, please know that everything I start, I approach with maximum effort, dedication, and care."
+            },
             "alertCompatibility": {
                 "message": "This browser or browser version appears to be incompatible with the animations included in this portfolio. As a result, you will experience the static version of the site, without animations and transitions during scrolling.",
                 "links": {

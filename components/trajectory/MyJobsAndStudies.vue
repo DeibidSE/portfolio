@@ -7,13 +7,13 @@
     <div
       v-for="(section, sectionName) in sections"
       :key="sectionName"
-      class="flex flex-col gap-8 p-8 border-2 bg-primary-light dark:bg-primary-dark rounded-xl dark:border-light border-dark scroll-transition"
+      class="flex flex-col gap-8 p-8 border-4 shadow-xl border-dark dark:border-light bg-primary-light dark:bg-primary-dark rounded-xl scroll-transition"
       :aria-label="String(sectionName)"
     >
       <header class="flex w-full gap-4">
         <Icon name="FolderIcon" class="w-9 h-9" alt="Folder Icon" />
         <h2 class="text-4xl font-bold text-purple-500 uppercase font-terminal">
-          {{ sectionName }}
+          {{ sectionName || '' }}
         </h2>
       </header>
       <!-- Timeline -->

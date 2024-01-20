@@ -1,7 +1,7 @@
 <template>
   <aside
-    class="fixed top-0 z-40 w-full h-full transition-transform duration-500 transform shadow-lg backdrop-blur-xl"
-    :class="{ 'translate-y-0': menuOpen, '-translate-y-full': !menuOpen }"
+    class="fixed left-0 z-40 w-full h-full transition-transform duration-500 transform shadow-lg bg-secondary-light dark:bg-secondary-dark"
+    :class="{ 'translate-x-0': menuOpen, '-translate-x-full': !menuOpen }"
     aria-label="Navigation menu"
   >
     <ul class="flex flex-col justify-center flex-1 h-full gap-8 p-16">
@@ -10,7 +10,7 @@
           class="text-2xl capitalize opacity-100 cursor-pointer md:text-4xl hover:text-purple-500"
           @click.stop="scrollToSection(section)"
         >
-          {{ section }}
+          {{ section || '' }}
         </span>
       </li>
     </ul>
@@ -32,21 +32,25 @@ const emit = defineEmits(['menu-close'])
 const closeMenuDropdown = () => emit('menu-close')
 
 const scrollToSection = (section: string) => {
-  // Cierra el menú
+  // Closes the menu
   closeMenuDropdown()
 
-  // Busca la sección seleccionada por id
-  const sectionSelected = document.getElementById(section.replace(/\s+/g, '-')) as HTMLElement
-  const headerHeight = document.getElementById('header')?.offsetHeight || 0
+  if (section) {
+    // Search the section by id
+    const sectionSelected = document.getElementById(section.replace(/\s+/g, '-')) as HTMLElement
+    const headerHeight = document.getElementById('header')?.offsetHeight || 0
 
-  if (sectionSelected) {
-    const { top } = sectionSelected.getBoundingClientRect()
+    if (sectionSelected) {
+      const { top } = sectionSelected.getBoundingClientRect()
 
-    // Desplázate a la sección seleccionada
-    window.scrollTo({
-      top: top + window.scrollY - headerHeight,
-      behavior: 'smooth'
-    })
+      // Scrolls to the selected section
+      window.scrollTo({
+        top: top + window.scrollY - headerHeight,
+        behavior: 'smooth'
+      })
+    }
+  } else {
+    console.log(`Section ${section} not found`)
   }
 }
 </script>

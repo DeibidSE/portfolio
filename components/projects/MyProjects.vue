@@ -7,15 +7,24 @@
     <header class="flex items-center gap-4">
       <Icon name="FolderIcon" class="w-9 h-9" alt="Folder Icon" />
       <h2 class="text-4xl text-purple-500 uppercase md:font-bold font-terminal">
-        {{ sectionTitle }}
+        {{ sectionTitle || '' }}
       </h2>
     </header>
-    <ProjectsProjectCard
-      v-for="(project, index) in projects"
-      :key="index"
-      :project-name="index.toString()"
-      :project-data="project"
+    <AlertComponent
+      :data="alert"
+      :enable-close="false"
+      :animate-entry="false"
+      type="info"
+      class="scroll-transition"
     />
+    <div class="flex flex-col gap-8 lg:gap-16 lg:grid lg:grid-cols-2">
+      <ProjectsProjectCard
+        v-for="(project, index) in projects"
+        :key="index"
+        :project-name="index.toString()"
+        :project-data="project"
+      />
+    </div>
   </section>
 </template>
 
@@ -24,6 +33,10 @@ import { type ProjectData } from '~/types/types.d'
 
 const props = defineProps({
   sectionData: {
+    type: Object,
+    default: () => ({})
+  },
+  alert: {
     type: Object,
     default: () => ({})
   }

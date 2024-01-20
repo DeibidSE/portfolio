@@ -32,28 +32,6 @@
   }
 }
 
-@keyframes reveal {
-  from {
-    opacity: 0;
-    translate: 0 500px;
-  }
-  50% {
-    opacity: .1;
-  }
-
-  to {
-    opacity: 1;
-    translate: 0 0;
-  }
-  
-}
-
-.scroll-reveal {
-  animation: linear reveal both;
-  animation-range: entry 15% cover 40%;
-  animation-timeline: view();
-}
-
 .scroll-transition {
   view-timeline-name: --scroll-driven-animations;
   animation-name: show;

@@ -7,7 +7,7 @@
     <header class="flex w-full gap-4 px-6 py-8 md:px-16">
       <Icon name="FolderIcon" class="w-9 h-9" alt="Folder Icon" />
       <h2 class="text-4xl text-purple-500 uppercase md:font-bold font-terminal">
-        {{ sectionTitle }}
+        {{ sectionTitle || '' }}
       </h2>
     </header>
     <!-- Tabs with different categories -->
@@ -18,8 +18,8 @@
         :class="[
           'flex-1 md:p-8 p-2 py-8 text-center cursor-pointer rounded-t-xl',
           selectedCategory === category
-            ? 'border-x-2 border-t-2 border-x-purple-400 border-t-purple-400 bg-secondary-light dark:bg-secondary-dark shadow-top'
-            : 'bg-purple-200 dark:bg-purple-600'
+            ? 'border-x-4 border-t-4 border-x-purple-400 border-t-purple-400 bg-secondary-light dark:bg-secondary-dark shadow-top'
+            : 'bg-purple-200 hover:bg-purple-300 dark:bg-purple-600 hover:dark:bg-purple-500'
         ]"
         role="tab"
         :aria-selected="selectedCategory === category"
@@ -28,15 +28,15 @@
       >
         <div class="flex items-center justify-center gap-2">
           <Icon name="FolderIcon" class="w-3 h-3 md:w-5 md:h-5" />
-          <span class="text-xs uppercase md:text-xl font-terminal">{{ category }}</span>
+          <span class="text-xs uppercase md:text-xl font-terminal">{{ category || '' }}</span>
         </div>
       </li>
     </ul>
 
-    <div class="min-h-screen rounded-lg bg-secondary-light dark:bg-secondary-dark" :aria-label="selectedCategory">
+    <div class="min-h-screen bg-secondary-light dark:bg-secondary-dark" :aria-label="selectedCategory">
       <!-- Grid/list toggle -->
       <div class="flex justify-end mt-2 mr-2" aria-label="View Toggle">
-        <div class="inline-flex text-sm leading-none bg-purple-200 border-2 border-purple-500 rounded-full cursor-pointer dark:bg-purple-500 text-dark dark:text-light shadow-inside">
+        <div class="inline-flex text-sm leading-none bg-purple-200 border-2 border-purple-400 rounded-full cursor-pointer hover:bg-purple-300 dark:bg-purple-600 hover:dark:bg-purple-500 text-dark dark:text-light shadow-inside">
           <i
             :class="{
               'inline-flex items-center px-2 py-1 md:px-4 md:py-2 transition-colors duration-300 ease-in rounded-l-full rounded-r-none focus:outline-none' : true,
