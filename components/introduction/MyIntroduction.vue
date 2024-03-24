@@ -19,8 +19,8 @@
     <div class="absolute bottom-0 w-full py-4 text-center">
       <div class="flex flex-col animate-bounce text-dark dark:text-light">
         <span class="w-full text-xs sm:text-sm">{{ sectionData.scrollDown || '' }}</span>
-        <Icon
-          name="uil:angle-double-down"
+        <nuxt-icon
+          name="angle-double-down"
           class="self-center text-4xl cursor-pointer hover:text-purple-500"
           role="button"
           aria-label="Scroll down"

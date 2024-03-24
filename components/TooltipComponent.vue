@@ -24,7 +24,7 @@ defineProps({
 })
 </script>
 
-<style scoped lang="scss">
+<style scoped>
   span {
     & > * {
       @apply inline-block;

@@ -4,8 +4,8 @@
     class="flex flex-col min-h-screen bg-primary-light dark:bg-primary-dark"
     :aria-label="sectionId"
   >
-    <header class="flex w-full gap-4 px-6 py-8 md:px-16">
-      <Icon name="FolderIcon" class="w-9 h-9" alt="Folder Icon" />
+    <header class="flex items-center w-full gap-4 px-6 py-8 md:px-16">
+      <nuxt-icon name="folder" filled class="text-3xl" alt="Folder Icon" />
       <h2 class="text-4xl text-purple-500 uppercase md:font-bold font-terminal">
         {{ sectionTitle || '' }}
       </h2>
@@ -27,7 +27,7 @@
         @click="selectCategory(category)"
       >
         <div class="flex items-center justify-center gap-2">
-          <Icon name="FolderIcon" class="w-3 h-3 md:w-5 md:h-5" />
+          <nuxt-icon name="folder" filled class="text-xl" />
           <span class="text-xs uppercase md:text-xl font-terminal">{{ category || '' }}</span>
         </div>
       </li>
@@ -47,7 +47,7 @@
             aria-label="Grid View"
             @click="showList = false"
           >
-            <Icon name="uil:th" class="w-3 h-3 md:w-4 md:h-4" />
+            <nuxt-icon name="th" class="text-lg" />
           </i>
           <i
             :class="{
@@ -59,7 +59,7 @@
             aria-label="List View"
             @click="showList = true"
           >
-            <Icon name="uil:list-ul" class="w-3 h-3 md:w-4 md:h-4" />
+            <nuxt-icon name="list-ul" class="text-lg" />
           </i>
         </div>
       </div>
@@ -87,7 +87,7 @@
           v-for="lang in filteredSkills"
           v-else
           :key="lang.name"
-          class="w-full card md:w-80 scroll-transition"
+          class="w-full card md:w-80"
         >
           <SkillsTechnicalSkillCard :data="lang" />
         </div>

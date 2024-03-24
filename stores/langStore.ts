@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 export const langStore = defineStore('lang', {
   state: () => ({
-    language: 'es-ES'
+    language: 'es'
   }),
   getters: {
     getLanguage: state => state.language

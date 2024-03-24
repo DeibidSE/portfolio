@@ -11,7 +11,7 @@
         Sorry, we couldn't find the page you're looking for.
       </p>
       <div class="flex items-center justify-center mt-10 gap-x-6">
-        <a :href="$config.public.BASE_URL" class="rounded-md bg-purple-600 px-3.5 py-2.5 text-light shadow-xl hover:bg-purple-700" role="button">
+        <a :href="`${$config.public.BASE_URL}`" class="rounded-md bg-purple-600 px-3.5 py-2.5 text-light shadow-xl hover:bg-purple-700" role="button">
           Go back to the main page
         </a>
       </div>

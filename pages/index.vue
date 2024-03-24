@@ -4,7 +4,7 @@
     <PageDivider />
     <PresentationMyPresentation :section-data="selectedLanguageData[1]" />
     <PageDivider :top="true" />
-    <ProjectsMyProjects :section-data="selectedLanguageData[2]" :alert="otherData('projectsAlert')" />
+    <ProjectsMyProjects :section-data="selectedLanguageData[2]" />
     <PageDivider />
     <TrajectoryMyJobsAndStudies :section-data="selectedLanguageData[3]" />
     <PageDivider :top="true" />

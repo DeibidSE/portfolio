@@ -19,21 +19,21 @@
                 "😀 ¡Muchas gracias por visitar mi sitio web y por ser parte de mi viaje de crecimiento y desarrollo profesional!"
             ],
             "profileCard": {
-                "imagePath": "/images/david.webp",
+                "imagePath": "images/david.webp",
                 "socialLinks": [
                     {
                         "name": "LinkedIn",
-                        "icon": "uil:linkedin",
+                        "icon": "linkedin",
                         "url": "https://www.linkedin.com/in/davidsimon98/"
                     },
                     {
                         "name": "GitHub",
-                        "icon": "uil:github",
+                        "icon": "github",
                         "url": "https://github.com/DeibidSE"
                     },
                     {
                         "name": "davidsimon98@outlook.com",
-                        "icon": "uil:envelope",
+                        "icon": "envelope",
                         "url": "mailto:davidsimon98@outlook.com"
                     }
                 ]
@@ -55,8 +55,8 @@
     {
         "proyectos": {
             "Mi trabajo diario": {
-                "image": "/images/verify.svg",
-                "description": "Aquí dedico casi el 100 % de mi tiempo a la programación, centrándome especialmente en proyectos web relacionados con los requisitos KYC (Conozca a su cliente) dentro del sector financiero. Aunque no puedo compartir detalles específicos debido a acuerdos de confidencialidad con la empresa, sí puedo mencionar que mi participación abarca una amplia gama de productos desarrollados mediante diversas tecnologías. He trabajado tanto en el frontend como en el backend, participando en el desarrollo de APIs Rest, la automatización de procesos, la creación de informes avanzados y la implementación de metodologías ágiles, entre otros aspectos.",
+                "image": "images/verify.webp",
+                "description": "Aquí dedico la mayor parte de mi tiempo a la programación, concentrándome en proyectos web relacionados con requisitos KYC en el sector financiero. Aunque la confidencialidad me impide compartir detalles específicos, mi contribución abarca una variedad de productos desarrollados con diferentes tecnologías. He trabajado en frontend y backend, incluyendo el desarrollo de APIs Rest, automatización de procesos, creación de informes avanzados e implementación de metodologías ágiles, entre otros aspectos",
                 "technologies": [
                     {
                         "name": "Laravel",
@@ -103,6 +103,29 @@
                         "url": "https://www.vagrantup.com/"
                     }
                     
+                ]
+            },
+            "Clon de spotify": {
+                "image": "images/spotify-clone.webp",
+                "description": "Este proyecto se enfoca en recrear de manera precisa la interfaz web de Spotify, proporcionando a los usuarios la capacidad de reproducir música, buscar y explorar listas de reproducción. Con un énfasis en la fidelidad visual y funcional, este clon me ha permitido explorar y desarrollar tanto nuevas funcionalidades como aquellas ya conocidas.",
+                "url": "https://github.com/DeibidSE/spotify-clone",
+                "technologies": [
+                    {
+                        "name": "Nuxt",
+                        "url": "https://nuxt.com/"
+                    },
+                    {
+                        "name": "Pinia",
+                        "url": "https://pinia.vuejs.org/"
+                    },
+                    {
+                        "name": "TypeScript",
+                        "url": "https://www.typescriptlang.org/"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "url": "https://tailwindcss.com/"
+                    }
                 ]
             },
             "???": {
@@ -203,111 +226,111 @@
             "/frontend": [
                 {
                     "name": "Vue.js",
-                    "image": "/svg/Vue.svg",
+                    "image": "logos/Vue.svg",
                     "progress": 80
                 },
                 {
-                    "name": "Nuxt 3",
-                    "image": "/svg/Nuxt.js.svg",
+                    "name": "Nuxt",
+                    "image": "logos/Nuxt.svg",
                     "progress": 75
                 },
                 {
                     "name": "TypeScript",
-                    "image": "/svg/TypeScript.svg",
+                    "image": "logos/TypeScript.svg",
                     "progress": 80
                 },
                 {
                     "name": "JavaScript",
-                    "image": "/svg/JavaScript.svg",
+                    "image": "logos/JavaScript.svg",
                     "progress": 80
                 },
                 {
                     "name": "HTML 5",
-                    "image": "/svg/HTML.svg",
+                    "image": "logos/HTML.svg",
                     "progress": 95
                 },
                 {
                     "name": "CSS",
-                    "image": "/svg/CSS.svg",
+                    "image": "logos/CSS.svg",
                     "progress": 70
                 },
                 {
                     "name": "Sass",
-                    "image": "/svg/Sass.svg",
+                    "image": "logos/Sass.svg",
                     "progress": 70
                 },
                 {
                     "name": "Tailwind CSS",
-                    "image": "/svg/Tailwind CSS.svg",
+                    "image": "logos/Tailwind CSS.svg",
                     "progress": 90
                 }
             ],
             "/backend": [
                 {
                     "name": "Laravel",
-                    "image": "/svg/Laravel.svg",
+                    "image": "logos/Laravel.svg",
                     "progress": 85
                 },
                 {
                     "name": "PHP",
-                    "image": "/svg/PHP.svg",
+                    "image": "logos/PHP.svg",
                     "progress": 85
                 },
                 {
                     "name": "MySQL",
-                    "image": "/svg/MySQL.svg",
+                    "image": "logos/MySQL.svg",
                     "progress": 80
                 },
                 {
                     "name": "PostgreSQL",
-                    "image": "/svg/PostgreSQL.svg",
+                    "image": "logos/PostgreSQL.svg",
                     "progress": 70
                 },
                 {
                     "name": "Node.js",
-                    "image": "/svg/Node.js.svg",
+                    "image": "logos/Node.js.svg",
                     "progress": 40
                 },
                 {
                     "name": "Express",
-                    "image": "/svg/Express.svg",
+                    "image": "logos/Express.svg",
                     "progress": 40
                 },
                 {
                     "name": "Java",
-                    "image": "/svg/Java.svg",
+                    "image": "logos/Java.svg",
                     "progress": 35
                 },
                 {
                     "name": "Python",
-                    "image": "/svg/Python.svg",
+                    "image": "logos/Python.svg",
                     "progress": 20
                 }
             ],
             "/herramientas": [
                 {
                     "name": "Visual Studio Code",
-                    "image": "/svg/VS Code.svg",
+                    "image": "logos/VS Code.svg",
                     "progress": 100
                 },
                 {
                     "name": "Docker",
-                    "image": "/svg/Docker.svg",
+                    "image": "logos/Docker.svg",
                     "progress": 80
                 },
                 {
                     "name": "Vagrant",
-                    "image": "/svg/Vagrant.svg",
+                    "image": "logos/Vagrant.svg",
                     "progress": 90
                 },
                 {
                     "name": "Laragon",
-                    "image": "/svg/Laragon.svg",
+                    "image": "logos/Laragon.svg",
                     "progress": 95
                 },
                 {
                     "name": "Android Studio",
-                    "image": "/svg/Android Studio.svg",
+                    "image": "logos/Android Studio.svg",
                     "progress": 35
                 }
             ]
@@ -317,9 +340,6 @@
         "others": {
             "backToTopButton": {
                 "label": "Volver Arriba"
-            },
-            "projectsAlert": {
-                "message": "Tengo pocos proyectos personales (al menos que merezcan ser mostrados aquí) porque me encanta equilibrar mi vida. Trabajo duro, pero también disfruto de mi tiempo libre para desconectar y explorar otras cosas que me apasionan fuera del código. Para mí, esto es fundamental para mantenerme fresco y creativo. Aunque en este portfolio no se encuentren tantos proyectos personales, cada cosa que inicio la abordo con el máximo esfuerzo, dedicación y cariño."
             },
             "alertCompatibility": {
                 "message": "Tu navegador o la versión que estás utilizando parece ser incompatible con las animaciones incluidas en este portafolio. Como resultado, experimentarás la versión estática del sitio, sin animaciones ni transiciones durante el desplazamiento.",

@@ -182,3 +182,22 @@
 ### Removed
 
 - Removed unfinished/redundant projects
+
+## [v1.7.0] - 24/03/2024
+
+### Changes
+
+- Updated dependencies.
+- Redesigned navbar icons with and add it a scrolling reduction effect.
+- Replaced Nuxt Icon library with nuxt-icons for utilizing local SVGs instead of ones from iconify.
+- Moved icons to the assets folder for better organization.
+- Removed the alert from the projects section.
+- Move the .nojekyll file inside public folder
+
+### Added
+
+- New project that i'm working on: A Spotify Clone
+
+### Removed
+
+- Remove SASS dependency

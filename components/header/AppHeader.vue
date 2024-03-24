@@ -11,11 +11,11 @@
   <!-- Header of the app -->
   <header
     id="header"
-    class="fixed top-0 z-50 flex items-center justify-between w-full gap-6 px-6 py-4 transition-all shadow-lg h-min bg-primary-light dark:bg-primary-dark md:px-8 scroll-reduce"
+    class="fixed top-0 right-0 z-50 flex items-center justify-between w-full gap-6 px-6 py-4 transition-all rounded-b-lg shadow-lg justify-self-center h-min bg-primary-light dark:bg-primary-dark md:px-8 scroll-reduce"
   >
-    <Icon
-      name="ic:round-list"
-      class="cursor-pointer fill-current w-7 h-7 md:w-8 md:h-8 hover:text-purple-500"
+    <nuxt-icon
+      name="round-list"
+      class="text-3xl cursor-pointer fill-current hover:text-purple-500"
       :class="{ 'text-purple-700' : menuOpen }"
       role="button"
       aria-label="Toggle menu"
@@ -48,19 +48,16 @@ const toggleMenuDropdown = () => {
 <style scoped>
 @keyframes reduce {
   to {
-    background: transparent;
-    backdrop-filter: blur(16px);
-    padding-left: 3rem;
-    padding-right: 3rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    width: 206px;
   }
 
 }
 
 .scroll-reduce {
   animation: linear reduce both;
-  animation-range: 0 150vh;
+  animation-range: 0 100vh;
   animation-timeline: scroll(root);
 }
 

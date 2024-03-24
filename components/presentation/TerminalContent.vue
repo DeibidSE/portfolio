@@ -20,7 +20,7 @@
           <div class="relative w-full h-full transition-all duration-500 rounded-full [transform-style:preserve-3d] group-hover:[transform:rotateY(-180deg)] shadow-xl shadow-black/40">
             <div class="inset-0 p-4 border-4 rounded-full md:p-6 dark:bg-primary-dark bg-primary-light border-dark dark:border-light">
               <img
-                :src="$config.public.BASE_URL + terminalData?.profileCard?.imagePath"
+                :src="`${$config.public.BASE_URL}/${terminalData?.profileCard?.imagePath}`"
                 alt="Photo of the programmer of this portfolio"
                 class="inset-0 object-cover object-top border-4 rounded-full border-dark dark:border-light aspect-square "
                 loading="lazy"
@@ -32,7 +32,7 @@
             </div>
             <div class="absolute inset-0 w-full h-full p-8 text-center border-4 rounded-full dark:bg-primary-dark bg-primary-light border-dark dark:border-light [transform:rotateY(180deg)] [backface-visibility:hidden]">
               <div class="flex flex-col items-center justify-center min-h-full">
-                <Icon name="MainIcon" class="w-full h-auto" role="img" aria-label="Profile Icon" />
+                <nuxt-icon name="main" filled class="w-full h-auto text-3xl" role="img" aria-label="Profile Icon" />
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@
         class="flex items-center justify-center px-3 py-1 transition border rounded-full shadow-xl dark:border-light border-dark gap-x-2 hover:scale-125 dark:bg-primary-dark bg-primary-light"
       >
 
-        <Icon :name="info.icon" class="w-6 h-6 " role="link" />
+        <nuxt-icon :name="info.icon" class="text-2xl" />
         {{ info.name || '' }}
       </a>
     </div>
@@ -74,7 +74,7 @@
       <a
         v-for="(cv, key) in terminalData.cv"
         :key="key"
-        :href="$config.public.BASE_URL + cv.url"
+        :href="`${$config.public.BASE_URL}/${cv.url}`"
         target="_blank"
         aria-label="Download my curriculum vitae"
         :download="cv.fileName"

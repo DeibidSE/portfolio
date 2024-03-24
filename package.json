@@ -1,28 +1,30 @@
 {
   "name": "portfolio-deibidse",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d dist"
+    "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/tailwindcss": "^6.10.4",
+    "@nuxtjs/tailwindcss": "^6.11.4",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@pinia/nuxt": "^0.5.1",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "gh-pages": "^6.1.1",
-    "nuxt": "^3.9.3",
-    "nuxt-icon": "^0.6.8",
-    "sass": "^1.70.0",
-    "sass-loader": "^14.0.0"
+    "nuxt": "3.10.3",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   },
-  "overrides": {
-    "vue": "latest"
+  "dependencies": {
+    "nuxt-icon": "^0.6.10",
+    "nuxt-icons": "^3.2.1",
+    "pinia": "^2.1.7"
   }
 }

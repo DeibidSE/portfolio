@@ -1,43 +1,44 @@
 <template>
   <div class="relative" role="button" @click="toggle">
-    <div class="relative flex items-center p-1 rounded-full cursor-pointer focus:outline-none">
-      <!-- Flag -->
-      <Icon :name="selectedLang.icon" class="w-4 h-4 md:w-5 md:h-5" alt="Flag of the selected language" />
-      <!-- Arrow -->
-      <Icon name="uil:angle-down" class="w-4 h-4 ml-1 md:w-5 md:h-5" alt="Down arrow icon" />
+    <div class="flex items-center rounded-full cursor-pointer hover:text-purple-500">
+      <nuxt-icon name="language" class="text-xl" alt="Language selector icon" />
+      <nuxt-icon name="angle-down" class="text-xl" alt="Down arrow icon" />
     </div>
     <transition name="dropdown-content">
-      <div v-if="showDropdown" class="absolute right-0 mt-2 origin-top-right border-2 border-purple-500 rounded-lg md:w-48 md:py-2 bg-secondary-light dark:bg-secondary-dark">
-        <label
+      <label
+        v-if="showDropdown"
+        for="languageSelector"
+        class="absolute right-0 inline-flex items-center p-1 mt-3 origin-top-right border rounded-md cursor-pointer dark:border-light border-dark bg-secondary-light dark:bg-secondary-dark"
+      >
+        <input id="languageSelector" type="checkbox" class="hidden peer">
+        <span
           v-for="lang in languages"
           :key="lang.value"
-          class="flex items-center gap-4 p-4 hover:bg-purple-200 dark:hover:bg-purple-500"
-          @click.stop="selectLang(lang)"
+          class="px-4 py-2 uppercase"
+          :class="{
+            'bg-purple-500': lang.value === languageStore.language,
+            'hover:bg-purple-500/50': lang.value !== languageStore.language
+          }"
+          @click="selectLang(lang)"
         >
-          <Icon :name="lang.icon" alt="Language flag" />
-          {{ lang.label || '' }}
-        </label>
-      </div>
+          {{ lang.value }}
+        </span>
+      </label>
     </transition>
   </div>
 </template>
 
 <script setup lang="ts">
-import { langStore } from '~/stores/langStore'
 import { type Language } from '~/types/types.d'
 
 const showDropdown = ref(false)
 
-const languages = ref<Language[]>([
-  { value: 'es-ES', label: 'Español', icon: 'circle-flags:es-variant' },
-  { value: 'en-GB', label: 'English', icon: 'circle-flags:uk' }
-])
+const languages: Language[] = [
+  { value: 'es' },
+  { value: 'en' }
+]
 
 const languageStore = langStore()
-
-const selectedLang = computed(() => {
-  return languages.value.find(lang => lang.value === languageStore.language) || languages.value[0]
-})
 
 const toggle = () => {
   showDropdown.value = !showDropdown.value

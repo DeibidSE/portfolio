@@ -6,7 +6,7 @@
     :data-label="props?.btnData?.label || 'Back to Top'"
     @click="scrollToTop"
   >
-    <Icon name="uil:arrow-up" class="text-3xl text-white duration-300 group-hover:duration-300 group-hover:translate-y-[-200%]" />
+    <nuxt-icon name="arrow-up" class="text-3xl text-white duration-300 group-hover:duration-300 group-hover:translate-y-[-200%]" />
   </button>
 </template>
 

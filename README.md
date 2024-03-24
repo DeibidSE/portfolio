@@ -16,4 +16,3 @@ This web portfolio aims to display my professional profile and web development s
 ## Acknowledgements
 
 - Many thanks to [@viryi_vc21](https://instagram.com/viryi_vc21) for creating different SVG logos based on my name.
-- Shoutout to the github user [lucpotage](https://github.com/lucpotage) for the tips on deploying a Nuxt 3 project on GitHub pages.

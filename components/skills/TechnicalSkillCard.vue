@@ -2,7 +2,7 @@
   <div class="relative z-10 flex items-center justify-center p-16 duration-500 translate-y-24 face face1 bg-secondary-light dark:bg-secondary-dark rounded-t-xl">
     <div class="flex flex-col items-center justify-center duration-500 opacity-50 dark:opacity-20">
       <img
-        :src="$config.public.BASE_URL + data.image"
+        :src="`${$config.public.BASE_URL}/${data.image}`"
         :alt="`An image of the official logo of ${data.name}`"
         class="w-24 h-24"
         loading="lazy"
@@ -37,7 +37,7 @@ defineProps({
 })
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .card {
   &:hover {
     .face.face1 {

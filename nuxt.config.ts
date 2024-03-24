@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     baseURL: '/MyPortfolio/',
-    buildAssetsDir: 'assets',
     head: {
       title: 'Portfolio - David Simón',
       meta: [
@@ -19,7 +18,8 @@ export default defineNuxtConfig({
         {
           hid: 'description',
           name: 'description',
-          content: "Welcome to my portfolio! I'm David, a full stack web developer. Explore my work and projects here."
+          content:
+            "Welcome to my portfolio! I'm David, a full stack web developer. Explore my work and projects here."
         },
         {
           name: 'author',
@@ -42,9 +42,9 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
-    'nuxt-icon'
+    '@pinia/nuxt',
+    'nuxt-icons'
   ],
   css: ['@/assets/css/tailwind.css']
 })

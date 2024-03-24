@@ -19,21 +19,21 @@
                 "😀 Thank you so much for visiting my website and for being part of my journey of growth and professional development!"
             ],
             "profileCard": {
-                "imagePath": "/images/david.webp",
+                "imagePath": "images/david.webp",
                 "socialLinks": [
                     {
                         "name": "LinkedIn",
-                        "icon": "uil:linkedin",
+                        "icon": "linkedin",
                         "url": "https://www.linkedin.com/in/davidsimon98/"
                     },
                     {
                         "name": "GitHub",
-                        "icon": "uil:github",
+                        "icon": "github",
                         "url": "https://github.com/DeibidSE"
                     },
                     {
                         "name": "davidsimon98@outlook.com",
-                        "icon": "uil:envelope",
+                        "icon": "envelope",
                         "url": "mailto:davidsimon98@outlook.com"
                     }
                 ]
@@ -55,8 +55,8 @@
     {
         "projects": {
             "My daily Job": {
-                "image": "/images/verify.svg",
-                "description": "Here, I dedicate almost 100% of my time to programming, focusing specifically on web projects related to KYC (Know Your Customer) requirements within the financial sector. While I can't share specific details due to confidentiality agreements with the company, I can mention that my involvement covers a wide range of products developed using various technologies. I've worked on both the frontend and backend, participating in Rest API development, process automation, advanced reporting creation, and the implementation of agile methodologies, among other aspects.",
+                "image": "images/verify.webp",
+                "description": "Here I dedicate most of my time to programming, focusing on web projects related to KYC requirements in the financial sector. Although confidentiality prevents me from sharing specific details, my contribution encompasses a variety of products developed with different technologies. I have worked on both frontend and backend, including the development of Rest APIs, process automation, creation of advanced reports, and implementation of agile methodologies, among other aspects.",
                 "technologies": [
                     {
                         "name": "Laravel",
@@ -101,6 +101,29 @@
                     {
                         "name": "Vagrant",
                         "url": "https://www.vagrantup.com/"
+                    }
+                ]
+            },
+            "Spotify Clone": {
+                "image": "images/spotify-clone.webp",
+                "description": "This project focuses on faithfully replicating the Spotify web interface, providing users with the ability to play music, search, and explore playlists. With an emphasis on visual and functional fidelity, this clone has allowed me to explore and develop both new features and familiar ones.",
+                "url": "https://github.com/DeibidSE/spotify-clone",
+                "technologies": [
+                    {
+                        "name": "Nuxt",
+                        "url": "https://nuxt.com/"
+                    },
+                    {
+                        "name": "Pinia",
+                        "url": "https://pinia.vuejs.org/"
+                    },
+                    {
+                        "name": "TypeScript",
+                        "url": "https://www.typescriptlang.org/"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "url": "https://tailwindcss.com/"
                     }
                 ]
             },
@@ -202,111 +225,111 @@
             "/frontend": [
                 {
                     "name": "Vue.js",
-                    "image": "/svg/Vue.svg",
+                    "image": "logos/Vue.svg",
                     "progress": 80
                 },
                 {
-                    "name": "Nuxt 3",
-                    "image": "/svg/Nuxt.js.svg",
+                    "name": "Nuxt",
+                    "image": "logos/Nuxt.svg",
                     "progress": 75
                 },
                 {
                     "name": "TypeScript",
-                    "image": "/svg/TypeScript.svg",
+                    "image": "logos/TypeScript.svg",
                     "progress": 80
                 },
                 {
                     "name": "JavaScript",
-                    "image": "/svg/JavaScript.svg",
+                    "image": "logos/JavaScript.svg",
                     "progress": 80
                 },
                 {
                     "name": "HTML 5",
-                    "image": "/svg/HTML.svg",
+                    "image": "logos/HTML.svg",
                     "progress": 95
                 },
                 {
                     "name": "CSS",
-                    "image": "/svg/CSS.svg",
+                    "image": "logos/CSS.svg",
                     "progress": 70
                 },
                 {
                     "name": "Sass",
-                    "image": "/svg/Sass.svg",
+                    "image": "logos/Sass.svg",
                     "progress": 70
                 },
                 {
                     "name": "Tailwind CSS",
-                    "image": "/svg/Tailwind CSS.svg",
+                    "image": "logos/Tailwind CSS.svg",
                     "progress": 90
                 }
             ],
             "/backend": [
                 {
                     "name": "Laravel",
-                    "image": "/svg/Laravel.svg",
+                    "image": "logos/Laravel.svg",
                     "progress": 85
                 },
                 {
                     "name": "PHP",
-                    "image": "/svg/PHP.svg",
+                    "image": "logos/PHP.svg",
                     "progress": 85
                 },
                 {
                     "name": "MySQL",
-                    "image": "/svg/MySQL.svg",
+                    "image": "logos/MySQL.svg",
                     "progress": 80
                 },
                 {
                     "name": "PostgreSQL",
-                    "image": "/svg/PostgreSQL.svg",
+                    "image": "logos/PostgreSQL.svg",
                     "progress": 70
                 },
                 {
                     "name": "Node.js",
-                    "image": "/svg/Node.js.svg",
+                    "image": "logos/Node.js.svg",
                     "progress": 40
                 },
                 {
                     "name": "Express",
-                    "image": "/svg/Express.svg",
+                    "image": "logos/Express.svg",
                     "progress": 40
                 },
                 {
                     "name": "Java",
-                    "image": "/svg/Java.svg",
+                    "image": "logos/Java.svg",
                     "progress": 35
                 },
                 {
                     "name": "Python",
-                    "image": "/svg/Python.svg",
+                    "image": "logos/Python.svg",
                     "progress": 20
                 }
             ],
             "/tools": [
                 {
                     "name": "Visual Studio Code",
-                    "image": "/svg/VS Code.svg",
+                    "image": "logos/VS Code.svg",
                     "progress": 100
                 },
                 {
                     "name": "Docker",
-                    "image": "/svg/Docker.svg",
+                    "image": "logos/Docker.svg",
                     "progress": 80
                 },
                 {
                     "name": "Vagrant",
-                    "image": "/svg/Vagrant.svg",
+                    "image": "logos/Vagrant.svg",
                     "progress": 90
                 },
                 {
                     "name": "Laragon",
-                    "image": "/svg/Laragon.svg",
+                    "image": "logos/Laragon.svg",
                     "progress": 95
                 },
                 {
                     "name": "Android Studio",
-                    "image": "/svg/Android Studio.svg",
+                    "image": "logos/Android Studio.svg",
                     "progress": 35
                 }
             ]
@@ -316,9 +339,6 @@
         "others": {
             "backToTopButton": {
                 "label": "Back to Top"
-            },
-            "projectsAlert": {
-                "message": "I have few personal projects (at least that deserve to be shown here) because I love to balance my life. I work hard, but I also enjoy my free time to unwind and explore other things that I'm passionate about beyond coding. For me, this is crucial to stay fresh and creative. Although you won't find many personal projects in this portfolio, please know that everything I start, I approach with maximum effort, dedication, and care."
             },
             "alertCompatibility": {
                 "message": "This browser or browser version appears to be incompatible with the animations included in this portfolio. As a result, you will experience the static version of the site, without animations and transitions during scrolling.",
