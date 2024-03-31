@@ -16,7 +16,7 @@
         v-for="category in categories"
         :key="category"
         :class="[
-          'flex-1 md:p-8 p-2 py-8 text-center cursor-pointer rounded-t-xl',
+          'flex-1 md:p-8 p-2 py-8 text-center cursor-pointer rounded-t-xl transition-all duration-200',
           selectedCategory === category
             ? 'border-x-4 border-t-4 border-x-purple-400 border-t-purple-400 bg-secondary-light dark:bg-secondary-dark shadow-top'
             : 'bg-purple-200 hover:bg-purple-300 dark:bg-purple-600 hover:dark:bg-purple-500'

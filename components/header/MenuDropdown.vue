@@ -19,13 +19,7 @@
 
 <script setup lang="ts">
 
-defineProps({
-  menuOpen: Boolean,
-  sectionList: {
-    type: Array as () => string[],
-    default: () => []
-  }
-})
+defineProps<{ menuOpen: Boolean, sectionList: string[] }>()
 
 const emit = defineEmits(['menu-close'])
 

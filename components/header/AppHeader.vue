@@ -31,12 +31,7 @@
 
 <script setup lang="ts">
 
-defineProps({
-  sectionList: {
-    type: Array as () => string[],
-    default: () => []
-  }
-})
+defineProps<{ sectionList: string[] }>()
 
 const menuOpen = ref(false)
 

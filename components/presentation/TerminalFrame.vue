@@ -8,14 +8,14 @@
       </div>
     </div>
     <div
-      class="flex flex-col flex-grow max-h-full p-4 overflow-y-auto text-normal md:text-xl bg-secondary-light dark:bg-secondary-dark"
+      class="flex flex-col flex-grow max-h-full p-6 overflow-y-auto text-normal md:text-xl bg-secondary-light dark:bg-secondary-dark"
       :class="{ 'h-0 !overflow-y-hidden' : isMinimized }"
     >
       <slot />
     </div>
   </div>
   <div v-else class="flex items-center justify-center w-full h-full overflow-hidden rounded-lg">
-    <h2 class="cursor-not-allowed text-9xl">
+    <h2 class="cursor-not-allowed text-9xl" @click="isClosed = !isClosed">
       :(
     </h2>
   </div>

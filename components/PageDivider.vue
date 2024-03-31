@@ -13,9 +13,5 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-  top: {
-    type: Boolean
-  }
-})
+defineProps<{ top?: Boolean }>()
 </script>

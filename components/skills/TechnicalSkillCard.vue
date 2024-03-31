@@ -1,15 +1,7 @@
 <template>
   <div class="relative z-10 flex items-center justify-center p-16 duration-500 translate-y-24 face face1 bg-secondary-light dark:bg-secondary-dark rounded-t-xl">
     <div class="flex flex-col items-center justify-center duration-500 opacity-50 dark:opacity-20">
-      <img
-        :src="`${$config.public.BASE_URL}/${data.image}`"
-        :alt="`An image of the official logo of ${data.name}`"
-        class="w-24 h-24"
-        loading="lazy"
-        width="96"
-        height="96"
-        role="img"
-      >
+      <nuxt-icon filled :name="`${data.image}`" class="flex w-24 h-24" role="img" />
     </div>
   </div>
   <div class="flex flex-col justify-center w-full p-6 overflow-x-hidden overflow-y-auto duration-500 -translate-y-24 shadow-xl opacity-0 face face2 rounded-b-xl bg-primary-light dark:bg-primary-dark" :aria-label="`Details about ${data.name}`">
@@ -29,12 +21,7 @@
 <script setup lang="ts">
 import { type Skill } from '~/types/types.d'
 
-defineProps({
-  data: {
-    type: Object as () => Skill,
-    default: () => ({})
-  }
-})
+defineProps<{ data: Skill }>()
 </script>
 
 <style scoped>

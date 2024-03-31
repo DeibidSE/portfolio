@@ -9,14 +9,13 @@
     {
         "presentation": {
             "command": "./about_me.sh",
-            "title": "WELCOME TO MY PORTFOLIO",
+            "title": "🙋🏻‍♂️ About me",
             "availability": "Currently Employed",
             "content": [
-                "🧑🏻‍💻 Hi there! I'm David, a passionate Full Stack Web Developer with almost 3 years of experience in the exciting world of programming.",
-                "🚀 Throughout my brief journey, I've gained extensive knowledge in web application development and I'm always seeking new ways to breathe life into creative and innovative ideas. Programming has become my second language, and I enjoy facing daily challenges that allow me to grow professionally and push my limits.",
-                "🚧 Although my portfolio is still in development, mainly due to my focus on professional projects, these experiences have allowed me to face significant challenges and learn from real-world situations.",
-                "🔝  I am proud of everything I have learned and built so far, but also excited for future opportunities that will allow me to expand my portfolio with more diverse and creative projects, thus showcasing my ability to tackle a wide range of technology solutions.",
-                "😀 Thank you so much for visiting my website and for being part of my journey of growth and professional development!"
+                "🧑🏻‍💻 My name is David, I am a Full Stack Web Developer with over 3 years of experience.",
+                "🚀 I started programming after finishing high school, as I always knew this field was for me. Since then, I have been immersed in a constant process of learning and improvement, which has led me to face new challenges every day that have shaped the professional I consider myself to be today.",
+                "🔝 Although a large part of my time is dedicated to my daily work, I always find space to create something new in my free time. I am very proud of what I have achieved so far, but what really excites me are the opportunities that the future holds. I am eager to expand this portfolio with more projects and successes!",
+                "😀 Thank you very much for visiting my website and for being part of my journey of growth and professional development!"
             ],
             "profileCard": {
                 "imagePath": "images/david.webp",
@@ -225,111 +224,111 @@
             "/frontend": [
                 {
                     "name": "Vue.js",
-                    "image": "logos/Vue.svg",
+                    "image": "logos/Vue",
                     "progress": 80
                 },
                 {
                     "name": "Nuxt",
-                    "image": "logos/Nuxt.svg",
+                    "image": "logos/Nuxt",
                     "progress": 75
                 },
                 {
                     "name": "TypeScript",
-                    "image": "logos/TypeScript.svg",
+                    "image": "logos/TypeScript",
                     "progress": 80
                 },
                 {
                     "name": "JavaScript",
-                    "image": "logos/JavaScript.svg",
+                    "image": "logos/JavaScript",
                     "progress": 80
                 },
                 {
                     "name": "HTML 5",
-                    "image": "logos/HTML.svg",
+                    "image": "logos/HTML",
                     "progress": 95
                 },
                 {
                     "name": "CSS",
-                    "image": "logos/CSS.svg",
+                    "image": "logos/CSS",
                     "progress": 70
                 },
                 {
                     "name": "Sass",
-                    "image": "logos/Sass.svg",
+                    "image": "logos/Sass",
                     "progress": 70
                 },
                 {
                     "name": "Tailwind CSS",
-                    "image": "logos/Tailwind CSS.svg",
+                    "image": "logos/Tailwind CSS",
                     "progress": 90
                 }
             ],
             "/backend": [
                 {
                     "name": "Laravel",
-                    "image": "logos/Laravel.svg",
+                    "image": "logos/Laravel",
                     "progress": 85
                 },
                 {
                     "name": "PHP",
-                    "image": "logos/PHP.svg",
+                    "image": "logos/PHP",
                     "progress": 85
                 },
                 {
                     "name": "MySQL",
-                    "image": "logos/MySQL.svg",
+                    "image": "logos/MySQL",
                     "progress": 80
                 },
                 {
                     "name": "PostgreSQL",
-                    "image": "logos/PostgreSQL.svg",
+                    "image": "logos/PostgreSQL",
                     "progress": 70
                 },
                 {
                     "name": "Node.js",
-                    "image": "logos/Node.js.svg",
+                    "image": "logos/Node.js",
                     "progress": 40
                 },
                 {
                     "name": "Express",
-                    "image": "logos/Express.svg",
+                    "image": "logos/Express",
                     "progress": 40
                 },
                 {
                     "name": "Java",
-                    "image": "logos/Java.svg",
+                    "image": "logos/Java",
                     "progress": 35
                 },
                 {
                     "name": "Python",
-                    "image": "logos/Python.svg",
+                    "image": "logos/Python",
                     "progress": 20
                 }
             ],
             "/tools": [
                 {
                     "name": "Visual Studio Code",
-                    "image": "logos/VS Code.svg",
+                    "image": "logos/VS Code",
                     "progress": 100
                 },
                 {
                     "name": "Docker",
-                    "image": "logos/Docker.svg",
+                    "image": "logos/Docker",
                     "progress": 80
                 },
                 {
                     "name": "Vagrant",
-                    "image": "logos/Vagrant.svg",
+                    "image": "logos/Vagrant",
                     "progress": 90
                 },
                 {
                     "name": "Laragon",
-                    "image": "logos/Laragon.svg",
+                    "image": "logos/Laragon",
                     "progress": 95
                 },
                 {
                     "name": "Android Studio",
-                    "image": "logos/Android Studio.svg",
+                    "image": "logos/Android Studio",
                     "progress": 35
                 }
             ]
