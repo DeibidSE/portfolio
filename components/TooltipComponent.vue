@@ -4,6 +4,7 @@
     :tooltipText="tooltipText"
     :position="position"
     role="tooltip"
+    :aria-label="tooltipText"
     aria-live="polite"
     aria-atomic="true"
   >

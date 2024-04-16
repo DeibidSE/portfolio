@@ -211,3 +211,18 @@
 - Enhanced props typing.
 - Minor style adjustments.
 - Upgraded to Nuxt 3.11.1
+
+## [v1.7.2] - 16/04/2024
+
+### Changes
+
+- Fixed wrong url to docker website
+- Updated dependencies
+
+### Removed
+
+- Outdated PDF files from public folder
+
+### Added
+
+- New modal to inform to contact me to get the CV

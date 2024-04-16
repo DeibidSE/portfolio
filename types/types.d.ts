@@ -24,7 +24,7 @@ export interface PresentationInfo {
   availability: string
   content: string[]
   profileCard: UserProfileCard
-  cv: Curriculum[]
+  cv: Curriculum
 }
 
 export interface UserProfileCard {
@@ -39,9 +39,9 @@ export interface SocialLink {
 }
 
 export interface Curriculum {
-  url: string
-  fileName: string
   label: string
+  message: string
+  closeMsg: string
 }
 
 /* -------------------------------------------------------- */

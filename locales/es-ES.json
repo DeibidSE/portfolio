@@ -37,18 +37,11 @@
                     }
                 ]
             },
-            "cv": [
-                {
-                    "url": "/CV - David Simón (ES - 2023).pdf",
-                    "fileName": "CV - David Simón (ES - 2023).pdf",
-                    "label": "Descarga mi Curriculum (Versión en Español)"
-                },
-                {
-                    "url": "/CV - David Simón (EN - 2023).pdf",
-                    "fileName": "CV - David Simón (EN - 2023).pdf",
-                    "label": "Descarga mi Curriculum (Version en Inglés)"
-                }
-            ]
+            "cv": {
+                "label": "Consigue mi Curriculum Vitae",
+                "message": "¡Gracias por tu interés en mi CV! Por favor, no dudes en contactarme para recibir una copia actualizada.",
+                "closeMsg": "(Haz click en cualquier sitio para cerrarme)"
+            }
         }
     },
     {
@@ -95,7 +88,7 @@
                     },
                     {
                         "name": "Docker",
-                        "url": "https://laragon.org/index.html"
+                        "url": "https://www.docker.com/"
                     },
                     {
                         "name": "Vagrant",

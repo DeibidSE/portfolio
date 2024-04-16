@@ -46,7 +46,7 @@
 
     <footer v-if="projectData.technologies" class="flex flex-wrap justify-around w-full gap-2 p-3 mx-auto rounded-lg shadow-inside">
       <TooltipComponent v-for="(technology, key) in projectData.technologies" :key="key" :tooltip-text="technology.name" position="top">
-        <a :href="technology.url" target="_blank" rel="noopener noreferrer" class="cursor-pointer">
+        <a :href="technology.url" target="_blank" rel="noopener noreferrer" class="cursor-pointer" :aria-label="`Link to ${technology.name} website`">
           <nuxt-icon filled :name="`logos/${technology.name}`" class="flex w-6 h-6 text-xs transition-transform md:w-8 xl:w-10 md:h-8 xl:h-10 hover:scale-125" />
         </a>
       </TooltipComponent>

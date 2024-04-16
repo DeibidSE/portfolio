@@ -18,8 +18,8 @@
     "@pinia/nuxt": "^0.5.1",
     "eslint": "^8.57.0",
     "gh-pages": "^6.1.1",
-    "nuxt": "^3.11.1",
-    "vue": "^3.4.21",
+    "nuxt": "^3.11.2",
+    "vue": "^3.4.23",
     "vue-router": "^4.3.0"
   },
   "dependencies": {

@@ -70,23 +70,27 @@
         <span class="font-semibold tracking-wider dark:text-lime-600 text-lime-800">user@localhost:~$</span>
         <span class="text-dark dark:text-light">npx run cv-download</span>
       </div>
-      <a
-        v-for="(cv, key) in terminalData.cv"
-        :key="key"
-        :href="`${$config.public.BASE_URL}/${cv.url}`"
-        target="_blank"
-        aria-label="Download my curriculum vitae"
-        :download="cv.fileName"
-        :class="{
-          'hover:text-purple-700 dark:hover:text-purple-500': true,
-          'text-purple-600 dark:text-purple-400' : activeIndex === key
-        }"
-        role="link"
-        @mouseover="changeActiveIndex(key)"
+      <span
+        class="text-purple-600 cursor-pointer dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-500 w-max"
+        @click="showModal(true)"
       >
-        > {{ cv.label || '' }}
-      </a>
+        > {{ terminalData.cv.label || '' }}
+      </span>
     </div>
+
+    <!-- Modal -->
+    <dialog
+      ref="infoModal"
+      class="w-full bg-transparent sm:w-1/2 h-1/3 modal rounded-xl"
+      @click="showModal(false)"
+    >
+      <PresentationTerminalFrame :buttons-clickable="false">
+        <div class="flex flex-col items-center justify-center w-full h-full gap-2">
+          <span class="flex items-center justify-center text-xl text-center text-dark dark:text-light md:text-2xl">{{ terminalData.cv.message }}</span>
+          <span class="flex items-center justify-center text-sm text-center text-dark/90 dark:text-light/90">{{ terminalData.cv.closeMsg }}</span>
+        </div>
+      </PresentationTerminalFrame>
+    </dialog>
   </div>
 </template>
 
@@ -95,9 +99,29 @@ import { type PresentationInfo } from '~/types/types.d'
 
 defineProps<{ terminalData: PresentationInfo }>()
 
-const activeIndex = ref(0)
+const infoModal = ref<HTMLDialogElement>()
 
-const changeActiveIndex = (index: number) => {
-  activeIndex.value = index
+const showModal = (show: boolean) => {
+  infoModal.value?.[show ? 'showModal' : 'close']()
 }
 </script>
+
+<style scoped>
+.modal[open]::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  animation-name: showModal;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes showModal {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+</style>

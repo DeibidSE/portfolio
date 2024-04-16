@@ -6,7 +6,7 @@
     :aria-label="sectionId"
   >
     <div class="flex self-center justify-center w-full h-full scroll-transition">
-      <PresentationTerminalFrame>
+      <PresentationTerminalFrame :buttons-clickable="true">
         <PresentationTerminalContent :terminal-data="section" />
       </PresentationTerminalFrame>
     </div>
