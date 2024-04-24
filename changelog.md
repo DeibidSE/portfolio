@@ -226,3 +226,9 @@
 ### Added
 
 - New modal to inform to contact me to get the CV
+
+## [v1.7.3] - 24/04/2024
+
+### Changes
+
+- Fixed issue where dropdown menu didn't close when clicking outside the language selector.

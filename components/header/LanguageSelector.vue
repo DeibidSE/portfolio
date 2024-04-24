@@ -1,5 +1,5 @@
 <template>
-  <div class="relative" role="button" @click="toggle">
+  <div ref="dropdown" class="relative" role="button">
     <div class="flex items-center rounded-full cursor-pointer hover:text-purple-500">
       <nuxt-icon name="language" class="text-xl" alt="Language selector icon" />
       <nuxt-icon name="angle-down" class="text-xl" alt="Down arrow icon" />
@@ -32,6 +32,7 @@
 import { type Language } from '~/types/types.d'
 
 const showDropdown = ref(false)
+const dropdown = ref<HTMLElement | null>(null)
 
 const languages: Language[] = [
   { value: 'es' },
@@ -40,14 +41,26 @@ const languages: Language[] = [
 
 const languageStore = langStore()
 
-const toggle = () => {
-  showDropdown.value = !showDropdown.value
-}
-
 const selectLang = (lang: Language) => {
   languageStore.setLanguage(lang.value)
   showDropdown.value = false
 }
+
+const handleClickOutside = (event: MouseEvent) => {
+  if (dropdown.value && !dropdown.value.contains(event.target as Node)) {
+    showDropdown.value = false
+  } else {
+    showDropdown.value = !showDropdown.value
+  }
+}
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside)
+})
 </script>
 
 <style scoped>
