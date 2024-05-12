@@ -12,18 +12,20 @@
       <h4 class="mb-2 text-base text-gray-800 dark:text-gray-600">
         {{ info.location || '' }}
       </h4>
-      <p class="mb-4 text-xs text-gray-600 dark:text-gray-400">
-        {{ info.details || '' }}
+      <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">
+        {{ info.description || '' }}
       </p>
+      <ul v-if="info.details" class="pl-4 text-sm text-gray-600 list-disc dark:text-gray-400">
+        <li v-for="(detail, key) in info.details" :key="key" role="listitem">
+          {{ detail }}
+        </li>
+      </ul>
     </li>
   </ol>
 </template>
 
 <script setup lang="ts">
-defineProps({
-  data: {
-    type: Object,
-    default: () => ({})
-  }
-})
+import { type JobOrStudy } from '~/types/types.d'
+
+defineProps<{ data: JobOrStudy[] }>()
 </script>

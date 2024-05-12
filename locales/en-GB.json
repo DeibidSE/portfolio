@@ -48,7 +48,7 @@
         "projects": {
             "My daily Job": {
                 "image": "images/verify.webp",
-                "description": "Here I dedicate most of my time to programming, focusing on web projects related to KYC requirements in the financial sector. Although confidentiality prevents me from sharing specific details, my contribution encompasses a variety of products developed with different technologies. I have worked on both frontend and backend, including the development of Rest APIs, process automation, creation of advanced reports, and implementation of agile methodologies, among other aspects.",
+                "description": "Here I dedicate most of my time to programming, focusing on web projects related to KYC requirements in the financial sector. Although confidentiality prevents me from sharing specific details, my contribution encompasses a variety of products developed with different technologies. I've worked on both frontend and backend, engaging with various and diverse projects.",
                 "technologies": [
                     {
                         "name": "Laravel",
@@ -159,7 +159,18 @@
                     "startDate": "February 2021",
                     "endDate": "Present",
                     "location": "Remote",
-                    "details": "This is my current job where I have learned a wide range of web development skills and technologies.",
+                    "description": "This is my current job where I have learned a wide range of web development skills and technologies.",
+                    "details": [
+                        "Development and maintenance of web applications for leading banking clients in Australia primarily using Laravel and PHP.",
+                        "Front-end development with Vue.js, Tailwind CSS, and other technologies such as jQuery or JavaScript for an optimal user experience.",
+                        "Management of MySQL and PostgreSQL databases.",
+                        "Dockerization of development environments.",
+                        "Creation of REST APIs and process automation.",
+                        "Creation of advanced reports.",
+                        "Utilization of agile methodologies and scrum development.",
+                        "Collaboration in teams using Git for version control.",
+                        "Proactive resolution of incidents and technical issues."
+                    ],
                     "website": "https://www.simplekyc.com/"
                 },
                 {
@@ -167,7 +178,7 @@
                     "startDate": "October 2020",
                     "endDate": "December 2020",
                     "location": "Remote",
-                    "details": "My first contact with the working world, here I completed the 3-month internship required by the superior degree. Unfortunately, due to the COVID-19 pandemic, these internships had to be done 100% remotely.",
+                    "description": "My first contact with the working world, here I completed the 3-month internship required by the superior degree. Unfortunately, due to the COVID-19 pandemic, these internships had to be done 100% remotely.",
                     "website": "http://www.dominama.es/"
                 }
             ],
@@ -177,14 +188,14 @@
                     "startDate": "September 2018",
                     "endDate": "June 2020",
                     "location": "Madrid",
-                    "details": "Here I began my programming studies: Java, Python, SQL, Linux... a world of learning and growth with dedicated teachers and colleagues. These years undoubtedly marked an unforgettable time in my educational journey."
+                    "description": "Here I began my programming studies: Java, Python, SQL, Linux... a world of learning and growth with dedicated teachers and colleagues. These years undoubtedly marked an unforgettable time in my educational journey."
                 },
                 {
                     "title": "Technological Bachillerato",
                     "startDate": 2014,
                     "endDate": 2018,
                     "location": "Madrid",
-                    "details": "In Spain, we have what is referred to as Bachillerato, an educational phase following secondary school that acts as a transition to higher education. This stage prepares students for university studies and vocational avenues alike. Personally, I specialized in the science track, which primarily focuses on subjects like mathematics, chemistry, biology, and more."
+                    "description": "In Spain, we have what is referred to as Bachillerato, an educational phase following secondary school that acts as a transition to higher education. This stage prepares students for university studies and vocational avenues alike. Personally, I specialized in the science track, which primarily focuses on subjects like mathematics, chemistry, biology, and more."
                 }
             ],
             "/additional studies": [
@@ -193,21 +204,21 @@
                     "startDate": 2022,
                     "endDate": 2023,
                     "location": "Remote",
-                    "details": "As part of my professional development, the company I work for paid us English classes focused on improving our English language skills."
+                    "description": "As part of my professional development, the company I work for paid us English classes focused on improving our English language skills."
                 },
                 {
                     "title": "Driving lessons",
                     "startDate": 2018,
                     "endDate": 2019,
                     "location": "Madrid",
-                    "details": "I completed driving lessons and obtained my class B driver's license"
+                    "description": "I completed driving lessons and obtained my class B driver's license"
                 },
                 {
                     "title": "Lingua Generation",
                     "startDate": 2010,
                     "endDate": 2020,
                     "location": "Madrid",
-                    "details": "An English academy with native teachers"
+                    "description": "An English academy with native teachers"
                 }
             ]
         }
@@ -330,11 +341,11 @@
     {
         "others": {
             "backToTopButton": {
-                "label": "Back to Top"
+                "message": "Back to Top"
             },
             "alertCompatibility": {
                 "message": "This browser or browser version appears to be incompatible with the animations included in this portfolio. As a result, you will experience the static version of the site, without animations and transitions during scrolling.",
-                "links": {
+                "link": {
                     "label": "Click here for more information",
                     "url": "https://caniuse.com/?search=animation-timeline"
                 }

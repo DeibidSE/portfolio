@@ -23,17 +23,12 @@
 </template>
 
 <script setup lang="ts">
-import { type JobsAndStudiesData } from '~/types/types.d'
+import { type JobOrStudy } from '~/types/types.d'
 
-const props = defineProps({
-  sectionData: {
-    type: Object,
-    default: () => ({})
-  }
-})
+const props = defineProps<{ sectionData: { [title: string]: { [category: string]: JobOrStudy[] } } }>()
 
 const sectionTitle = computed<string>(() => Object.keys(props.sectionData).toString() || '')
 const sectionId = computed<string>(() => sectionTitle.value.toLowerCase().replace(/\s+/g, '-'))
-const sections = computed<JobsAndStudiesData>(() => props.sectionData[sectionTitle.value] || {})
+const sections = computed<{ [category: string]: JobOrStudy[] }>(() => props.sectionData[sectionTitle.value] || {})
 
 </script>

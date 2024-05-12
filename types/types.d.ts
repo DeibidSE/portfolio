@@ -46,10 +46,6 @@ export interface Curriculum {
 
 /* -------------------------------------------------------- */
 
-export interface ProjectData {
-  [job: string]: Project
-}
-
 export interface Project {
   text?: string
   image?: string
@@ -65,27 +61,32 @@ export interface Technology {
 
 /* -------------------------------------------------------- */
 
-export interface JobsAndStudiesData {
-  [category: string]: JobOrStudy[]
-}
-
 export interface JobOrStudy {
   title: string
   startDate: string
   endDate: string
   location: string
-  details: string
+  description: string,
+  details?: string[],
   website?: string
 }
 
 /* -------------------------------------------------------- */
 
-export interface SkillData {
-  [skill: string]: Skill[]
-}
-
 export interface Skill {
   name: string
   image: string
   progress: number
+}
+
+/* -------------------------------------------------------- */
+
+export interface Alert {
+  message: string
+  link?: AlertLink
+}
+
+export interface AlertLink {
+  label: string
+  url: string
 }

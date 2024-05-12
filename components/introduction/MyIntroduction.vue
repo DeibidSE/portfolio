@@ -1,13 +1,13 @@
 <template>
   <section
-    :id="sectionId"
+    :id="id"
     class="min-h-screen bg-primary-light dark:bg-primary-dark"
-    :aria-label="sectionId"
+    :aria-label="id"
   >
     <div class="flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto">
       <div class="flex items-end justify-center w-full h-full p-5 overflow-hidden sm:p-6">
         <h1 class="w-full text-4xl font-bold text-center sm:text-5xl md:text-7xl">
-          {{ sectionData.whoAmI || '' }}
+          {{ data.whoAmI || '' }}
         </h1>
       </div>
       <div class="flex items-start justify-center w-full h-full p-5 overflow-hidden sm:p-6">
@@ -18,7 +18,7 @@
     </div>
     <div class="absolute bottom-0 w-full py-4 text-center">
       <div class="flex flex-col animate-bounce text-dark dark:text-light">
-        <span class="w-full text-xs sm:text-sm">{{ sectionData.scrollDown || '' }}</span>
+        <span class="w-full text-xs sm:text-sm">{{ data.scrollDown || '' }}</span>
         <nuxt-icon
           name="angle-double-down"
           class="self-center text-4xl cursor-pointer hover:text-purple-500"
@@ -34,21 +34,16 @@
 <script setup lang="ts">
 import { type PersonalIntroduction } from '~/types/types.d'
 
-const props = defineProps({
-  sectionData: {
-    type: Object,
-    default: () => ({})
-  }
-})
+const props = defineProps<{ sectionData: { [title: string]: PersonalIntroduction } }>()
 
 const txt = ref('')
 const isDeleting = ref(false)
 const loopNum = ref(0)
 const typingtextElement = ref<HTMLElement | null>(null)
 
-const sectionTitle = computed<string>(() => Object.keys(props.sectionData).toString() || '')
-const sectionId = computed<string>(() => sectionTitle.value.toLowerCase().replace(/\s+/g, '-'))
-const sectionData = computed<PersonalIntroduction>(() => props.sectionData[sectionTitle.value] || {})
+const title = computed<string>(() => Object.keys(props.sectionData).toString() || '')
+const id = computed<string>(() => title.value.toLowerCase().replace(/\s+/g, '-'))
+const data = computed<PersonalIntroduction>(() => props.sectionData[title.value] || {})
 
 onMounted(() => {
   typingtextElement.value = typingtextElement as unknown as HTMLElement
@@ -57,7 +52,7 @@ onMounted(() => {
 
 const tick = () => {
   const htmlElement = typingtextElement.value
-  const fullTxt = sectionData.value.job || ''
+  const fullTxt = data.value.job || ''
 
   if (htmlElement && fullTxt.length > 0) {
     if (isDeleting.value) {

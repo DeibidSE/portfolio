@@ -48,7 +48,7 @@
         "proyectos": {
             "Mi trabajo diario": {
                 "image": "images/verify.webp",
-                "description": "Aquí dedico la mayor parte de mi tiempo a la programación, concentrándome en proyectos web relacionados con requisitos KYC en el sector financiero. Aunque la confidencialidad me impide compartir detalles específicos, mi contribución abarca una variedad de productos desarrollados con diferentes tecnologías. He trabajado en frontend y backend, incluyendo el desarrollo de APIs Rest, automatización de procesos, creación de informes avanzados e implementación de metodologías ágiles, entre otros aspectos",
+                "description": "Aquí dedico la mayor parte de mi tiempo a la programación, concentrándome en proyectos web relacionados con requisitos KYC en el sector financiero. Aunque la confidencialidad me impide compartir detalles específicos, mi contribución abarca una variedad de productos desarrollados con diferentes tecnologías.  He contribuido tanto en el frontend como en el backend, participando en proyectos diversos y variados",
                 "technologies": [
                     {
                         "name": "Laravel",
@@ -159,7 +159,18 @@
                     "startDate": "Febrero 2021",
                     "endDate": "Presente",
                     "location": "Remoto",
-                    "details": "Este es mi trabajo actual, donde he aprendido una amplia gama de habilidades y tecnologías aplicadas al desarrollo web.",
+                    "description": "Este es mi trabajo actual, donde he aprendido una amplia gama de habilidades y tecnologías aplicadas al desarrollo web",
+                    "details": [
+                        "Desarrollo y mantenimiento de aplicaciones web para los principales clientes bancarios en Australia utilizando principalmente Laravel y PHP.",
+                        "Desarrollo front-end con Vue.js, Tailwind CSS y otras tecnologías como jQuery o JavaScript para una experiencia de usuario óptima.",
+                        "Manejo de base de datos MySQL y PostgreSQL.",
+                        "Dockerización de entornos de desarrollo.",
+                        "Creación de API REST y automatización de procesos.",
+                        "Creación de Informes avanzados.",
+                        "Uso de metodologías ágiles y desarrollo scrum.",
+                        "Colaboración en equipos utilizando Git para control de versiones.",
+                        "Resolución proactiva de incidencias y problemas técnicos."
+                    ],
                     "website": "https://www.simplekyc.com/"
                 },
                 {
@@ -167,7 +178,7 @@
                     "startDate": "Octubre 2020",
                     "endDate": "Diciembre 2020",
                     "location": "Remoto",
-                    "details": "Mi primera toma de contacto con el mundo laboral, aquí completé las prácticas de 3 meses de duración ofrecidas por el grado superior. Por desgracia, debido a la pandemia de COVID-19, estas prácticas tuvieron que realizarse de manera 100% remota.",
+                    "description": "Mi primera toma de contacto con el mundo laboral, aquí completé las prácticas de 3 meses de duración ofrecidas por el grado superior. Por desgracia, debido a la pandemia de COVID-19, estas prácticas tuvieron que realizarse de manera 100% remota.",
                     "website": "http://www.dominama.es/"
                 }
             ],
@@ -177,14 +188,14 @@
                     "startDate": "Septiembre 2018",
                     "endDate": "Junio 2020",
                     "location": "Madrid",
-                    "details": "Aquí empecé mis estudios de programación: Java, Python, SQL, Linux... un mundo de aprendizaje y crecimiento junto a dedicados profesores y compañeros. Estos años sin duda marcaron una época inolvidable en mi camino educativo."
+                    "description": "Aquí empecé mis estudios de programación: Java, Python, SQL, Linux... un mundo de aprendizaje y crecimiento junto a dedicados profesores y compañeros. Estos años sin duda marcaron una época inolvidable en mi camino educativo."
                 },
                 {
                     "title": "Bachillerato tecnológico",
                     "startDate": 2014,
                     "endDate": 2018,
                     "location": "Madrid",
-                    "details": "Durante este periodo completé el bachillerato de la rama de ciencias, centrado principalmente en asignaturas como matemáticas, química y biología, etc..."
+                    "description": "Durante este periodo completé el bachillerato de la rama de ciencias, centrado principalmente en asignaturas como matemáticas, química y biología, etc..."
                 }
             ],
             "/estudios adicionales": [
@@ -193,21 +204,21 @@
                     "startDate": 2022,
                     "endDate": 2023,
                     "location": "Remoto",
-                    "details": "Como parte de mi desarrollo profesional, la empresa para la que trabajo nos pagaba clases de inglés enfocadas a mejorar nuestros conocimientos de esta lengua."
+                    "description": "Como parte de mi desarrollo profesional, la empresa para la que trabajo nos pagaba clases de inglés enfocadas a mejorar nuestros conocimientos de esta lengua."
                 },
                 {
                     "title": "Clases de conducir",
                     "startDate": 2018,
                     "endDate": 2019,
                     "location": "Madrid",
-                    "details": "Completé las clases de conducir y obtuve el permiso de conducir de clase B"
+                    "description": "Completé las clases de conducir y obtuve el permiso de conducir de clase B"
                 },
                 {
                     "title": "Lingua Generation",
                     "startDate": 2010,
                     "endDate": 2020,
                     "location": "Madrid",
-                    "details": "Una academia de inglés con profesores nativos"
+                    "description": "Una academia de inglés con profesores nativos"
                 }
             ]
         }
@@ -330,11 +341,11 @@
     {
         "others": {
             "backToTopButton": {
-                "label": "Volver Arriba"
+                "message": "Volver Arriba"
             },
             "alertCompatibility": {
                 "message": "Tu navegador o la versión que estás utilizando parece ser incompatible con las animaciones incluidas en este portafolio. Como resultado, experimentarás la versión estática del sitio, sin animaciones ni transiciones durante el desplazamiento.",
-                "links": {
+                "link": {
                     "label": "Haz clic aquí para más información",
                     "url": "https://caniuse.com/?search=animation-timeline"
                 }

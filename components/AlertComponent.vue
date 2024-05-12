@@ -37,24 +37,9 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-  data: {
-    type: Object,
-    default: () => ({})
-  },
-  enableClose: {
-    type: Boolean,
-    default: true
-  },
-  animateEntry: {
-    type: Boolean,
-    default: true
-  },
-  type: {
-    type: String,
-    default: 'info'
-  }
-})
+import { type Alert } from '~/types/types.d'
+
+defineProps<{ data: Alert, enableClose?: boolean, animateEntry?: boolean, type: string }>()
 
 defineEmits(['close'])
 
@@ -62,10 +47,10 @@ defineEmits(['close'])
 
 <style scoped>
 .entrance-anim {
-  animation: myAnim 1s linear 0s 1 normal none;
+  animation: bounce 1s linear 0s 1 normal none;
 }
 
-@keyframes myAnim {
+@keyframes bounce {
   0% {
     animation-timing-function: ease-in;
     opacity: 0;

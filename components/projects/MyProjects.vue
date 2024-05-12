@@ -22,16 +22,11 @@
 </template>
 
 <script setup lang="ts">
-import { type ProjectData } from '~/types/types.d'
+import { type Project } from '~/types/types.d'
 
-const props = defineProps({
-  sectionData: {
-    type: Object,
-    default: () => ({})
-  }
-})
+const props = defineProps<{ sectionData: { [title: string]: Project[] } }>()
 
 const sectionTitle = computed<string>(() => Object.keys(props.sectionData).toString() || '')
 const sectionId = computed<string>(() => sectionTitle.value.toLowerCase().replace(/\s+/g, '-'))
-const projects = computed<ProjectData>(() => props.sectionData[sectionTitle.value] || {})
+const projects = computed<Project[]>(() => props.sectionData[sectionTitle.value] || {})
 </script>

@@ -232,3 +232,20 @@
 ### Changes
 
 - Fixed issue where dropdown menu didn't close when clicking outside the language selector.
+
+## [v1.7.4] - 12/05/2024
+
+### Changes
+
+- Update dependencies.
+- Migrated all defineProps to TypeScript style (hopefully without causing any issues).
+- Minor fixes.
+
+### Removed
+
+- Unused TypeScript interfaces.
+
+### Added
+
+- More details for each job
+- New TypeScript interfaces for alerts.

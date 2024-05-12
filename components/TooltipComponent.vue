@@ -2,7 +2,7 @@
   <span
     class="relative before:content-[''] before:z-[1001] before:border-[5px] before:border-solid before:border-transparent after:content-[attr(tooltipText)] after:text-center after:whitespace-nowrap after:min-w-[3em] after:max-w-xs after:overflow-hidden after:text-ellipsis after:shadow-sm after:opacity-30 after:text-white after:z-[1000] after:p-2 after:rounded-md"
     :tooltipText="tooltipText"
-    :position="position"
+    :position="position ?? 'top'"
     role="tooltip"
     :aria-label="tooltipText"
     aria-live="polite"
@@ -13,16 +13,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-  tooltipText: {
-    type: String,
-    default: ''
-  },
-  position: {
-    type: String,
-    default: 'top'
-  }
-})
+defineProps<{ tooltipText: string, position?: string }>()
 </script>
 
 <style scoped>

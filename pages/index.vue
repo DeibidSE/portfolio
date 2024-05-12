@@ -16,6 +16,8 @@
     <div v-if="!hideAlert" class="fixed right-0 z-20 flex w-full p-2 mx-auto top-20 place-content-center lg:w-1/2">
       <AlertComponent
         :data="otherData('alertCompatibility')"
+        :enable-close="true"
+        :animate-entry="true"
         type="warning"
         @close="closeAlert"
       />
@@ -24,13 +26,7 @@
 </template>
 
 <script setup lang="ts">
-
-const props = defineProps({
-  selectedLanguageData: {
-    type: Array as () => Record<string, any>[],
-    default: () => []
-  }
-})
+const props = defineProps<{ selectedLanguageData: Record<string, any>[] }>()
 
 const hideAlert = ref(isBrowserCompatible())
 

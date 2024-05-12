@@ -30,7 +30,6 @@
 </template>
 
 <script setup lang="ts">
-
 defineProps<{ sectionList: string[] }>()
 
 const menuOpen = ref(false)

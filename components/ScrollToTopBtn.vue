@@ -3,7 +3,7 @@
     v-if="showScrollToTop"
     :class="`fixed bottom-4 right-4 group z-40 p-1 w-12 h-12 text-light bg-purple-500 font-semibold flex items-center justify-center justify-items-center shadow-lg cursor-pointer duration-300 overflow-hidden rounded-[50%] border-2 border-light hover:w-36 hover:duration-300 hover:bg-purple-600 hover:rounded-[50px] before:absolute before:content-[attr(data-label)] before:text-[0px] hover:before:text-sm hover:before:duration-300`"
     aria-label="Scroll to top of the page"
-    :data-label="props?.btnData?.label || 'Back to Top'"
+    :data-label="props?.btnData?.message || 'Back to Top'"
     @click="scrollToTop"
   >
     <nuxt-icon name="arrow-up" class="text-3xl text-white duration-300 group-hover:duration-300 group-hover:translate-y-[-200%]" />
@@ -11,13 +11,9 @@
 </template>
 
 <script setup lang="ts">
+import { type Alert } from '~/types/types.d'
 
-const props = defineProps({
-  btnData: {
-    type: Object,
-    default: () => ({})
-  }
-})
+const props = defineProps<{ btnData: Alert }>()
 
 const showScrollToTop = ref(false)
 

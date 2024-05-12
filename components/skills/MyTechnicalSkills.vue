@@ -68,8 +68,6 @@
         <ul v-if="showList" class="flex flex-col justify-between flex-1 h-full gap-8 px-8 py-8 md:px-16" role="list">
           <AlertComponent
             :data="alert"
-            :enable-close="false"
-            :animate-entry="false"
             type="info"
             class="shadow-inside"
           />
@@ -97,18 +95,9 @@
 </template>
 
 <script setup lang="ts">
-import { type Skill } from '~/types/types.d'
+import { type Skill, type Alert } from '~/types/types.d'
 
-const props = defineProps({
-  sectionData: {
-    type: Object,
-    default: () => ({})
-  },
-  alert: {
-    type: Object,
-    default: () => ({})
-  }
-})
+const props = defineProps<{ sectionData: { [title: string]: { [category: string]: Skill[] } }, alert: Alert }>()
 
 const selectedCategory = ref('/frontend')
 const showList = ref(false)
@@ -118,7 +107,7 @@ const sectionTitle = computed<string>(() => Object.keys(props.sectionData).toStr
 const sectionId = computed<string>(() => sectionTitle.value.toLowerCase().replace(/\s+/g, '-'))
 
 // Computed property for filtered skills based on the selected category
-const filteredSkills = computed(() => props.sectionData[sectionTitle.value][selectedCategory.value] || [])
+const filteredSkills = computed<Skill[]>(() => props.sectionData[sectionTitle.value][selectedCategory.value] || [])
 
 // Computed property for filtered and sorted skills by progress
 const sortedFilteredSkills = computed(() =>

@@ -18,7 +18,6 @@
 </template>
 
 <script setup lang="ts">
-
 defineProps<{ menuOpen: Boolean, sectionList: string[] }>()
 
 const emit = defineEmits(['menu-close'])

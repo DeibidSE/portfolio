@@ -16,12 +16,7 @@
 <script setup lang="ts">
 import { type PresentationInfo } from '~/types/types.d'
 
-const props = defineProps({
-  sectionData: {
-    type: Object,
-    default: () => ({})
-  }
-})
+const props = defineProps<{ sectionData: { [title: string]: PresentationInfo } }>()
 
 const sectionTitle = computed<string>(() => Object.keys(props.sectionData).toString() || '')
 const sectionId = computed<string>(() => sectionTitle.value.toLowerCase().replace(/\s+/g, '-'))
