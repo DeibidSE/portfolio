@@ -249,3 +249,13 @@
 
 - More details for each job
 - New TypeScript interfaces for alerts.
+
+## [v1.7.5] - 13/06/2024
+
+### Changes
+
+- Upgraded to Nuxt 3.12.1
+
+### Removed
+
+- Unused dependency
