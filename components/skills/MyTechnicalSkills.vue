@@ -1,7 +1,7 @@
 <template>
   <section
     :id="sectionId"
-    class="flex flex-col min-h-screen bg-primary-light dark:bg-primary-dark"
+    class="flex flex-col min-h-dvh bg-primary-light dark:bg-primary-dark"
     :aria-label="sectionId"
   >
     <header class="flex items-center w-full gap-4 px-6 py-8 md:px-16">
@@ -33,7 +33,7 @@
       </li>
     </ul>
 
-    <div class="min-h-screen bg-secondary-light dark:bg-secondary-dark" :aria-label="selectedCategory">
+    <div class="min-h-dvh bg-secondary-light dark:bg-secondary-dark" :aria-label="selectedCategory">
       <!-- Grid/list toggle -->
       <div class="flex justify-end mt-2 mr-2" aria-label="View Toggle">
         <div class="inline-flex text-sm leading-none bg-purple-200 border-2 border-purple-400 rounded-full cursor-pointer hover:bg-purple-300 dark:bg-purple-600 hover:dark:bg-purple-500 text-dark dark:text-light shadow-inside">

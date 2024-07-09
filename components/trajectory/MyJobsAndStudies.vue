@@ -1,7 +1,7 @@
 <template>
   <section
     :id="sectionId"
-    class="flex flex-col min-h-screen gap-6 p-6 lg:grid lg:p-16 lg:grid-cols-3"
+    class="flex flex-col min-h-dvh gap-6 p-6 lg:grid lg:p-16 lg:grid-cols-3"
     :aria-label="sectionTitle"
   >
     <div

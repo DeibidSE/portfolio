@@ -259,3 +259,10 @@
 ### Removed
 
 - Unused dependency
+
+## [v1.7.6] - 09/07/2024
+
+### Changes
+
+- Update dependencies.
+- Replaced all `h-screen` classes with `h-dvh`.

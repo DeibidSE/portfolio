@@ -1,10 +1,10 @@
 <template>
   <section
     :id="id"
-    class="min-h-screen bg-primary-light dark:bg-primary-dark"
+    class="min-h-dvh bg-primary-light dark:bg-primary-dark"
     :aria-label="id"
   >
-    <div class="flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto">
+    <div class="flex flex-col items-center justify-center w-full max-w-screen-lg mx-auto h-dvh">
       <div class="flex items-end justify-center w-full h-full p-5 overflow-hidden sm:p-6">
         <h1 class="w-full text-4xl font-bold text-center sm:text-5xl md:text-7xl">
           {{ data.whoAmI || '' }}

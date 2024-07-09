@@ -1,7 +1,7 @@
 <template>
   <section
     :id="sectionId"
-    class="flex flex-col min-h-screen gap-4 p-6 lg:flex-row lg:gap-10 lg:px-32 lg:py-16"
+    class="flex flex-col min-h-dvh gap-4 p-6 lg:flex-row lg:gap-10 lg:px-32 lg:py-16"
     role="region"
     :aria-label="sectionId"
   >
