@@ -1,7 +1,7 @@
 <template>
   <section
     :id="sectionId"
-    class="flex flex-col min-h-dvh gap-8 p-6 bg-primary-light dark:bg-primary-dark lg:p-16"
+    class="flex flex-col gap-8 p-6 min-h-dvh bg-primary-light dark:bg-primary-dark lg:p-16"
     :aria-label="sectionId"
   >
     <header class="flex items-center w-full gap-4">
@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { type Project } from '~/types/types.d'
+import { type Project } from '~/lib/types.d'
 
 const props = defineProps<{ sectionData: { [title: string]: Project[] } }>()
 

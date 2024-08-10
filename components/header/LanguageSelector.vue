@@ -1,5 +1,5 @@
 <template>
-  <div ref="dropdown" class="relative" role="button">
+  <div ref="dropdown" class="relative" role="button" aria-label="Select language">
     <div class="flex items-center rounded-full cursor-pointer hover:text-purple-500">
       <nuxt-icon name="language" class="text-xl" alt="Language selector icon" />
       <nuxt-icon name="angle-down" class="text-xl" alt="Down arrow icon" />
@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import { type Language } from '~/types/types.d'
+import { type Language } from '~/lib/types.d'
 
 const showDropdown = ref(false)
 const dropdown = ref<HTMLElement | null>(null)

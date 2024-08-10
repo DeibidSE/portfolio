@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { type Skill } from '~/types/types.d'
+import { type Skill } from '~/lib/types.d'
 
 defineProps<{ data: Skill }>()
 </script>

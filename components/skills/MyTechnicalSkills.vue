@@ -95,7 +95,7 @@
 </template>
 
 <script setup lang="ts">
-import { type Skill, type Alert } from '~/types/types.d'
+import { type Skill, type Alert } from '~/lib/types.d'
 
 const props = defineProps<{ sectionData: { [title: string]: { [category: string]: Skill[] } }, alert: Alert }>()
 

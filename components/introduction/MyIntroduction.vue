@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { type PersonalIntroduction } from '~/types/types.d'
+import { type PersonalIntroduction } from '~/lib/types.d'
 
 const props = defineProps<{ sectionData: { [title: string]: PersonalIntroduction } }>()
 

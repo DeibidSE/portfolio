@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import { type JobOrStudy } from '~/types/types.d'
+import { type JobOrStudy } from '~/lib/types.d'
 
 defineProps<{ data: JobOrStudy[] }>()
 </script>

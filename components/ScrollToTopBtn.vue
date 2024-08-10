@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { type Alert } from '~/types/types.d'
+import { type Alert } from '~/lib/types.d'
 
 const props = defineProps<{ btnData: Alert }>()
 

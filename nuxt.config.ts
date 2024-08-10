@@ -46,5 +46,6 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'nuxt-icons'
   ],
-  css: ['@/assets/css/tailwind.css']
+  css: ['@/assets/css/tailwind.css'],
+  compatibilityDate: '2024-08-10'
 })

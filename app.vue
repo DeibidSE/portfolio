@@ -7,28 +7,25 @@
 </template>
 
 <script setup lang="ts">
-import { type LanguageData } from '~/types/types.d'
-import espJsonData from '~/locales/es-ES.json'
-import engJsonData from '~/locales/en-GB.json'
+import { spanishData, englishData } from '~/lib/data'
+import { type LanguageData } from '~/lib/types.d'
 
-const EXCLUDED_SECTIONS = ['others']
+const EXCLUDED_SECTIONS = new Set<string>(['others']) // Use Set for faster lookups
 const languageStore = langStore()
-const languageData = ref<LanguageData>({
-  es: espJsonData,
-  en: engJsonData
+
+// Use readonly to ensure languageData is immutable
+const languageData = readonly<LanguageData>({
+  es: spanishData,
+  en: englishData
 })
 
-const selectedLanguageData = computed(() => languageData.value[languageStore.getLanguage])
+// Compute selected language data based on the current language
+const selectedLanguageData = computed(() => languageData[languageStore.getLanguage])
 
-// Gets an array with all section names
-const sectionList = computed(() => {
-  // Filter sections to exclude some
-  const filteredSections = selectedLanguageData.value.filter((section: any) => {
-    const [sectionTitle] = Object.keys(section)
-    return !EXCLUDED_SECTIONS.includes(sectionTitle)
-  })
-
-  // Map to get section names
-  return filteredSections.map((section: any) => Object.keys(section)[0])
-})
+// Compute the list of section names, excluding specific sections
+const sectionList = computed<string[]>(() =>
+  selectedLanguageData.value
+    .flatMap((section: Record<string, any>) => Object.keys(section))
+    .filter((sectionTitle: string) => !EXCLUDED_SECTIONS.has(sectionTitle))
+)
 </script>

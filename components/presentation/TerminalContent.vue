@@ -95,7 +95,7 @@
 </template>
 
 <script setup lang="ts">
-import { type PresentationInfo } from '~/types/types.d'
+import { type PresentationInfo } from '~/lib/types.d'
 
 defineProps<{ terminalData: PresentationInfo }>()
 

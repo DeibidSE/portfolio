@@ -1,7 +1,7 @@
 <template>
   <section
     :id="sectionId"
-    class="flex flex-col min-h-dvh gap-6 p-6 lg:grid lg:p-16 lg:grid-cols-3"
+    class="flex flex-col gap-6 p-6 min-h-dvh lg:grid lg:p-16 lg:grid-cols-3"
     :aria-label="sectionTitle"
   >
     <div
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { type JobOrStudy } from '~/types/types.d'
+import { type JobOrStudy } from '~/lib/types.d'
 
 const props = defineProps<{ sectionData: { [title: string]: { [category: string]: JobOrStudy[] } } }>()
 

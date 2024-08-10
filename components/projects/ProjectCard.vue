@@ -55,7 +55,7 @@
 </template>
 
 <script setup lang="ts">
-import { type Project } from '~/types/types.d'
+import { type Project } from '~/lib/types.d'
 
 defineProps<{ projectName: String, projectData: Project }>()
 </script>

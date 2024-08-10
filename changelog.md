@@ -266,3 +266,14 @@
 
 - Update dependencies.
 - Replaced all `h-screen` classes with `h-dvh`.
+
+## [v1.8.0] - 10/08/2024
+
+### Changes
+
+- Reorganized data: removed language JSON files and migrated them to a TypeScript data file.
+- Moved alert icons to a separate SVG file
+- Introduced a progress bar that dynamically adjusts its length based on scroll position
+- Minor code optimizations.
+- Set compatibility date in nuxt.config -> [Nuxt Documentation](https://nuxt.com/docs/api/nuxt-config#compatibilitydate)
+- Updated dependencies to the latest versions.
