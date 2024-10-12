@@ -1,6 +1,6 @@
 <template>
-  <NuxtLayout id="projects" icon="code" :title="$t('projects')">
-    <ul id="cards" class="flex flex-col gap-48">
+  <SectionWrapper id="projects" icon="code" :title="$t('projects')">
+    <ul id="cards" class="flex flex-col gap-24">
       <li
         v-for="(project, projectName, i) in $tm('projectsList')"
         :id="`card_${i + 1}`"
@@ -14,7 +14,7 @@
         />
       </li>
     </ul>
-  </NuxtLayout>
+  </SectionWrapper>
 </template>
 
 <style scoped>

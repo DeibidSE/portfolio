@@ -36,7 +36,7 @@
         </div>
         <div class="flex items-center gap-2">
           Status:
-          <BadgeComponent color="red">
+          <BadgeComponent tag="span" color="red" size="small">
             {{ $t('availability') }}
           </BadgeComponent>
         </div>
@@ -46,18 +46,20 @@
     <hr class="border-2 border-gray-400 dark:border-gray-600" role="separator">
 
     <div class="flex flex-wrap items-center justify-around w-full gap-4">
-      <a
+      <BadgeComponent
         v-for="(info, key) in socialLinks"
         :key="key"
+        tag="a"
+        :icon="info.icon"
+        size="large"
+        hover
         :href="info.url"
         target="_blank"
         rel="noopener noreferrer"
         :aria-label="`Contact me via ${info.name}`"
-        class="flex items-center justify-center px-3 py-1 transition bg-gray-100 border rounded-full shadow-xl dark:border-light border-dark gap-x-2 hover:scale-125 dark:bg-primary-dark"
       >
-        <nuxt-icon :name="info.icon" class="text-2xl" />
         {{ info.name || '' }}
-      </a>
+      </BadgeComponent>
     </div>
 
     <hr class="border-2 border-gray-400 dark:border-gray-600" role="separator">
@@ -68,7 +70,7 @@
         <span class="text-dark dark:text-light">npx run cv-download</span>
       </div>
       <span
-        class="text-purple-600 cursor-pointer dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-600 w-max"
+        class="text-purple-700 cursor-pointer dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-600 w-max"
         @click="showModal(true)"
       >
         > {{ $t('cvLabel') }}

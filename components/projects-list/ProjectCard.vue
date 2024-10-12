@@ -28,17 +28,19 @@
         <p class="text-sm leading-relaxed text-gray-600 sm:text-base md:text-lg dark:text-gray-300">
           {{ $rt(projectData.description) }}
         </p>
-        <a
+        <BadgeComponent
           v-if="projectData.url"
+          tag="a"
           :href="$rt(projectData.url)"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-3 px-4 py-2 text-sm font-medium text-white transition-all duration-300 ease-in-out bg-purple-600 rounded-full shadow-lg sm:px-6 sm:text-base hover:bg-purple-700"
           aria-label="Link to the project on GitHub"
+          hover
+          icon="github"
+          color="purple"
         >
-          <nuxt-icon name="github" class="text-xl sm:text-2xl" />
           <span>{{ $t('code') }}</span>
-        </a>
+        </BadgeComponent>
       </div>
     </div>
 

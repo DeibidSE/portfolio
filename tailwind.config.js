@@ -16,7 +16,8 @@ module.exports = {
       },
       boxShadow: {
         inside: 'inset 0 0 10px rgba(0,0,0,0.5)',
-        top: '0px -10px 20px 0px rgba(0,0,0,0.2)'
+        top: '0px -10px 20px 0px rgba(0,0,0,0.2)',
+        bottom: '0px 10px 20px 0px rgba(0,0,0,0.2)'
       },
       backgroundColor: {
         'primary-dark': '#0D1117',

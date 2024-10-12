@@ -1,7 +1,7 @@
 <template>
   <header
     id="header"
-    class="fixed top-0 left-0 right-0 z-50 mx-auto transition-all shadow-lg backdrop-blur-lg"
+    class="fixed top-0 left-0 right-0 z-50 mx-auto transition-all shadow-bottom backdrop-blur-lg"
   >
     <nav id="nav" class="flex items-center justify-between w-full px-6 py-1 mx-auto">
       <div class="flex items-center justify-start flex-1">

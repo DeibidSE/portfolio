@@ -313,3 +313,12 @@
 
 - Various bug fixes.
 - Update some texts
+
+## [v2.0.2] - 12/10/2024
+
+### Changes
+
+- Optimizations and bug fixes.
+- Updated dependencies.
+- Replaced layout with new `SectionWrapper` component.
+- Minor visual tweaks for better design consistency.

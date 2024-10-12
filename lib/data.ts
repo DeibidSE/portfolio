@@ -1,3 +1,7 @@
+export const FRONTEND_TYPE = 'frontend'
+export const BACKEND_TYPE = 'backend'
+export const TOOLS_TYPE = 'tools'
+
 export const socialLinks = [
   {
     name: 'LinkedIn',
@@ -10,7 +14,7 @@ export const socialLinks = [
     url: 'https://github.com/DeibidSE'
   },
   {
-    name: 'davidsimon98@outlook.com',
+    name: 'Email',
     icon: 'envelope',
     url: 'mailto:davidsimon98@outlook.com'
   }
@@ -102,18 +106,6 @@ export const skillList = [
     type: 'backend'
   },
   {
-    name: 'Java',
-    image: 'logos/Java',
-    percentage: 35,
-    type: 'backend'
-  },
-  {
-    name: 'Python',
-    image: 'logos/Python',
-    percentage: 20,
-    type: 'backend'
-  },
-  {
     name: 'Visual Studio Code',
     image: 'logos/VS Code',
     percentage: 100,
@@ -135,12 +127,6 @@ export const skillList = [
     name: 'Laragon',
     image: 'logos/Laragon',
     percentage: 95,
-    type: 'tools'
-  },
-  {
-    name: 'Android Studio',
-    image: 'logos/Android Studio',
-    percentage: 35,
     type: 'tools'
   }
 ]

@@ -1,7 +1,7 @@
 <template>
-  <NuxtLayout id="skills" icon="message-code" :title="$t('skills')">
+  <SectionWrapper id="skills" icon="message-code" :title="$t('skills')">
     <TechnicalSkillsBannerLogos />
-  </NuxtLayout>
+  </SectionWrapper>
 </template>
 
 <script setup lang="ts">
