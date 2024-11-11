@@ -322,3 +322,13 @@
 - Updated dependencies.
 - Replaced layout with new `SectionWrapper` component.
 - Minor visual tweaks for better design consistency.
+
+## [v2.1.0] - 11/11/2024
+
+### Changes
+
+- Updated project dependencies.
+- Moved i18n folder to root directory to support migration to v9.0.
+- Adjusted main content alignment for improved centering.
+- Implemented custom dropdown for language selection.
+- Minor visual adjustments.

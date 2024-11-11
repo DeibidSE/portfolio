@@ -5,7 +5,7 @@
   >
     <nav id="nav" class="flex items-center justify-between w-full px-6 py-1 mx-auto">
       <div class="flex items-center justify-start flex-1">
-        <a :href="`${$config.public.BASE_URL}`" aria-label="Go to homepage">
+        <a :href="`${$config.public.BASE_URL}`" aria-label="Go to homepage" class="transition-transform duration-300 hover:scale-110">
           <nuxt-icon name="main" filled class="w-16 h-16" />
         </a>
       </div>
@@ -76,8 +76,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-
 const { t } = useI18n()
 const isMenuOpen = ref(false)
 

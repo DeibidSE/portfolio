@@ -24,7 +24,7 @@ const colorsMap = {
   red: 'dark:bg-red-800 bg-red-700 text-red-100 border-red-500',
   green: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300 border-green-500',
   yellow: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 border-yellow-500',
-  purple: 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300 border-purple-500',
+  purple: 'bg-purple-200 text-purple-800 dark:bg-purple-900 dark:text-purple-300 border-purple-500',
   orange: 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300 border-orange-500',
   pink: 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300 border-pink-500',
   default: 'bg-primary-light border-dark text-dark dark:bg-primary-dark dark:border-light dark:text-light'

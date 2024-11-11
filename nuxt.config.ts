@@ -50,12 +50,10 @@ export default defineNuxtConfig({
   i18n: {
     strategy: 'no_prefix',
     defaultLocale: 'es',
-    fallbackLocale: 'es',
     locales: [
       { code: 'es', name: 'Español', file: 'es.json' },
       { code: 'en', name: 'English', file: 'en.json' }
-    ],
-    langDir: 'lib/locales/'
+    ]
   },
   css: ['@/assets/css/tailwind.css', '@/assets/css/index.css'],
   compatibilityDate: '2024-08-10'

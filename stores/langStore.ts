@@ -8,7 +8,7 @@ export const langStore = defineStore('lang', {
     getLanguage: state => state.language
   },
   actions: {
-    setLanguage (lang: string) {
+    setLanguage (lang: 'es'|'en') {
       this.language = lang
     }
   },

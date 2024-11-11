@@ -2,7 +2,7 @@
   <div class="flex justify-center w-full gap-4">
     <div class="relative w-full overflow-hidden text-center">
       <div class="flex w-full [mask-image:_linear-gradient(to_right,transparent_0,_black_64px,_black_calc(100%-64px),transparent_100%)]">
-        <ul v-for="n in 2" :key="`list-${n}`" class="inline-flex items-center justify-center gap-4 md:gap-12 animate-infinite-scroll" role="list">
+        <ul v-for="n in 2" :key="`list-${n}`" class="inline-flex items-center justify-center gap-4 py-1 md:gap-12 animate-infinite-scroll" role="list">
           <template v-for="(skills, type, typeIndex) in categorizedSkills" :key="`category-${typeIndex}-${n}`">
             <li v-for="(skill, index) in skills" :key="`skill-${type}-${index}-${n}`" class="flex flex-col items-center w-32 gap-3 transition-transform duration-300 transform hover:scale-105" role="listitem">
               <nuxt-icon

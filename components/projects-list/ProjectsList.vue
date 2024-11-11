@@ -14,6 +14,9 @@
         />
       </li>
     </ul>
+    <span class="w-full py-6 text-3xl text-center opacity-75 md:py-12">
+      {{ $t('moreSoon') }}
+    </span>
   </SectionWrapper>
 </template>
 

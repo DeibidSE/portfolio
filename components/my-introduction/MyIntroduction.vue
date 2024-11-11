@@ -1,8 +1,8 @@
 <template>
   <SectionWrapper id="introduction">
-    <div class="flex flex-col items-center justify-center w-full gap-6 mx-auto h-dvh">
+    <div class="flex flex-col items-center justify-center w-full gap-6 h-dvh">
       <div class="flex items-end justify-center w-full h-full overflow-hidden">
-        <h1 class="w-full p-6 text-6xl font-bold text-center text-transparent sm:text-7xl md:text-8xl lg:text-9xl bg-clip-text bg-gradient-to-r from-accent to-accent-secondary">
+        <h1 class="w-full py-6 font-bold text-center text-transparent text-7xl md:text-8xl lg:text-9xl bg-clip-text bg-gradient-to-r from-accent to-accent-secondary">
           {{ $t('whoAmI') }}
         </h1>
       </div>
