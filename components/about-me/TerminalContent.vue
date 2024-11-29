@@ -34,7 +34,7 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center gap-2">
+        <div class="flex flex-col items-center gap-2">
           Status:
           <BadgeComponent tag="span" color="red" size="small">
             {{ $t('availability') }}

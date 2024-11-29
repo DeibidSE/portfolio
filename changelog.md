@@ -332,3 +332,11 @@
 - Adjusted main content alignment for improved centering.
 - Implemented custom dropdown for language selection.
 - Minor visual adjustments.
+
+## [v2.1.1] - 29/11/2024
+
+### Changes
+
+- Reorganized and updated project dependencies.
+- Updated CSS svg logo
+- Updated some effects in the terminal component.

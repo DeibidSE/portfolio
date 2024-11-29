@@ -10,7 +10,7 @@ This web portfolio aims to display my professional profile and web development s
 
 - **Responsive Design:** The interface adapts to different devices to provide an optimal experience.
 - **Projects Section:** Check out the projects I've worked on.
-- **Experience:** Summary of my work and educational background.
+- **Professional Experience:** Summary of my work background.
 - **Skills:** List of technical skills relevant to web development.
 
 ## Acknowledgements
