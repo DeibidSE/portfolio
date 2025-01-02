@@ -340,3 +340,12 @@
 - Reorganized and updated project dependencies.
 - Updated CSS svg logo
 - Updated some effects in the terminal component.
+
+## [v2.1.2] - 02/01/2025
+
+### Changes
+
+- Updated dependencies.
+- Upgraded to Nuxt 3.15.0
+- Improved pinia store code.
+- Fixed language persistance.

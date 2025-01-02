@@ -5,7 +5,7 @@
       aria-label="Select language"
       @click="toggleDropdown"
     >
-      {{ languagesList[languageStore.language as 'es' | 'en'] }}
+      {{ languagesList[languageStore.language] }}
       <nuxt-icon
         name="angle-down"
         class="text-xl transition-transform duration-300 pointer-events-none right-4"
@@ -33,37 +33,39 @@
 
 <script setup lang="ts">
 const { locale } = useI18n()
-const languageStore = langStore()
+const languageStore = useLangStore()
 
 const languagesList: Record<'es' | 'en', string> = { es: 'Español', en: 'English' }
 const isOpen = ref(false)
-
-watch(
-  () => languageStore.language as 'es' | 'en',
-  (newLocale) => {
-    locale.value = newLocale
-  }
-)
+const dropdown = ref<HTMLElement | null>(null)
 
 // Toggle dropdown
 const toggleDropdown = () => {
   isOpen.value = !isOpen.value
 }
 
-// Select language and close dropdown
+// Select language
 const selectLanguage = (code: 'es' | 'en') => {
-  languageStore.language = code
+  if (languageStore.language !== code) {
+    languageStore.setLanguage(code)
+    locale.value = code
+  }
   isOpen.value = false
-  locale.value = code
 }
 
-// Close dropdown on outside click
-const dropdown = ref<HTMLElement | null>(null)
-document.addEventListener('click', (event) => {
-  if (dropdown.value && !dropdown.value.contains(event.target as Node)) {
-    isOpen.value = false
-  }
+onMounted(() => {
+  languageStore.initLanguage()
+  locale.value = languageStore.language || 'es'
 })
+
+watch(
+  () => languageStore.language,
+  (newLocale) => {
+    if (locale.value !== newLocale) {
+      locale.value = newLocale
+    }
+  }
+)
 </script>
 
 <style scoped>

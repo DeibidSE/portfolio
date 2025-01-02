@@ -1,15 +1,22 @@
 import { defineStore } from 'pinia'
 
-export const langStore = defineStore('lang', {
+type Lang = 'es' | 'en'
+
+export const useLangStore = defineStore('lang', {
   state: () => ({
-    language: 'es'
+    language: 'es' as Lang
   }),
-  getters: {
-    getLanguage: state => state.language
-  },
   actions: {
-    setLanguage (lang: 'es'|'en') {
-      this.language = lang
+    initLanguage () {
+      const savedLang = this.language
+      if (savedLang) {
+        this.setLanguage(savedLang)
+      }
+    },
+    setLanguage (newLang: Lang) {
+      if (this.language !== newLang) {
+        this.language = newLang
+      }
     }
   },
   persist: true
