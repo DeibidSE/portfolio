@@ -3,9 +3,10 @@
     <button
       class="flex items-center justify-between w-full h-10 px-4 rounded-full cursor-pointer lg:pl-4 lg:pr-10 text-md focus:outline-none"
       aria-label="Select language"
+      :aria-expanded="isOpen"
       @click="toggleDropdown"
     >
-      {{ languagesList[languageStore.language] }}
+      {{ selectedLocale.name }}
       <nuxt-icon
         name="angle-down"
         class="text-xl transition-transform duration-300 pointer-events-none right-4"
@@ -16,15 +17,16 @@
     <transition name="fade">
       <ul
         v-if="isOpen"
+        role="menu"
         class="absolute z-10 w-full overflow-hidden transition-all duration-300 ease-in-out bg-gray-100 border-2 border-purple-500 rounded-lg top-12 dark:bg-gray-900"
       >
         <li
-          v-for="(language, code) in languagesList"
-          :key="code"
+          v-for="lang in locales"
+          :key="lang.code"
           class="px-4 py-2 transition-colors duration-200 ease-in-out cursor-pointer hover:bg-purple-200 dark:hover:bg-purple-900"
-          @click="selectLanguage(code)"
+          @click.prevent.stop="setLocale(lang.code)"
         >
-          {{ language }}
+          {{ lang.name }}
         </li>
       </ul>
     </transition>
@@ -32,40 +34,15 @@
 </template>
 
 <script setup lang="ts">
-const { locale } = useI18n()
-const languageStore = useLangStore()
+const { locale, locales, setLocale } = useI18n()
 
-const languagesList: Record<'es' | 'en', string> = { es: 'Español', en: 'English' }
 const isOpen = ref(false)
-const dropdown = ref<HTMLElement | null>(null)
 
-// Toggle dropdown
-const toggleDropdown = () => {
-  isOpen.value = !isOpen.value
-}
+const selectedLocale = computed(() => locales.value.find(i => i.code === locale.value) || locales.value[0])
 
-// Select language
-const selectLanguage = (code: 'es' | 'en') => {
-  if (languageStore.language !== code) {
-    languageStore.setLanguage(code)
-    locale.value = code
-  }
-  isOpen.value = false
-}
+watch(locale, () => (isOpen.value = false))
 
-onMounted(() => {
-  languageStore.initLanguage()
-  locale.value = languageStore.language || 'es'
-})
-
-watch(
-  () => languageStore.language,
-  (newLocale) => {
-    if (locale.value !== newLocale) {
-      locale.value = newLocale
-    }
-  }
-)
+const toggleDropdown = () => (isOpen.value = !isOpen.value)
 </script>
 
 <style scoped>

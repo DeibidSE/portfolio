@@ -49,11 +49,11 @@ export default defineNuxtConfig({
   ],
   i18n: {
     strategy: 'no_prefix',
-    defaultLocale: 'es',
     locales: [
-      { code: 'es', name: 'Español', file: 'es.json' },
-      { code: 'en', name: 'English', file: 'en.json' }
-    ]
+      { code: 'es', language: 'es-ES', name: 'Español', file: 'es.json' },
+      { code: 'en', language: 'en-GB', name: 'English', file: 'en.json' }
+    ],
+    defaultLocale: 'es'
   },
   css: ['@/assets/css/tailwind.css', '@/assets/css/index.css'],
   compatibilityDate: '2024-08-10'

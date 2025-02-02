@@ -349,3 +349,14 @@
 - Upgraded to Nuxt 3.15.0
 - Improved pinia store code.
 - Fixed language persistance.
+
+## [v2.2.0] - 02/02/2025
+
+### Changes
+
+- Updated dependencies.
+- Improved language switch code.
+
+### Removed
+
+- Removed `langStore.ts` as it's no longer needed.
