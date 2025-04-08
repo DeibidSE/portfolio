@@ -10,7 +10,8 @@ export default defineNuxtConfig({
 		'@nuxtjs/i18n',
 	],
 	ssr: false,
-	devtools: { enabled: false }, app: {
+	devtools: { enabled: false },
+	app: {
 		baseURL: '/portfolio/',
 		head: {
 			title: 'Portfolio - David Simón',
