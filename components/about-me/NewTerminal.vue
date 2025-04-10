@@ -71,7 +71,7 @@
 					<span>npx run social</span>
 				</div>
 
-				<div class="flex flex-wrap gap-4">
+				<div class="flex flex-col gap-4 sm:flex-row">
 					<BadgeComponent
 						v-for="(info, key) in socialLinks"
 						:key="key"
