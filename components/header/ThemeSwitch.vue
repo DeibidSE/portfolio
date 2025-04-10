@@ -3,14 +3,14 @@
 		class="flex items-center justify-center p-2 transition-colors duration-300 rounded-full cursor-pointer hover:text-yellow-500 dark:hover:text-purple-600"
 		@click="setTheme"
 	>
-		<nuxt-icon
+		<Icon
 			v-if="themeStore.isLightMode"
-			name="sun"
+			name="tabler:sun"
 			class="text-2xl"
 		/>
-		<nuxt-icon
+		<Icon
 			v-else
-			name="moon"
+			name="tabler:moon"
 			class="text-2xl"
 		/>
 	</div>

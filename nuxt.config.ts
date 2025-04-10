@@ -6,8 +6,8 @@ export default defineNuxtConfig({
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
 		'pinia-plugin-persistedstate/nuxt',
-		'nuxt-icons',
 		'@nuxtjs/i18n',
+		'@nuxt/icon',
 	],
 	ssr: false,
 	devtools: { enabled: false },
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
 				{
 					name: 'description',
 					content:
-            'Welcome to my portfolio! I\'m David, a full stack web developer. Explore my work and projects here.',
+						'Welcome to my portfolio! I\'m David, a full stack web developer. Explore my work and projects here.',
 				},
 				{
 					name: 'author',
@@ -30,7 +30,10 @@ export default defineNuxtConfig({
 				},
 			],
 			link: [
+				{ rel: 'icon', href: '/portfolio/favicon.ico', sizes: 'any' },
 				{ rel: 'icon', type: 'image/x-icon', href: '/portfolio/favicon.ico' },
+				{ rel: 'apple-touch-icon', href: '/portfolio/favicons/apple-touch-icon.png' },
+				{ rel: 'manifest', href: '/portfolio/favicons/site.webmanifest' },
 			],
 		},
 	},
@@ -55,5 +58,15 @@ export default defineNuxtConfig({
 			{ code: 'en', language: 'en-GB', name: 'English', file: 'en.json' },
 		],
 		defaultLocale: 'es',
+	},
+	icon: {
+		provider: 'server',
+		mode: 'svg',
+		customCollections: [
+			{
+				prefix: 'my-icon',
+				dir: './assets/icons',
+			},
+		],
 	},
 })

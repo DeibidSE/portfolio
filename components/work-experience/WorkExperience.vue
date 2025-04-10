@@ -1,7 +1,7 @@
 <template>
 	<SectionWrapper
 		id="work-experience"
-		icon="work"
+		icon="tabler:briefcase"
 		:title="$t('workExperience')"
 	>
 		<WorkExperienceTimeLine />

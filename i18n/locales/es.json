@@ -6,97 +6,104 @@
   "skills": "Habilidades",
   "whoAmI": "¡Hola! Soy David",
   "fullJobTitle": "Desarrollador Web Full Stack",
-  "availability": "Actualmente trabajando",
+  "availability": "Actualmente trabajando 🎉",
   "terminalContent": [
     "🧑🏻‍💻 Me llamo David y trabajo como Desarrollador Web Full Stack desde hace más de 4 años.",
     "🚀 Comencé a programar tras terminar el instituto, ya que siempre supe que este mundillo era para mí. Desde entonces, he estado inmerso en un constante proceso de aprendizaje y mejora, lo que ha hecho que cada día me enfrente a nuevos desafíos que han moldeado el profesional en el que considero me he convertido hasta el día de hoy.",
     "🔝 Aunque gran parte de mi tiempo lo dedico a mi trabajo diario, siempre encuentro espacio para crear algo nuevo en mi tiempo libre. Estoy muy orgulloso de lo que he logrado hasta ahora, pero lo que realmente me emociona son las oportunidades que el futuro tiene reservadas. ¡Estoy ansioso por ampliar este portafolio con más proyectos y éxitos!",
     "😀 ¡Muchas gracias por visitar mi sitio web y por ser parte de mi viaje de crecimiento y desarrollo profesional!"
   ],
-  "cvLabel": "Descarga mi Curriculum Vitae",
-  "cvMessage": "¡Gracias por tu interés en mi CV! No dudes en contactarme para solicitar una copia actualizada.",
-  "cvCloseMsg": "(Haz clic en cualquier lugar para cerrar)",
   "code": "Consulta el código en GitHub",
   "projectsList": {
-    "Mi trabajo diario": {
-      "image": "images/verify.webp",
-      "description": "Aquí dedico la mayor parte de mi tiempo a la programación, concentrándome en proyectos web relacionados con requisitos KYC en el sector financiero. Aunque la confidencialidad me impide compartir detalles específicos, mi contribución abarca una variedad de productos desarrollados con diferentes tecnologías.  He contribuido tanto en el frontend como en el backend, participando en proyectos diversos y variados",
-      "technologies": [
-        {
-          "name": "Laravel",
-          "url": "https://laravel.com/"
-        },
-        {
-          "name": "Vue",
-          "url": "https://vuejs.org/"
-        },
-        {
-          "name": "Pinia",
-          "url": "https://pinia.vuejs.org/"
-        },
-        {
-          "name": "JavaScript",
-          "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
-        },
-        {
-          "name": "TypeScript",
-          "url": "https://www.typescriptlang.org/"
-        },
-        {
-          "name": "CSS",
-          "url": "https://developer.mozilla.org/es/docs/Web/CSS"
-        },
-        {
-          "name": "Sass",
-          "url": "https://sass-lang.com/"
-        },
-        {
-          "name": "Tailwind CSS",
-          "url": "https://tailwindcss.com/"
-        },
-        {
-          "name": "MySQL",
-          "url": "https://www.mysql.com/"
-        },
-        {
-          "name": "PostgreSQL",
-          "url": "https://www.postgresql.org/"
-        },
-        {
-          "name": "Docker",
-          "url": "https://www.docker.com/"
-        },
-        {
-          "name": "Vagrant",
-          "url": "https://www.vagrantup.com/"
-        }
-      ]
-    },
     "Clon de spotify": {
       "image": "images/spotify-clone.webp",
       "description": "Este proyecto se enfoca en recrear de manera precisa la interfaz web de Spotify, proporcionando a los usuarios la capacidad de reproducir música, buscar y explorar listas de reproducción. Con un énfasis en la fidelidad visual y funcional, este clon me ha permitido explorar y desarrollar tanto nuevas funcionalidades como aquellas ya conocidas.",
       "url": "https://github.com/DeibidSE/spotify-clone",
       "technologies": [
         {
-          "name": "Nuxt",
-          "url": "https://nuxt.com/"
+          "name": "Nuxt 3",
+          "url": "https://nuxt.com/",
+          "icon": "logos:nuxt-icon"
         },
         {
           "name": "Pinia",
-          "url": "https://pinia.vuejs.org/"
+          "url": "https://pinia.vuejs.org/",
+          "icon": "logos:pinia"
         },
         {
           "name": "TypeScript",
-          "url": "https://www.typescriptlang.org/"
+          "url": "https://www.typescriptlang.org/",
+          "icon": "logos:typescript-icon"
         },
         {
           "name": "Tailwind CSS",
-          "url": "https://tailwindcss.com/"
+          "url": "https://tailwindcss.com/",
+          "icon": "logos:tailwindcss-icon"
+        }
+      ]
+    },
+    "Mi trabajo diario": {
+      "image": "images/verify.webp",
+      "description": "Aquí dedico la mayor parte de mi tiempo a la programación, concentrándome en proyectos web relacionados con requisitos KYC en el sector financiero. Aunque la confidencialidad me impide compartir detalles específicos, mi contribución abarca una variedad de productos desarrollados con diferentes tecnologías.  He contribuido tanto en el frontend como en el backend, participando en proyectos diversos y variados",
+      "technologies": [
+        {
+          "name": "Laravel",
+          "url": "https://laravel.com/",
+          "icon": "logos:laravel"
+        },
+        {
+          "name": "Vue",
+          "url": "https://vuejs.org/",
+          "icon": "logos:vue"
+        },
+        {
+          "name": "Pinia",
+          "url": "https://pinia.vuejs.org/",
+          "icon": "logos:pinia"
+        },
+        {
+          "name": "JavaScript",
+          "url": "https://developer.mozilla.org/es/docs/Web/JavaScript",
+          "icon": "logos:javascript"
+        },
+        {
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org/",
+          "icon": "logos:typescript-icon"
+        },
+        {
+          "name": "CSS",
+          "url": "https://developer.mozilla.org/es/docs/Web/CSS",
+          "icon": "my-icon:css"
+        },
+        {
+          "name": "Sass",
+          "url": "https://sass-lang.com/",
+          "icon": "logos:sass"
+        },
+        {
+          "name": "Tailwind CSS",
+          "url": "https://tailwindcss.com/",
+          "icon": "logos:tailwindcss-icon"
+        },
+        {
+          "name": "MySQL",
+          "url": "https://www.mysql.com/",
+          "icon": "logos:mysql"
+        },
+        {
+          "name": "PostgreSQL",
+          "url": "https://www.postgresql.org/",
+          "icon": "logos:postgresql"
+        },
+        {
+          "name": "Docker",
+          "url": "https://www.docker.com/",
+          "icon": "logos:docker-icon"
         }
       ]
     }
   },
-  "moreSoon": "Más proyectos en camino...",
   "workExperienceList": [
     {
       "title": "Desarrollador Web Full Stack en Simple KYC",

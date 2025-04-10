@@ -18,8 +18,7 @@
 							class="flex flex-col items-center w-32 gap-3 transition-transform duration-300 transform hover:scale-105"
 							role="listitem"
 						>
-							<nuxt-icon
-								filled
+							<Icon
 								:name="skill.image"
 								class="w-12 h-12 md:w-20 md:h-20"
 								role="img"
@@ -33,7 +32,7 @@
 								{{ skill.name }}
 							</span>
 						</li>
-						<!-- Vertical separator line between each category -->
+
 						<div
 							class="w-px h-20 mx-4 dark:bg-light/70 bg-dark/70 md:h-28 md:mx-6"
 							aria-hidden="true"

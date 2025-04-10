@@ -1,7 +1,7 @@
 <template>
 	<SectionWrapper
 		id="skills"
-		icon="message-code"
+		icon="tabler:message-2-code"
 		:title="$t('skills')"
 	>
 		<TechnicalSkillsBannerLogos />

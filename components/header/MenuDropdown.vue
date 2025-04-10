@@ -4,7 +4,6 @@
 		aria-label="Navigation menu"
 	>
 		<div class="relative flex flex-col justify-between h-full p-6">
-			<!-- Navigation Menu -->
 			<ul class="flex flex-col gap-6 mt-8">
 				<li
 					v-for="(section, key) in sectionList"

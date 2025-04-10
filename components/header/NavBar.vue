@@ -13,9 +13,8 @@
 					aria-label="Go to homepage"
 					class="transition-transform duration-300 hover:scale-110"
 				>
-					<nuxt-icon
-						name="main"
-						filled
+					<Icon
+						name="my-icon:main"
 						class="w-16 h-16"
 					/>
 				</a>
@@ -51,8 +50,8 @@
 					class="text-dark dark:text-light focus:outline-none"
 					@click="isMenuOpen = !isMenuOpen"
 				>
-					<nuxt-icon
-						name="menu"
+					<Icon
+						name="tabler:menu-2"
 						class="text-3xl cursor-pointer fill-current hover:text-purple-600"
 						:class="{ 'text-purple-700': isMenuOpen }"
 						role="button"

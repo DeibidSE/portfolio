@@ -10,8 +10,8 @@
 			@click="toggleDropdown"
 		>
 			{{ selectedLocale.name }}
-			<nuxt-icon
-				name="angle-down"
+			<Icon
+				name="tabler:chevron-down"
 				class="text-xl transition-transform duration-300 pointer-events-none right-4"
 				:class="{ 'rotate-180': isOpen }"
 			/>
@@ -43,7 +43,15 @@ const isOpen = ref(false)
 
 const selectedLocale = computed(() => locales.value.find(i => i.code === locale.value) || locales.value[0])
 
-watch(locale, () => (isOpen.value = false))
+watch(locale, () => {
+	isOpen.value = false
+	// Set the HTML lang attribute dynamically based on the selected locale
+	useHead({
+		htmlAttrs: {
+			lang: locale.value,
+		},
+	})
+})
 
 const toggleDropdown = () => (isOpen.value = !isOpen.value)
 </script>

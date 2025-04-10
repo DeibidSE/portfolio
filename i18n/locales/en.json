@@ -6,97 +6,104 @@
   "skills": "Skills",
   "whoAmI": "Hi! I'm David",
   "fullJobTitle": "Full Stack Web Developer",
-  "availability": "Currently employed",
+  "availability": "Currently employed 🎉",
   "terminalContent": [
     "🧑🏻‍💻 My name is David and I have been working as a Full Stack Web Developer for more than 4 years.",
     "🚀 I started programming after finishing high school, as I always knew this field was for me. Since then, I have been immersed in a constant process of learning and improvement, which has led me to face new challenges every day that have shaped the professional I consider myself to be today.",
     "🔝 Although a large part of my time is dedicated to my daily work, I always find space to create something new in my free time. I am very proud of what I have achieved so far, but what really excites me are the opportunities that the future holds. I am eager to expand this portfolio with more projects and successes!",
     "😀 Thank you very much for visiting my website and for being part of my journey of growth and professional development!"
   ],
-  "cvLabel": "Download my Curriculum Vitae",
-  "cvMessage": "Thank you for your interest in my CV! Feel free to contact me for an updated copy.",
-  "cvCloseMsg": "(Click anywhere to close)",
   "code": "View the code on GitHub",
   "projectsList": {
-    "My daily Job": {
-      "image": "images/verify.webp",
-      "description": "Here I dedicate most of my time to programming, focusing on web projects related to KYC requirements in the financial sector. Although confidentiality prevents me from sharing specific details, my contribution encompasses a variety of products developed with different technologies. I've worked on both frontend and backend, engaging with various and diverse projects.",
-      "technologies": [
-        {
-          "name": "Laravel",
-          "url": "https://laravel.com/"
-        },
-        {
-          "name": "Vue",
-          "url": "https://vuejs.org/"
-        },
-        {
-          "name": "Pinia",
-          "url": "https://pinia.vuejs.org/"
-        },
-        {
-          "name": "JavaScript",
-          "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
-        },
-        {
-          "name": "TypeScript",
-          "url": "https://www.typescriptlang.org/"
-        },
-        {
-          "name": "CSS",
-          "url": "https://developer.mozilla.org/es/docs/Web/CSS"
-        },
-        {
-          "name": "Sass",
-          "url": "https://sass-lang.com/"
-        },
-        {
-          "name": "Tailwind CSS",
-          "url": "https://tailwindcss.com/"
-        },
-        {
-          "name": "MySQL",
-          "url": "https://www.mysql.com/"
-        },
-        {
-          "name": "PostgreSQL",
-          "url": "https://www.postgresql.org/"
-        },
-        {
-          "name": "Docker",
-          "url": "https://www.docker.com/"
-        },
-        {
-          "name": "Vagrant",
-          "url": "https://www.vagrantup.com/"
-        }
-      ]
-    },
     "Spotify Clone": {
       "image": "images/spotify-clone.webp",
       "description": "This project focuses on faithfully replicating the Spotify web interface, providing users with the ability to play music, search, and explore playlists. With an emphasis on visual and functional fidelity, this clone has allowed me to explore and develop both new features and familiar ones.",
       "url": "https://github.com/DeibidSE/spotify-clone",
       "technologies": [
         {
-          "name": "Nuxt",
-          "url": "https://nuxt.com/"
+          "name": "Nuxt 3",
+          "url": "https://nuxt.com/",
+          "icon": "logos:nuxt-icon"
         },
         {
           "name": "Pinia",
-          "url": "https://pinia.vuejs.org/"
+          "url": "https://pinia.vuejs.org/",
+          "icon": "logos:pinia"
         },
         {
           "name": "TypeScript",
-          "url": "https://www.typescriptlang.org/"
+          "url": "https://www.typescriptlang.org/",
+          "icon": "logos:typescript-icon"
         },
         {
           "name": "Tailwind CSS",
-          "url": "https://tailwindcss.com/"
+          "url": "https://tailwindcss.com/",
+          "icon": "logos:tailwindcss-icon"
+        }
+      ]
+    },
+    "My daily Job": {
+      "image": "images/verify.webp",
+      "description": "Here I dedicate most of my time to programming, focusing on web projects related to KYC requirements in the financial sector. Although confidentiality prevents me from sharing specific details, my contribution encompasses a variety of products developed with different technologies. I've worked on both frontend and backend, engaging with various and diverse projects.",
+      "technologies": [
+        {
+          "name": "Laravel",
+          "url": "https://laravel.com/",
+          "icon": "logos:laravel"
+        },
+        {
+          "name": "Vue",
+          "url": "https://vuejs.org/",
+          "icon": "logos:vue"
+        },
+        {
+          "name": "Pinia",
+          "url": "https://pinia.vuejs.org/",
+          "icon": "logos:pinia"
+        },
+        {
+          "name": "JavaScript",
+          "url": "https://developer.mozilla.org/es/docs/Web/JavaScript",
+          "icon": "logos:javascript"
+        },
+        {
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org/",
+          "icon": "logos:typescript-icon"
+        },
+        {
+          "name": "CSS",
+          "url": "https://developer.mozilla.org/es/docs/Web/CSS",
+          "icon": "my-icon:css"
+        },
+        {
+          "name": "Sass",
+          "url": "https://sass-lang.com/",
+          "icon": "logos:sass"
+        },
+        {
+          "name": "Tailwind CSS",
+          "url": "https://tailwindcss.com/",
+          "icon": "logos:tailwindcss-icon"
+        },
+        {
+          "name": "MySQL",
+          "url": "https://www.mysql.com/",
+          "icon": "logos:mysql"
+        },
+        {
+          "name": "PostgreSQL",
+          "url": "https://www.postgresql.org/",
+          "icon": "logos:postgresql"
+        },
+        {
+          "name": "Docker",
+          "url": "https://www.docker.com/",
+          "icon": "logos:docker-icon"
         }
       ]
     }
   },
-  "moreSoon": "More projects on the way...",
   "workExperienceList": [
     {
       "title": "Full Stack Web Developer at Simple KYC",
