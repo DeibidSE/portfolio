@@ -60,7 +60,6 @@ export default defineNuxtConfig({
 		defaultLocale: 'es',
 	},
 	icon: {
-		provider: 'server',
 		mode: 'svg',
 		customCollections: [
 			{
