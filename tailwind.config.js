@@ -9,15 +9,16 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				// Overwrite tailwind's default font (sans) with 'coolvetica'
-				sans: 'coolvetica',
+				// Overwrite tailwind's default font (sans) with 'Coolvetica'
+				sans: 'Coolvetica',
 				// Other custom fonts:
-				terminal: 'VT323',
+				code: 'CascadiaCode',
 			},
 			boxShadow: {
-				inside: 'inset 0 0 10px rgba(0,0,0,0.5)',
-				top: '0px -10px 20px 0px rgba(0,0,0,0.2)',
-				bottom: '0px 10px 20px 0px rgba(0,0,0,0.2)',
+				'inside': 'inset 0 0 10px rgba(0,0,0,0.5)',
+				'top': '0px -10px 20px 0px rgba(0,0,0,0.2)',
+				'bottom': '0px 10px 20px 0px rgba(0,0,0,0.2)',
+				'no-offset': '0px 0px 20px 0px rgba(0,0,0,0.1)',
 			},
 			backgroundColor: {
 				'primary-dark': '#0D1117',
@@ -33,13 +34,13 @@ module.exports = {
 			},
 			// Custom animations
 			keyframes: {
-				'blink-caret': {
-					'0%, 100%': { 'border-color': 'transparent' },
-					'50%': { 'border-right': '2px solid grey' },
+				blink: {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0' },
 				},
 			},
 			animation: {
-				'blinking-caret': 'blink-caret 1s infinite',
+				'blinking-cursor': 'blink 1s steps(2, start) infinite',
 			},
 		},
 	},
