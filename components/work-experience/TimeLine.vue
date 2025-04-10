@@ -22,7 +22,6 @@
 					role="link"
 				>
 					{{ $rt(info.title) }}
-					<Icon name="tabler:external-link" />
 				</a>
 				<span v-else>{{ $rt(info.title) }}</span>
 			</h3>
