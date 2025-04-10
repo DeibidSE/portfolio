@@ -1,11 +1,9 @@
 <template>
 	<SectionWrapper
 		id="about-me"
-		icon="me"
+		icon="tabler:user"
 		:title="$t('aboutMe')"
 	>
-		<AboutMeTerminalFrame :buttons-clickable="true">
-			<AboutMeTerminalContent />
-		</AboutMeTerminalFrame>
+		<AboutMeNewTerminal />
 	</SectionWrapper>
 </template>
