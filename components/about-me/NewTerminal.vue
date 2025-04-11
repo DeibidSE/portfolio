@@ -1,10 +1,10 @@
 <template>
 	<div
-		class="flex flex-col w-full h-full overflow-hidden transition-all duration-300 border-2 shadow-no-offset rounded-3xl border-accent/30 backdrop-blur-lg md:text-lg bg-secondary-light/50 dark:bg-secondary-dark/50"
+		class="flex flex-col w-full h-full overflow-hidden transition-all duration-300 border-2 shadow-no-offset rounded-3xl border-accent/50 backdrop-blur-lg md:text-lg bg-secondary-light/50 dark:bg-secondary-dark/50"
 		role="region"
 		aria-label="Terminal component"
 	>
-		<div class="flex items-center justify-between w-full px-4 py-3 border-b bg-gray-100/80 dark:bg-gray-900/60 border-accent/30">
+		<div class="flex items-center justify-between w-full px-4 py-3 border-b bg-gray-100/80 dark:bg-gray-900/60 border-accent/50">
 			<div class="flex gap-2">
 				<span class="w-3 h-3 bg-[#ff5f57] rounded-full shadow-md" />
 				<span class="w-3 h-3 bg-[#ffbd2e] rounded-full shadow-md" />
@@ -63,7 +63,7 @@
 				</div>
 			</div>
 
-			<hr class="border-accent/30">
+			<hr class="border-accent/50">
 
 			<div class="flex flex-col gap-6 w-fit">
 				<div class="flex items-start gap-2">
@@ -91,7 +91,7 @@
 				</div>
 			</div>
 
-			<hr class="border-accent/30">
+			<hr class="border-accent/50">
 
 			<div class="flex flex-col gap-2 w-max">
 				<div class="flex items-start gap-2">

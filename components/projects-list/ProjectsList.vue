@@ -32,9 +32,6 @@
   #card_2 {
     --index: 2;
   }
-  #card_3 {
-    --index: 3;
-  }
 
   .card {
     --index0: calc(var(--index) - 1);
