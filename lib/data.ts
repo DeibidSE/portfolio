@@ -61,12 +61,6 @@ export const skillList = [
 		type: 'frontend',
 	},
 	{
-		name: 'Sass',
-		image: 'logos:sass',
-		percentage: 70,
-		type: 'frontend',
-	},
-	{
 		name: 'Tailwind CSS',
 		image: 'logos:tailwindcss-icon',
 		percentage: 90,
