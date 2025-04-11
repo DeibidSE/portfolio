@@ -13,11 +13,10 @@
     "🔝 Although a large part of my time is dedicated to my daily work, I always find space to create something new in my free time. I am very proud of what I have achieved so far, but what really excites me are the opportunities that the future holds. I am eager to expand this portfolio with more projects and successes!",
     "😀 Thank you very much for visiting my website and for being part of my journey of growth and professional development!"
   ],
-  "code": "View the code on GitHub",
   "projectsList": {
     "Spotify Clone": {
       "image": "images/spotify-clone.webp",
-      "description": "This project focuses on faithfully replicating the Spotify web interface, providing users with the ability to play music, search, and explore playlists. With an emphasis on visual and functional fidelity, this clone has allowed me to explore and develop both new features and familiar ones.",
+      "description": "This project focuses on faithfully replicating the Spotify web interface, providing users with the ability to play music, search, and explore playlists. With an emphasis on visual and functional fidelity, this clone has allowed me to explore and develop both new features and familiar ones",
       "url": "https://github.com/DeibidSE/spotify-clone",
       "technologies": [
         {
@@ -39,12 +38,30 @@
           "name": "Tailwind CSS",
           "url": "https://tailwindcss.com/",
           "icon": "logos:tailwindcss-icon"
+        },
+        {
+          "name": "Visual Studio Code",
+          "url": "https://code.visualstudio.com/",
+          "icon": "logos:visual-studio-code"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/",
+          "icon": "logos:github-icon"
+        }
+      ],
+      "tags": [
+        {
+          "text": "View the code on GitHub",
+          "url": "https://github.com/DeibidSE/spotify-clone",
+          "icon": "tabler:brand-github",
+          "color": "default"
         }
       ]
     },
     "My daily Job": {
       "image": "images/verify.webp",
-      "description": "Here I dedicate most of my time to programming, focusing on web projects related to KYC requirements in the financial sector. Although confidentiality prevents me from sharing specific details, my contribution encompasses a variety of products developed with different technologies. I've worked on both frontend and backend, engaging with various and diverse projects.",
+      "description": "Here I dedicate most of my time to programming, focusing on web projects related to KYC requirements in the financial sector. Although confidentiality prevents me from sharing specific details, my contribution encompasses a variety of products developed with different technologies. I've worked on both frontend and backend, engaging with various and diverse projects",
       "technologies": [
         {
           "name": "Laravel",
@@ -77,11 +94,6 @@
           "icon": "my-icon:css"
         },
         {
-          "name": "Sass",
-          "url": "https://sass-lang.com/",
-          "icon": "logos:sass"
-        },
-        {
           "name": "Tailwind CSS",
           "url": "https://tailwindcss.com/",
           "icon": "logos:tailwindcss-icon"
@@ -100,8 +112,19 @@
           "name": "Docker",
           "url": "https://www.docker.com/",
           "icon": "logos:docker-icon"
+        },
+        {
+          "name": "Cursor",
+          "url": "https://www.cursor.com/en",
+          "icon": "my-icon:cursor"
+        },
+        {
+          "name": "Bitbucket",
+          "url": "https://bitbucket.org/product",
+          "icon": "logos:bitbucket"
         }
-      ]
+      ],
+      "tags": []
     }
   },
   "workExperienceList": [

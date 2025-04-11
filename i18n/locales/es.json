@@ -13,12 +13,10 @@
     "🔝 Aunque gran parte de mi tiempo lo dedico a mi trabajo diario, siempre encuentro espacio para crear algo nuevo en mi tiempo libre. Estoy muy orgulloso de lo que he logrado hasta ahora, pero lo que realmente me emociona son las oportunidades que el futuro tiene reservadas. ¡Estoy ansioso por ampliar este portafolio con más proyectos y éxitos!",
     "😀 ¡Muchas gracias por visitar mi sitio web y por ser parte de mi viaje de crecimiento y desarrollo profesional!"
   ],
-  "code": "Consulta el código en GitHub",
   "projectsList": {
     "Clon de spotify": {
       "image": "images/spotify-clone.webp",
-      "description": "Este proyecto se enfoca en recrear de manera precisa la interfaz web de Spotify, proporcionando a los usuarios la capacidad de reproducir música, buscar y explorar listas de reproducción. Con un énfasis en la fidelidad visual y funcional, este clon me ha permitido explorar y desarrollar tanto nuevas funcionalidades como aquellas ya conocidas.",
-      "url": "https://github.com/DeibidSE/spotify-clone",
+      "description": "Este proyecto se enfoca en recrear de manera precisa la interfaz web de Spotify, proporcionando a los usuarios la capacidad de reproducir música, buscar y explorar listas de reproducción. Con un énfasis en la fidelidad visual y funcional, este clon me ha permitido explorar y desarrollar tanto nuevas funcionalidades como aquellas ya conocidas",
       "technologies": [
         {
           "name": "Nuxt 3",
@@ -39,6 +37,24 @@
           "name": "Tailwind CSS",
           "url": "https://tailwindcss.com/",
           "icon": "logos:tailwindcss-icon"
+        },
+        {
+          "name": "Visual Studio Code",
+          "url": "https://code.visualstudio.com/",
+          "icon": "logos:visual-studio-code"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/",
+          "icon": "logos:github-icon"
+        }
+      ],
+      "tags": [
+        {
+          "text": "Consulta el código en github",
+          "url": "https://github.com/DeibidSE/spotify-clone",
+          "icon": "tabler:brand-github",
+          "color": "default"
         }
       ]
     },
@@ -77,11 +93,6 @@
           "icon": "my-icon:css"
         },
         {
-          "name": "Sass",
-          "url": "https://sass-lang.com/",
-          "icon": "logos:sass"
-        },
-        {
           "name": "Tailwind CSS",
           "url": "https://tailwindcss.com/",
           "icon": "logos:tailwindcss-icon"
@@ -100,8 +111,19 @@
           "name": "Docker",
           "url": "https://www.docker.com/",
           "icon": "logos:docker-icon"
+        },
+        {
+          "name": "Cursor",
+          "url": "https://www.cursor.com/en",
+          "icon": "my-icon:cursor"
+        },
+        {
+          "name": "Bitbucket",
+          "url": "https://bitbucket.org/product",
+          "icon": "logos:bitbucket"
         }
-      ]
+      ],
+      "tags": []
     }
   },
   "workExperienceList": [
