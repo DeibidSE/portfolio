@@ -9,6 +9,7 @@ export interface Project {
 export interface Technology {
 	name: string
 	url: string
+	icon: string
 }
 
 export interface WorkExperience {
