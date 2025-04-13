@@ -37,6 +37,7 @@
 									:src="`${$config.public.BASE_URL}/images/david.webp`"
 									alt="Profile photo"
 									class="object-cover w-full h-full"
+									loading="lazy"
 								>
 							</div>
 							<div

@@ -60,8 +60,8 @@
       ]
     },
     "My daily Job": {
-      "image": "images/verify.webp",
-      "description": "Here I dedicate most of my time to programming, focusing on web projects related to KYC requirements in the financial sector. Although confidentiality prevents me from sharing specific details, my contribution encompasses a variety of products developed with different technologies. I've worked on both frontend and backend, engaging with various and diverse projects",
+      "image": "images/daily-work.webp",
+      "description": "While not a standalone project, I want to highlight my daily work, as it's where I dedicate most of my time and effort as a developer. I'm part of a team building web-based solutions focused on KYC (Know Your Customer) processes within the financial sector. Due to confidentiality agreements, I'm unable to share specific project details, but my contributions span multiple products with diverse technical requirements. I've worked across both frontend and backend, using various technologies and actively contributing to a range of complex, compliance-driven projects.",
       "technologies": [
         {
           "name": "Laravel",

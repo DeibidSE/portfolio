@@ -68,12 +68,12 @@
 				v-if="projectData.image"
 				:src="`${$config.public.BASE_URL}/${$rt(projectData.image)}`"
 				:alt="`Image of project: ${projectName}`"
-				class="object-cover w-full h-auto shadow-md max-h-min rounded-xl"
+				class="object-cover w-full h-auto max-h-96 rounded-xl aspect-video"
 				loading="lazy"
 			>
 			<div
 				v-else
-				class="flex items-center justify-center w-full aspect-video max-h-64 rounded-xl bg-[repeating-linear-gradient(-45deg,_yellow,_yellow_40px,_black_40px,_black_80px)] text-center"
+				class="flex items-center justify-center w-full h-auto aspect-video max-h-96 rounded-xl bg-[repeating-linear-gradient(-45deg,_yellow,_yellow_40px,_black_40px,_black_80px)] text-center"
 			>
 				<span class="w-full px-4 py-2 text-xl font-semibold bg-orange-600 border-black text-dark border-y-2 md:text-2xl">
 					Work in Progress
