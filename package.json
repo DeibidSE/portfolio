@@ -21,9 +21,9 @@
     "@iconify-json/tabler": "^1.2.17",
     "@nuxt/icon": "^1.12.0",
     "@nuxtjs/i18n": "^9.5.3",
-    "@pinia/nuxt": "^0.10.1",
+    "@pinia/nuxt": "^0.11.0",
     "nuxt": "^3.16.2",
-    "pinia": "^3.0.1",
+    "pinia": "^3.0.2",
     "pinia-plugin-persistedstate": "^4.2.0",
     "vue": "latest",
     "vue-router": "latest"
