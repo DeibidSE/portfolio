@@ -6,7 +6,7 @@
 	>
 		<UiTerminal>
 			<template #header>
-				<div class="flex items-start gap-2 w-max">
+				<div class="flex items-start gap-2">
 					<span class="font-semibold text-accent-secondary dark:text-accent-secondary">user@localhost:~$</span>
 					<span>npm run experience --timeline</span>
 				</div>
