@@ -21,16 +21,20 @@ module.exports = {
 				'no-offset': '0px 0px 20px 0px rgba(0,0,0,0.1)',
 			},
 			backgroundColor: {
-				'primary-dark': '#0D1117',
-				'primary-light': '#F5F5F5',
-				'secondary-dark': '#161B22',
-				'secondary-light': '#E8EAF6',
+				'primary-dark': '#0d1117',
+				'primary-light': '#f5f5f5',
+				'secondary-dark': '#161b22',
+				'secondary-light': '#e8eaf6',
 			},
 			colors: {
-				'dark': '#0D1117',
-				'light': '#F5F5F5',
-				'accent': '#7927b2',
-				'accent-secondary': '#FB3182',
+				'dark': '#0d1117',
+				'light': '#f5f5f5',
+				'accent': '#9333ea',
+				'accent-light': '#b966f5',
+				'accent-dark': '#6b1f9b',
+				'accent-secondary': '#fb3182',
+				'accent-secondary-light': '#fd66a1',
+				'accent-secondary-dark': '#d7176b',
 			},
 			// Custom animations
 			keyframes: {

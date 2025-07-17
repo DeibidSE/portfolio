@@ -18,7 +18,7 @@
 				v-if="projectData.tags?.length"
 				class="flex flex-wrap items-center gap-2 pt-2"
 			>
-				<BadgeComponent
+				<UiBadge
 					v-for="(tag, index) in projectData.tags"
 					:key="index"
 					v-bind="{
@@ -33,14 +33,14 @@
 					}"
 				>
 					{{ $rt(tag.text) }}
-				</BadgeComponent>
+				</UiBadge>
 			</div>
 
 			<div
 				v-if="projectData.technologies"
 				class="flex flex-wrap gap-6 pt-6 border-t justify-evenly col-span-full border-accent/50"
 			>
-				<TooltipComponent
+				<UiTooltip
 					v-for="(technology, key) in projectData.technologies"
 					:key="key"
 					:tooltip-text="$rt(technology.name)"
@@ -59,7 +59,7 @@
 							class="w-8 h-8"
 						/>
 					</a>
-				</TooltipComponent>
+				</UiTooltip>
 			</div>
 		</div>
 

@@ -1,10 +1,10 @@
 <template>
 	<main>
-		<MyIntroduction />
-		<AboutMe />
-		<ProjectsList />
-		<WorkExperience />
-		<TechnicalSkills />
-		<ScrollToTopBtn />
+		<SectionsIntroductionSection />
+		<SectionsAboutSection />
+		<SectionsProjectsSection />
+		<SectionsExperienceWorkExperience />
+		<SectionsSkillsSection />
+		<LayoutsScrollToTopBtn />
 	</main>
 </template>

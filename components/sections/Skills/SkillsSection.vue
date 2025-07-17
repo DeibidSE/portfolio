@@ -1,11 +1,11 @@
 <template>
-	<SectionWrapper
+	<LayoutsSectionWrapper
 		id="skills"
 		icon="tabler:message-2-code"
-		:title="$t('skills')"
+		:title="$t('skills.title')"
 	>
-		<TechnicalSkillsBannerLogos />
-	</SectionWrapper>
+		<SectionsSkillsBannerLogos />
+	</LayoutsSectionWrapper>
 </template>
 
 <script setup lang="ts">

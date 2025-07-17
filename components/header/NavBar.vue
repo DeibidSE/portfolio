@@ -27,14 +27,14 @@
 					class="relative cursor-pointer group"
 				>
 					<span
-						class="block px-3 py-2 transition-all duration-200 text-nowrap text-md text-dark dark:text-light group-hover:text-purple-600 group-hover:scale-110"
+						class="block px-3 py-2 transition-all duration-200 text-nowrap text-md text-dark dark:text-light group-hover:text-accent group-hover:scale-110"
 						aria-label="Navigate to section"
 						@click.stop="scrollToSection(key)"
 					>
 						{{ section }}
 					</span>
 					<span
-						class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"
+						class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
 					/>
 				</li>
 			</ul>
@@ -52,8 +52,8 @@
 				>
 					<Icon
 						name="tabler:menu-2"
-						class="text-3xl cursor-pointer fill-current hover:text-purple-600"
-						:class="{ 'text-purple-700': isMenuOpen }"
+						class="text-3xl cursor-pointer fill-current hover:text-accent"
+						:class="{ 'text-accent-dark': isMenuOpen }"
 						role="button"
 						aria-label="Toggle menu"
 					/>
@@ -72,7 +72,7 @@
 					class="relative rounded-md cursor-pointer group"
 				>
 					<span
-						class="block px-3 py-2 text-sm font-semibold transition-all duration-200 text-dark dark:text-light group-hover:text-purple-600 group-hover:translate-x-2"
+						class="block px-3 py-2 text-sm font-semibold transition-all duration-200 text-dark dark:text-light group-hover:text-accent group-hover:translate-x-2"
 						aria-label="Navigate to section"
 						@click.stop="scrollToSection(key)"
 					>
@@ -94,10 +94,10 @@ const isMenuOpen = ref(false)
 
 // Sections for the navbar
 const sectionList = computed(() => ({
-	'about-me': t('aboutMe'),
-	'projects': t('projects'),
-	'work-experience': t('workExperience'),
-	'skills': t('skills'),
+	about: t('about.title'),
+	projects: t('projects.title'),
+	experience: t('work_experience.title'),
+	skills: t('skills.title'),
 }))
 
 // Smooth scroll to section function

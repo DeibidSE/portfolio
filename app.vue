@@ -5,6 +5,6 @@
 	>
 		<HeaderNavBar />
 		<NuxtPage />
-		<AppFooter />
+		<LayoutsAppFooter />
 	</div>
 </template>

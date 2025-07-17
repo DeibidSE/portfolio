@@ -1,16 +1,16 @@
 <template>
-	<SectionWrapper id="introduction">
+	<LayoutsSectionWrapper id="introduction">
 		<div
 			class="flex flex-col items-center justify-center w-full gap-6 text-center min-h-[calc(100dvh-10rem)]"
 		>
 			<h1 class="w-full py-6 font-bold text-center text-transparent text-7xl md:text-8xl lg:text-9xl bg-clip-text bg-gradient-to-r from-accent to-accent-secondary">
-				{{ $t('whoAmI') }}
+				{{ $t('introduction.greeting') }}
 			</h1>
 
 			<div class="flex items-center justify-center w-full min-h-8 sm:min-h-10 md:min-h-12 xl:min-h-16">
 				<h2
 					ref="typingtext"
-					class="text-2xl font-bold text-purple-500 transition-all duration-300 ease-out sm:text-4xl md:text-5xl xl:text-6xl"
+					class="text-2xl font-bold transition-all duration-300 ease-out text-accent-light sm:text-4xl md:text-5xl xl:text-6xl"
 				>
 					{{ txt }}
 					<span
@@ -20,7 +20,7 @@
 				</h2>
 			</div>
 		</div>
-	</SectionWrapper>
+	</LayoutsSectionWrapper>
 </template>
 
 <script setup lang="ts">
@@ -38,7 +38,7 @@ onMounted(() => {
 
 const tick = () => {
 	const htmlElement = typingtextElement.value
-	const fullTxt = t('fullJobTitle')
+	const fullTxt = t('job.title')
 
 	if (htmlElement && fullTxt.length > 0) {
 		if (isDeleting.value) {

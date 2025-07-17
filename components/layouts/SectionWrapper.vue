@@ -2,7 +2,7 @@
 	<section
 		:id="id"
 		:aria-labelledby="title ? `${id}-title` : undefined"
-		class="container flex flex-col items-center justify-center h-full gap-8 px-8 py-20 mx-auto content-visibility-auto"
+		class="container flex flex-col items-center justify-center h-full gap-8 px-8 py-20 mx-auto [content-visibility:auto]"
 	>
 		<header
 			v-if="icon || title"

@@ -16,4 +16,5 @@
 html {
   font-family: 'Coolvetica', system-ui, sans-serif;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }

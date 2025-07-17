@@ -1,18 +1,25 @@
 <template>
 	<div
-		class="flex items-center justify-center p-2 transition-colors duration-300 rounded-full cursor-pointer hover:text-yellow-500 dark:hover:text-purple-600"
+		class="flex items-center justify-center p-2 rounded-full cursor-pointer hover:scale-110 hover:text-yellow-500 dark:hover:text-accent"
 		@click="setTheme"
 	>
-		<Icon
-			v-if="themeStore.isLightMode"
-			name="tabler:sun"
-			class="text-2xl"
-		/>
-		<Icon
-			v-else
-			name="tabler:moon"
-			class="text-2xl"
-		/>
+		<div
+			class="transition-transform duration-500"
+			:class="{
+				'rotate-180': themeStore.isLightMode,
+			}"
+		>
+			<Icon
+				v-if="themeStore.isLightMode"
+				name="tabler:sun"
+				class="text-2xl transition-all duration-500 ease-in-out transform"
+			/>
+			<Icon
+				v-else
+				name="tabler:moon"
+				class="text-2xl transition-all duration-500 ease-in-out transform"
+			/>
+		</div>
 	</div>
 </template>
 

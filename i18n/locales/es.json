@@ -1,19 +1,19 @@
 {
-  "introduction": "Bienvenida",
-  "aboutMe": "Acerca de mí",
-  "projects": "Mis Proyectos",
-  "workExperience": "Experiencia Profesional",
-  "skills": "Habilidades",
-  "whoAmI": "¡Hola! Soy David",
-  "fullJobTitle": "Desarrollador Web Full Stack",
-  "availability": "Actualmente trabajando 🎉",
-  "terminalContent": [
+  "about.title": "Acerca de mí",
+  "availability.label": "Disponibilidad",
+  "availability.status": "Actualmente trabajando 🎉",
+  "job.title": "Desarrollador Web Full Stack",
+  "projects.title": "Mis Proyectos",
+  "skills.title": "Habilidades",
+  "introduction.greeting": "¡Hola! Soy David",
+  "work_experience.title": "Experiencia Profesional",
+  "terminal_content": [
     "🧑🏻‍💻 Me llamo David y trabajo como Desarrollador Web Full Stack desde hace más de 4 años.",
     "🚀 Comencé a programar tras terminar el instituto, ya que siempre supe que este mundillo era para mí. Desde entonces, he estado inmerso en un constante proceso de aprendizaje y mejora, lo que ha hecho que cada día me enfrente a nuevos desafíos que han moldeado el profesional en el que considero me he convertido hasta el día de hoy.",
     "🔝 Aunque gran parte de mi tiempo lo dedico a mi trabajo diario, siempre encuentro espacio para crear algo nuevo en mi tiempo libre. Estoy muy orgulloso de lo que he logrado hasta ahora, pero lo que realmente me emociona son las oportunidades que el futuro tiene reservadas. ¡Estoy ansioso por ampliar este portafolio con más proyectos y éxitos!",
     "😀 ¡Muchas gracias por visitar mi sitio web y por ser parte de mi viaje de crecimiento y desarrollo profesional!"
   ],
-  "projectsList": {
+  "projects_list": {
     "Clon de spotify": {
       "image": "images/spotify-clone.webp",
       "description": "Este proyecto se enfoca en recrear de manera precisa la interfaz web de Spotify, proporcionando a los usuarios la capacidad de reproducir música, buscar y explorar listas de reproducción. Con un énfasis en la fidelidad visual y funcional, este clon me ha permitido explorar y desarrollar tanto nuevas funcionalidades como aquellas ya conocidas",
@@ -90,7 +90,7 @@
         {
           "name": "CSS",
           "url": "https://developer.mozilla.org/es/docs/Web/CSS",
-          "icon": "my-icon:css"
+          "icon": "vscode-icons:file-type-css"
         },
         {
           "name": "Tailwind CSS",
@@ -115,7 +115,7 @@
         {
           "name": "Cursor",
           "url": "https://www.cursor.com/en",
-          "icon": "my-icon:cursor"
+          "icon": "vscode-icons:file-type-cursorrules"
         },
         {
           "name": "Bitbucket",
@@ -126,7 +126,7 @@
       "tags": []
     }
   },
-  "workExperienceList": [
+  "work_experience_list": [
     {
       "title": "Desarrollador Web Full Stack en Simple KYC",
       "startDate": "Febrero 2021",
@@ -155,5 +155,5 @@
       "website": "http://www.dominama.es/"
     }
   ],
-  "backToTop": "Volver Arriba"
+  "back_to_top": "Volver Arriba"
 }

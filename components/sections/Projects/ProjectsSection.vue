@@ -1,27 +1,27 @@
 <template>
-	<SectionWrapper
+	<LayoutsSectionWrapper
 		id="projects"
 		icon="tabler:code"
-		:title="$t('projects')"
+		:title="$t('projects.title')"
 	>
 		<ul
 			id="cards"
 			class="flex flex-col gap-24"
 		>
 			<li
-				v-for="(project, projectName, i) in $tm('projectsList')"
+				v-for="(project, projectName, i) in $tm('projects_list')"
 				:id="`card_${i + 1}`"
 				:key="projectName"
 				class="sticky top-0 lg:top-36 card"
 			>
-				<ProjectsListProjectCard
+				<SectionsProjectsProjectCard
 					:project-name="projectName"
 					:project-data="project"
 					class="card__content"
 				/>
 			</li>
 		</ul>
-	</SectionWrapper>
+	</LayoutsSectionWrapper>
 </template>
 
 <style scoped>
