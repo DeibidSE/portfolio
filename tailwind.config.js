@@ -7,9 +7,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				// Overwrite tailwind's default font (sans) with 'Coolvetica'
 				sans: 'Coolvetica',
-				// Other custom fonts:
 				code: 'CascadiaCode',
 			},
 			boxShadow: {
@@ -34,7 +32,6 @@ module.exports = {
 				'accent-secondary-light': '#fd66a1',
 				'accent-secondary-dark': '#d7176b',
 			},
-			// Custom animations
 			keyframes: {
 				blink: {
 					'0%, 100%': { opacity: '1' },
