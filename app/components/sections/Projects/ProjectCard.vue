@@ -4,7 +4,7 @@
 	>
 		<div class="flex flex-col justify-center w-full gap-4">
 			<h3 class="inline-flex w-full gap-4 text-3xl font-bold text-center sm:text-4xl sm:text-left">
-				<span class="text-accent">></span>{{ projectName }}
+				<span class="text-accent">&gt;</span>{{ projectName }}
 			</h3>
 
 			<p

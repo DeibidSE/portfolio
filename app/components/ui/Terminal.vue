@@ -12,7 +12,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col gap-6 px-6 py-6 overflow-y-auto text-xs leading-relaxed text-gray-800 bg-transparent sm:text-sm font-code dark:text-gray-200">
+		<div class="flex flex-col gap-8 px-6 py-6 overflow-y-auto text-xs leading-relaxed text-gray-800 bg-transparent sm:text-sm font-code dark:text-gray-200">
 			<slot name="header" />
 			<slot name="content" />
 			<slot name="secondary-content" />

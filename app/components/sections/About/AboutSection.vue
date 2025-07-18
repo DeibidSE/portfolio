@@ -20,6 +20,7 @@
 							:key="index"
 							class="leading-relaxed text-gray-700 dark:text-gray-300"
 						>
+							<span class="text-accent">&gt;</span>
 							{{ $rt(content) }}
 						</p>
 					</div>
@@ -62,7 +63,6 @@
 
 			<template #secondary-content>
 				<div class="flex flex-col gap-6">
-					<hr class="border-accent/50">
 					<div class="flex items-start gap-2">
 						<span class="font-semibold text-accent-secondary dark:text-accent-secondary">user@localhost:~$</span>
 						<span>npm run social --links</span>
@@ -85,7 +85,6 @@
 							{{ info.name || '' }}
 						</UiBadge>
 					</div>
-					<hr class="border-accent/50">
 				</div>
 			</template>
 		</UiTerminal>
