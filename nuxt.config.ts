@@ -19,15 +19,11 @@ export default defineNuxtConfig({
 				lang: 'es',
 			},
 			meta: [
-				{
-					name: 'description',
-					content:
-						'Welcome to my portfolio! I\'m David, a full stack web developer. Explore my work and projects here.',
-				},
-				{
-					name: 'author',
-					content: 'David Simón - @DeibidSE',
-				},
+				{ name: 'description', content: 'Welcome to my portfolio! I\'m David, a full stack web developer. Explore my work and projects here.' },
+				{ name: 'author', content: 'David Simón - @DeibidSE' },
+				{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
+				{ name: 'robots', content: 'noindex, nofollow' },
+				{ name: 'theme-color', content: '#9333ea' },
 			],
 			link: [
 				{ rel: 'icon', href: '/portfolio/favicon.ico', sizes: 'any' },
@@ -43,7 +39,7 @@ export default defineNuxtConfig({
 			BASE_URL: '/portfolio',
 		},
 	},
-	compatibilityDate: '2025-03-13',
+	compatibilityDate: '2025-07-18',
 	eslint: {
 		config: {
 			stylistic: {
