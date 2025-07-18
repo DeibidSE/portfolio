@@ -4,11 +4,12 @@
 		class="relative flex items-center justify-center"
 	>
 		<button
-			class="flex items-center justify-between w-full h-10 gap-2 px-4 rounded-full cursor-pointer lg:pl-4 lg:pr-10 text-md focus:outline-none"
+			class="flex items-center justify-end w-full h-10 gap-2 px-4 rounded-full cursor-pointer text-md focus:outline-none"
 			aria-label="Select language"
 			:aria-expanded="isOpen"
 			@click="toggleDropdown"
 		>
+			<Icon :name="`circle-flags:${selectedLocale.code}`" />
 			<span>{{ selectedLocale.name }}</span>
 			<Icon
 				name="tabler:chevron-down"
@@ -21,15 +22,16 @@
 			<ul
 				v-if="isOpen"
 				role="menu"
-				class="absolute z-10 w-full overflow-hidden transition-all duration-300 ease-in-out bg-gray-100 border-2 rounded-lg border-accent/70 top-12 dark:bg-gray-900"
+				class="absolute z-10 items-end overflow-hidden transition-all duration-300 ease-in-out bg-gray-100 border-2 rounded-lg right-4 border-accent/70 top-12 dark:bg-gray-900"
 			>
 				<li
 					v-for="lang in locales"
 					:key="lang.code"
-					class="px-4 py-2 transition-colors duration-200 ease-in-out cursor-pointer hover:bg-accent-light dark:hover:bg-accent-dark"
+					class="flex items-center gap-2 px-4 py-2 transition-colors duration-200 ease-in-out cursor-pointer hover:bg-accent-light dark:hover:bg-accent-dark"
 					@click.prevent.stop="setLocale(lang.code)"
 				>
-					{{ lang.name }}
+					<Icon :name="`circle-flags:${lang.code}`" />
+					<span>{{ lang.name }}</span>
 				</li>
 			</ul>
 		</transition>

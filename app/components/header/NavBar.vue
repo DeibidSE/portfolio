@@ -51,7 +51,7 @@
 					@click="isMenuOpen = !isMenuOpen"
 				>
 					<Icon
-						name="tabler:menu-2"
+						name="tabler:menu-deep"
 						class="text-3xl cursor-pointer fill-current hover:text-accent"
 						:class="{ 'text-accent-dark': isMenuOpen }"
 						role="button"
@@ -65,7 +65,7 @@
 			v-if="isMenuOpen"
 			class="p-4 lg:hidden"
 		>
-			<ul class="flex flex-col gap-3">
+			<ul class="flex flex-col items-end gap-3">
 				<li
 					v-for="(section, key) in sectionList"
 					:key="key"
@@ -79,8 +79,8 @@
 						{{ section }}
 					</span>
 				</li>
-
-				<HeaderLanguageSelector class="border rounded-lg border-accent" />
+				<hr class="w-full border border-accent/50">
+				<HeaderLanguageSelector />
 			</ul>
 		</div>
 
