@@ -1,6 +1,6 @@
 <template>
 	<article
-		class="relative grid gap-8 p-8 transition-all duration-300 border-2 shadow-lg rounded-2xl bg-light/50 dark:bg-secondary-dark/50 border-accent/50 backdrop-blur-md md:grid-cols-2"
+		class="relative grid gap-8 p-6 transition-all duration-300 border-2 shadow-lg sm:p-8 rounded-2xl bg-light/50 dark:bg-secondary-dark/50 border-accent/50 backdrop-blur-md md:grid-cols-2"
 	>
 		<div class="flex flex-col justify-center w-full gap-4">
 			<h3 class="inline-flex w-full gap-4 text-3xl font-bold text-center sm:text-4xl sm:text-left">
@@ -9,7 +9,7 @@
 
 			<p
 				v-if="projectData.description"
-				class="text-xs leading-snug sm:text-sm font-code sm:leading-relaxed"
+				class="text-xs sm:text-sm font-code sm:leading-relaxed"
 			>
 				{{ $rt(projectData.description) }}<span class="animate-blinking-cursor">_</span>
 			</p>
@@ -56,7 +56,7 @@
 						<Icon
 							v-if="technology.icon"
 							:name="`${$rt(technology.icon)}`"
-							class="w-8 h-8"
+							class="w-5 h-5 md:w-8 md:h-8"
 						/>
 					</a>
 				</UiTooltip>
