@@ -30,7 +30,7 @@ export const skillList = [
 		type: 'frontend',
 	},
 	{
-		name: 'Nuxt 3',
+		name: 'Nuxt',
 		image: 'logos:nuxt-icon',
 		type: 'frontend',
 	},

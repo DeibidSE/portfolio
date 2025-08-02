@@ -20,7 +20,7 @@
       "url": "https://github.com/DeibidSE/spotify-clone",
       "technologies": [
         {
-          "name": "Nuxt 3",
+          "name": "Nuxt",
           "url": "https://nuxt.com/",
           "icon": "logos:nuxt-icon"
         },
