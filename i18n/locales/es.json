@@ -41,7 +41,7 @@
         {
           "name": "Visual Studio Code",
           "url": "https://code.visualstudio.com/",
-          "icon": "logos:visual-studio-code"
+          "icon": "vscode-icons:file-type-vscode"
         },
         {
           "name": "GitHub",

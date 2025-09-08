@@ -86,7 +86,7 @@ export const skillList = [
 	},
 	{
 		name: 'Visual Studio Code',
-		image: 'logos:visual-studio-code',
+		image: 'vscode-icons:file-type-vscode',
 		type: 'tools',
 	},
 	{
