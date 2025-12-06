@@ -2,7 +2,7 @@
 	<component
 		:is="tag"
 		v-bind="$attrs"
-		class="inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 border-2 rounded-full shadow-sm w-fit"
+		class="inline-flex items-center justify-center gap-2 transition-all duration-200 border-2 rounded-full shadow-sm w-fit"
 		:class="[colorClasses, sizeClasses, hover ? 'hover:scale-[1.05] hover:shadow-md' : '']"
 	>
 		<Icon

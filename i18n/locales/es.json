@@ -58,6 +58,67 @@
         }
       ]
     },
+    "Factuapp": {
+      "image": "images/factuapp.webp",
+      "description": "Me encargué de todo el desarrollo del frontend de una aplicación web para gestionar facturas, clientes y productos. La idea era que fuera muy fácil de usar, visualmente agradable y pensada para el día a día de pymes y autónomos. La app permite crear, editar y enviar facturas, llevar el control de clientes y artículos, y automatizar parte del trabajo gracias a su integración con VeriFactu, cumpliendo con la normativa y conectando directamente con la Agencia Tributaria",
+      "technologies": [
+        {
+          "name": "Laravel",
+          "url": "https://laravel.com/",
+          "icon": "logos:laravel"
+        },
+        {
+          "name": "Vue",
+          "url": "https://vuejs.org/",
+          "icon": "logos:vue"
+        },
+        {
+          "name": "Tailwind CSS",
+          "url": "https://tailwindcss.com/",
+          "icon": "logos:tailwindcss-icon"
+        },
+        {
+          "name": "MySQL",
+          "url": "https://www.mysql.com/",
+          "icon": "logos:mysql"
+        },
+        {
+          "name": "Visual Studio Code",
+          "url": "https://code.visualstudio.com/",
+          "icon": "vscode-icons:file-type-vscode"
+        }
+      ],
+      "tags": []
+    },
+    "Web de Factuapp": {
+      "image": "images/factuapp-web.webp",
+      "description": "Me encargué del diseño y desarrollo completo de la landing page de Factuapp, creada para presentar la herramienta a pymes y autónomos que deben adaptarse a la nueva normativa de facturación. Con un diseño minimalista y moderno, la web explica sus características y beneficios de forma clara. Aunque la app aún está en desarrollo, la landing ya funciona como carta de presentación y punto de información para quienes buscan una solución compatible con Verifactu",
+      "technologies": [
+        {
+          "name": "Laravel",
+          "url": "https://laravel.com/",
+          "icon": "logos:laravel"
+        },
+        {
+          "name": "Tailwind CSS",
+          "url": "https://tailwindcss.com/",
+          "icon": "logos:tailwindcss-icon"
+        },
+        {
+          "name": "Visual Studio Code",
+          "url": "https://code.visualstudio.com/",
+          "icon": "vscode-icons:file-type-vscode"
+        }
+      ],
+      "tags": [
+        {
+          "text": "Página web de Factuapp",
+          "url": "https://factuapp.com",
+          "icon": "tabler:world-www",
+          "color": "default"
+        }
+      ]
+    },
     "Mi trabajo diario": {
       "image": "images/daily-work.webp",
       "description": "Aunque no se trata de un proyecto independiente, quiero destacar mi trabajo diario, ya que es donde dedico la mayor parte de mi tiempo y esfuerzo como desarrollador. Formo parte de un equipo que desarrolla soluciones web centradas en procesos KYC (Know Your Customer) dentro del sector financiero. Por razones de confidencialidad, no puedo compartir detalles específicos, pero mi trabajo abarca múltiples productos con requerimientos técnicos diversos. He contribuido tanto en el frontend como en el backend, utilizando diferentes tecnologías y participando activamente en proyectos variados que combinan complejidad técnica y cumplimiento regulatorio",
