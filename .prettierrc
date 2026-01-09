@@ -1,0 +1,11 @@
+{
+	"semi": false,
+	"singleQuote": true,
+	"printWidth": 150,
+	"useTabs": true,
+	"tabWidth": 1,
+	"htmlWhitespaceSensitivity": "css",
+	"endOfLine": "auto",
+	"plugins": ["prettier-plugin-tailwindcss"],
+	"tailwindStylesheet": "./app/assets/css/tailwind.css"
+}

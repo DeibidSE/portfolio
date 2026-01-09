@@ -23,7 +23,7 @@ export const useThemeStore = defineStore('theme', {
 		},
 	},
 	getters: {
-		isLightMode: state => state.lightmode,
+		isLightMode: (state) => state.lightmode,
 	},
 	persist: true,
 })

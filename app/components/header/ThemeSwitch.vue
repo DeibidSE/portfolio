@@ -1,37 +1,15 @@
-<template>
-	<div
-		class="flex items-center justify-center p-2 rounded-full cursor-pointer hover:scale-110 hover:text-yellow-500 dark:hover:text-accent"
-		@click="toggleTheme"
-	>
-		<div
-			class="transition-transform duration-500"
-			:class="{
-				'rotate-180': themeStore.isLightMode,
-			}"
-		>
-			<Icon
-				v-if="themeStore.isLightMode"
-				name="tabler:sun"
-				class="text-2xl transition-all duration-500 ease-in-out transform"
-			/>
-			<Icon
-				v-else
-				name="tabler:moon"
-				class="text-2xl transition-all duration-500 ease-in-out transform"
-			/>
-		</div>
-	</div>
-</template>
-
 <script setup lang="ts">
 const themeStore = useThemeStore()
 
 const setTheme = () => {
-	themeStore.setTheme(!themeStore.isLightMode ? 'light' : 'dark')
+	themeStore.setTheme(themeStore.isLightMode ? 'dark' : 'light')
 }
 
 const toggleTheme = () => {
-	if (!document.startViewTransition) setTheme()
+	if (!document.startViewTransition) {
+		setTheme()
+		return
+	}
 	document.startViewTransition(setTheme)
 }
 
@@ -40,28 +18,45 @@ onMounted(() => {
 })
 </script>
 
-<style lang="css">
-::view-transition-new(root) {
-  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="white"/></svg>')
-    center / 0 no-repeat;
-  animation: scale 1s;
-  animation-fill-mode: both;
-}
+<template>
+	<button
+		class="size-10 hover:text-yellow-500 dark:hover:text-accent flex items-center justify-center transition-colors focus:outline-none"
+		aria-label="Toggle theme"
+		@click="toggleTheme"
+	>
+		<Icon :name="themeStore.isLightMode ? 'tabler:sun' : 'tabler:moon'" class="text-xl transition-all duration-300" />
+	</button>
+</template>
 
-::view-transition-old(root),
-.dark::view-transition-old(root) {
-  animation: none;
-  animation-fill-mode: both;
-  z-index: -1;
-}
-.dark::view-transition-new(root) {
-  animation: scale 1s;
-  animation-fill-mode: both;
-}
+<style>
+@supports (view-transition-name: root) {
+	::view-transition-group(root) {
+		animation-timing-function: var(--expo-in);
+	}
 
-@keyframes scale {
-  to {
-    mask-size: 200vmax;
-  }
+	::view-transition-new(root),
+	::view-transition-old(root),
+	.dark::view-transition-old(root) {
+		animation: mask-scale 2.5s both;
+	}
+
+	::view-transition-new(root) {
+		mask: url('~/assets/gifs/dance-girl-transition.gif') center / 0 no-repeat;
+	}
+
+	@keyframes mask-scale {
+		0% {
+			mask-size: 0;
+		}
+		15% {
+			mask-size: 50vmax;
+		}
+		85% {
+			mask-size: 50vmax;
+		}
+		100% {
+			mask-size: 2000vmax;
+		}
+	}
 }
 </style>

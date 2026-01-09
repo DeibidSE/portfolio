@@ -1,24 +1,3 @@
-<template>
-	<component
-		:is="tag"
-		v-bind="$attrs"
-		class="inline-flex items-center justify-center gap-2 transition-all duration-200 border-2 rounded-full shadow-sm w-fit"
-		:class="[colorClasses, sizeClasses, hover ? 'hover:scale-[1.05] hover:shadow-md' : '']"
-	>
-		<Icon
-			v-if="prependIcon"
-			:name="prependIcon"
-			class="text-xl opacity-80"
-		/>
-		<slot />
-		<Icon
-			v-if="appendIcon"
-			:name="appendIcon"
-			class="text-lg opacity-80"
-		/>
-	</component>
-</template>
-
 <script setup lang="ts">
 const props = defineProps<{
 	tag: keyof HTMLElementTagNameMap
@@ -47,5 +26,18 @@ const sizeMap = {
 }
 
 const sizeClasses = computed(() => sizeMap[props.size ?? 'medium'])
-const colorClasses = computed(() => colorsMap[props.color as 'blue' | 'red' | 'green' | 'yellow' | 'purple' | 'orange' | 'pink' ?? 'default'])
+const colorClasses = computed(() => colorsMap[(props.color as 'blue' | 'red' | 'green' | 'yellow' | 'purple' | 'orange' | 'pink') ?? 'default'])
 </script>
+
+<template>
+	<component
+		:is="tag"
+		v-bind="$attrs"
+		class="gap-2 shadow-sm inline-flex w-fit items-center justify-center rounded-full border-2 transition-all duration-200"
+		:class="[colorClasses, sizeClasses, hover ? 'hover:shadow-md hover:scale-105' : '']"
+	>
+		<Icon v-if="prependIcon" :name="prependIcon" class="text-xl opacity-80" />
+		<slot />
+		<Icon v-if="appendIcon" :name="appendIcon" class="text-lg opacity-80" />
+	</component>
+</template>

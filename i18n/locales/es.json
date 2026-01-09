@@ -1,220 +1,238 @@
 {
-  "about.title": "Acerca de mí",
-  "availability.label": "Disponibilidad",
-  "availability.status": "Actualmente trabajando 🎉",
-  "job.title": "Desarrollador Web Full Stack",
-  "projects.title": "Proyectos",
-  "skills.title": "Habilidades",
-  "introduction.greeting": "¡Hola! Soy David",
-  "work_experience.title": "Experiencia Profesional",
-  "terminal_content": [
-    "🧑🏻‍💻 Me llamo David y trabajo como Desarrollador Web Full Stack desde hace más de 4 años.",
-    "🚀 Comencé a programar tras terminar el instituto, ya que siempre supe que este mundillo era para mí. Desde entonces, he estado inmerso en un constante proceso de aprendizaje y mejora, lo que ha hecho que cada día me enfrente a nuevos desafíos que han moldeado el profesional en el que considero me he convertido hasta el día de hoy.",
-    "🔝 Aunque gran parte de mi tiempo lo dedico a mi trabajo diario, siempre encuentro espacio para crear algo nuevo en mi tiempo libre. Estoy muy orgulloso de lo que he logrado hasta ahora, pero lo que realmente me emociona son las oportunidades que el futuro tiene reservadas. ¡Estoy ansioso por ampliar este portafolio con más proyectos y éxitos!",
-    "😀 ¡Muchas gracias por visitar mi sitio web y por ser parte de mi viaje de crecimiento y desarrollo profesional!"
-  ],
-  "projects_list": {
-    "Clon de spotify": {
-      "image": "images/spotify-clone.webp",
-      "description": "Este proyecto se enfoca en recrear de manera precisa la interfaz web de Spotify, proporcionando a los usuarios la capacidad de reproducir música, buscar y explorar listas de reproducción. Con un énfasis en la fidelidad visual y funcional, este clon me ha permitido explorar y desarrollar tanto nuevas funcionalidades como aquellas ya conocidas",
-      "technologies": [
-        {
-          "name": "Nuxt",
-          "url": "https://nuxt.com/",
-          "icon": "logos:nuxt-icon"
-        },
-        {
-          "name": "Pinia",
-          "url": "https://pinia.vuejs.org/",
-          "icon": "logos:pinia"
-        },
-        {
-          "name": "TypeScript",
-          "url": "https://www.typescriptlang.org/",
-          "icon": "logos:typescript-icon"
-        },
-        {
-          "name": "Tailwind CSS",
-          "url": "https://tailwindcss.com/",
-          "icon": "logos:tailwindcss-icon"
-        },
-        {
-          "name": "Visual Studio Code",
-          "url": "https://code.visualstudio.com/",
-          "icon": "vscode-icons:file-type-vscode"
-        },
-        {
-          "name": "GitHub",
-          "url": "https://github.com/",
-          "icon": "logos:github-icon"
-        }
-      ],
-      "tags": [
-        {
-          "text": "Consulta el código en github",
-          "url": "https://github.com/DeibidSE/spotify-clone",
-          "icon": "tabler:brand-github",
-          "color": "default"
-        }
-      ]
-    },
-    "Factuapp": {
-      "image": "images/factuapp.webp",
-      "description": "Me encargué de todo el desarrollo del frontend de una aplicación web para gestionar facturas, clientes y productos. La idea era que fuera muy fácil de usar, visualmente agradable y pensada para el día a día de pymes y autónomos. La app permite crear, editar y enviar facturas, llevar el control de clientes y artículos, y automatizar parte del trabajo gracias a su integración con VeriFactu, cumpliendo con la normativa y conectando directamente con la Agencia Tributaria",
-      "technologies": [
-        {
-          "name": "Laravel",
-          "url": "https://laravel.com/",
-          "icon": "logos:laravel"
-        },
-        {
-          "name": "Vue",
-          "url": "https://vuejs.org/",
-          "icon": "logos:vue"
-        },
-        {
-          "name": "Tailwind CSS",
-          "url": "https://tailwindcss.com/",
-          "icon": "logos:tailwindcss-icon"
-        },
-        {
-          "name": "MySQL",
-          "url": "https://www.mysql.com/",
-          "icon": "logos:mysql"
-        },
-        {
-          "name": "Visual Studio Code",
-          "url": "https://code.visualstudio.com/",
-          "icon": "vscode-icons:file-type-vscode"
-        }
-      ],
-      "tags": []
-    },
-    "Web de Factuapp": {
-      "image": "images/factuapp-web.webp",
-      "description": "Me encargué del diseño y desarrollo completo de la landing page de Factuapp, creada para presentar la herramienta a pymes y autónomos que deben adaptarse a la nueva normativa de facturación. Con un diseño minimalista y moderno, la web explica sus características y beneficios de forma clara. Aunque la app aún está en desarrollo, la landing ya funciona como carta de presentación y punto de información para quienes buscan una solución compatible con Verifactu",
-      "technologies": [
-        {
-          "name": "Laravel",
-          "url": "https://laravel.com/",
-          "icon": "logos:laravel"
-        },
-        {
-          "name": "Tailwind CSS",
-          "url": "https://tailwindcss.com/",
-          "icon": "logos:tailwindcss-icon"
-        },
-        {
-          "name": "Visual Studio Code",
-          "url": "https://code.visualstudio.com/",
-          "icon": "vscode-icons:file-type-vscode"
-        }
-      ],
-      "tags": [
-        {
-          "text": "Página web de Factuapp",
-          "url": "https://factuapp.com",
-          "icon": "tabler:world-www",
-          "color": "default"
-        }
-      ]
-    },
-    "Mi trabajo diario": {
-      "image": "images/daily-work.webp",
-      "description": "Aunque no se trata de un proyecto independiente, quiero destacar mi trabajo diario, ya que es donde dedico la mayor parte de mi tiempo y esfuerzo como desarrollador. Formo parte de un equipo que desarrolla soluciones web centradas en procesos KYC (Know Your Customer) dentro del sector financiero. Por razones de confidencialidad, no puedo compartir detalles específicos, pero mi trabajo abarca múltiples productos con requerimientos técnicos diversos. He contribuido tanto en el frontend como en el backend, utilizando diferentes tecnologías y participando activamente en proyectos variados que combinan complejidad técnica y cumplimiento regulatorio",
-      "technologies": [
-        {
-          "name": "Laravel",
-          "url": "https://laravel.com/",
-          "icon": "logos:laravel"
-        },
-        {
-          "name": "Vue",
-          "url": "https://vuejs.org/",
-          "icon": "logos:vue"
-        },
-        {
-          "name": "Pinia",
-          "url": "https://pinia.vuejs.org/",
-          "icon": "logos:pinia"
-        },
-        {
-          "name": "JavaScript",
-          "url": "https://developer.mozilla.org/es/docs/Web/JavaScript",
-          "icon": "logos:javascript"
-        },
-        {
-          "name": "TypeScript",
-          "url": "https://www.typescriptlang.org/",
-          "icon": "logos:typescript-icon"
-        },
-        {
-          "name": "CSS",
-          "url": "https://developer.mozilla.org/es/docs/Web/CSS",
-          "icon": "vscode-icons:file-type-css"
-        },
-        {
-          "name": "Tailwind CSS",
-          "url": "https://tailwindcss.com/",
-          "icon": "logos:tailwindcss-icon"
-        },
-        {
-          "name": "MySQL",
-          "url": "https://www.mysql.com/",
-          "icon": "logos:mysql"
-        },
-        {
-          "name": "PostgreSQL",
-          "url": "https://www.postgresql.org/",
-          "icon": "logos:postgresql"
-        },
-        {
-          "name": "Docker",
-          "url": "https://www.docker.com/",
-          "icon": "logos:docker-icon"
-        },
-        {
-          "name": "Cursor",
-          "url": "https://www.cursor.com/en",
-          "icon": "vscode-icons:file-type-cursorrules"
-        },
-        {
-          "name": "Bitbucket",
-          "url": "https://bitbucket.org/product",
-          "icon": "logos:bitbucket"
-        }
-      ],
-      "tags": []
-    }
-  },
-  "work_experience_list": [
-    {
-      "title": "Desarrollador Web Full Stack en Simple KYC",
-      "startDate": "Febrero 2021",
-      "endDate": "Presente",
-      "location": "Remoto",
-      "description": "Este es mi trabajo actual, donde he aprendido una amplia gama de habilidades y tecnologías aplicadas al desarrollo web",
-      "details": [
-        "Desarrollo y mantenimiento de aplicaciones web para los principales clientes bancarios en Australia utilizando principalmente Laravel y PHP.",
-        "Desarrollo front-end con Vue.js, Tailwind CSS y otras tecnologías como jQuery o JavaScript para una experiencia de usuario óptima.",
-        "Manejo de base de datos MySQL y PostgreSQL.",
-        "Dockerización de entornos de desarrollo.",
-        "Creación de API REST y automatización de procesos.",
-        "Creación de Informes avanzados.",
-        "Uso de metodologías ágiles y desarrollo scrum.",
-        "Colaboración en equipos utilizando Git para control de versiones.",
-        "Resolución proactiva de incidencias y problemas técnicos."
-      ],
-      "website": "https://www.simplekyc.com/"
-    },
-    {
-      "title": "Dominama Análisis Tecnológicos S.L.",
-      "startDate": "Octubre 2020",
-      "endDate": "Diciembre 2020",
-      "location": "Remoto",
-      "description": "Mi primera toma de contacto con el mundo laboral, aquí completé las prácticas de 3 meses de duración ofrecidas por el grado superior. Por desgracia, debido a la pandemia de COVID-19, estas prácticas tuvieron que realizarse de manera 100% remota.",
-      "website": "http://www.dominama.es/"
-    }
-  ],
-  "back_to_top": "Volver Arriba"
+	"about.title": "Acerca de mí",
+	"availability.label": "Disponibilidad",
+	"availability.status": "Actualmente trabajando 🎉",
+	"job.title": "Desarrollador Web Full Stack",
+	"projects.title": "Proyectos",
+	"skills.title": "Habilidades",
+	"introduction.greeting": "¡Hola! Soy David",
+	"work_experience.title": "Experiencia Profesional",
+	"terminal_content": [
+		"🧑🏻‍💻 Me llamo David y soy Desarrollador Web Full Stack con más de 4 años de experiencia en el sector.",
+		"🚀 Comencé a programar tras terminar el instituto, ya que siempre supe que este mundillo era para mí. Desde entonces, no he dejado de aprender. La tecnología avanza rápido y cada nuevo reto me ha ayudado a crecer, tanto a nivel profesional como personal, convirtiéndome en el desarrollador que soy hoy.",
+		"🔝 Aunque gran parte de mi tiempo lo dedico a mi trabajo diario, siempre intento reservar un espacio para crear, experimentar y dar vida a nuevas ideas en mis ratos libres. Me siento orgulloso del camino recorrido hasta ahora, pero lo que de verdad me motiva es todo lo que aún está por venir. Este portafolio seguirá creciendo con nuevos proyectos, aprendizajes y logros.",
+		"😀 Gracias por visitar mi sitio web y acompañarme en este camino de crecimiento y evolución profesional."
+	],
+	"projects_list": {
+		"Clon de spotify": {
+			"image": "images/spotify-clone.webp",
+			"description": "Este proyecto se enfoca en recrear de manera precisa la interfaz web de Spotify, proporcionando a los usuarios la capacidad de reproducir música, buscar y explorar listas de reproducción. Con un énfasis en la fidelidad visual y funcional, este clon me ha permitido explorar y desarrollar tanto nuevas funcionalidades como aquellas ya conocidas",
+			"technologies": [
+				{
+					"name": "Nuxt",
+					"url": "https://nuxt.com/",
+					"icon": "logos:nuxt-icon"
+				},
+				{
+					"name": "Pinia",
+					"url": "https://pinia.vuejs.org/",
+					"icon": "logos:pinia"
+				},
+				{
+					"name": "TypeScript",
+					"url": "https://www.typescriptlang.org/",
+					"icon": "logos:typescript-icon"
+				},
+				{
+					"name": "Tailwind CSS",
+					"url": "https://tailwindcss.com/",
+					"icon": "logos:tailwindcss-icon"
+				},
+				{
+					"name": "GitHub",
+					"url": "https://github.com/",
+					"icon": "tabler:brand-github"
+				},
+				{
+					"name": "Visual Studio Code",
+					"url": "https://code.visualstudio.com/",
+					"icon": "vscode-icons:file-type-vscode"
+				}
+			],
+			"tags": [
+				{
+					"text": "Consulta el código en github",
+					"url": "https://github.com/DeibidSE/spotify-clone",
+					"icon": "tabler:code",
+					"color": "default"
+				}
+			]
+		},
+		"Web de Factuapp": {
+			"image": "images/factuapp-web.webp",
+			"description": "Me encargué del diseño y desarrollo completo de la landing page de Factuapp, creada para presentar la herramienta a pymes y autónomos que deben adaptarse a la nueva normativa de facturación. Con un diseño minimalista y moderno, la web explica sus características y beneficios de forma clara. Aunque la app aún está en desarrollo, la landing ya funciona como carta de presentación y punto de información para quienes buscan una solución compatible con Verifactu",
+			"technologies": [
+				{
+					"name": "Laravel",
+					"url": "https://laravel.com/",
+					"icon": "logos:laravel"
+				},
+				{
+					"name": "Tailwind CSS",
+					"url": "https://tailwindcss.com/",
+					"icon": "logos:tailwindcss-icon"
+				},
+				{
+					"name": "GitHub",
+					"url": "https://github.com/",
+					"icon": "tabler:brand-github"
+				},
+				{
+					"name": "Visual Studio Code",
+					"url": "https://code.visualstudio.com/",
+					"icon": "vscode-icons:file-type-vscode"
+				}
+			],
+			"tags": [
+				{
+					"text": "Página web de Factuapp",
+					"url": "https://factuapp.com",
+					"icon": "tabler:world-www",
+					"color": "default"
+				}
+			]
+		},
+		"Factuapp": {
+			"image": "images/factuapp.webp",
+			"description": "Me encargué de todo el desarrollo del frontend de una aplicación web para gestionar facturas, clientes y productos. La idea era que fuera muy fácil de usar, visualmente agradable y pensada para el día a día de pymes y autónomos. La app permite crear, editar y enviar facturas, llevar el control de clientes y artículos, y automatizar parte del trabajo gracias a su integración con VeriFactu, cumpliendo con la normativa y conectando directamente con la Agencia Tributaria",
+			"technologies": [
+				{
+					"name": "Laravel",
+					"url": "https://laravel.com/",
+					"icon": "logos:laravel"
+				},
+				{
+					"name": "Vue",
+					"url": "https://vuejs.org/",
+					"icon": "logos:vue"
+				},
+				{
+					"name": "Tailwind CSS",
+					"url": "https://tailwindcss.com/",
+					"icon": "logos:tailwindcss-icon"
+				},
+				{
+					"name": "MySQL",
+					"url": "https://www.mysql.com/",
+					"icon": "logos:mysql"
+				},
+				{
+					"name": "GitHub",
+					"url": "https://github.com/",
+					"icon": "tabler:brand-github"
+				},
+				{
+					"name": "Visual Studio Code",
+					"url": "https://code.visualstudio.com/",
+					"icon": "vscode-icons:file-type-vscode"
+				}
+			],
+			"tags": []
+		},
+		"Mi trabajo diario": {
+			"image": "images/daily-work.webp",
+			"description": "Aunque no es un proyecto personal, este trabajo representa una parte muy importante de mi experiencia como desarrollador. En mi día a día formo parte de un equipo que crea soluciones web para procesos KYC (Know Your Customer) dentro del sector financiero. Por motivos de confidencialidad no puedo mostrar detalles concretos, pero he trabajado en distintos productos con necesidades técnicas variadas. Mi aporte incluye tanto frontend como backend, utilizando diferentes tecnologías y participando en proyectos que combinan desafíos técnicos con el cumplimiento de normativas",
+			"technologies": [
+				{
+					"name": "Laravel",
+					"url": "https://laravel.com/",
+					"icon": "logos:laravel"
+				},
+				{
+					"name": "Vue",
+					"url": "https://vuejs.org/",
+					"icon": "logos:vue"
+				},
+				{
+					"name": "Pinia",
+					"url": "https://pinia.vuejs.org/",
+					"icon": "logos:pinia"
+				},
+				{
+					"name": "TypeScript",
+					"url": "https://www.typescriptlang.org/",
+					"icon": "logos:typescript-icon"
+				},
+				{
+					"name": "JavaScript",
+					"url": "https://developer.mozilla.org/es/docs/Web/JavaScript",
+					"icon": "logos:javascript"
+				},
+				{
+					"name": "Tailwind CSS",
+					"url": "https://tailwindcss.com/",
+					"icon": "logos:tailwindcss-icon"
+				},
+				{
+					"name": "CSS",
+					"url": "https://developer.mozilla.org/es/docs/Web/CSS",
+					"icon": "vscode-icons:file-type-css"
+				},
+				{
+					"name": "PostgreSQL",
+					"url": "https://www.postgresql.org/",
+					"icon": "logos:postgresql"
+				},
+				{
+					"name": "MySQL",
+					"url": "https://www.mysql.com/",
+					"icon": "logos:mysql"
+				},
+				{
+					"name": "Docker",
+					"url": "https://www.docker.com/",
+					"icon": "logos:docker-icon"
+				},
+				{
+					"name": "Bitbucket",
+					"url": "https://bitbucket.org/product",
+					"icon": "logos:bitbucket"
+				},
+				{
+					"name": "Jira",
+					"url": "https://www.atlassian.com/es/software/jira",
+					"icon": "logos:jira"
+				},
+				{
+					"name": "Cursor",
+					"url": "https://www.cursor.com/en",
+					"icon": "vscode-icons:file-type-cursorrules"
+				}
+			],
+			"tags": []
+		}
+	},
+	"work_experience_list": [
+		{
+			"title": "Desarrollador Web Full Stack en Simple KYC",
+			"startDate": "Febrero 2021",
+			"endDate": "Presente",
+			"location": "Remoto",
+			"description": "Este es mi trabajo actual, donde he aprendido una amplia gama de habilidades y tecnologías aplicadas al desarrollo web",
+			"details": [
+				"Desarrollo y mantenimiento de aplicaciones web para los principales clientes bancarios en Australia utilizando principalmente Laravel y PHP.",
+				"Desarrollo front-end con Vue.js, Tailwind CSS y otras tecnologías como jQuery o JavaScript para una experiencia de usuario óptima.",
+				"Manejo de base de datos MySQL y PostgreSQL.",
+				"Dockerización de entornos de desarrollo.",
+				"Creación de API REST y automatización de procesos.",
+				"Creación de Informes avanzados.",
+				"Uso de metodologías ágiles y desarrollo scrum.",
+				"Colaboración en equipos utilizando Git para control de versiones.",
+				"Resolución proactiva de incidencias y problemas técnicos."
+			],
+			"website": "https://www.simplekyc.com/"
+		},
+		{
+			"title": "Dominama Análisis Tecnológicos S.L.",
+			"startDate": "Octubre 2020",
+			"endDate": "Diciembre 2020",
+			"location": "Remoto",
+			"description": "Mi primera toma de contacto con el mundo laboral, aquí completé las prácticas de 3 meses de duración ofrecidas por el grado superior. Por desgracia, debido a la pandemia de COVID-19, estas prácticas tuvieron que realizarse de manera 100% remota.",
+			"website": "http://www.dominama.es/"
+		}
+	],
+	"frontend": "Frontend",
+	"backend": "Backend",
+	"tools": "Herramientas",
+	"back_to_top": "Volver Arriba"
 }

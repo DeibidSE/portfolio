@@ -27,3 +27,15 @@ export interface WorkExperience {
 	details?: string[]
 	website?: string
 }
+
+export const FRONTEND_TYPE = 'frontend' as const
+export const BACKEND_TYPE = 'backend' as const
+export const TOOLS_TYPE = 'tools' as const
+
+export type SkillType = typeof FRONTEND_TYPE | typeof BACKEND_TYPE | typeof TOOLS_TYPE
+
+export interface Skill {
+	name: string
+	image: string
+	type: SkillType
+}

@@ -1,17 +1,17 @@
 # My Portfolio
 
-Welcome to my web portfolio! This project is a personal space where I showcase my skills, projects, and experiences. The platform is built using the Nuxt framework, providing a smooth user experience and intuitive navigation.
+Welcome to my online portfolio! This personal website serves as a showcase of my web development skills, projects, and professional experiences. Built with the Nuxt.js framework, it offers a seamless and responsive user experience, ensuring smooth navigation across all devices.
 
 ## About This Project
 
-This web portfolio aims to display my professional profile and web development skills. Here, you'll find information about my highlighted projects, technical skills, and relevant details about my journey.
+This portfolio is designed to highlight my skills as a web developer. It provides a comprehensive overview of my career, including detailed descriptions of key projects, technical expertise, and personal achievements.
 
 ### Key Features
 
-- **Responsive Design:** The interface adapts to different devices to provide an optimal experience.
-- **Projects Section:** Check out the projects I've worked on.
-- **Professional Experience:** Summary of my work background.
-- **Skills:** List of technical skills relevant to web development.
+- **Responsive Design:** Optimized for all screen sizes, ensuring a smooth experience on desktops, tablets, and mobile devices.
+- **Projects Section:** A dedicated section to display the projects I’ve worked on, demonstrating my development process and the technologies I’ve mastered.
+- **Professional Experience:** A concise summary of my career history, highlighting relevant roles and accomplishments.
+- **Skills:** A list of my technical abilities, focusing on tools and technologies integral to modern web development.
 
 ## Acknowledgements
 

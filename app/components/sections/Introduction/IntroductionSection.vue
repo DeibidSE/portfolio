@@ -1,72 +1,54 @@
-<template>
-	<LayoutsSectionWrapper id="introduction">
-		<div
-			class="flex flex-col items-center justify-center w-full gap-6 text-center min-h-[calc(100dvh-10rem)]"
-		>
-			<h1 class="w-full py-6 font-bold text-center text-transparent text-7xl md:text-8xl lg:text-9xl bg-clip-text bg-gradient-to-r from-accent to-accent-secondary">
-				{{ $t('introduction.greeting') }}
-			</h1>
-
-			<div class="flex items-center justify-center w-full min-h-8 sm:min-h-10 md:min-h-12 xl:min-h-16">
-				<h2
-					ref="typingtext"
-					class="text-2xl font-bold transition-all duration-300 ease-out text-accent-light sm:text-4xl md:text-5xl xl:text-6xl"
-				>
-					{{ txt }}
-					<span
-						class="dark:text-white/70 text-dark/50 animate-blinking-cursor"
-						aria-hidden="true"
-					>|</span>
-				</h2>
-			</div>
-		</div>
-	</LayoutsSectionWrapper>
-</template>
-
 <script setup lang="ts">
 const txt = ref('')
 const isDeleting = ref(false)
 const loopNum = ref(0)
-const typingtextElement = ref()
 
 const { t } = useI18n()
 
-onMounted(() => {
-	typingtextElement.value = typingtextElement
-	tick()
-})
-
 const tick = () => {
-	const htmlElement = typingtextElement.value
 	const fullTxt = t('job.title')
 
-	if (htmlElement && fullTxt.length > 0) {
-		if (isDeleting.value) {
-			txt.value = fullTxt.substring(0, txt.value.length - 1)
-		} else {
-			txt.value = fullTxt.substring(0, txt.value.length + 1)
-		}
+	if (!fullTxt) return
 
-		htmlElement.textContent = txt.value
-
-		let pause = 200 - Math.random() * 100
-
-		if (isDeleting.value) {
-			pause /= 2
-		}
-
-		if (!isDeleting.value && txt.value === fullTxt) {
-			pause = 2000
-			isDeleting.value = true
-		} else if (isDeleting.value && txt.value === '') {
-			isDeleting.value = false
-			loopNum.value++
-			pause = 500
-		}
-
-		setTimeout(tick, pause)
+	if (isDeleting.value) {
+		txt.value = fullTxt.substring(0, txt.value.length - 1)
 	} else {
-		txt.value = fullTxt
+		txt.value = fullTxt.substring(0, txt.value.length + 1)
 	}
+
+	let delay = isDeleting.value ? 50 : 90
+
+	if (!isDeleting.value && txt.value === fullTxt) {
+		delay = 3600
+		isDeleting.value = true
+	} else if (isDeleting.value && txt.value === '') {
+		isDeleting.value = false
+		loopNum.value++
+		delay = 600
+	}
+
+	setTimeout(tick, delay)
 }
+
+onMounted(tick)
 </script>
+
+<template>
+	<LayoutsSectionWrapper id="introduction">
+		<header class="gap-6 sm:gap-8 flex h-full flex-col items-center text-center">
+			<h1
+				class="font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl from-accent via-accent-secondary to-accent animate-gradient py-3 bg-gradient-to-r bg-[length:200%_200%] bg-clip-text text-transparent"
+			>
+				{{ $t('introduction.greeting') }}
+			</h1>
+
+			<p
+				class="gap-1 px-6 py-4 text-xl font-semibold bg-yellow-400 sm:text-2xl md:text-3xl lg:text-4xl text-dark shadow-bottom before:top-0 before:right-0 before:w-4 before:h-4 before:bg-yellow-300 before:shadow-md rounded-tr-xl relative flex -rotate-1 items-center justify-center before:absolute before:rounded-tr-full"
+				:style="{ width: $t('job.title').length + 3 + 'ch' }"
+			>
+				{{ txt }}
+				<span class="animate-blinking-cursor text-dark/70" aria-hidden="true">|</span>
+			</p>
+		</header>
+	</LayoutsSectionWrapper>
+</template>

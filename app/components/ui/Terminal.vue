@@ -1,26 +1,28 @@
 <template>
 	<div
-		class="flex flex-col w-full h-full overflow-hidden transition-shadow duration-300 border-2 shadow-no-offset rounded-3xl border-accent/50 backdrop-blur-lg md:text-lg bg-secondary-light/50 dark:bg-secondary-dark/50"
+		class="rounded-3xl border-accent/50 bg-secondary-light/50 shadow-lg backdrop-blur-sm hover:border-primary-500/30 hover:shadow-xl dark:bg-slate-900/50 md:text-lg flex h-full w-full flex-col overflow-hidden border-2 transition-all duration-300"
 		role="region"
 		aria-label="Terminal component"
 	>
-		<div class="flex items-center justify-between w-full px-4 py-3 border-b-2 border-accent/50 bg-gray-100/80 dark:bg-gray-900/60">
-			<div class="flex gap-2">
-				<span class="w-3 h-3 bg-[#ff5f57] rounded-full shadow-md" />
-				<span class="w-3 h-3 bg-[#ffbd2e] rounded-full shadow-md" />
-				<span class="w-3 h-3 bg-[#28c940] rounded-full shadow-md" />
+		<div class="border-accent/50 bg-gray-100/80 px-4 py-3 dark:bg-gray-900/60 flex w-full items-center justify-between border-b-2">
+			<div class="gap-2 flex items-center" aria-hidden="true">
+				<span class="size-3 shadow-md rounded-full bg-[#ff5f57]" />
+				<span class="size-3 shadow-md rounded-full bg-[#ffbd2e]" />
+				<span class="size-3 shadow-md rounded-full bg-[#28c940]" />
 			</div>
 		</div>
 
-		<div class="flex flex-col gap-8 px-6 py-6 overflow-y-auto text-xs leading-relaxed text-gray-800 bg-transparent sm:text-sm font-code dark:text-gray-200">
+		<div
+			class="gap-8 px-6 py-6 font-code text-xs leading-relaxed text-gray-800 dark:text-gray-200 sm:text-sm flex flex-col overflow-y-auto bg-transparent"
+		>
 			<slot name="header" />
 			<slot name="content" />
 			<slot name="secondary-content" />
 			<slot name="footer" />
 
-			<div class="flex items-start gap-2">
-				<span class="font-semibold text-accent-secondary dark:text-accent-secondary">user@localhost:~$</span>
-				<span class="animate-blinking-cursor">_</span>
+			<div class="gap-2 flex items-start">
+				<span class="font-semibold text-accent-secondary dark:text-accent-secondary"> user@localhost:~$ </span>
+				<span class="animate-blinking-cursor" aria-hidden="true">_</span>
 			</div>
 		</div>
 	</div>
