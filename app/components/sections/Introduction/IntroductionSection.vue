@@ -37,7 +37,7 @@ onMounted(tick)
 	<LayoutsSectionWrapper id="introduction">
 		<header class="gap-6 sm:gap-8 flex h-full flex-col items-center text-center">
 			<h1
-				class="font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl from-accent via-accent-secondary to-accent animate-gradient py-3 bg-gradient-to-r bg-[length:200%_200%] bg-clip-text text-transparent"
+				class="font-extrabold text-7xl lg:text-8xl xl:text-9xl from-accent via-accent-secondary to-accent animate-gradient py-3 bg-gradient-to-r bg-[length:200%_200%] bg-clip-text text-transparent"
 			>
 				{{ $t('introduction.greeting') }}
 			</h1>
