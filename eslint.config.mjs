@@ -9,10 +9,10 @@ export default withNuxt({
 		'@stylistic/member-delimiter-style': 'off',
 		'@stylistic/no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
 		'@stylistic/quote-props': ['error', 'as-needed'],
-		'@stylisctic/quotes': ['error', 'as-needed'],
+		'@stylistic/quotes': 'off',
 
-		'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-		'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+		'no-console': 'off',
+		'no-debugger': 'off',
 
 		'vue/html-closing-bracket-newline': 'off',
 		'vue/html-indent': 'off',
