@@ -1,5 +1,3 @@
-Tengo este fondo creado con tailwind css para una web (portfolio). Puedes darme diferentes ejemplos que queden super guays y visuales ya que no
-consigo decidirme?
 <template>
 	<div id="app" class="text-dark dark:text-light bg-primary-light dark:bg-primary-dark relative min-h-screen w-full">
 		<div class="inset-0 bg-white dark:bg-gray-950 absolute">
