@@ -41,8 +41,8 @@ export interface Skill {
 }
 
 export interface Link {
-	name: string;
-	icon: string;
-	color: string;
-	url: string;
+	name: string
+	icon: string
+	color: string
+	url: string
 }
