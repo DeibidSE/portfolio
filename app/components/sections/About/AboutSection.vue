@@ -55,20 +55,20 @@ import { socialLinks } from '~/lib/data'
 					</div>
 					<div class="gap-4 flex flex-wrap items-center">
 						<UiBadge
-							v-for="(info, key) in socialLinks"
+							v-for="(link, key) in socialLinks"
 							:key="key"
 							tag="a"
-							:href="info.url"
+							:href="link.url"
 							target="_blank"
 							rel="noopener noreferrer"
-							:aria-label="`Contact me via ${info.name}`"
-							:prepend-icon="info.icon"
+							:aria-label="`Contact me via ${link.name}`"
+							:prepend-icon="link.icon"
 							append-icon="tabler:external-link"
-							:color="info.color"
+							:color="link.color"
 							size="medium"
 							hover
 						>
-							{{ info.name || '' }}
+							{{ link.name || '' }}
 						</UiBadge>
 					</div>
 				</div>

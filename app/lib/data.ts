@@ -1,7 +1,7 @@
-import type { Skill } from './types.d'
+import type { Link, Skill } from './types.d'
 import { FRONTEND_TYPE, BACKEND_TYPE, TOOLS_TYPE } from './types.d'
 
-export const socialLinks = [
+export const socialLinks: Link[] = [
 	{
 		name: 'LinkedIn',
 		icon: 'tabler:brand-linkedin',

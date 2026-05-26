@@ -10,15 +10,15 @@ import { socialLinks } from '~/lib/data'
 
 				<nav class="gap-4 flex items-center justify-center" aria-label="Social links">
 					<a
-						v-for="social in socialLinks"
-						:key="social.name"
-						:href="social.url"
+						v-for="link in socialLinks"
+						:key="link.name"
+						:href="link.url"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="text-dark/60 hover:-translate-y-0.5 hover:text-accent dark:text-light/60 transition-all"
-						:aria-label="social.name"
+						:aria-label="link.name"
 					>
-						<Icon :name="social.icon" class="size-5" aria-hidden="true" />
+						<Icon :name="link.icon" class="size-5" aria-hidden="true" />
 					</a>
 				</nav>
 			</div>

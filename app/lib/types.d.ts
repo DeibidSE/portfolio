@@ -39,3 +39,10 @@ export interface Skill {
 	image: string
 	type: SkillType
 }
+
+export interface Link {
+	name: string;
+	icon: string;
+	color: string;
+	url: string;
+}
