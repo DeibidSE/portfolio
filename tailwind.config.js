@@ -5,8 +5,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: 'Coolvetica',
-				code: 'CascadiaCode',
+				sans: ['Coolvetica', 'system-ui', 'sans-serif'],
+				code: ['CascadiaCode', 'monospace'],
 			},
 			boxShadow: {
 				inside: 'inset 0 0 10px rgba(0,0,0,0.5)',

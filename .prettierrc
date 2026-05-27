@@ -7,5 +7,5 @@
 	"htmlWhitespaceSensitivity": "css",
 	"endOfLine": "auto",
 	"plugins": ["prettier-plugin-tailwindcss"],
-	"tailwindStylesheet": "./app/assets/css/tailwind.css"
+	"tailwindConfig": "./tailwind.config.js"
 }

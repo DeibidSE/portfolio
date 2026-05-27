@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+
+# Nuxt build / dev output
+.nuxt
+.nitro
+.output
+.data
+.cache
+dist
+
+# Lockfile (owned by the package manager)
+package-lock.json
+
+# Static assets (hand-curated, e.g. favicons / manifest / svg)
+public
+
+# Logs
+*.log
