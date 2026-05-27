@@ -51,23 +51,26 @@ onMounted(() => {
 		<UiBrowser @back="moveCategory(-1)" @forward="moveCategory(1)" @home="activeCategory = categories[0]!">
 			<template #address> https://deibidse.github.io{{ $config.public.BASE_URL }}/skills?type={{ activeCategory }} </template>
 
-			<section class="gap-2 px-6 pt-3 text-xs sm:text-sm sm:justify-start border-b-accent/20 flex items-end justify-between border-b">
-				<span
+			<section
+				class="flex items-end justify-between gap-1 border-b border-slate-900/10 px-3 pt-3 dark:border-white/10 sm:justify-start sm:gap-2 sm:px-6"
+			>
+				<button
 					v-for="category in categories"
 					:key="category"
-					class="rounded-t-lg px-4 py-2 text-sm font-medium relative cursor-pointer transition"
+					type="button"
+					class="focus-ring relative -mb-px rounded-t-lg border-b-2 px-3 py-2 text-sm font-medium transition-colors sm:px-4"
 					:class="
 						activeCategory === category
-							? 'text-gray-800 dark:text-gray-200 border-accent border-b-2'
-							: 'text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200'
+							? 'border-accent text-gray-900 dark:text-gray-100'
+							: 'border-transparent text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200'
 					"
 					@click="activeCategory = category"
 				>
 					{{ $t(category) }}
-				</span>
+				</button>
 			</section>
 
-			<main class="px-6 py-6 flex-1 overflow-y-auto">
+			<main class="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
 				<Transition name="page" mode="out-in">
 					<SectionsSkillsSkillCard :key="activeCategory" :category="activeCategory" :skills="visibleSkills" />
 				</Transition>

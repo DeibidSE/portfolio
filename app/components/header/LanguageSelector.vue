@@ -33,7 +33,7 @@ onBeforeUnmount(() => {
 	<div ref="dropdown" class="relative flex items-center">
 		<button
 			type="button"
-			class="gap-2 px-3 py-2 text-sm font-medium text-dark hover:bg-gray-300/70 dark:text-light dark:hover:bg-slate-700/70 flex items-center rounded-full transition-all focus:outline-none"
+			class="focus-ring flex items-center gap-1.5 rounded-full px-2.5 py-2 text-sm font-medium text-dark transition-colors hover:bg-accent/10 dark:text-light dark:hover:bg-white/10"
 			aria-haspopup="menu"
 			:aria-expanded="isOpen"
 			aria-label="Select language"
@@ -44,16 +44,13 @@ onBeforeUnmount(() => {
 		</button>
 
 		<transition name="lang-dropdown">
-			<ul
-				v-if="isOpen"
-				role="menu"
-				class="right-0 mt-2 rounded-xl border-accent/50 bg-secondary-light shadow-xl dark:bg-slate-900 absolute top-full overflow-hidden border"
-			>
+			<ul v-if="isOpen" role="menu" class="glass-surface absolute right-0 top-full mt-2 min-w-[10rem] overflow-hidden rounded-xl p-1">
 				<li v-for="lang in locales" :key="lang.code" role="none">
 					<button
 						type="button"
 						role="menuitem"
-						class="gap-3 px-4 py-3 text-sm hover:bg-gray-300/70 dark:hover:bg-slate-700/70 flex w-full items-center text-left transition-colors"
+						class="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition-colors hover:bg-accent/10 dark:hover:bg-white/10"
+						:class="lang.code === locale ? 'text-accent dark:text-accent-light' : ''"
 						@click.prevent.stop="setLocale(lang.code)"
 					>
 						<Icon :name="`circle-flags:${lang.code}`" class="size-5" aria-hidden="true" />

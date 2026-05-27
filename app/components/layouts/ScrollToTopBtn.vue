@@ -24,7 +24,7 @@ onBeforeUnmount(() => {
 <template>
 	<button
 		v-if="showScrollToTop"
-		class="bottom-4 right-4 group p-1 w-12 h-12 text-accent bg-secondary-light/50 dark:bg-slate-900/50 backdrop-blur-lg font-semibold shadow-lg border-accent/70 hover:w-36 hover:before:text-sm fixed z-40 flex cursor-pointer items-center justify-center justify-items-center overflow-hidden rounded-[50%] border-2 duration-300 before:absolute before:text-[0px] before:content-[attr(data-label)] hover:rounded-[50px] hover:duration-300 hover:before:duration-300"
+		class="glass-surface group fixed bottom-4 right-4 z-40 flex h-12 w-12 cursor-pointer items-center justify-center justify-items-center overflow-hidden rounded-[50%] p-1 font-semibold text-accent duration-300 before:absolute before:text-[0px] before:content-[attr(data-label)] hover:w-36 hover:rounded-[50px] hover:duration-300 hover:before:text-sm hover:before:duration-300 dark:text-accent-light"
 		aria-label="Scroll to top of the page"
 		:data-label="$t('back_to_top')"
 		@click="scrollToTop"

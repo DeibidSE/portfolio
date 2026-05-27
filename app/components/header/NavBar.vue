@@ -28,61 +28,67 @@ const scrollToSection = (section: string) => {
 </script>
 
 <template>
-	<header
-		class="top-4 rounded-2xl border-accent/50 bg-secondary-light/50 shadow-xl backdrop-blur-xl dark:bg-slate-900/50 lg:w-fit fixed left-1/2 z-50 w-[95%] -translate-x-1/2 border transition-all duration-300"
-	>
-		<nav class="gap-6 px-6 py-3 flex items-center justify-between" aria-label="Main navigation">
+	<header class="glass-surface fixed left-1/2 top-4 z-50 w-[95%] -translate-x-1/2 rounded-2xl transition-all duration-300 lg:w-fit">
+		<nav class="flex items-center justify-between gap-4 px-4 py-2.5 sm:gap-6 sm:px-6 sm:py-3" aria-label="Main navigation">
 			<a
 				:href="`${$config.public.BASE_URL}`"
-				class="gap-2 flex items-center transition-transform duration-300 hover:scale-105"
+				class="focus-ring flex items-center rounded-xl transition-transform duration-300 hover:scale-105"
 				aria-label="Main website logo"
 			>
-				<Icon name="my-icon:main" class="size-12" aria-hidden="true" />
+				<Icon name="my-icon:main" class="size-10 sm:size-11" aria-hidden="true" />
 			</a>
 
-			<ul class="gap-8 lg:flex relative hidden items-center">
+			<ul class="relative hidden items-center gap-6 lg:flex xl:gap-8">
 				<li v-for="(section, key) in sectionList" :key="key" class="group relative">
 					<button
 						type="button"
-						class="px-2 py-1 text-sm font-medium text-dark group-hover:text-accent dark:text-light truncate transition-all duration-300"
+						class="focus-ring rounded-md px-2 py-1 text-sm font-medium text-dark/80 transition-colors duration-300 group-hover:text-accent dark:text-light/80 dark:group-hover:text-accent-light"
 						@click="scrollToSection(key)"
 					>
 						{{ section }}
 					</button>
 
 					<span
-						class="left-0 -bottom-1 h-0.5 from-accent to-accent-secondary absolute w-full origin-left scale-x-0 bg-gradient-to-r transition-transform duration-300 group-hover:scale-x-100"
+						class="absolute -bottom-0.5 left-2 h-0.5 w-[calc(100%-1rem)] origin-left scale-x-0 rounded-full bg-gradient-to-r from-accent to-accent-secondary transition-transform duration-300 group-hover:scale-x-100"
 						aria-hidden="true"
 					/>
 				</li>
 			</ul>
 
-			<div class="gap-4 lg:flex hidden items-center">
+			<div class="hidden items-center gap-2 lg:flex">
 				<HeaderThemeSwitch />
 				<HeaderLanguageSelector />
 			</div>
 
 			<button
 				type="button"
-				class="gap-1.5 lg:hidden relative z-50 flex flex-col"
+				class="focus-ring relative z-50 flex size-10 flex-col items-center justify-center gap-1.5 rounded-xl lg:hidden"
 				aria-label="Toggle menu"
 				:aria-expanded="isMenuOpen"
 				@click="toggleMenu"
 			>
-				<span class="h-0.5 w-6 bg-current transition-all duration-300" :class="isMenuOpen ? 'translate-y-2 rotate-45' : ''" aria-hidden="true" />
-				<span class="h-0.5 w-6 bg-current transition-all duration-300" :class="isMenuOpen ? 'opacity-0' : ''" aria-hidden="true" />
-				<span class="h-0.5 w-6 bg-current transition-all duration-300" :class="isMenuOpen ? '-translate-y-2 -rotate-45' : ''" aria-hidden="true" />
+				<span
+					class="h-0.5 w-6 rounded-full bg-current transition-all duration-300"
+					:class="isMenuOpen ? 'translate-y-2 rotate-45' : ''"
+					aria-hidden="true"
+				/>
+				<span class="h-0.5 w-6 rounded-full bg-current transition-all duration-300" :class="isMenuOpen ? 'opacity-0' : ''" aria-hidden="true" />
+				<span
+					class="h-0.5 w-6 rounded-full bg-current transition-all duration-300"
+					:class="isMenuOpen ? '-translate-y-2 -rotate-45' : ''"
+					aria-hidden="true"
+				/>
 			</button>
 		</nav>
 
 		<transition name="mobile-menu">
-			<div v-if="isMenuOpen" class="left-0 lg:hidden absolute w-full">
-				<div class="mt-4 gap-6 rounded-2xl border-accent/50 bg-secondary-light p-6 shadow-2xl dark:bg-slate-900 flex flex-col border">
-					<ul class="gap-4 flex flex-col">
+			<div v-if="isMenuOpen" class="absolute left-0 w-full lg:hidden">
+				<div class="glass-surface mt-3 flex flex-col gap-5 rounded-2xl p-5">
+					<ul class="flex flex-col gap-1">
 						<li v-for="(section, key, i) in sectionList" :key="key" class="animate-slide-in opacity-0" :style="{ animationDelay: `${i * 70}ms` }">
 							<button
 								type="button"
-								class="text-lg font-semibold text-dark hover:translate-x-2 hover:text-accent dark:text-light w-full text-left transition-all"
+								class="focus-ring w-full rounded-lg px-3 py-2 text-left text-lg font-semibold text-dark transition-colors hover:bg-accent/10 hover:text-accent dark:text-light dark:hover:text-accent-light"
 								@click="scrollToSection(key)"
 							>
 								{{ section }}
@@ -90,9 +96,9 @@ const scrollToSection = (section: string) => {
 						</li>
 					</ul>
 
-					<div class="via-accent/50 h-px bg-gradient-to-r from-transparent to-transparent" aria-hidden="true" />
+					<div class="h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" aria-hidden="true" />
 
-					<div class="gap-4 flex items-center justify-between">
+					<div class="flex items-center justify-between gap-4 px-3">
 						<HeaderThemeSwitch />
 						<HeaderLanguageSelector />
 					</div>

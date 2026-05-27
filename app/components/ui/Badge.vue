@@ -33,11 +33,11 @@ const colorClasses = computed(() => colorsMap[(props.color as 'blue' | 'red' | '
 	<component
 		:is="tag"
 		v-bind="$attrs"
-		class="gap-2 shadow-sm inline-flex w-fit items-center justify-center rounded-full border-2 transition-all duration-200"
-		:class="[colorClasses, sizeClasses, hover ? 'hover:shadow-md hover:scale-105' : '']"
+		class="inline-flex w-fit items-center justify-center gap-2 rounded-full border font-medium shadow-sm transition-all duration-200"
+		:class="[colorClasses, sizeClasses, hover ? 'cursor-pointer hover:-translate-y-0.5 hover:shadow-md' : '']"
 	>
 		<Icon v-if="prependIcon" :name="prependIcon" class="text-xl opacity-80" />
 		<slot />
-		<Icon v-if="appendIcon" :name="appendIcon" class="text-lg opacity-80" />
+		<Icon v-if="appendIcon" :name="appendIcon" class="text-lg opacity-70" />
 	</component>
 </template>

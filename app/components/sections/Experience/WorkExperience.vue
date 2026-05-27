@@ -2,8 +2,8 @@
 	<LayoutsSectionWrapper id="experience" icon="tabler:briefcase" :title="$t('work_experience.title')">
 		<UiTerminal>
 			<template #header>
-				<div class="gap-2 flex items-start">
-					<span class="font-semibold text-accent-secondary dark:text-accent-secondary">user@localhost:~$</span>
+				<div class="flex items-start gap-2">
+					<span class="font-semibold text-accent-secondary">user@localhost:~$</span>
 					<span>npm run experience --timeline</span>
 				</div>
 			</template>

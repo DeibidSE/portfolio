@@ -14,7 +14,19 @@
 }
 
 html {
-	font-family: 'Coolvetica', system-ui, sans-serif;
 	overflow-x: hidden;
 	overscroll-behavior: none;
+	/* Keep anchored sections clear of the fixed navbar. */
+	scroll-padding-top: 6rem;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+/* Brand-tinted text selection for a more polished feel. */
+::selection {
+	background-color: rgba(147, 51, 234, 0.25);
 }
