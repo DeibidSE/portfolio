@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import type { Project } from '~/lib/types.d'
 
-const projects = $tm('projects_list') as Record<string, Project>
+const { tm } = useI18n()
+
+const projects = computed(() => tm('projects_list') as Record<string, Project>)
 </script>
 
 <template>
