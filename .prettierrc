@@ -4,7 +4,7 @@
 	"printWidth": 150,
 	"useTabs": true,
 	"tabWidth": 1,
-	"htmlWhitespaceSensitivity": "css",
+	"htmlWhitespaceSensitivity": "ignore",
 	"endOfLine": "auto",
 	"plugins": ["prettier-plugin-tailwindcss"],
 	"tailwindConfig": "./tailwind.config.js"
