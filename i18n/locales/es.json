@@ -1,5 +1,9 @@
 {
 	"about.title": "Acerca de mí",
+	"about.name": "David Simón",
+	"about.summary": "Desarrollador Full Stack con más de 5 años de experiencia creando aplicaciones y experiencias web rápidas y cuidadas. Disfruto convirtiendo ideas en productos reales, desde la lógica del backend hasta los pequeños detalles de la interfaz.",
+	"about.experience": "+5 años de experiencia",
+	"about.tag_fullstack": "Full Stack",
 	"availability.label": "Disponibilidad",
 	"availability.status": "Actualmente trabajando 🎉",
 	"job.title": "Desarrollador Web Full Stack",
@@ -8,15 +12,22 @@
 	"introduction.greeting": "¡Hola! Soy David",
 	"work_experience.title": "Experiencia Profesional",
 	"terminal_content": [
-		"🧑🏻‍💻 Me llamo David y soy Desarrollador Web Full Stack con más de 5 años de experiencia en el sector.",
-		"🚀 Comencé a programar tras terminar el instituto, ya que siempre supe que este mundillo era para mí. Desde entonces, no he dejado de aprender. La tecnología avanza rápido y cada nuevo reto me ha ayudado a crecer, tanto a nivel profesional como personal, convirtiéndome en el desarrollador que soy hoy.",
-		"🔝 Aunque gran parte de mi tiempo lo dedico a mi trabajo diario, siempre intento reservar un espacio para crear, experimentar y dar vida a nuevas ideas en mis ratos libres. Me siento orgulloso del camino recorrido hasta ahora, pero lo que de verdad me motiva es todo lo que aún está por venir. Este portafolio seguirá creciendo con nuevos proyectos, aprendizajes y logros.",
-		"😀 Gracias por visitar mi sitio web y acompañarme en este camino de crecimiento y evolución profesional."
+		"🧑🏻‍💻 Me llamo David, y soy desarrollador web Full Stack. Llevo más de 5 años trabajando en el sector y disfrutando de algo que siempre me ha gustado: crear cosas con código.",
+		"🚀 Empecé a programar al terminar el instituto porque tenía claro que quería dedicarme a algo relacionado con la informática. Desde pequeño me fascinaban los videojuegos y siempre pensé que algún día me gustaría crear algo parecido. Por el camino descubrí el desarrollo web casi por casualidad y terminé encontrando un mundo que me enganchó desde el primer momento. Desde entonces he trabajado en distintos proyectos, aprendido nuevas tecnologías y, sobre todo, he seguido disfrutando de ese proceso de construir cosas desde cero.",
+		"🔝 En mi tiempo libre, de vez en cuando se me enciende la bombilla y empiezo algún proyecto personal. La mayoría nunca llegan a publicarse, algunos ni siquiera pisan GitHub, pero disfruto mucho del proceso de crear por crear, sin objetivos ni fechas límite. Me gusta experimentar, probar ideas nuevas y enredar incluso en proyectos que ya daba por terminados, porque siempre termino encontrando algo que mejorar o una forma diferente de hacer las cosas. Hay días en los que me pongo los auriculares, suena buena música y puedo pasar horas programando completamente abstraído, disfrutando simplemente de construir algo y ver hasta dónde puede llegar una idea.",
+		"😀 Este portfolio es una pequeña muestra de algunas de las cosas que he ido haciendo durante estos años. Seguiré añadiendo nuevos proyectos según vayan surgiendo. Gracias por pasarte por aquí."
 	],
 	"projects_list": {
 		"Clon de spotify": {
 			"image": "images/spotify-clone.webp",
-			"description": "Este proyecto se enfoca en recrear de manera precisa la interfaz web de Spotify, proporcionando a los usuarios la capacidad de reproducir música, buscar y explorar listas de reproducción. Con un énfasis en la fidelidad visual y funcional, este clon me ha permitido explorar y desarrollar tanto nuevas funcionalidades como aquellas ya conocidas",
+			"description": "Nació como excusa para probar las view transitions de Nuxt y acabó siendo una recreación bastante completa de la interfaz de Spotify. Lo que más me entretuvo fue el reproductor: conseguir que el audio no se cortara al navegar entre páginas y que todos los controles funcionaran bien. Quedé contento con el resultado.",
+			"year": "2024",
+			"role": "Proyecto personal",
+			"highlights": [
+				"Reproductor de audio que no se corta al cambiar de página",
+				"View transitions fluidas, el motivo por el que nació el proyecto",
+				"Interfaz recreada con mucho mimo al detalle"
+			],
 			"technologies": [
 				{
 					"name": "Nuxt",
@@ -42,25 +53,20 @@
 					"name": "GitHub",
 					"url": "https://github.com/",
 					"icon": "tabler:brand-github"
-				},
-				{
-					"name": "Visual Studio Code",
-					"url": "https://code.visualstudio.com/",
-					"icon": "vscode-icons:file-type-vscode"
 				}
 			],
-			"tags": [
-				{
-					"text": "Consulta el código en github",
-					"url": "https://github.com/DeibidSE/spotify-clone",
-					"icon": "tabler:code",
-					"color": "default"
-				}
-			]
+			"url": "https://github.com/DeibidSE/spotify-clone"
 		},
 		"Web de Factuapp": {
 			"image": "images/factuapp-web.webp",
-			"description": "Me encargué del diseño y desarrollo completo de la landing page de Factuapp, creada para presentar la herramienta a pymes y autónomos que deben adaptarse a la nueva normativa de facturación. Con un diseño minimalista y moderno, la web explica sus características y beneficios de forma clara. Aunque la app aún está en desarrollo, la landing ya funciona como carta de presentación y punto de información para quienes buscan una solución compatible con Verifactu",
+			"description": "Diseñé y desarrollé la web de presentación de Factuapp de principio a fin, con diseño propio desde cero. Tiene varias secciones: precios, información sobre Veri*Factu, blog y formulario de contacto. Le puse especial cuidado al rendimiento, las animaciones con el scroll y que se vea bien en cualquier pantalla.",
+			"year": "2025",
+			"role": "Diseño y desarrollo frontend",
+			"highlights": [
+				"Diseño propio desde cero, sin plantillas",
+				"Animaciones ligadas al scroll y rendimiento muy cuidado",
+				"100% responsive y orientada a la normativa Veri*Factu"
+			],
 			"technologies": [
 				{
 					"name": "Laravel",
@@ -76,25 +82,20 @@
 					"name": "GitHub",
 					"url": "https://github.com/",
 					"icon": "tabler:brand-github"
-				},
-				{
-					"name": "Visual Studio Code",
-					"url": "https://code.visualstudio.com/",
-					"icon": "vscode-icons:file-type-vscode"
 				}
 			],
-			"tags": [
-				{
-					"text": "Página web de Factuapp",
-					"url": "https://factuapp.com",
-					"icon": "tabler:world-www",
-					"color": "default"
-				}
-			]
+			"url": "https://factuapp.com"
 		},
 		"Factuapp": {
 			"image": "images/factuapp.webp",
-			"description": "Me encargué de todo el desarrollo del frontend de una aplicación web para gestionar facturas, clientes y productos. La idea era que fuera muy fácil de usar, visualmente agradable y pensada para el día a día de pymes y autónomos. La app permite crear, editar y enviar facturas, llevar el control de clientes y artículos, y automatizar parte del trabajo gracias a su integración con VeriFactu, cumpliendo con la normativa y conectando directamente con la Agencia Tributaria",
+			"description": "Me encargué del frontend completo de una app para gestionar facturas, clientes y productos, pensada para pymes y autónomos. Está construida con Vue e Inertia.js, lo que le da un enfoque distinto al de una SPA típica. Trabajaba en paralelo con el equipo de backend: cuando tenían lista una API me avisaban y yo la integraba. Incluye también generación de facturas en PDF y cumplimiento con la normativa Veri*Factu.",
+			"year": "2025",
+			"role": "Desarrollo frontend",
+			"highlights": [
+				"Crear, editar y enviar facturas",
+				"Gestión de clientes y productos",
+				"Integración con Veri*Factu y la Agencia Tributaria"
+			],
 			"technologies": [
 				{
 					"name": "Laravel",
@@ -120,86 +121,9 @@
 					"name": "GitHub",
 					"url": "https://github.com/",
 					"icon": "tabler:brand-github"
-				},
-				{
-					"name": "Visual Studio Code",
-					"url": "https://code.visualstudio.com/",
-					"icon": "vscode-icons:file-type-vscode"
 				}
 			],
-			"tags": []
-		},
-		"Mi trabajo diario": {
-			"image": "images/daily-work.webp",
-			"description": "Aunque no es un proyecto personal, este trabajo representa una parte muy importante de mi experiencia como desarrollador. En mi día a día formo parte de un equipo que crea soluciones web para procesos KYC (Know Your Customer) dentro del sector financiero. Por motivos de confidencialidad no puedo mostrar detalles concretos, pero he trabajado en distintos productos con necesidades técnicas variadas. Mi aporte incluye tanto frontend como backend, utilizando diferentes tecnologías y participando en proyectos que combinan desafíos técnicos con el cumplimiento de normativas",
-			"technologies": [
-				{
-					"name": "Laravel",
-					"url": "https://laravel.com/",
-					"icon": "logos:laravel"
-				},
-				{
-					"name": "Vue",
-					"url": "https://vuejs.org/",
-					"icon": "logos:vue"
-				},
-				{
-					"name": "Pinia",
-					"url": "https://pinia.vuejs.org/",
-					"icon": "logos:pinia"
-				},
-				{
-					"name": "TypeScript",
-					"url": "https://www.typescriptlang.org/",
-					"icon": "logos:typescript-icon"
-				},
-				{
-					"name": "JavaScript",
-					"url": "https://developer.mozilla.org/es/docs/Web/JavaScript",
-					"icon": "logos:javascript"
-				},
-				{
-					"name": "Tailwind CSS",
-					"url": "https://tailwindcss.com/",
-					"icon": "logos:tailwindcss-icon"
-				},
-				{
-					"name": "CSS",
-					"url": "https://developer.mozilla.org/es/docs/Web/CSS",
-					"icon": "vscode-icons:file-type-css"
-				},
-				{
-					"name": "PostgreSQL",
-					"url": "https://www.postgresql.org/",
-					"icon": "logos:postgresql"
-				},
-				{
-					"name": "MySQL",
-					"url": "https://www.mysql.com/",
-					"icon": "logos:mysql"
-				},
-				{
-					"name": "Docker",
-					"url": "https://www.docker.com/",
-					"icon": "logos:docker-icon"
-				},
-				{
-					"name": "Bitbucket",
-					"url": "https://bitbucket.org/product",
-					"icon": "logos:bitbucket"
-				},
-				{
-					"name": "Jira",
-					"url": "https://www.atlassian.com/es/software/jira",
-					"icon": "logos:jira"
-				},
-				{
-					"name": "Cursor",
-					"url": "https://www.cursor.com/en",
-					"icon": "vscode-icons:file-type-cursorrules"
-				}
-			],
-			"tags": []
+			"url": "https://app.factuapp.com"
 		}
 	},
 	"work_experience_list": [
@@ -208,19 +132,34 @@
 			"startDate": "Febrero 2021",
 			"endDate": "Presente",
 			"location": "Remoto",
-			"description": "Este es mi trabajo actual, donde he aprendido una amplia gama de habilidades y tecnologías aplicadas al desarrollo web",
+			"description": "Mi trabajo actual, donde llevo desde 2021 como parte del equipo de desarrollo. Es una empresa relativamente pequeña con equipos repartidos por varios países, con muy buen ambiente, de esos equipos en los que da gusto trabajar cada día. El trabajo es variado: un día puedes estar peleándote con un bug, al siguiente arrancando un proyecto nuevo desde cero, o dando soporte a producción para dejar todo fino antes de cerrar un ciclo.",
 			"details": [
 				"Desarrollo y mantenimiento de aplicaciones web para los principales clientes bancarios en Australia utilizando principalmente Laravel y PHP.",
 				"Desarrollo front-end con Vue.js, Tailwind CSS y otras tecnologías como jQuery o JavaScript para una experiencia de usuario óptima.",
 				"Manejo de base de datos MySQL y PostgreSQL.",
 				"Dockerización de entornos de desarrollo.",
-				"Creación de API REST y automatización de procesos.",
-				"Creación de Informes avanzados.",
+				"Creación de API REST, integración de microservicios y automatización de procesos.",
+				"Generación de informes configurables, en web y PDF, que combinan decenas de servicios y fuentes de datos distintas.",
 				"Uso de metodologías ágiles y desarrollo scrum.",
 				"Colaboración en equipos utilizando Git para control de versiones.",
 				"Resolución proactiva de incidencias y problemas técnicos."
 			],
 			"website": "https://www.simplekyc.com/"
+		},
+		{
+			"branch": true,
+			"tag": "feat/factuapp",
+			"title": "Factuapp",
+			"startDate": "Septiembre 2025",
+			"endDate": "Enero 2026",
+			"location": "Remoto",
+			"description": "Un proyecto que nació para echarle una mano a un amigo con el inicio de una plataforma de facturación para una nueva empresa que quería crear. Me encargué de todo el frontend, tanto de la aplicación web como de la página pública del producto, dando vida a funcionalidades clave como la gestión de clientes, productos y facturas, siempre conforme a la normativa española Veri*Factu. Todo ello en mi tiempo libre y en paralelo a mi trabajo principal.",
+			"details": [
+				"Desarrollo frontend de la app para gestionar facturas, clientes y productos con Vue.js y Tailwind CSS.",
+				"Integración con Veri*Factu para cumplir la nueva normativa de facturación.",
+				"Diseño y desarrollo de la web de presentación de la herramienta."
+			],
+			"website": "https://factuapp.com"
 		},
 		{
 			"title": "Dominama Análisis Tecnológicos S.L.",
@@ -234,5 +173,9 @@
 	"frontend": "Frontend",
 	"backend": "Backend",
 	"tools": "Herramientas",
-	"back_to_top": "Volver Arriba"
+	"back_to_top": "Volver Arriba",
+	"nav.about": "Sobre mí",
+	"nav.projects": "Proyectos",
+	"nav.experience": "Experiencia",
+	"nav.skills": "Habilidades"
 }
