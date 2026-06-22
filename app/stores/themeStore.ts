@@ -8,13 +8,7 @@ export const useThemeStore = defineStore('theme', {
 	}),
 	actions: {
 		initTheme() {
-			// Detects system preference when loading
-			const isDarkModePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches
-			const defaultTheme: Theme = isDarkModePreferred ? 'dark' : 'light'
-
-			// Initializes the theme with the persisted value or system preference.
-			const currentTheme = this.lightmode ? 'light' : 'dark'
-			this.setTheme(currentTheme || defaultTheme)
+			this.setTheme(this.lightmode ? 'light' : 'dark')
 		},
 		setTheme(newTheme: Theme) {
 			document.documentElement.classList.remove('light', 'dark')

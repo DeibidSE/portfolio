@@ -1,26 +1,5 @@
-import type { Link, Skill } from './types.d'
-import { FRONTEND_TYPE, BACKEND_TYPE, TOOLS_TYPE } from './types.d'
-
-export const socialLinks: Link[] = [
-	{
-		name: 'LinkedIn',
-		icon: 'tabler:brand-linkedin',
-		color: 'blue',
-		url: 'https://www.linkedin.com/in/davidsimon98/',
-	},
-	{
-		name: 'GitHub',
-		icon: 'tabler:brand-github',
-		color: 'default',
-		url: 'https://github.com/DeibidSE',
-	},
-	{
-		name: 'Email',
-		icon: 'tabler:mail',
-		color: 'orange',
-		url: 'mailto:davidsimon98@outlook.com',
-	},
-]
+import type { Skill } from '~/types'
+import { FRONTEND_TYPE, BACKEND_TYPE, TOOLS_TYPE } from '~/types'
 
 export const skillList: Skill[] = [
 	{
@@ -104,6 +83,11 @@ export const skillList: Skill[] = [
 		type: TOOLS_TYPE,
 	},
 	{
+		name: 'Bitbucket',
+		image: 'logos:bitbucket',
+		type: TOOLS_TYPE,
+	},
+	{
 		name: 'Docker',
 		image: 'logos:docker-icon',
 		type: TOOLS_TYPE,
@@ -121,6 +105,11 @@ export const skillList: Skill[] = [
 	{
 		name: 'Jira',
 		image: 'logos:jira',
+		type: TOOLS_TYPE,
+	},
+	{
+		name: 'Claude Code',
+		image: 'vscode-icons:file-type-claude',
 		type: TOOLS_TYPE,
 	},
 ]

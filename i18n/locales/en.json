@@ -1,7 +1,6 @@
 {
 	"about.title": "About Me",
 	"about.name": "David Simón",
-	"about.summary": "Full Stack Developer with over 5 years of experience building fast, polished web experiences. I enjoy turning ideas into real products, from backend logic to the smallest interface details.",
 	"about.experience": "5+ years of experience",
 	"about.tag_fullstack": "Full Stack",
 	"projects.title": "Projects",
@@ -9,7 +8,6 @@
 	"skills.title": "Skills",
 	"introduction.greeting": "Hello! I'm David",
 	"job.title": "Full Stack Web Developer",
-	"availability.label": "Availability",
 	"availability.status": "Currently employed 🎉",
 	"terminal_content": [
 		"🧑🏻‍💻 My name is David, and I'm a Full Stack Web Developer. I've been working in the industry for over 5 years, doing something I've always enjoyed: building things with code.",
@@ -91,11 +89,7 @@
 			"description": "I handled the entire frontend of an app for managing invoices, clients and products, built for small businesses and freelancers. It's built with Vue and Inertia.js, which gives it a different feel from a typical SPA. I worked in parallel with the backend team: once they had an API ready they'd let me know and I'd integrate it. It also generates invoice PDFs and complies with the Spanish Veri*Factu invoicing regulations.",
 			"year": "2025",
 			"role": "Frontend development",
-			"highlights": [
-				"Create, edit and send invoices",
-				"Client and product management",
-				"Veri*Factu integration with the Tax Agency"
-			],
+			"highlights": ["Create, edit and send invoices", "Client and product management", "Veri*Factu integration with the Tax Agency"],
 			"technologies": [
 				{
 					"name": "Laravel",

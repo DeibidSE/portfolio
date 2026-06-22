@@ -1,6 +1,6 @@
 <template>
 	<main
-		class="grid min-h-dvh place-items-center bg-gray-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,rgba(120,119,198,0.3),transparent)] px-6 py-24 sm:py-32 lg:px-8"
+		class="grid min-h-dvh place-items-center bg-primary-dark bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,rgba(176,91,255,0.22),transparent)] px-6 py-24 sm:py-32 lg:px-8"
 	>
 		<div
 			class="w-full max-w-xl rounded-3xl border border-white/10 bg-secondary-dark/60 p-8 text-center shadow-[0_18px_50px_-12px_rgba(0,0,0,0.55)] backdrop-blur-md sm:p-12 md:p-16"
@@ -13,7 +13,7 @@
 			<div class="mt-10 flex justify-center">
 				<a
 					:href="`${$config.public.BASE_URL}`"
-					class="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 font-medium text-white shadow-lg shadow-accent/30 transition-all hover:-translate-y-0.5 hover:bg-accent-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
+					class="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 font-medium text-white shadow-lg shadow-accent/30 transition-all hover:-translate-y-0.5 hover:bg-accent-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
 				>
 					<Icon name="tabler:arrow-bar-to-left" />
 					<span>Return to main page</span>

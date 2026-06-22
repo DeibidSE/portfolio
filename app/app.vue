@@ -1,16 +1,20 @@
 <template>
-	<div id="app" class="relative min-h-screen w-full bg-primary-light text-dark dark:bg-primary-dark dark:text-light">
+	<div
+		id="app"
+		class="relative min-h-screen w-full bg-primary-light font-ui tracking-tighter text-dark dark:bg-primary-dark dark:text-light"
+		style="timeline-scope: --sec-about, --sec-projects, --sec-experience, --sec-skills"
+	>
 		<UiBackground />
 
-		<HeaderNavBar />
+		<LayoutAppHeader />
 		<main>
 			<SectionsIntroductionSection />
 			<SectionsAboutSection />
 			<SectionsProjectsSection />
-			<SectionsExperienceWorkExperience />
+			<SectionsExperienceSection />
 			<SectionsSkillsSection />
 		</main>
-		<LayoutsScrollToTopBtn />
-		<LayoutsAppFooter />
+		<LayoutScrollToTopButton />
+		<LayoutAppFooter />
 	</div>
 </template>

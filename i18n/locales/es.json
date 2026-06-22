@@ -1,10 +1,8 @@
 {
 	"about.title": "Acerca de mí",
 	"about.name": "David Simón",
-	"about.summary": "Desarrollador Full Stack con más de 5 años de experiencia creando aplicaciones y experiencias web rápidas y cuidadas. Disfruto convirtiendo ideas en productos reales, desde la lógica del backend hasta los pequeños detalles de la interfaz.",
 	"about.experience": "+5 años de experiencia",
 	"about.tag_fullstack": "Full Stack",
-	"availability.label": "Disponibilidad",
 	"availability.status": "Actualmente trabajando 🎉",
 	"job.title": "Desarrollador Web Full Stack",
 	"projects.title": "Proyectos",
@@ -91,11 +89,7 @@
 			"description": "Me encargué del frontend completo de una app para gestionar facturas, clientes y productos, pensada para pymes y autónomos. Está construida con Vue e Inertia.js, lo que le da un enfoque distinto al de una SPA típica. Trabajaba en paralelo con el equipo de backend: cuando tenían lista una API me avisaban y yo la integraba. Incluye también generación de facturas en PDF y cumplimiento con la normativa Veri*Factu.",
 			"year": "2025",
 			"role": "Desarrollo frontend",
-			"highlights": [
-				"Crear, editar y enviar facturas",
-				"Gestión de clientes y productos",
-				"Integración con Veri*Factu y la Agencia Tributaria"
-			],
+			"highlights": ["Crear, editar y enviar facturas", "Gestión de clientes y productos", "Integración con Veri*Factu y la Agencia Tributaria"],
 			"technologies": [
 				{
 					"name": "Laravel",

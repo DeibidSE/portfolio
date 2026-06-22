@@ -1,21 +1,17 @@
 export interface Project {
 	image?: string
+	year?: string
+	role?: string
 	description: string
+	highlights?: string[]
 	technologies: Technology[]
-	tags: ProjectTag[]
+	url?: string
 }
 
 export interface Technology {
 	name: string
 	url: string
 	icon: string
-}
-
-export interface ProjectTag {
-	text: string
-	url?: string
-	color?: string
-	icon?: string
 }
 
 export interface WorkExperience {
@@ -26,6 +22,8 @@ export interface WorkExperience {
 	description: string
 	details?: string[]
 	website?: string
+	branch?: boolean
+	tag?: string
 }
 
 export const FRONTEND_TYPE = 'frontend' as const
@@ -43,6 +41,5 @@ export interface Skill {
 export interface Link {
 	name: string
 	icon: string
-	color: string
 	url: string
 }
