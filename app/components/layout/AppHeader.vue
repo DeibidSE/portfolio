@@ -29,16 +29,16 @@ const scrollToSection = (section: string) => {
 
 <template>
 	<header class="nav-header fixed inset-x-0 top-0 z-50 w-full transition-all duration-300" :class="{ 'menu-open': isMenuOpen }">
-		<nav class="nav-inner mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-5 py-3 sm:px-8" aria-label="Main navigation">
+		<nav class="nav-inner mx-auto flex w-full items-center justify-between gap-4 px-5 py-3 sm:px-8 lg:grid lg:max-w-7xl lg:grid-cols-[1fr_auto_1fr]" aria-label="Main navigation">
 			<a
 				:href="`${$config.public.BASE_URL}`"
-				class="focus-ring flex items-center rounded-xl transition-transform duration-300 hover:scale-105"
+				class="focus-ring flex items-center rounded-xl transition-transform duration-300 hover:scale-105 lg:justify-self-start"
 				aria-label="Main website logo"
 			>
 				<Icon name="my-icon:main" class="size-10 sm:size-11" aria-hidden="true" />
 			</a>
 
-			<ul class="hidden items-center gap-1 lg:flex">
+			<ul class="hidden items-center gap-1 lg:flex lg:justify-self-center">
 				<li v-for="section in sections" :key="section.key">
 					<button
 						type="button"
@@ -52,7 +52,7 @@ const scrollToSection = (section: string) => {
 				</li>
 			</ul>
 
-			<div class="hidden items-center gap-2 lg:flex">
+			<div class="hidden items-center gap-2 lg:justify-self-end lg:flex">
 				<LayoutThemeSwitch />
 				<LayoutLanguageSelector />
 			</div>
