@@ -29,7 +29,10 @@ const scrollToSection = (section: string) => {
 
 <template>
 	<header class="nav-header fixed inset-x-0 top-0 z-50 w-full transition-all duration-300" :class="{ 'menu-open': isMenuOpen }">
-		<nav class="nav-inner mx-auto flex w-full items-center justify-between gap-4 px-5 py-3 sm:px-8 lg:grid lg:max-w-7xl lg:grid-cols-[1fr_auto_1fr]" aria-label="Main navigation">
+		<nav
+			class="nav-inner mx-auto flex w-full items-center justify-between gap-4 px-5 py-3 sm:px-8 lg:grid lg:max-w-7xl lg:grid-cols-[1fr_auto_1fr]"
+			aria-label="Main navigation"
+		>
 			<a
 				:href="`${$config.public.BASE_URL}`"
 				class="focus-ring flex items-center rounded-xl transition-transform duration-300 hover:scale-105 lg:justify-self-start"
@@ -52,7 +55,7 @@ const scrollToSection = (section: string) => {
 				</li>
 			</ul>
 
-			<div class="hidden items-center gap-2 lg:justify-self-end lg:flex">
+			<div class="hidden items-center gap-2 lg:flex lg:justify-self-end">
 				<LayoutThemeSwitch />
 				<LayoutLanguageSelector />
 			</div>
