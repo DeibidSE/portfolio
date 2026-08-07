@@ -208,15 +208,11 @@ const scrollToSection = (section: string) => {
 	bottom: -2.5rem;
 	z-index: -1;
 	pointer-events: none;
-	background-image: linear-gradient(to bottom, rgb(244 245 250 / 0.92) 0%, rgb(244 245 250 / 0.8) 30%, rgb(244 245 250 / 0) 100%);
-	-webkit-backdrop-filter: blur(12px);
-	backdrop-filter: blur(12px);
+	background-image: linear-gradient(to bottom, rgb(96 165 250 / 0.18), rgb(129 140 248 / 0.1), transparent);
+	-webkit-backdrop-filter: blur(12px) saturate(120%);
+  backdrop-filter: blur(12px) saturate(120%);
 	-webkit-mask-image: linear-gradient(to bottom, black 0%, black 35%, transparent 100%);
 	mask-image: linear-gradient(to bottom, black 0%, black 35%, transparent 100%);
-}
-
-.dark .nav-header::before {
-	background-image: linear-gradient(to bottom, rgb(22 22 30 / 0.72) 0%, rgb(22 22 30 / 0.58) 30%, rgb(22 22 30 / 0) 100%);
 }
 
 @supports (animation-timeline: scroll()) {

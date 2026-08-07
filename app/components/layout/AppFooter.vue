@@ -36,14 +36,19 @@
 	top: -2.5rem;
 	z-index: -1;
 	pointer-events: none;
-	background-image: linear-gradient(to bottom, rgb(244 245 250 / 0) 0%, rgb(244 245 250 / 0.8) 70%, rgb(244 245 250 / 0.92) 100%);
-	-webkit-backdrop-filter: blur(12px);
-	backdrop-filter: blur(12px);
+
+	background-image: linear-gradient(
+		to bottom,
+		rgb(96 165 250 / 0) 0%,
+		rgb(96 165 250 / 0.05) 45%,
+		rgb(129 140 248 / 0.1) 75%,
+		rgb(129 140 248 / 0.14) 100%
+	);
+
+	-webkit-backdrop-filter: blur(12px) saturate(120%);
+	backdrop-filter: blur(12px) saturate(120%);
+
 	-webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 65%, black 100%);
 	mask-image: linear-gradient(to bottom, transparent 0%, black 65%, black 100%);
-}
-
-.dark .site-footer::before {
-	background-image: linear-gradient(to bottom, rgb(22 22 30 / 0) 0%, rgb(22 22 30 / 0.58) 70%, rgb(22 22 30 / 0.72) 100%);
 }
 </style>
